@@ -1,88 +1,60 @@
-# Biblioteca de slides em PptxGenJS
+# Responsive configuration and branding
 
-Reconstrução editável dos slides **5, 10, 21, 38, 50, 64 e 68** do arquivo de referência. O original permanece intacto.
+[Documentation index](README.md) · [Component API](components.md) · [Templates](templates.md)
 
-## Executar
-
-Node.js 20+ e Python 3 para extração e verificação.
-
-```sh
-npm install
-npm run build:responsive
-npm test
-npm run verify
-```
-
-No ambiente Codex, o gerador também encontra as dependências locais do runtime quando `node_modules` não existe. É possível indicar outro diretório com `CODEX_NODE_MODULES`.
-
-O resultado fica em `output/responsive-slides.pptx`. O slide de origem 68 mantém o estado oculto do original. Para exibir os sete slides e usar Arial explicitamente:
-
-```sh
-node src/generate.mjs --mode responsive --font Arial --show-hidden --output output/preview-arial.pptx
-```
-
-**As fontes Scotia e Scotia Headline devem estar instaladas para a tipografia de marca.** Não estão incorporadas no arquivo de referência e não são distribuídas aqui. A seleção de Arial é uma substituição explícita para prévia. As medidas de texto usam métricas Arial com margem de segurança, portanto a validação final com as fontes Scotia continua necessária.
-
-## Grid e responsividade
-
-“14:9” significa **14 colunas × 9 linhas**, configuráveis, dentro de um canvas **16:9**. São conceitos independentes. O aspecto do slide é validado e preservado quando suas dimensões mudam.
-
-```sh
-node src/generate.mjs --mode responsive --grid 12x8 --output output/grid-12x8.pptx
-npm run build:debug
-```
-
-`Grid` determina as regiões de título, corpo e rodapé. Componentes recebem uma caixa disponível, dividem esse espaço por pesos e calculam as posições dos filhos. Coleções determinam quantas colunas cabem por largura mínima e por extensão mínima no grid, preenchem da esquerda para a direita e continuam de cima para baixo. A altura disponível se redistribui entre as linhas resultantes. Timelines usam datas para posicionar eventos, mantendo rótulos separados por faixa e cartões em ordem cronológica.
-
-**A responsividade acontece ao gerar o PPTX.** PowerPoint recebe objetos com posições calculadas. Alterar texto manualmente no PowerPoint não executa novamente o motor de layout. Para redistribuir, altere os dados/configuração e gere novamente.
-
-Textos e tabelas são medidos antes da geração. O motor reduz a fonte até o mínimo configurado e rejeita um layout que não acomode o conteúdo. Ele não corta conteúdo nem acrescenta slides automaticamente. Grids extremamente pequenos, textos muito extensos ou muitos componentes podem exigir ajustar o template ou os limites mínimos.
-
-## Arquitetura
-
-| Arquivo | Responsabilidade |
-| --- | --- |
-| `src/theme.mjs` | Tokens de marca, dimensões e configuração |
-| `src/layout.mjs` | Grid, fluxo por pesos, quebra de linhas e caixas relativas |
-| `src/components.mjs` | Texto, rich text, formas, imagens, tabelas nativas, painéis e gráficos nativos |
-| `src/content.mjs` | Conteúdo e referências dos sete slides |
-| `src/templates.mjs` | Sete templates, regiões e registro dos masters |
-| `src/generate.mjs` | Preparação dos assets e geração |
-| `scripts/extract.py` | Extração reprodutível de XML, notas, dados e artwork original |
-| `scripts/verify.py` | Verificação do PPTX exportado e preservação do conteúdo |
-
-Não há screenshots de slides como conteúdo. Textos, formas, diagramas, duas tabelas e três gráficos são editáveis. Ícones e logos reutilizam artwork extraído do original. Seus SVGs ficam em `assets/`, com PNGs de alta resolução para compatibilidade entre leitores de PowerPoint. Os ícones são imagens redimensionáveis, não formas vetoriais editáveis dentro do PowerPoint.
-
-Os sete templates registram masters pela API `defineSlideMaster`. PptxGenJS os exporta como layouts reutilizáveis ligados ao master compartilhado. O master contém o chrome estático. Títulos, conteúdo, fontes e número de origem ficam nos slides, pois variam por instância. Não se trata de sete masters independentes do tipo `<p:sldMaster>`.
-
-## Configuração
+Responsive mode composes seven semantic templates from structured data. It redistributes content at build time rather than preserving the source object tree. The default responsive typography is separate from the full-deck quality profile.
 
 ```sh
 node src/generate.mjs --mode responsive --config config.example.json
+node src/generate.mjs --mode responsive --grid 12x8 --font Arial --show-hidden --output output/grid-12x8.pptx
+npm run build:debug
 ```
 
-`config.example.json` demonstra as camadas. A precedência é:
+## Configuration structure
 
-1. Tokens e padrões da biblioteca.
-2. Configuração global do componente em `components`.
-3. Configuração da instância de template em `templates`.
-4. Configuração do componente por slide em `slides.<origem>.components`.
-5. Configuração de cada elemento em `elements.<origem>.<id>`.
+| Field | Default / purpose |
+| --- | --- |
+| `slide` | `{width:13.333333,height:7.5}` inches; must remain 16:9 |
+| `grid` | `{columns:14,rows:9,gapX:0.12,gapY:0.10}` |
+| `theme` | Brand tokens below |
+| `template` | Common regions and chrome settings |
+| `templates[name]` | Per-template chrome and master settings |
+| `components[kind]` | Global component options |
+| `slides[source].components[kind]` | Per-slide component options |
+| `slides[source].data` | Content patches using the selected template schema |
+| `elements['source.id']` | Per-primitive options; highest drawing override layer |
+| `assets[key]` | Artwork replacement path and optional tint |
 
-Objetos fazem merge recursivo. Arrays são substituídos por inteiro. `slides.<origem>.data` permite alterar conteúdo, dados e quantidade de itens sem editar o layout.
+`configure(patch)` recursively merges defaults, clones inputs, and validates positive 16:9 dimensions, six-digit theme colors, and usable header/footer spans. The `Grid` constructor validates track counts and available geometry. Not every unknown responsive key is rejected; consult the documented consumer rather than assuming it is used.
+
+## Precedence and merge semantics
+
+```mermaid
+flowchart TD
+  A[Library defaults] --> B[Top-level theme, grid, and template patch]
+  B --> C[Per-template chrome overrides]
+  C --> D[Renderer local drawing options]
+  D --> E[Global components by kind]
+  E --> F[Slide components by kind]
+  F --> G[Exact element override]
+```
+
+Per-template overrides change `config.template` for region/chrome rendering; they are not a universal component override layer. Canvas drawing options merge local defaults, global component options, slide component options, then exact element options. Objects merge recursively; arrays replace completely. An explicit `box` is an advanced override that can defeat normal layout constraints.
 
 ```json
 {
   "grid": { "columns": 14, "rows": 9 },
-  "theme": {
-    "colors": { "primary": "EC111A", "surface": "F5EFE8" },
-    "fonts": { "body": "Scotia", "heading": "Scotia Headline" }
-  },
   "components": {
     "strategicPillars": { "gap": 0.24, "minWidth": 2.2, "minColumnSpan": 3 }
   },
   "templates": {
-    "executionDashboard": { "showLogo": false, "headerRows": 1.35 }
+    "executionDashboard": { "showLogo": false }
+  },
+  "slides": {
+    "50": {
+      "data": { "mission": "Build lasting client relationships" },
+      "components": { "text": { "color": "1E1117" } }
+    }
   },
   "elements": {
     "50.pillars.items.0.title": {
@@ -93,28 +65,86 @@ Objetos fazem merge recursivo. Arrays são substituídos por inteiro. `slides.<o
 }
 ```
 
-Cada elemento aceita `visible` e `box` (`x`, `y`, `w`, `h`, em polegadas). Textos aceitam `text`, `fontSize`, `minFontSize`, `padding`, `leading`, estilo e opções PptxGenJS. Formas aceitam `type`, `line` e `fill`. Imagens aceitam `asset`. Tabelas aceitam `values`, `weights`, `rowStyles`, `cellStyles` e `pptx` para opções nativas adicionais. Gráficos aceitam `series`, `holeSize`, `firstSliceAng` e `pptx`. Uma substituição manual de `box` é uma opção avançada que prevalece sobre o layout calculado.
+IDs are recorded in `output/responsive-slides.layout.json`. Primitive text, shape, image, table, and chart methods support their documented visibility settings. Composites do not universally implement their own `visible` flag.
 
-Os IDs estão em `output/responsive-slides.layout.json`, junto com caixas, tamanhos de fonte e conteúdo. Cada objeto também recebe um nome identificável no PPTX. Os objetos estáticos do master podem ser configurados com `templates.<nome>.masterObjects`, `master` e `logo`.
+## Brand tokens
 
-Os tokens foram extraídos da apresentação. Eles não substituem um manual oficial de marca. Artwork oficial de logos permanece inalterado. Ícones extraídos seguem os tokens de cor e podem receber substituição em `assets`:
+Defined in [theme.mjs](../src/theme.mjs):
+
+| `theme.colors` key | Hex | Use |
+| --- | --- | --- |
+| `primary` | `EC111A` | Brand red, emphasis, bars |
+| `text` | `1E1117` | Main text |
+| `muted` | `666666` | Secondary labels |
+| `paper` | `FFFFFF` | Background and reversed text |
+| `surface` | `F5EFE8` | Card/table background |
+| `border` | `D8D6CA` | Borders and secondary fills |
+| `neutral` | `BCB8A4` | Neutral indicators |
+| `complete` | `0070C0` | Completion charts |
+| `inProgress` | `D8D6CA` | In-progress chart slices |
+| `notStarted` | `EEEEEB` | Not-started chart slices |
+| `majorIssues` | `EC111A` | Health status |
+| `atRisk` | `FDB913` | Health status |
+| `onTrack` | `00A467` | Health status |
+
+| Token group | Defaults |
+| --- | --- |
+| `fonts` | `body:'Scotia'`, `heading:'Scotia Headline'`, `fallback:'Arial'` |
+| `type` | `title:21`, `body:10.5`, `small:9`, `caption:7.5`, `kicker:8` pt |
+| `spacing` | `marginX:0.56`, `marginY:0.26`, `gap:0.12`, `padding:0.12` in |
+| `line` | `thin:0.5`, `regular:0.8`, `emphasis:1.1` pt |
+
+The fallback token does not itself install or automatically substitute a missing font. Use `--font Arial` for an explicit preview choice. Some renderers set local sizes for specific roles; changing a base token does not replace every local value. Use component/element overrides for those roles, or edit the renderer to consume a new token.
+
+These tokens describe the reference presentation; they are not an official brand manual. Native quality mode has separate typography and flow tokens, and recipes may contain literal source colors. A brand migration must inspect those paths as well as this responsive theme.
+
+## Common template settings
+
+Defaults: `headerRows:1.35`, `footerRows:0.55`, `showNumber:true`, `showLogo:true`, `showGrid:false`, `header:{}`, `footer:{}`. Execution dashboard defaults to `showLogo:false` at its template layer.
+
+`templates[name]` can also supply `logo` (prepared asset key), `masterObjects` (static PptxGenJS object array), and `master` (master-definition overrides). See [Templates](templates.md) for the difference between a semantic renderer and a native Office master.
+
+## Grid and available space
+
+The slide ratio is 16:9; 14 × 9 means layout tracks. Regions are calculated inside outer margins, with header/body/footer spans. Collections choose columns by physical minimum width and optional minimum grid span, then fill rows in reading order. Their cells divide the available height. Extremely dense input can still exceed capacity.
+
+Text and table components shrink within their own documented limits; impossible minimum sizes throw. Responsive templates do not automatically add continuation slides. Changing source data and regenerating runs layout again. Editing the exported PPTX manually does not.
+
+## Artwork
+
+`prepareAssets(config)` scans SVG, PNG, JPEG, and JPG entries in `assets/`, applies replacements, and writes compatible PNGs into `output/assets/`. It returns each prepared asset's path and dimensions. The original assets are not changed.
 
 ```json
-{ "assets": { "assets/source-50-geometry-4.svg": { "path": "assets/meu-icone.svg", "tint": "EC111A" } } }
+{
+  "assets": {
+    "assets/source-50-geometry-4.svg": {
+      "path": "assets/source-50-geometry-4.svg",
+      "tint": "EC111A"
+    }
+  }
+}
 ```
 
-## Verificação e fidelidade
+Default tint maps source-50 geometry to primary and source-64 geometry to border. SVG tint replaces six-digit literal hex colors. Logos are not automatically tinted. SVG is rasterized at high resolution for responsive reader compatibility; responsive icons are images, not editable Office shapes. EMF and other unscanned media are retained only by the native preservation path. To introduce a new asset key, add a supported file to `assets/` or bind a replacement to an existing key.
 
-`npm test` cobre limites do grid, ordem de leitura, reflow, conteúdo adicional, ajuste de fontes, outra dimensão 16:9, outro grid e overrides. `npm run verify` abre o ZIP exportado e verifica contagem, aspecto, tabelas e gráficos nativos, valores dos gráficos e preservação dos textos principais.
+## Content example
 
-Esta implementação adapta os layouts ao motor responsivo. Não é uma conversão pixel a pixel das coordenadas originais. Espaços usados manualmente para posicionamento foram normalizados. A timeline preserva os dois rótulos “SteerCo #4” presentes no original. No dashboard, o quarto valor de cada rosca é o espaçador que cria o semicírculo, não um indicador adicional.
+```js
+import { build } from './src/responsive.mjs';
 
-Para renderizar uma prévia dos sete slides com LibreOffice e Poppler disponíveis:
-
-```sh
-node src/generate.mjs --mode responsive --font Arial --show-hidden --output output/review/slides-visible.pptx
-soffice --headless --convert-to pdf --outdir output/review output/review/slides-visible.pptx
-pdftoppm -scale-to 1400 -png output/review/slides-visible.pdf output/review/slide
+await build({
+  theme: { fonts: { body: 'Arial', heading: 'Arial' } },
+  slides: {
+    50: { data: {
+      mission: 'Build lasting client relationships',
+      outcome: 'Deliver sustainable growth',
+      pillars: [
+        { title: 'Grow', icon: 'assets/source-50-geometry-4.svg' },
+        { title: 'Simplify', icon: 'assets/source-50-geometry-2.svg' },
+      ],
+    } },
+  },
+}, { output: 'output/custom-responsive.pptx', showHidden: true });
 ```
 
-A prévia usa uma fonte alternativa. A revisão com a fonte de marca deve usar uma máquina com Scotia instalada.
+Only the pillar array is replaced; other source entries remain in the seven-slide build. Use [Validation](validation.md) after changing item count, dimensions, fonts, or content length.

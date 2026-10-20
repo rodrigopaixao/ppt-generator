@@ -1,55 +1,89 @@
-# Contrato de configuração
+# Native configuration reference
 
-O contrato também está documentado no próprio código em `src/fidelity-config.mjs`. Todos os números de slide/IDs abaixo foram verificados no catálogo da referência.
+[Documentation index](README.md) · [Quality profile](quality.md) · [Responsive configuration](responsive-guide.md)
 
-## Escolher o mecanismo
+This contract applies to native fidelity, including quality-profile builds. Start with [config.fidelity.example.json](../config.fidelity.example.json). Responsive mode has a separate schema.
 
-A CLI sem configuração usa `fidelity` e cobre os 71 slides. `npm run build` agora fornece `config.quality.json`, que aplica o [perfil de revisão](quality.md) sobre esse mecanismo e cria continuações quando necessário. Ele mantém as partes nativas e não troca o original por screenshots. O arquivo original é uma dependência de build. `responsive` compõe os sete templates semânticos e usa o contrato antigo de `config.example.json`. Use `config.fidelity.example.json` no modo fiel. Não misture os dois contratos.
+## Top-level parameters
 
-## Encontrar IDs e templates
+| Parameter | Type / default | Behavior |
+| --- | --- | --- |
+| `source` | Local path / reference filename | Source package, resolved from the repository root |
+| `mode` | `fidelity` or `responsive` / `fidelity` | CLI routing; removed before calling the selected build |
+| `selection` | Unique source numbers / all slides | Output selection and order; source IDs remain stable |
+| `showHidden` | Boolean / false | Makes hidden source slides visible |
+| `grid` | Object / 14 columns, 9 rows | Tracks for explicit grid edits and additions |
+| `theme` | Object | Native color/font substitutions |
+| `masters` | Map keyed by `slideMasterN` | Edits native master parts |
+| `templates` | Map keyed by `slideLayoutN` | Edits native layout parts |
+| `slides` | Map keyed by source number | Element edits, flows, background, hidden state |
+| `elements` | Map keyed by `source.eID` | Direct native patches; replace matching slide-level patches |
+| `additions` | Map of source number to declarations | New PptxGenJS objects |
+| `nativeParts` | Map of OPC XML path to operations | Advanced whole-part XML edits |
+| `quality` | Object / absent | Enables [quality normalization](quality.md) |
+| `slide` | Exact source dimensions | Native mode rejects canvas changes |
 
-`data/templates.json` contém 71 variantes (`source-001` a `source-071`). `data/slides/050.json`, por exemplo, descreve a variante do slide 50, os IDs, caixas, hierarquia e recursos. `data/catalog.json` inclui também os 148 layouts e 7 masters.
+Unknown top-level, owner-level, element, text-style, and flow keys are rejected by their validators. This is not a complete schema validator for arbitrary PptxGenJS options.
 
-Os IDs são `e` seguido do ID nativo, não índices de arrays. A hierarquia é indicada por `parentId`. `box` é uma caixa em polegadas e `grid` é uma representação fracionária em 14×9; o original não sofre arredondamento para caber em tracks inteiros. `inheritedFrom` indica de onde veio a geometria. Estilos continuam na cadeia nativa de herança, em vez de serem achatados por aproximação.
+`grid.columns` and `grid.rows` are positive integers. `gapX`, `gapY`, `marginX`, and `marginY` are inches; native addition defaults are zero. Changing the grid does not snap preserved objects to new tracks.
 
-O mesmo template de origem pode ser reutilizado em builds distintos com `selection` e dados diferentes. A seleção de um build aceita números únicos e preserva os IDs de origem.
+## Find an element
 
-## Precedência
-
-1. Tema por tokens ou mapas explícitos.
-2. Overrides de `masters.slideMasterN`.
-3. Overrides de `templates.slideLayoutN`.
-4. Overrides de `slides.<n>`.
-5. Overrides de `elements.<n>.<eID>`.
-6. Operações avançadas em `nativeParts`.
-7. Objetos novos declarados em `additions`, gerados pelo PptxGenJS.
-
-Dentro do slide, `flows` calcula as caixas; uma caixa explícita em `elements` prevalece. Configurações desconhecidas geram erro, em vez de serem tratadas como configurações aplicadas com sucesso.
-
-## Texto, estilos e geometria
+Inspect `data/slides/050.json` for source slide 50 or the exported `.layout.json` for final geometry. IDs such as `e25` are native nonvisual object IDs, not array indices. `parentId` identifies group membership; `inheritedFrom` identifies inherited geometry. Layout/master IDs belong to their respective parts.
 
 ```json
 {
+  "selection": [5, 10, 50],
   "elements": {
     "5.e5": {
-      "text": "Novo resumo",
-      "textStyle": {
-        "fontFace": "Scotia Headline",
-        "fontSize": 19,
-        "color": "EC111A",
-        "align": "left"
-      },
+      "text": "Updated executive summary",
+      "textStyle": { "fontSize": 19, "color": "EC111A", "align": "left" },
       "grid": { "col": 1, "row": 1, "colSpan": 11, "rowSpan": 1 }
     }
   }
 }
 ```
 
-`text` substitui o corpo, usando o primeiro estilo como base. `textRuns` aceita índices de runs para preservar ênfases distintas. `textReplacements` opera dentro de cada run, sem atravessar fronteiras de formatação. `textStyle` aceita fonte, tamanho em pontos, negrito, itálico, cor, alinhamento, margem em polegadas, âncora vertical e wrap.
+## Order and precedence
 
-`box` usa polegadas globais. `localBox` usa EMU no espaço do pai, indicado para filhos de grupos rotacionados. `rotation` usa graus. `visible:false` remove o objeto da saída. As formas aceitam `fill`, `line` e `shapeType`. Geometria herdada só é materializada quando uma edição exige geometria própria.
+```mermaid
+flowchart LR
+  A[Original package] --> B[Theme]
+  B --> C[Master patches]
+  C --> D[Layout patches]
+  D --> E[Slide patches and flows]
+  E --> F[Whole-part XML edits]
+  F --> G[Import additions]
+  G --> H[Selection and optional quality normalization]
+```
 
-## Fluxo responsivo
+Global `elements["5.e5"]` **replaces** the matching `slides["5"].elements.e5` patch; the two are not recursively merged. Flows calculate boxes before explicit element properties take precedence. Native Office inheritance gives directly styled slide objects precedence over inherited layout/master styling. Quality normalization runs afterward and can impose semantic typography tokens.
+
+## Element patch parameters
+
+| Parameter | Type / unit | Effect |
+| --- | --- | --- |
+| `text` | String | Replaces text using the first original style as a base |
+| `textRuns` | Map of zero-based run index to string | Replaces selected runs |
+| `textReplacements` | Map of old to new strings | Substitutes within runs; does not match across formatting boundaries |
+| `textStyle` | Object | Supported text formatting below |
+| `box` | `{x,y,w,h}` in inches | Global geometry; partial coordinates may be patched |
+| `localBox` | Parent-space transform values in EMU | Local geometry for grouped/rotated objects |
+| `grid` | `{col,row,colSpan,rowSpan}` | Zero-based placement; fractional tracks allowed |
+| `rotation` | Degrees | Rotation |
+| `visible` | Boolean | `false` removes the object |
+| `fill` | Six-digit hex color | Solid fill |
+| `line` | `{color,width}` | Line color and width in points |
+| `shapeType` | DrawingML preset | Preset shape geometry |
+| `name` | String | Selection-pane name |
+| `table` | Object | Native table edits |
+| `chart` | Object | Native chart data/XML edits |
+| `image` | Path or `{path,fallback}` | Image resource replacement |
+| `xmlPatches` | Array | Relative object XML operations |
+
+`textStyle` accepts `fontFace`, `fontSize` in points, `bold`, `italic`, `color`, `align` (`left`, `center`, `right`, `justify`), `margin` in inches, `vertical` (`top`, `middle`, `bottom`), and `wrap` (boolean). Native text margin is distinct from PptxGenJS table padding in points. Bare fidelity mode does not measure or shrink edited text.
+
+## Native flows
 
 ```json
 {
@@ -59,18 +93,29 @@ Dentro do slide, `flows` calcula as caixas; uma caixa explícita em `elements` p
         "elements": ["e25", "e26", "e27", "e28"],
         "region": { "x": 1, "y": 2, "w": 5, "h": 4 },
         "minWidth": 2,
-        "gap": 0.1
+        "gap": 0.1,
+        "maxColumns": 2
       }]
     }
   }
 }
 ```
 
-Esse exemplo redistribui especificamente os quatro textos de pilares em duas linhas; não move seus ícones. Para mover componentes inteiros, selecione seus grupos nativos apropriados. O motor não infere agrupamentos semânticos que não existam no original. Não inclua simultaneamente pai e filho no mesmo fluxo.
+This moves the four texts, not their independent icons. Select existing group IDs to move grouped components. Do not include a group and its child together. Items read left to right, then top to bottom, in the supplied order.
 
-A área disponível determina quantas colunas cabem. A ordem da lista determina a leitura da esquerda para a direita e depois de cima para baixo. Fontes de texto não são recalculadas automaticamente pelo modo fiel. Para um novo volume de conteúdo, ajuste caixa/estilo ou use a composição semântica adaptativa quando houver template adequado. Alterações configuradas não mantêm, por definição, igualdade visual com o conteúdo anterior.
+| Option | Default |
+| --- | --- |
+| `elements` | Required nonempty, unique existing IDs |
+| `region` | `{x:0.56,y:1.3,w:slide.width-1.12,h:slide.height-1.9}` |
+| `minWidth` | 2 inches |
+| `gap` | 0.12 inches |
+| `maxColumns` | Number of elements |
 
-## Tabelas
+Cells are equally sized. Available width determines columns; available height determines row height. Flow changes geometry, not font size or semantic associations.
+
+## Tables
+
+`table.rows` replaces the matrix while retaining column count. Additional rows clone the last row, and height is redistributed. Complex merges require specific review. Cell keys are `"row.column"`, zero-based and including the header.
 
 ```json
 {
@@ -81,7 +126,7 @@ A área disponível determina quantas colunas cabem. A ordem da lista determina 
           "table": {
             "cells": {
               "1.2": {
-                "text": "Nova atividade",
+                "text": "Updated meeting",
                 "fill": "F5EFE8",
                 "textStyle": { "bold": true }
               }
@@ -94,47 +139,65 @@ A área disponível determina quantas colunas cabem. A ordem da lista determina 
 }
 ```
 
-Índices são base zero, incluindo a linha de cabeçalho. `rows` substitui a matriz mantendo a quantidade de colunas. Quando muda a quantidade de linhas, o motor clona a última e redistribui a altura total. Mesclas complexas podem requerer revisão específica. `columnWidths` e `rowHeights` recebem polegadas. O corpo continua sendo uma tabela PowerPoint editável.
+`columnWidths` and `rowHeights` are inch-based arrays. Tables remain native editable tables. Quality mode subsequently measures text and enforces its font/padding rules.
 
-## Gráficos
+## Charts
 
 ```json
 {
-  "slides": {
-    "68": {
-      "elements": {
-        "e114": {
-          "chart": {
-            "series": [{ "values": [2, 7, 2, 11] }],
-            "xmlPatches": [{ "path": ".//c:holeSize", "attributes": { "val": "60" } }]
-          }
-        }
+  "elements": {
+    "68.e114": {
+      "chart": {
+        "series": [{ "values": [2, 7, 2, 11] }],
+        "xmlPatches": [{ "path": ".//c:holeSize", "attributes": { "val": "60" } }]
       }
     }
   }
 }
 ```
 
-Mantém a quantidade de séries e pontos. `{}` preserva uma série. `name`, `labels`, `values`, `xValues` e `yValues` dependem do tipo original. O motor atualiza cache e XLSX incorporado, clonando os recursos por instância para não alterar outro slide. No dashboard, o último valor é o espaçador branco, não uma medida adicional.
+Retain original series and point counts. An empty series patch `{}` preserves that series. Fields are `name`, `labels`, `values`, `xValues`, and `yValues`, depending on chart type. The adapter updates caches and workbook data with private resources for the edited instance. Quality also repairs workbook portability for Keynote.
 
-Elementos auxiliares de texto desenhados fora do gráfico são objetos separados no original. Se mudar a informação desses elementos, configure também seus IDs; o adaptador não inventa relações semânticas entre textos soltos e séries de dados.
+Independent text boxes near a chart are separate elements; update them explicitly. In dashboard half-doughnuts, the fourth value is a white spacer equal to the sum of the first three values, not another metric.
 
-## Branding e imagens
+## Branding and media
 
-`theme.colors` aceita primary, surface, paper e text. `theme.fonts` aceita body e heading. `theme.colorMap`/`fontMap` fazem substituições por valores exatos. Todos os temas da referência continuam disponíveis. Imagens e logos rasterizados não são recoloridos automaticamente.
+Native `theme.colors` supports `primary`, `surface`, `paper`, and `text`; `theme.fonts` supports `body` and `heading`. `colorMap` and `fontMap` replace exact values. Original themes and inheritance remain available. Color substitution does not recolor image pixels or automatically rewrite every literal recipe color.
 
-Use `image` no objeto de imagem para fornecer outro arquivo local. A alteração mantém crop/geometria/efeitos, cria um recurso privado e atualiza o relacionamento. Substituições SVG recebem automaticamente um fallback PNG pelo wrapper JavaScript, mantendo também o vetor no PPTX. Para preservar o enquadramento visual, use a mesma proporção da imagem original. O baseline conserva inclusive SVG, EMF e WDP sem conversão.
+Image replacement preserves crop, geometry, and effects. A string path ending in `.svg` receives a generated PNG fallback while retaining the vector. Supply `{path,fallback}` explicitly to manage both. Paths resolve from the repository root. Preserve aspect ratio when crop fidelity matters.
 
-## Masters, layouts e propriedades avançadas
+## Masters, layouts, and XML operations
 
-`masters.slideMaster1` e `templates.slideLayout20` aceitam `elements` e `background`. IDs pertencem a essas partes, não ao slide. O efeito propaga pela herança original. Alterar um objeto diretamente no slide tem precedência sobre o valor herdado.
+`masters.slideMaster1` and `templates.slideLayout20` accept `elements`, `flows`, and `background`. Slide patches additionally accept `hidden`. Background is a hex color. IDs must exist in the selected part.
 
-`xmlPatches` opera sobre um objeto; `chart.xmlPatches` sobre o gráfico privado; `nativeParts` sobre uma parte OPC inteira. Operações aceitam `path`, `attributes`, `text`, `remove` e `appendXml`. Use o prefixo correto e forneça namespaces no fragmento inserido. Essa é a saída para propriedades DrawingML sem equivalente no PptxGenJS, como ajustes especiais de geometria, eixos ou efeitos.
+XML operations accept `path`, `attributes`, `text`, `remove`, and `appendXml`. Use relative ElementTree XPath and the appropriate `p:`, `a:`, or `c:` namespace. Inserted XML must declare namespaces. Removing the operation root is forbidden. `chart.xmlPatches` targets private chart XML; `nativeParts` targets an existing `.xml` or `.rels` part. Verify relationships and rendering after advanced edits.
 
-`additions` cria objetos novos via PptxGenJS. Cada declaração aceita `kind:text|shape`, `id`, `text`/`type`, `box`/`grid` e `style`. Objetos novos recebem nomes `custom.<id>` no painel de seleção.
+## New editable additions
 
-## Resultados e limites de verificação
+```json
+{
+  "selection": [50],
+  "additions": {
+    "50": [{
+      "id": "review-label",
+      "kind": "text",
+      "text": "Review copy",
+      "box": { "x": 10.5, "y": 6.6, "w": 2, "h": 0.2 },
+      "style": { "fontFace": "Arial", "fontSize": 10, "color": "666666" }
+    }]
+  }
+}
+```
 
-`output/recreated-slides.layout.json` identifica exatamente as partes alteradas. `baselineVisualPartsByteIdentical:true` significa que todas as partes visuais e binárias da referência foram mantidas, sem exceções ocultas. Para configurações que mudam conteúdo, o valor é false e `changedParts` mostra o efeito.
+| Field | Meaning |
+| --- | --- |
+| `id` | Unique per slide; defaults to `addition-<index>` |
+| `kind` | `text`, `shape`, `table`, `chart` |
+| `box` / `grid` | Positive on-canvas region; grid takes precedence |
+| `text` | String or PptxGenJS rich-text runs |
+| `type` | Shape/chart type; defaults to `rect` / `bar` |
+| `rows` | PptxGenJS table rows |
+| `series` | PptxGenJS chart series |
+| `style` | PptxGenJS options merged over default style and geometry |
 
-A comparação visual é feita no mesmo ambiente de renderização. Manter as declarações de fonte não instala nem incorpora uma fonte ausente. Fidelidade fora desse ambiente depende das fontes e do leitor usado, assim como no arquivo original.
+Objects receive `custom.<id>` names. Bounds are validated before and after style merging. Additions cannot target unselected slides. They bypass responsive Canvas fitting; dense additions need explicit measurement or quality normalization.
