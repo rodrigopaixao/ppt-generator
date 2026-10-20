@@ -1,0 +1,285 @@
+{
+  "number": 11,
+  "part": "ppt/slides/slide11.xml",
+  "hidden": false,
+  "title": "Offsite Agenda ",
+  "layout": "ppt/slideLayouts/slideLayout17.xml",
+  "master": "ppt/slideMasters/slideMaster1.xml",
+  "elements": [
+    {
+      "id": "e17",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide11.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag34.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image3.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject23.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout17.xml",
+      "kind": "shape",
+      "text": "Offsite Agenda ",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Offsite Agenda ",
+            "size": 22.0,
+            "runSizes": [
+              22.0
+            ]
+          }
+        ],
+        "size": 22.0
+      },
+      "sourcePart": "ppt/slides/slide11.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout17.xml",
+      "kind": "shape",
+      "text": "11",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "11",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide11.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e6",
+      "name": "Table 46",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "table",
+      "text": "TIMING\nTOPIC\nPRESENTERS\nPAGE #\n9:30 am - 9:50 am\nUpdate on Must-Win Priorities\nAnique A., Mehnaz C.\n3-11\n9:50 am - 1:30 pm\nMust-Win Deep Dives\n\n12-72\n9:50 am - 10:15 am\nRetail Client Primacy and Deposits\nTerri-Lee W., Thayde O.\n13-19\n10:15 am - 10:40 am\nRetail Investment Advice\nNeal K., John D.\n20-25\n10:40 am - 11:00 am\nBREAK\n\n\n11:00 am - 11:25 am\nCommercial Growth and Optimization\nStephen B., Adrian O.R., Chris M.\n26-30\n11:25 am - 11:50 am\nCloud Acceleration\nSteve S., Grace L.\n31-41\n11:50 am - 12:15 pm\nGlobal Transaction Banking \n(including U.S. Core Banking Replacement & Cash Management Expansion Business Case Review)\nMatthew P. J.\n42-49\n12:15 pm - 12:35 pm\nLUNCH\n\n\n12:35 pm - 1:00 pm\nProductivity\nLoretta M., Tracy B.\n50-57\n1:00 pm - 1:15 pm\nData-Driven Decision Making\nGrace L., Martin W.\n58-63\n1:15 pm - 1:30 pm\nCapital Allocation\nAnique A.\n64-74",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide11.xml",
+      "relations": [
+        {
+          "id": "rId8",
+          "target": "ppt/slides/slide54.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide"
+        },
+        {
+          "id": "rId13",
+          "target": "ppt/slides/slide21.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide"
+        },
+        {
+          "id": "rId7",
+          "target": "ppt/slides/slide38.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide"
+        },
+        {
+          "id": "rId12",
+          "target": "ppt/slides/slide66.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide"
+        },
+        {
+          "id": "rId6",
+          "target": "ppt/slides/slide6.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide"
+        },
+        {
+          "id": "rId11",
+          "target": "ppt/slides/slide12.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide"
+        },
+        {
+          "id": "rId10",
+          "target": "ppt/slides/slide57.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide"
+        },
+        {
+          "id": "rId9",
+          "target": "ppt/slides/slide5.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide"
+        }
+      ],
+      "box": {
+        "x": 0.5740638670166229,
+        "y": 1.6632141294838145,
+        "w": 12.195033902012248,
+        "h": 5.031234689413823
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.602767060367454,
+        "row": 1.9958569553805774,
+        "colSpan": 12.804785597112861,
+        "rowSpan": 6.037481627296588
+      },
+      "headerFontSizes": [
+        12.0,
+        12.0,
+        12.0,
+        12.0
+      ],
+      "cells": [
+        [
+          "TIMING",
+          "TOPIC",
+          "PRESENTERS",
+          "PAGE #"
+        ],
+        [
+          "9:30 am - 9:50 am",
+          "Update on Must-Win Priorities",
+          "Anique A., Mehnaz C.",
+          "3-11"
+        ],
+        [
+          "9:50 am - 1:30 pm",
+          "Must-Win Deep Dives",
+          "",
+          "12-72"
+        ],
+        [
+          "9:50 am - 10:15 am",
+          "Retail Client Primacy and Deposits",
+          "Terri-Lee W., Thayde O.",
+          "13-19"
+        ],
+        [
+          "10:15 am - 10:40 am",
+          "Retail Investment Advice",
+          "Neal K., John D.",
+          "20-25"
+        ],
+        [
+          "10:40 am - 11:00 am",
+          "BREAK",
+          "",
+          ""
+        ],
+        [
+          "11:00 am - 11:25 am",
+          "Commercial Growth and Optimization",
+          "Stephen B., Adrian O.R., Chris M.",
+          "26-30"
+        ],
+        [
+          "11:25 am - 11:50 am",
+          "Cloud Acceleration",
+          "Steve S., Grace L.",
+          "31-41"
+        ],
+        [
+          "11:50 am - 12:15 pm",
+          "Global Transaction Banking \n(including U.S. Core Banking Replacement & Cash Management Expansion Business Case Review)",
+          "Matthew P. J.",
+          "42-49"
+        ],
+        [
+          "12:15 pm - 12:35 pm",
+          "LUNCH",
+          "",
+          ""
+        ],
+        [
+          "12:35 pm - 1:00 pm",
+          "Productivity",
+          "Loretta M., Tracy B.",
+          "50-57"
+        ],
+        [
+          "1:00 pm - 1:15 pm",
+          "Data-Driven Decision Making",
+          "Grace L., Martin W.",
+          "58-63"
+        ],
+        [
+          "1:15 pm - 1:30 pm",
+          "Capital Allocation",
+          "Anique A.",
+          "64-74"
+        ]
+      ]
+    }
+  ]
+}

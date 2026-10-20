@@ -1,0 +1,1250 @@
+{
+  "number": 24,
+  "part": "ppt/slides/slide24.xml",
+  "hidden": false,
+  "title": "Commercial and Wealth Partnership History | Since F16, key progress has been made to increase collaboration & partnership between our businesses",
+  "layout": "ppt/slideLayouts/slideLayout23.xml",
+  "master": "ppt/slideMasters/slideMaster2.xml",
+  "elements": [
+    {
+      "id": "e41",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag67.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId6",
+          "target": "ppt/media/image275.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/embeddings/oleObject33.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout23.xml",
+      "kind": "shape",
+      "text": "Commercial and Wealth Partnership History | Since F16, key progress has been made to increase collaboration & partnership between our businesses",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Commercial and Wealth Partnership History | Since F16, key progress has been made to increase collaboration & partnership between our businesses",
+            "size": 24.0,
+            "runSizes": [
+              24.0,
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout23.xml",
+      "kind": "shape",
+      "text": "24",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "24",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e9",
+      "name": "Table 27",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "table",
+      "text": "F16\nF17\nF18\nF19\nF20\nF21\nF22\nF23\nF24\nF25\n\n\n\n\n\n\n\n\n\n",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 0.3987860892388451,
+        "y": 3.7639676290463693,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.4187253937007874,
+        "row": 4.516761154855643,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      },
+      "headerFontSizes": [
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0
+      ],
+      "cells": [
+        [
+          "F16",
+          "F17",
+          "F18",
+          "F19",
+          "F20",
+          "F21",
+          "F22",
+          "F23",
+          "F24",
+          "F25"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "e11",
+      "name": "Straight Arrow Connector 10",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6328937007874016,
+        "y": 4.321508092738408,
+        "w": 12.1,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6645383858267716,
+        "row": 5.1858097112860895,
+        "colSpan": 12.705,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e13",
+      "name": "Rectangle: Rounded Corners 12",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 2.543742344706912,
+        "y": 4.266117672790901,
+        "w": 1.9,
+        "h": 0.14139654418197725
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.6709294619422574,
+        "row": 5.1193412073490805,
+        "colSpan": 1.9949999999999999,
+        "rowSpan": 0.1696758530183727
+      }
+    },
+    {
+      "id": "e14",
+      "name": "Rectangle: Rounded Corners 13",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "PROCESS\nEstablished Wealth Management Consultants (WMCs) to serve Retail, Small Bus. & Comm. clients",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PROCESS",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Established Wealth Management Consultants (WMCs) to serve Retail, Small Bus. & Comm. clients",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 2.411851487314086,
+        "w": 2.0530818022747157,
+        "h": 1.029278215223097
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 2.894221784776903,
+        "colSpan": 2.155735892388451,
+        "rowSpan": 1.2351338582677163
+      }
+    },
+    {
+      "id": "e15",
+      "name": "Straight Connector 14",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 0.9131944444444444,
+        "y": 3.568506124234471,
+        "w": 0.00173665791776028,
+        "h": 0.28566929133858265
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.9588541666666666,
+        "row": 4.282207349081365,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.3428031496062992
+      }
+    },
+    {
+      "id": "e16",
+      "name": "Rectangle: Rounded Corners 15",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5991010498687664,
+        "y": 4.265635389326334,
+        "w": 1.7,
+        "h": 0.1423611111111111
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6290561023622048,
+        "row": 5.118762467191601,
+        "colSpan": 1.7850000000000001,
+        "rowSpan": 0.17083333333333334
+      }
+    },
+    {
+      "id": "e18",
+      "name": "Oval 17",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 2.354309930008749,
+        "y": 4.258075240594926,
+        "w": 0.15748031496062992,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.4720254265091866,
+        "row": 5.109690288713911,
+        "colSpan": 0.1653543307086614,
+        "rowSpan": 0.1889763779527559
+      }
+    },
+    {
+      "id": "e20",
+      "name": "Straight Connector 19",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 2.432181758530184,
+        "y": 4.764525371828522,
+        "w": 0.00173665791776028,
+        "h": 0.28632764654418197
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.553790846456693,
+        "row": 5.717430446194226,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.34359317585301835
+      }
+    },
+    {
+      "id": "e19",
+      "name": "Rectangle: Rounded Corners 18",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "PROCESS\nRemoved Commercial responsibility from WMCs – RM and Advisor to drive client relationships directly",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PROCESS",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Removed Commercial responsibility from WMCs – RM and Advisor to drive client relationships directly",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 0.7644925634295713,
+        "y": 5.180387139107611,
+        "w": 2.0530818022747157,
+        "h": 1.0705588363954506
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.8027171916010498,
+        "row": 6.216464566929134,
+        "colSpan": 2.155735892388451,
+        "rowSpan": 1.2846706036745408
+      }
+    },
+    {
+      "id": "e21",
+      "name": "Rectangle: Rounded Corners 20",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "PEOPLE & CULTURE\nCreated regional “pods” to enhance relationship building and collaboration; ended in 2020 due to pandemic",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PEOPLE & CULTURE",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Created regional “pods” to enhance relationship building and collaboration; ended in 2020 due to pandemic",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 2.9812478127734034,
+        "y": 2.411851487314086,
+        "w": 2.0530818022747157,
+        "h": 1.0283136482939632
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.1303102034120736,
+        "row": 2.894221784776903,
+        "colSpan": 2.155735892388451,
+        "rowSpan": 1.233976377952756
+      }
+    },
+    {
+      "id": "e22",
+      "name": "Straight Connector 21",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 3.995291994750656,
+        "y": 3.5438877952755905,
+        "w": 0.00173665791776028,
+        "h": 0.28566929133858265
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.195056594488189,
+        "row": 4.252665354330708,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.3428031496062992
+      }
+    },
+    {
+      "id": "e23",
+      "name": "Oval 22",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 6.419442257217848,
+        "y": 4.258075240594926,
+        "w": 0.15748031496062992,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.74041437007874,
+        "row": 5.109690288713911,
+        "colSpan": 0.1653543307086614,
+        "rowSpan": 0.1889763779527559
+      }
+    },
+    {
+      "id": "e25",
+      "name": "Straight Connector 24",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 6.500347769028871,
+        "y": 4.764525371828522,
+        "w": 0.00173665791776028,
+        "h": 0.28632764654418197
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.825365157480315,
+        "row": 5.717430446194226,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.34359317585301835
+      }
+    },
+    {
+      "id": "e24",
+      "name": "Rectangle: Rounded Corners 23",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "TECH & DATA\nBegan tracking and reporting referrals at client level, in addition to product level",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "TECH & DATA",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Began tracking and reporting referrals at client level, in addition to product level",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 5.497063648293963,
+        "y": 5.180387139107611,
+        "w": 2.0530818022747157,
+        "h": 1.0265682414698163
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.771916830708661,
+        "row": 6.216464566929134,
+        "colSpan": 2.155735892388451,
+        "rowSpan": 1.2318818897637795
+      }
+    },
+    {
+      "id": "e27",
+      "name": "Rectangle: Rounded Corners 26",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "TECH & DATA\nBuilt feedback loop (connector) between Wealth and Commercial Salesforce platforms",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "TECH & DATA",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Built feedback loop (connector) between Wealth and Commercial Salesforce platforms",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 5.497063648293963,
+        "y": 2.411851487314086,
+        "w": 2.0530818022747157,
+        "h": 1.0275590551181102
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.771916830708661,
+        "row": 2.894221784776903,
+        "colSpan": 2.155735892388451,
+        "rowSpan": 1.2330708661417322
+      }
+    },
+    {
+      "id": "e29",
+      "name": "Rectangle: Rounded Corners 28",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "PROCESS\nEstablished scorecard neutralization to eliminate negative incentives for referring business",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PROCESS",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Established scorecard neutralization to eliminate negative incentives for referring business",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 8.516300306211724,
+        "y": 5.180387139107611,
+        "w": 2.0530818022747157,
+        "h": 1.0265682414698163
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.94211532152231,
+        "row": 6.216464566929134,
+        "colSpan": 2.155735892388451,
+        "rowSpan": 1.2318818897637795
+      }
+    },
+    {
+      "id": "e30",
+      "name": "Oval 29",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 8.69752624671916,
+        "y": 4.258075240594926,
+        "w": 0.15748031496062992,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.13240255905512,
+        "row": 5.109690288713911,
+        "colSpan": 0.1653543307086614,
+        "rowSpan": 0.1889763779527559
+      }
+    },
+    {
+      "id": "e35",
+      "name": "TextBox 34",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "KEY HIGHLIGHTS ACROSS COMMERCIAL AND WEALTH PARTNERSHIP\nF16 – F25",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "KEY HIGHLIGHTS ACROSS COMMERCIAL AND WEALTH PARTNERSHIP",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "F16 – F25",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [
+        {
+          "id": "rId2",
+          "target": "ppt/tags/tag68.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        }
+      ],
+      "box": {
+        "x": 0.5740419947506562,
+        "y": 1.6933858267716535,
+        "w": 6.968503937007874,
+        "h": 0.47963910761154854
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.602744094488189,
+        "row": 2.0320629921259843,
+        "colSpan": 7.316929133858267,
+        "rowSpan": 0.5755669291338582
+      }
+    },
+    {
+      "id": "e36",
+      "name": "Rectangle: Rounded Corners 35",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 9.90173665791776,
+        "y": 4.242839020122485,
+        "w": 2.6209930008748907,
+        "h": 0.18795384951881014
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.396823490813649,
+        "row": 5.091406824146982,
+        "colSpan": 2.752042650918635,
+        "rowSpan": 0.22554461942257217
+      }
+    },
+    {
+      "id": "e37",
+      "name": "Rectangle: Rounded Corners 36",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "PROCESS\nLaunched bonus incentive program (Partner to Win) for Commercial RMs to drive Wealth referrals",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PROCESS",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Launched bonus incentive program (Partner to Win) for Commercial RMs to drive Wealth referrals",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 9.253899825021872,
+        "y": 2.411851487314086,
+        "w": 2.0530818022747157,
+        "h": 1.0275579615048118
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.716594816272966,
+        "row": 2.894221784776903,
+        "colSpan": 2.155735892388451,
+        "rowSpan": 1.2330695538057743
+      }
+    },
+    {
+      "id": "e39",
+      "name": "Straight Connector 38",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 10.236283902012248,
+        "y": 3.5676574803149608,
+        "w": 0.00173665791776028,
+        "h": 0.28632764654418197
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.74809809711286,
+        "row": 4.281188976377953,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.34359317585301835
+      }
+    },
+    {
+      "id": "e43",
+      "name": "Rectangle 42",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "PROCESS\nHired 5 Regional Managers to champion referrals and be the liaison between Wealth and Commercial Business",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PROCESS",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Hired 5 Regional Managers to champion referrals and be the liaison between Wealth and Commercial Business",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 10.715277777777779,
+        "y": 5.180387139107611,
+        "w": 2.0538199912510935,
+        "h": 1.0260422134733158
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.251041666666667,
+        "row": 6.216464566929134,
+        "colSpan": 2.156510990813648,
+        "rowSpan": 1.231250656167979
+      }
+    },
+    {
+      "id": "e45",
+      "name": "Straight Connector 44",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 11.741075021872266,
+        "y": 4.764525371828522,
+        "w": 0.00173665791776028,
+        "h": 0.28632764654418197
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.32812877296588,
+        "row": 5.717430446194226,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.34359317585301835
+      }
+    },
+    {
+      "id": "e46",
+      "name": "Rectangle: Rounded Corners 45",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 10.952353455818022,
+        "y": 4.265635389326334,
+        "w": 1.0,
+        "h": 0.1423611111111111
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.499971128608923,
+        "row": 5.118762467191601,
+        "colSpan": 1.05,
+        "rowSpan": 0.17083333333333334
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Straight Connector 7",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 6.500347769028871,
+        "y": 3.7108213035870516,
+        "w": 0.00173665791776028,
+        "h": 0.28566929133858265
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.825365157480315,
+        "row": 4.452985564304462,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.3428031496062992
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Straight Connector 9",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 9.553601268591427,
+        "y": 4.764525371828522,
+        "w": 0.00173665791776028,
+        "h": 0.28632764654418197
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.031281332020997,
+        "row": 5.717430446194226,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.34359317585301835
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Rectangle: Rounded Corners 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 4.5892946194225726,
+        "y": 4.260725065616798,
+        "w": 1.8,
+        "h": 0.13516185476815398
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.818759350393702,
+        "row": 5.1128700787401575,
+        "colSpan": 1.8900000000000001,
+        "rowSpan": 0.1621942257217848
+      }
+    },
+    {
+      "id": "e26",
+      "name": "Straight Connector 25",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 4.768537839020122,
+        "y": 4.764525371828522,
+        "w": 0.00173665791776028,
+        "h": 0.28632764654418197
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.006964730971128,
+        "row": 5.717430446194226,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.34359317585301835
+      }
+    },
+    {
+      "id": "e28",
+      "name": "Rectangle: Rounded Corners 27",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "PEOPLE & CULTURE\nJoint client engagements to re-engage partnership during & post pandemic (e.g., Face Five, Auto & BFAS Initiative, etc.)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PEOPLE & CULTURE",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Joint client engagements to re-engage partnership during & post pandemic (e.g., Face Five, Auto & BFAS Initiative, etc.)",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 3.1195844269466315,
+        "y": 5.180387139107611,
+        "w": 2.0530818022747157,
+        "h": 1.0265682414698163
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.275563648293963,
+        "row": 6.216464566929134,
+        "colSpan": 2.155735892388451,
+        "rowSpan": 1.2318818897637795
+      }
+    },
+    {
+      "id": "e5",
+      "name": "Text Placeholder 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout23.xml",
+      "kind": "shape",
+      "text": "",
+      "placeholder": {
+        "type": "body",
+        "idx": "11"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide24.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642377515310586,
+        "y": 6.911537620297463,
+        "w": 11.614173228346457,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924496391076115,
+        "row": 8.293845144356956,
+        "colSpan": 12.19488188976378,
+        "rowSpan": 0.1889763779527559
+      }
+    }
+  ]
+}

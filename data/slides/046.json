@@ -1,0 +1,90 @@
+{
+  "number": 46,
+  "part": "ppt/slides/slide46.xml",
+  "hidden": false,
+  "title": "Industry Trends, Headwinds or Tailwinds",
+  "layout": "ppt/slideLayouts/slideLayout5.xml",
+  "master": "ppt/slideMasters/slideMaster1.xml",
+  "elements": [
+    {
+      "id": "e2",
+      "name": "Text Placeholder 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout5.xml",
+      "kind": "shape",
+      "text": "Industry Trends, Headwinds or Tailwinds",
+      "placeholder": {
+        "type": "body",
+        "idx": "11"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Industry Trends, Headwinds or Tailwinds",
+            "size": 66.01,
+            "runSizes": [
+              66.01
+            ]
+          }
+        ],
+        "size": 66.01
+      },
+      "sourcePart": "ppt/slides/slide46.xml",
+      "relations": [],
+      "box": {
+        "x": 0.7877843394575678,
+        "y": 2.436279527559055,
+        "w": 11.785132327209098,
+        "h": 1.2131539807524059
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.8271735564304461,
+        "row": 2.923535433070866,
+        "colSpan": 12.374388943569553,
+        "rowSpan": 1.4557847769028869
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Text Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout5.xml",
+      "kind": "shape",
+      "text": "09",
+      "placeholder": {
+        "type": "body",
+        "idx": "12"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "09",
+            "size": 28.0,
+            "runSizes": [
+              28.0
+            ]
+          }
+        ],
+        "size": 28.0
+      },
+      "sourcePart": "ppt/slides/slide46.xml",
+      "relations": [],
+      "box": {
+        "x": 0.7877832458442695,
+        "y": 1.7578958880139983,
+        "w": 1.3788845144356956,
+        "h": 0.5385422134733159
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.8271724081364829,
+        "row": 2.109475065616798,
+        "colSpan": 1.4478287401574803,
+        "rowSpan": 0.646250656167979
+      }
+    }
+  ]
+}

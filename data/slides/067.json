@@ -1,0 +1,370 @@
+{
+  "number": 67,
+  "part": "ppt/slides/slide67.xml",
+  "hidden": false,
+  "title": "Performance – Fortify the Bank | We report on a set of Board-approved Key Risk Indicators (KRIs) which are published in the Quarterly Board Report",
+  "layout": "ppt/slideLayouts/slideLayout106.xml",
+  "master": "ppt/slideMasters/slideMaster6.xml",
+  "elements": [
+    {
+      "id": "e11",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide67.xml",
+      "relations": [
+        {
+          "id": "rId3",
+          "target": "ppt/embeddings/oleObject56.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        },
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag445.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/media/image277.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout106.xml",
+      "kind": "shape",
+      "text": "Performance – Fortify the Bank | We report on a set of Board-approved Key Risk Indicators (KRIs) which are published in the Quarterly Board Report",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Performance – Fortify the Bank | We report on a set of Board-approved Key Risk Indicators (KRIs) which are published in the Quarterly Board Report",
+            "size": 22.0,
+            "runSizes": [
+              22.0,
+              22.0,
+              22.0,
+              22.0,
+              22.0
+            ]
+          }
+        ],
+        "size": 22.0
+      },
+      "sourcePart": "ppt/slides/slide67.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout106.xml",
+      "kind": "shape",
+      "text": "67",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "67",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide67.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e6",
+      "name": "Text Placeholder 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout106.xml",
+      "kind": "shape",
+      "text": "BOARD OF DIRECTOR ONBOARDING – Enterprise Security",
+      "placeholder": {
+        "type": "body",
+        "idx": "13"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "BOARD OF DIRECTOR ONBOARDING – Enterprise Security",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide67.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.37495297462817145,
+        "w": 5.905511811023622,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.4499435695538057,
+        "colSpan": 6.200787401574803,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e13",
+      "name": "Rectangle 12",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "HIGHLIGHTS \nWe track a set of nine Board-approved Key Risk Indicators (KRIs) which are reported every quarter\nFor F26, we tightened our KRI targets, with the expectation that we would reduce risk over time\nTherefore, we expect that, in the short-term, many of our metrics would fall outside of tolerance limits, with progress made over subsequent quarters  \nThe current set of KRIs have a remediation focus; we are planning to evolve them to ensure they track towards reducing risk overall",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "HIGHLIGHTS ",
+            "size": 14.0,
+            "runSizes": [
+              14.0
+            ]
+          },
+          {
+            "text": "We track a set of nine Board-approved Key Risk Indicators (KRIs) which are reported every quarter",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "For F26, we tightened our KRI targets, with the expectation that we would reduce risk over time",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Therefore, we expect that, in the short-term, many of our metrics would fall outside of tolerance limits, with progress made over subsequent quarters  ",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "The current set of KRIs have a remediation focus; we are planning to evolve them to ensure they track towards reducing risk overall",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide67.xml",
+      "relations": [],
+      "box": {
+        "x": 9.552083333333334,
+        "y": 1.7147615923009625,
+        "w": 3.2071872265966754,
+        "h": 5.061430446194226
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.0296875,
+        "row": 2.057713910761155,
+        "colSpan": 3.367546587926509,
+        "rowSpan": 6.073716535433071
+      }
+    },
+    {
+      "id": "e17",
+      "name": "Table 57",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "table",
+      "text": "KRI\nF26 Q2 YTD\nF26 TARGET\nIncidents Impacting Customers & Business (Sev1)\nApril: (1); Q2 / YTD: (2)\n≤3/month (9/quarter, 36/year)\nUnsupported Software (Tier 1, 2)\n8.1%\n≤5%\nApplication Recovery Testing Outside SLA (Tier 1, 2)\n15%\n<10%\nCritical Vulnerabilities not Remediated within SLA (Tier 1, 2)\n21%\n<10%\nHigh Vulnerabilities not Remediated within SLA (Tier 1, 2)\n39%\n<5%\nAsset Logs not Centrally Managed (Tier 1, 2)\n5.5%\n<5%\nApps Not Enrolled in Logical Access Management  (Tier 1,2)\n28%\n<5%\nEndpoints Missing Key Security Controls (Tier 1, 2)\n4.8%\n<5%\nAsset Management Error Rate\n4%\n<5%",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide67.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 1.7147604986876641,
+        "w": 8.858267716535433,
+        "h": 5.039365704286964
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 2.057712598425197,
+        "colSpan": 9.301181102362206,
+        "rowSpan": 6.047238845144356
+      },
+      "headerFontSizes": [
+        12.0,
+        12.0,
+        12.0
+      ],
+      "cells": [
+        [
+          "KRI",
+          "F26 Q2 YTD",
+          "F26 TARGET"
+        ],
+        [
+          "Incidents Impacting Customers & Business (Sev1)",
+          "April: (1); Q2 / YTD: (2)",
+          "≤3/month (9/quarter, 36/year)"
+        ],
+        [
+          "Unsupported Software (Tier 1, 2)",
+          "8.1%",
+          "≤5%"
+        ],
+        [
+          "Application Recovery Testing Outside SLA (Tier 1, 2)",
+          "15%",
+          "<10%"
+        ],
+        [
+          "Critical Vulnerabilities not Remediated within SLA (Tier 1, 2)",
+          "21%",
+          "<10%"
+        ],
+        [
+          "High Vulnerabilities not Remediated within SLA (Tier 1, 2)",
+          "39%",
+          "<5%"
+        ],
+        [
+          "Asset Logs not Centrally Managed (Tier 1, 2)",
+          "5.5%",
+          "<5%"
+        ],
+        [
+          "Apps Not Enrolled in Logical Access Management  (Tier 1,2)",
+          "28%",
+          "<5%"
+        ],
+        [
+          "Endpoints Missing Key Security Controls (Tier 1, 2)",
+          "4.8%",
+          "<5%"
+        ],
+        [
+          "Asset Management Error Rate",
+          "4%",
+          "<5%"
+        ]
+      ]
+    },
+    {
+      "id": "e7",
+      "name": "Speech Bubble: Rectangle 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "For more details on how we are reducing risk and fortifying the bank, please see the Q2 IT, Cyber & Risk Report as well as the Enterprise Security Strategy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "For more details on how we are reducing risk and fortifying the bank, please see the Q2 IT, Cyber & Risk Report as well as the Enterprise Security Strategy",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide67.xml",
+      "relations": [],
+      "box": {
+        "x": 8.693880139982502,
+        "y": 5.939256342957131,
+        "w": 4.02040791776028,
+        "h": 0.7127843394575678
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.128574146981627,
+        "row": 7.127107611548557,
+        "colSpan": 4.2214283136482935,
+        "rowSpan": 0.8553412073490814
+      }
+    }
+  ]
+}

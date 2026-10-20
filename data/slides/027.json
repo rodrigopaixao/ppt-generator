@@ -1,0 +1,951 @@
+{
+  "number": 27,
+  "part": "ppt/slides/slide27.xml",
+  "hidden": false,
+  "title": "Program Team | We will work collaboratively with the business teams and engage with the functional experts to design the program",
+  "layout": "ppt/slideLayouts/slideLayout23.xml",
+  "master": "ppt/slideMasters/slideMaster2.xml",
+  "elements": [
+    {
+      "id": "e20",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag70.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image3.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject35.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout23.xml",
+      "kind": "shape",
+      "text": "Program Team | We will work collaboratively with the business teams and engage with the functional experts to design the program",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Program Team | We will work collaboratively with the business teams and engage with the functional experts to design the program",
+            "size": 24.0,
+            "runSizes": [
+              24.0,
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout23.xml",
+      "kind": "shape",
+      "text": "27",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "27",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Rectangle 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Steering Committee (Meets Monthly)\nGuide scope and strategic development; Prioritize and make decisions on key issues and recommendations; Review and approve project milestones and deliverables",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Steering Committee (Meets Monthly)",
+            "size": 16.0,
+            "runSizes": [
+              16.0,
+              16.0
+            ]
+          },
+          {
+            "text": "Guide scope and strategic development; Prioritize and make decisions on key issues and recommendations; Review and approve project milestones and deliverables",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          }
+        ],
+        "size": 16.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 0.562678258967629,
+        "y": 1.653964348206474,
+        "w": 12.204860017497813,
+        "h": 1.4793657042869641
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5908121719160104,
+        "row": 1.9847572178477688,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 1.7752388451443568
+      }
+    },
+    {
+      "id": "e11",
+      "name": "Rectangle 10",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Core Project Team (Meets Bi-Weekly)\n",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Core Project Team (Meets Bi-Weekly)",
+            "size": 14.0,
+            "runSizes": [
+              14.0,
+              14.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 14.0,
+            "runSizes": [
+              14.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5678258967629046,
+        "y": 3.2285673665791776,
+        "w": 4.459803149606299,
+        "h": 3.683832020997375
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5962171916010499,
+        "row": 3.874280839895013,
+        "colSpan": 4.682793307086613,
+        "rowSpan": 4.42059842519685
+      }
+    },
+    {
+      "id": "e23",
+      "name": "TextBox 22",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Drive analysis and prepare executive materials & deliverables",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Drive analysis and prepare executive materials & deliverables",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5287456255468066,
+        "y": 3.7719706911636046,
+        "w": 4.595110454943132,
+        "h": 0.4712237532808399
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.555182906824147,
+        "row": 4.526364829396326,
+        "colSpan": 4.824865977690289,
+        "rowSpan": 0.5654685039370079
+      }
+    },
+    {
+      "id": "e25",
+      "name": "Rectangle 24",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Jorden DavisVP, Commercial Banking, GTA\nMatt RegenstreifDir. & Head, Data Analytics, Commercial Banking\nHelen He VP, Strategy\nMelanie FriszDir., Strategy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Jorden DavisVP, Commercial Banking, GTA",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          },
+          {
+            "text": "Matt RegenstreifDir. & Head, Data Analytics, Commercial Banking",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          },
+          {
+            "text": "Helen He VP, Strategy",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          },
+          {
+            "text": "Melanie FriszDir., Strategy",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7924912510936135,
+        "y": 4.2966535433070865,
+        "w": 2.0705118110236223,
+        "h": 1.9185542432195974
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.932115813648294,
+        "row": 5.155984251968504,
+        "colSpan": 2.174037401574803,
+        "rowSpan": 2.302265091863517
+      }
+    },
+    {
+      "id": "e53",
+      "name": "Rectangle 52",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Jennifer QuattrociocchiVP, Partnerships & Priority Segments\nKimberly PongoDir., Business Banking Partnerships\nLisa FrancksDir. & Head Strategy, Performance & Client Value\nDaphne MarkNational Director, CWM Partnerships\n\n",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Jennifer QuattrociocchiVP, Partnerships & Priority Segments",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              9.0,
+              9.0
+            ]
+          },
+          {
+            "text": "Kimberly PongoDir., Business Banking Partnerships",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0,
+              9.0
+            ]
+          },
+          {
+            "text": "Lisa FrancksDir. & Head Strategy, Performance & Client Value",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              9.0,
+              9.0
+            ]
+          },
+          {
+            "text": "Daphne MarkNational Director, CWM Partnerships",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              9.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 0.7324529746281715,
+        "y": 4.2966535433070865,
+        "w": 2.11,
+        "h": 1.7713692038495188
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.76907562335958,
+        "row": 5.155984251968504,
+        "colSpan": 2.2154999999999996,
+        "rowSpan": 2.1256430446194226
+      }
+    },
+    {
+      "id": "e44",
+      "name": "Rectangle 43",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "SMEs to be engaged by workstream (Meets as needed)\n\n",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "SMEs to be engaged by workstream (Meets as needed)",
+            "size": 14.0,
+            "runSizes": [
+              14.0,
+              14.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          },
+          {
+            "text": "",
+            "size": 14.0,
+            "runSizes": [
+              14.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 5.201127515310586,
+        "y": 3.2285673665791776,
+        "w": 7.566410761154856,
+        "h": 3.683832020997375
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.461183891076114,
+        "row": 3.874280839895013,
+        "colSpan": 7.944731299212599,
+        "rowSpan": 4.42059842519685
+      }
+    },
+    {
+      "id": "e5",
+      "name": "TextBox 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Provide support, guidance, and inputs for specific areas, as needed",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Provide support, guidance, and inputs for specific areas, as needed",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 5.368557524059493,
+        "y": 3.73123687664042,
+        "w": 7.231551837270342,
+        "h": 0.28610017497812773
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.636985400262467,
+        "row": 4.477484251968503,
+        "colSpan": 7.5931294291338585,
+        "rowSpan": 0.3433202099737533
+      }
+    },
+    {
+      "id": "e17",
+      "name": "Rectangle 16",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Technology, Processes and Data\nScott ParsonsVP & Head of Product Strategy, Global Wealth Technology\nAllison de KorteVP, Advisor & Client Experience Technology\nBusiness app owners (incl. Julie Cowan, Amy Lee, etc.)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Technology, Processes and Data",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Scott ParsonsVP & Head of Product Strategy, Global Wealth Technology",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          },
+          {
+            "text": "Allison de KorteVP, Advisor & Client Experience Technology",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          },
+          {
+            "text": "Business app owners (incl. Julie Cowan, Amy Lee, etc.)",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 10.245298556430447,
+        "y": 4.071459973753281,
+        "w": 2.288141951006124,
+        "h": 2.705770997375328
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.75756348425197,
+        "row": 4.8857519685039374,
+        "colSpan": 2.4025490485564305,
+        "rowSpan": 3.2469251968503934
+      }
+    },
+    {
+      "id": "e18",
+      "name": "Rectangle 17",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Change Management\nAmy LeeVP, Practice Excellence\nJeannine Cooney Dir., Sales Effectiveness & Sales Experienc",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Change Management",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          },
+          {
+            "text": "Amy LeeVP, Practice Excellence",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          },
+          {
+            "text": "Jeannine Cooney Dir., Sales Effectiveness & Sales Experienc",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 7.84628280839895,
+        "y": 5.462295494313211,
+        "w": 2.288141951006124,
+        "h": 1.314935476815398
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.238596948818898,
+        "row": 6.554754593175853,
+        "colSpan": 2.4025490485564305,
+        "rowSpan": 1.5779225721784775
+      }
+    },
+    {
+      "id": "e6",
+      "name": "Rectangle 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Leads Identification & Analytics\nEric TaoDir., Analytics, GWM \nValentina Carvallo Aldanondo\nSM, Business Intelligence & MIS\n",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Leads Identification & Analytics",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          },
+          {
+            "text": "Eric TaoDir., Analytics, GWM ",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          },
+          {
+            "text": "Valentina Carvallo Aldanondo",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "SM, Business Intelligence & MIS",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 5.434499125109362,
+        "y": 4.071458880139983,
+        "w": 2.288141951006124,
+        "h": 2.7047320647419073
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.706224081364829,
+        "row": 4.885750656167979,
+        "colSpan": 2.4025490485564305,
+        "rowSpan": 3.245678477690289
+      }
+    },
+    {
+      "id": "e12",
+      "name": "Rectangle 11",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Joint Client Service Model\nBusiness leaderse.g., Todd Barnes, Andrew Wright, Todd Flick, Daryl Dunn, Frank Ottavino, Ravina Bains, Tanya Eisener, Luzita Kennedy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Joint Client Service Model",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          },
+          {
+            "text": "Business leaderse.g., Todd Barnes, Andrew Wright, Todd Flick, Daryl Dunn, Frank Ottavino, Ravina Bains, Tanya Eisener, Luzita Kennedy",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              9.0
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 7.84628280839895,
+        "y": 4.071459973753281,
+        "w": 2.288141951006124,
+        "h": 1.314935476815398
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.238596948818898,
+        "row": 4.8857519685039374,
+        "colSpan": 2.4025490485564305,
+        "rowSpan": 1.5779225721784775
+      }
+    },
+    {
+      "id": "e16",
+      "name": "Group 15",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 1.0808716097987752,
+        "y": 2.3961537620297464,
+        "w": 11.16847440944882,
+        "h": 0.6041797900262467
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 1.1349151902887138,
+        "row": 2.8753845144356953,
+        "colSpan": 11.72689812992126,
+        "rowSpan": 0.725015748031496
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Rectangle 7",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Erin GriffithsSVP, Client Solutions",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Erin GriffithsSVP, Client Solutions",
+            "size": 14.0,
+            "runSizes": [
+              14.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 5.346400918635171,
+        "y": 2.3961537620297464,
+        "w": 1.8629429133858268,
+        "h": 0.6041797900262467
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.613720964566928,
+        "row": 2.8753845144356953,
+        "colSpan": 1.956090059055118,
+        "rowSpan": 0.725015748031496
+      }
+    },
+    {
+      "id": "e9",
+      "name": "Rectangle 8",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Alex Besharat EVP, CWM",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Alex Besharat EVP, CWM",
+            "size": 14.0,
+            "runSizes": [
+              14.0,
+              14.0,
+              14.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 1.0808716097987752,
+        "y": 2.3961537620297464,
+        "w": 1.718701881014873,
+        "h": 0.6041797900262467
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 1.1349151902887138,
+        "row": 2.8753845144356953,
+        "colSpan": 1.8046369750656168,
+        "rowSpan": 0.725015748031496
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Rectangle 9",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Chris Manning EVP, Commercial Banking",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Chris Manning EVP, Commercial Banking",
+            "size": 14.0,
+            "runSizes": [
+              14.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 2.988344269466317,
+        "y": 2.3961537620297464,
+        "w": 2.1692858705161853,
+        "h": 0.6041797900262467
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.1377614829396325,
+        "row": 2.8753845144356953,
+        "colSpan": 2.2777501640419944,
+        "rowSpan": 0.725015748031496
+      }
+    },
+    {
+      "id": "e4",
+      "name": "Rectangle 3",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Ravina Bains\nSVP & Head of Mid-Market",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Ravina Bains",
+            "size": 14.0,
+            "runSizes": [
+              14.0
+            ]
+          },
+          {
+            "text": "SVP & Head of Mid-Market",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 7.398114610673666,
+        "y": 2.3961537620297464,
+        "w": 2.3312303149606297,
+        "h": 0.6041797900262467
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.7680203412073485,
+        "row": 2.8753845144356953,
+        "colSpan": 2.447791830708661,
+        "rowSpan": 0.725015748031496
+      }
+    },
+    {
+      "id": "e27",
+      "name": "Rectangle 26",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Frank Ottavino\nSVP, Real Estate Banking & National Accounts",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Frank Ottavino",
+            "size": 14.0,
+            "runSizes": [
+              14.0,
+              14.0
+            ]
+          },
+          {
+            "text": "SVP, Real Estate Banking & National Accounts",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide27.xml",
+      "relations": [],
+      "box": {
+        "x": 9.918115704286965,
+        "y": 2.3961537620297464,
+        "w": 2.3312303149606297,
+        "h": 0.6041797900262467
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.414021489501312,
+        "row": 2.8753845144356953,
+        "colSpan": 2.447791830708661,
+        "rowSpan": 0.725015748031496
+      }
+    }
+  ]
+}

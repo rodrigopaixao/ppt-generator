@@ -1,0 +1,242 @@
+{
+  "number": 10,
+  "part": "ppt/slides/slide10.xml",
+  "hidden": false,
+  "title": "Agenda | Day 1: Tuesday, March 31st, 2026 ",
+  "layout": "ppt/slideLayouts/slideLayout20.xml",
+  "master": "ppt/slideMasters/slideMaster1.xml",
+  "elements": [
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout20.xml",
+      "kind": "shape",
+      "text": "Agenda | Day 1: Tuesday, March 31st, 2026 ",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Agenda | Day 1: Tuesday, March 31st, 2026 ",
+            "size": 22.01,
+            "runSizes": [
+              22.01,
+              22.01,
+              22.01,
+              22.01,
+              22.01
+            ]
+          }
+        ],
+        "size": 22.01
+      },
+      "sourcePart": "ppt/slides/slide10.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout20.xml",
+      "kind": "shape",
+      "text": "10",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "10",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide10.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282602799650043,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896732939632544,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Table 7",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "table",
+      "text": "Local Time\nLength\nMeeting\nStructure\nLocation\nParticipants\n8:00 – 8:30\n0:30\nTransfer to Scotiabank Plaza\n\nScotiabank Plaza \nScott Thomson & OpCo\n8:30 – 9:30\n1:00\nBreakfast with Senior Management Team\nIntroduction and welcome session with new leadership team.\nCasual discussion\nScotiabank Plaza 9th floor: Popocatépetl Room\nScott Thomson & OpCo\nPablo Elek & Senior Management Team\n9:30 – 10:00\n0:30\nBreak\n\n \n \n10:00 – 13:15\n3:15\nPolitical and Macroeconomic Q&A (25 min\nQ&A session with Luis De La Calle, leading Mexican economist, expert in international trade and public policy.\nPriorities, Opportunities & Challenges (2hrs 50 min)\nQ&A session with Senior Management Team about All-Bank and by segment priorities, opportunities and challenges.\nQ&A sessions\nScotiabank Plaza 9th floor: \nIztaccíhuatl Room\nScott Thomson & OpCo\nPablo Elek & Senior Management Team\nLuis De La Calle (Mexican economist)\n13:15 – 13:45\n0:30\nBreak\n\n \n \n13:45 – 15:30\n1:45\nClient Panel (Lunch)\nFireside-chat panel led by Pablo, featuring select clients to discuss Mexico’s outlook, business climate and expectations.\nRoundtable discussion\nScotiabank Plaza 9th floor:\nPopocatépetl Room\nScott Thomson & OpCo\nPablo Elek, Jose Jorge Rivero\nGuillermo Babatz\nClients: BlackRock, Engie, FUNO, IRG\n15:30 – 16:00\n0:30\nBreak\n\n \n \n16:00 – 17:00\n1:00\nLeadership Meetings by segment\nEach OpCo member meets with their respective teams, including Director meetings and AMA sessions.\nFireside chat / \nAsk Me Anything\nScotiabank Plaza (various venues)\nOpCo & Senior Management Team – Individual meetings\nScott and Francsico to record internal materials (visit recap)\n17:00 – 17:30\n0:30\nTransfer to hotel\n\nSt. Regis Hotel\nScott Thomson & OpCo\n17:30 – 18:30\n1:00\nFree time\n\nSt. Regis Hotel\n \n18:00 – 18:45\n0:45\nOPTIONAL: Private tour \n\nChapultepec Castle\nScott Thomson, OpCo & Pablo Elek\n18:30 – 19:00\n0:30\nTransfer to cocktail\n\nChapultepec Castle\nScott Thomson & OpCo\n19:00 – 21:15\n2:15\nCocktail with clients\nStand-up cocktail\nChapultepec Castle\nScott Thomson & OpCo\nPablo Elek & Senior Management Team\nMexico Board\nClients, Top Talent",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide10.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564235564304462,
+        "y": 1.3143055555555556,
+        "w": 12.20486111111111,
+        "h": 5.44130249343832
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.592447342519685,
+        "row": 1.5771666666666668,
+        "colSpan": 12.815104166666666,
+        "rowSpan": 6.5295629921259835
+      },
+      "headerFontSizes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "cells": [
+        [
+          "Local Time",
+          "Length",
+          "Meeting",
+          "Structure",
+          "Location",
+          "Participants"
+        ],
+        [
+          "8:00 – 8:30",
+          "0:30",
+          "Transfer to Scotiabank Plaza",
+          "",
+          "Scotiabank Plaza ",
+          "Scott Thomson & OpCo"
+        ],
+        [
+          "8:30 – 9:30",
+          "1:00",
+          "Breakfast with Senior Management Team\nIntroduction and welcome session with new leadership team.",
+          "Casual discussion",
+          "Scotiabank Plaza 9th floor: Popocatépetl Room",
+          "Scott Thomson & OpCo\nPablo Elek & Senior Management Team"
+        ],
+        [
+          "9:30 – 10:00",
+          "0:30",
+          "Break",
+          "",
+          " ",
+          " "
+        ],
+        [
+          "10:00 – 13:15",
+          "3:15",
+          "Political and Macroeconomic Q&A (25 min\nQ&A session with Luis De La Calle, leading Mexican economist, expert in international trade and public policy.\nPriorities, Opportunities & Challenges (2hrs 50 min)\nQ&A session with Senior Management Team about All-Bank and by segment priorities, opportunities and challenges.",
+          "Q&A sessions",
+          "Scotiabank Plaza 9th floor: \nIztaccíhuatl Room",
+          "Scott Thomson & OpCo\nPablo Elek & Senior Management Team\nLuis De La Calle (Mexican economist)"
+        ],
+        [
+          "13:15 – 13:45",
+          "0:30",
+          "Break",
+          "",
+          " ",
+          " "
+        ],
+        [
+          "13:45 – 15:30",
+          "1:45",
+          "Client Panel (Lunch)\nFireside-chat panel led by Pablo, featuring select clients to discuss Mexico’s outlook, business climate and expectations.",
+          "Roundtable discussion",
+          "Scotiabank Plaza 9th floor:\nPopocatépetl Room",
+          "Scott Thomson & OpCo\nPablo Elek, Jose Jorge Rivero\nGuillermo Babatz\nClients: BlackRock, Engie, FUNO, IRG"
+        ],
+        [
+          "15:30 – 16:00",
+          "0:30",
+          "Break",
+          "",
+          " ",
+          " "
+        ],
+        [
+          "16:00 – 17:00",
+          "1:00",
+          "Leadership Meetings by segment\nEach OpCo member meets with their respective teams, including Director meetings and AMA sessions.",
+          "Fireside chat / \nAsk Me Anything",
+          "Scotiabank Plaza (various venues)",
+          "OpCo & Senior Management Team – Individual meetings\nScott and Francsico to record internal materials (visit recap)"
+        ],
+        [
+          "17:00 – 17:30",
+          "0:30",
+          "Transfer to hotel",
+          "",
+          "St. Regis Hotel",
+          "Scott Thomson & OpCo"
+        ],
+        [
+          "17:30 – 18:30",
+          "1:00",
+          "Free time",
+          "",
+          "St. Regis Hotel",
+          " "
+        ],
+        [
+          "18:00 – 18:45",
+          "0:45",
+          "OPTIONAL: Private tour ",
+          "",
+          "Chapultepec Castle",
+          "Scott Thomson, OpCo & Pablo Elek"
+        ],
+        [
+          "18:30 – 19:00",
+          "0:30",
+          "Transfer to cocktail",
+          "",
+          "Chapultepec Castle",
+          "Scott Thomson & OpCo"
+        ],
+        [
+          "19:00 – 21:15",
+          "2:15",
+          "Cocktail with clients",
+          "Stand-up cocktail",
+          "Chapultepec Castle",
+          "Scott Thomson & OpCo\nPablo Elek & Senior Management Team\nMexico Board\nClients, Top Talent"
+        ]
+      ]
+    }
+  ]
+}

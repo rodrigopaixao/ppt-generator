@@ -1,0 +1,2089 @@
+{
+  "number": 51,
+  "part": "ppt/slides/slide51.xml",
+  "hidden": false,
+  "title": "All-Bank Strategic Priorities | We identified eight strategic priorities to address these challenges and achieve our 2030 goals",
+  "layout": "ppt/slideLayouts/slideLayout20.xml",
+  "master": "ppt/slideMasters/slideMaster1.xml",
+  "elements": [
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout20.xml",
+      "kind": "shape",
+      "text": "All-Bank Strategic Priorities | We identified eight strategic priorities to address these challenges and achieve our 2030 goals",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "All-Bank Strategic Priorities | We identified eight strategic priorities to address these challenges and achieve our 2030 goals",
+            "size": 22.01,
+            "runSizes": [
+              22.01,
+              22.01
+            ]
+          }
+        ],
+        "size": 22.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout20.xml",
+      "kind": "shape",
+      "text": "51",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "51",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282602799650043,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896732939632544,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e20",
+      "name": "Group 19",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5337948381452319,
+        "y": 1.7032020997375328,
+        "w": 12.224510061242345,
+        "h": 5.009831583552056
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5604845800524935,
+        "row": 2.0438425196850396,
+        "colSpan": 12.83573556430446,
+        "rowSpan": 6.011797900262467
+      }
+    },
+    {
+      "id": "e19",
+      "name": "Group 18",
+      "hidden": false,
+      "parentId": "e20",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5337948381452319,
+        "y": 1.7032020997375328,
+        "w": 12.224510061242345,
+        "h": 0.6481418095210282
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5604845800524935,
+        "row": 2.0438425196850396,
+        "colSpan": 12.83573556430446,
+        "rowSpan": 0.7777701714252337
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Rectangle 9",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "STRATEGIC PRIORITIES\nWe have established clear ownership and accountability within our Mexico leadership team across our eight strategic priorities, to ensure disciplined and effective execution.",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "STRATEGIC PRIORITIES",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "We have established clear ownership and accountability within our Mexico leadership team across our eight strategic priorities, to ensure disciplined and effective execution.",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5337948381452319,
+        "y": 1.7032020997375328,
+        "w": 12.224510061242345,
+        "h": 0.6481418095210282
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5604845800524935,
+        "row": 2.0438425196850396,
+        "colSpan": 12.83573556430446,
+        "rowSpan": 0.7777701714252337
+      }
+    },
+    {
+      "id": "e12",
+      "name": "Rectangle 11",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.7092541557305336,
+        "y": 1.7781309985166547,
+        "w": 0.4675918635170604,
+        "h": 0.4982829183497246
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7447168635170602,
+        "row": 2.1337571982199854,
+        "colSpan": 0.49097145669291337,
+        "rowSpan": 0.5979395020196695
+      }
+    },
+    {
+      "id": "e13",
+      "name": "Shape 2777",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 30.0,
+            "runSizes": [
+              30.0,
+              29.99
+            ]
+          }
+        ],
+        "size": 30.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.8215737095363079,
+        "y": 1.8501924438534816,
+        "w": 0.24295275590551182,
+        "h": 0.35416002767607097
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.8626523950131233,
+        "row": 2.220230932624178,
+        "colSpan": 0.2551003937007874,
+        "rowSpan": 0.42499203321128515
+      }
+    },
+    {
+      "id": "e18",
+      "name": "Group 17",
+      "hidden": false,
+      "parentId": "e20",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5337948381452319,
+        "y": 2.450795987286359,
+        "w": 12.224510061242345,
+        "h": 4.26223769600323
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5604845800524935,
+        "row": 2.9409551847436313,
+        "colSpan": 12.83573556430446,
+        "rowSpan": 5.114685235203876
+      }
+    },
+    {
+      "id": "e6",
+      "name": "Group 5",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5337948381452319,
+        "y": 2.450795987286359,
+        "w": 2.9367935258092737,
+        "h": 2.05560978749437
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5604845800524935,
+        "row": 2.9409551847436313,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993244
+      }
+    },
+    {
+      "id": "e57",
+      "name": "Rectangle 56",
+      "hidden": false,
+      "parentId": "e6",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "CX TRANSFORMATION",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "CX TRANSFORMATION",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5337948381452319,
+        "y": 2.450795987286359,
+        "w": 2.9367935258092737,
+        "h": 2.05560978749437
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5604845800524935,
+        "row": 2.9409551847436313,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993244
+      }
+    },
+    {
+      "id": "e59",
+      "name": "Oval 58",
+      "hidden": false,
+      "parentId": "e6",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "1",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "1",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6337970253718285,
+        "y": 2.5712913678071567,
+        "w": 0.25424431321084867,
+        "h": 0.2650436866746389
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6654868766404198,
+        "row": 3.0855496413685883,
+        "colSpan": 0.2669565288713911,
+        "rowSpan": 0.3180524240095667
+      }
+    },
+    {
+      "id": "e61",
+      "name": "TextBox 60",
+      "hidden": false,
+      "parentId": "e6",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Luis Alfredo Gonzalez (Technology)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Luis Alfredo Gonzalez (Technology)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6332578740157481,
+        "y": 3.7939748279375163,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6649207677165354,
+        "row": 4.5527697935250195,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e91",
+      "name": "TextBox 90",
+      "hidden": false,
+      "parentId": "e6",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Matias Nuñez (Retail Banking) ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Matias Nuñez (Retail Banking) ",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6332578740157481,
+        "y": 4.13570266235195,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6649207677165354,
+        "row": 4.96284319482234,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e92",
+      "name": "Rectangle 91",
+      "hidden": false,
+      "parentId": "e6",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Closes client experience gaps by simplifying journeys and strengthening self-service, improving satisfaction, loyalty, and cost-to-serve",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Closes client experience gaps by simplifying journeys and strengthening self-service, improving satisfaction, loyalty, and cost-to-serve",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6332589676290463,
+        "y": 2.9413809633094945,
+        "w": 2.737866360454943,
+        "h": 0.7596947160534017
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6649219160104987,
+        "row": 3.5296571559713934,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.911633659264082
+      }
+    },
+    {
+      "id": "e15",
+      "name": "Group 14",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.6297003499562557,
+        "y": 2.450795987286359,
+        "w": 2.9367935258092737,
+        "h": 2.05560978749437
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.811185367454068,
+        "row": 2.9409551847436313,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993244
+      }
+    },
+    {
+      "id": "e63",
+      "name": "Rectangle 62",
+      "hidden": false,
+      "parentId": "e15",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "DEPOSITS & INVESTMENT FOCUS",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "DEPOSITS & INVESTMENT FOCUS",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.6297003499562557,
+        "y": 2.450795987286359,
+        "w": 2.9367935258092737,
+        "h": 2.05560978749437
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.811185367454068,
+        "row": 2.9409551847436313,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993244
+      }
+    },
+    {
+      "id": "e80",
+      "name": "Oval 79",
+      "hidden": false,
+      "parentId": "e15",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "2",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "2",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.729266185476815,
+        "y": 2.5712913678071567,
+        "w": 0.25424431321084867,
+        "h": 0.2650436866746389
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.9157294947506562,
+        "row": 3.0855496413685883,
+        "colSpan": 0.2669565288713911,
+        "rowSpan": 0.3180524240095667
+      }
+    },
+    {
+      "id": "e99",
+      "name": "TextBox 98",
+      "hidden": false,
+      "parentId": "e15",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Odette Izquierdo (GTB)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Odette Izquierdo (GTB)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.7291633858267716,
+        "y": 3.7939748279375163,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.9156215551181104,
+        "row": 4.5527697935250195,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e100",
+      "name": "TextBox 99",
+      "hidden": false,
+      "parentId": "e15",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Rodrigo Cordova (Wealth Management)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Rodrigo Cordova (Wealth Management)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.7291633858267716,
+        "y": 4.13570266235195,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.9156215551181104,
+        "row": 4.96284319482234,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e101",
+      "name": "Rectangle 100",
+      "hidden": false,
+      "parentId": "e15",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Addresses funding mix and revenue concentration by growing transactional deposits and deepening investment and cash-management penetration",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Addresses funding mix and revenue concentration by growing transactional deposits and deepening investment and cash-management penetration",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.72916447944007,
+        "y": 2.9413809633094945,
+        "w": 2.737866360454943,
+        "h": 0.7596947160534017
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.915622703412073,
+        "row": 3.5296571559713934,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.911633659264082
+      }
+    },
+    {
+      "id": "e16",
+      "name": "Group 15",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.725605861767279,
+        "y": 2.450795987286359,
+        "w": 2.9367935258092737,
+        "h": 2.05560978749437
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.061886154855642,
+        "row": 2.9409551847436313,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993244
+      }
+    },
+    {
+      "id": "e64",
+      "name": "Rectangle 63",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "LENDING PROFITABILITY",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "LENDING PROFITABILITY",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.725605861767279,
+        "y": 2.450795987286359,
+        "w": 2.9367935258092737,
+        "h": 2.05560978749437
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.061886154855642,
+        "row": 2.9409551847436313,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993244
+      }
+    },
+    {
+      "id": "e81",
+      "name": "Oval 80",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "3",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "3",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.824735345581802,
+        "y": 2.5712913678071567,
+        "w": 0.25424431321084867,
+        "h": 0.2650436866746389
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.165972112860891,
+        "row": 3.0855496413685883,
+        "colSpan": 0.2669565288713911,
+        "rowSpan": 0.3180524240095667
+      }
+    },
+    {
+      "id": "e103",
+      "name": "TextBox 102",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Carlos Vargas (Commercial Banking)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Carlos Vargas (Commercial Banking)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.825068897637795,
+        "y": 3.7939748279375163,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.166322342519685,
+        "row": 4.5527697935250195,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e104",
+      "name": "TextBox 103",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Victor Carpio (GRM)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Victor Carpio (GRM)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.825068897637795,
+        "y": 4.13570266235195,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.166322342519685,
+        "row": 4.96284319482234,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e105",
+      "name": "Rectangle 104",
+      "hidden": false,
+      "parentId": "e16",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Improves risk-adjusted returns by optimizing wallet share, pricing, growth quality, and capital efficiency across the lending portfolio",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Improves risk-adjusted returns by optimizing wallet share, pricing, growth quality, and capital efficiency across the lending portfolio",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.825069991251094,
+        "y": 2.9413809633094945,
+        "w": 2.737866360454943,
+        "h": 0.7596947160534017
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.166323490813649,
+        "row": 3.5296571559713934,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.911633659264082
+      }
+    },
+    {
+      "id": "e17",
+      "name": "Group 16",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.821511373578304,
+        "y": 2.450795987286359,
+        "w": 2.9367935258092737,
+        "h": 2.05560978749437
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.312586942257218,
+        "row": 2.9409551847436313,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993244
+      }
+    },
+    {
+      "id": "e65",
+      "name": "Rectangle 64",
+      "hidden": false,
+      "parentId": "e17",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "PARTNERSHIPS",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PARTNERSHIPS",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.821511373578304,
+        "y": 2.450795987286359,
+        "w": 2.9367935258092737,
+        "h": 2.05560978749437
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.312586942257218,
+        "row": 2.9409551847436313,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993244
+      }
+    },
+    {
+      "id": "e82",
+      "name": "Oval 81",
+      "hidden": false,
+      "parentId": "e17",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "4",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "4",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.920205599300088,
+        "y": 2.5712913678071567,
+        "w": 0.25424431321084867,
+        "h": 0.2650436866746389
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.416215879265092,
+        "row": 3.0855496413685883,
+        "colSpan": 0.2669565288713911,
+        "rowSpan": 0.3180524240095667
+      }
+    },
+    {
+      "id": "e107",
+      "name": "TextBox 106",
+      "hidden": false,
+      "parentId": "e17",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Natalia Domingo (Partnerships)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Natalia Domingo (Partnerships)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.920974409448819,
+        "y": 3.7939748279375163,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.41702312992126,
+        "row": 4.5527697935250195,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e108",
+      "name": "TextBox 107",
+      "hidden": false,
+      "parentId": "e17",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Rodrigo Barragan (Strategy)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Rodrigo Barragan (Strategy)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.920974409448819,
+        "y": 4.13570266235195,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.41702312992126,
+        "row": 4.96284319482234,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e109",
+      "name": "Rectangle 108",
+      "hidden": false,
+      "parentId": "e17",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Unlocks incremental growth and relevance by leveraging strategic partnerships to expand distribution, capabilities, and revenue streams",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Unlocks incremental growth and relevance by leveraging strategic partnerships to expand distribution, capabilities, and revenue streams",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.920974409448819,
+        "y": 2.9413809633094945,
+        "w": 2.737866360454943,
+        "h": 0.7596947160534017
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.41702312992126,
+        "row": 3.5296571559713934,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.911633659264082
+      }
+    },
+    {
+      "id": "e11",
+      "name": "Group 10",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.6297003499562557,
+        "y": 4.657423895795218,
+        "w": 2.9367935258092737,
+        "h": 2.0556097874943706
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.811185367454068,
+        "row": 5.588908674954261,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993245
+      }
+    },
+    {
+      "id": "e77",
+      "name": "Rectangle 76",
+      "hidden": false,
+      "parentId": "e11",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "NORTH AMERICAN CORRIDOR",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "NORTH AMERICAN CORRIDOR",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.6297003499562557,
+        "y": 4.657423895795218,
+        "w": 2.9367935258092737,
+        "h": 2.0556097874943706
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.811185367454068,
+        "row": 5.588908674954261,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993245
+      }
+    },
+    {
+      "id": "e85",
+      "name": "Oval 84",
+      "hidden": false,
+      "parentId": "e11",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "6",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "6",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.729702537182852,
+        "y": 4.781195741042605,
+        "w": 0.25424431321084867,
+        "h": 0.2650436866746389
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.9161876640419946,
+        "row": 5.737434889251126,
+        "colSpan": 0.2669565288713911,
+        "rowSpan": 0.3180524240095667
+      }
+    },
+    {
+      "id": "e111",
+      "name": "TextBox 110",
+      "hidden": false,
+      "parentId": "e11",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Jose Jorge Rivero (GBM)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Jose Jorge Rivero (GBM)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.7291633858267716,
+        "y": 6.001252342603783,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.9156215551181104,
+        "row": 7.20150281112454,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e112",
+      "name": "TextBox 111",
+      "hidden": false,
+      "parentId": "e11",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Eduardo Fernandez (Legal)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Eduardo Fernandez (Legal)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.7291633858267716,
+        "y": 6.342982364244337,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.9156215551181104,
+        "row": 7.611578837093204,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e113",
+      "name": "Rectangle 112",
+      "hidden": false,
+      "parentId": "e11",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Captures cross-border opportunities by connecting client’s financial needs across Mexico, U.S., and Canada in a seamless way",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Captures cross-border opportunities by connecting client’s financial needs across Mexico, U.S., and Canada in a seamless way",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 3.72916447944007,
+        "y": 5.148659571588822,
+        "w": 2.837329396325459,
+        "h": 0.7596947160534011
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.915622703412073,
+        "row": 6.178391485906586,
+        "colSpan": 2.979195866141732,
+        "rowSpan": 0.9116336592640812
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Group 7",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.821511373578304,
+        "y": 4.657423895795218,
+        "w": 2.9367935258092737,
+        "h": 2.0556097874943706
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.312586942257218,
+        "row": 5.588908674954261,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993245
+      }
+    },
+    {
+      "id": "e78",
+      "name": "Rectangle 77",
+      "hidden": false,
+      "parentId": "e8",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "LEVERAGE REGIONAL SCALE",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "LEVERAGE REGIONAL SCALE",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.821511373578304,
+        "y": 4.657423895795218,
+        "w": 2.9367935258092737,
+        "h": 2.0556097874943706
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.312586942257218,
+        "row": 5.588908674954261,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993245
+      }
+    },
+    {
+      "id": "e86",
+      "name": "Oval 85",
+      "hidden": false,
+      "parentId": "e8",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "8",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "8",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.921077209098863,
+        "y": 4.781195741042605,
+        "w": 0.25424431321084867,
+        "h": 0.2650436866746389
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.417131069553806,
+        "row": 5.737434889251126,
+        "colSpan": 0.2669565288713911,
+        "rowSpan": 0.3180524240095667
+      }
+    },
+    {
+      "id": "e115",
+      "name": "TextBox 114",
+      "hidden": false,
+      "parentId": "e8",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Javier Serebrisky (CFO)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Javier Serebrisky (CFO)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.920974409448819,
+        "y": 6.001252342603783,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.41702312992126,
+        "row": 7.20150281112454,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e116",
+      "name": "TextBox 115",
+      "hidden": false,
+      "parentId": "e8",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Jose Manuel Barbosa (Operations)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Jose Manuel Barbosa (Operations)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.920974409448819,
+        "y": 6.342982364244337,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.41702312992126,
+        "row": 7.611578837093204,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e117",
+      "name": "Rectangle 116",
+      "hidden": false,
+      "parentId": "e8",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Eliminates duplication and inefficiencies by leveraging regional platforms, capabilities, and best practices to scale faster and cheaper",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Eliminates duplication and inefficiencies by leveraging regional platforms, capabilities, and best practices to scale faster and cheaper",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 9.920975503062117,
+        "y": 5.148659571588822,
+        "w": 2.737866360454943,
+        "h": 0.7596947160534011
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.417024278215223,
+        "row": 6.178391485906586,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.9116336592640812
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Group 6",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.725605861767279,
+        "y": 4.657423895795218,
+        "w": 2.9367935258092737,
+        "h": 2.0556097874943706
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.061886154855642,
+        "row": 5.588908674954261,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993245
+      }
+    },
+    {
+      "id": "e79",
+      "name": "Rectangle 78",
+      "hidden": false,
+      "parentId": "e7",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "BEST PLACE TO WORK",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "BEST PLACE TO WORK",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.725605861767279,
+        "y": 4.657423895795218,
+        "w": 2.9367935258092737,
+        "h": 2.0556097874943706
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.061886154855642,
+        "row": 5.588908674954261,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993245
+      }
+    },
+    {
+      "id": "e87",
+      "name": "Oval 86",
+      "hidden": false,
+      "parentId": "e7",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "7",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "7",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.824735345581802,
+        "y": 4.781195741042605,
+        "w": 0.25424431321084867,
+        "h": 0.2650436866746389
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.165972112860891,
+        "row": 5.737434889251126,
+        "colSpan": 0.2669565288713911,
+        "rowSpan": 0.3180524240095667
+      }
+    },
+    {
+      "id": "e119",
+      "name": "TextBox 118",
+      "hidden": false,
+      "parentId": "e7",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Norma Saenz (HR)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Norma Saenz (HR)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.825068897637795,
+        "y": 6.001252342603783,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.166322342519685,
+        "row": 7.20150281112454,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e120",
+      "name": "TextBox 119",
+      "hidden": false,
+      "parentId": "e7",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Manuel Silva (Corporate Affairs & Sustainab.)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Manuel Silva (Corporate Affairs & Sustainab.)",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.825068897637795,
+        "y": 6.342982364244337,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.166322342519685,
+        "row": 7.611578837093204,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e121",
+      "name": "Rectangle 120",
+      "hidden": false,
+      "parentId": "e7",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Addresses engagement, talent retention, and leadership gaps by strengthening culture, leadership capabilities, and employee experience",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Addresses engagement, talent retention, and leadership gaps by strengthening culture, leadership capabilities, and employee experience",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 6.825069991251094,
+        "y": 5.148659571588822,
+        "w": 2.737866360454943,
+        "h": 0.7596947160534011
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.166323490813649,
+        "row": 6.178391485906586,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.9116336592640812
+      }
+    },
+    {
+      "id": "e14",
+      "name": "Group 13",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5337948381452319,
+        "y": 4.657423895795218,
+        "w": 2.9367935258092737,
+        "h": 2.0556097874943706
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5604845800524935,
+        "row": 5.588908674954261,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993245
+      }
+    },
+    {
+      "id": "e76",
+      "name": "Rectangle 75",
+      "hidden": false,
+      "parentId": "e14",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "RISK AND CONTROL CULTURE",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "RISK AND CONTROL CULTURE",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5337948381452319,
+        "y": 4.657423895795218,
+        "w": 2.9367935258092737,
+        "h": 2.0556097874943706
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5604845800524935,
+        "row": 5.588908674954261,
+        "colSpan": 3.0836332020997372,
+        "rowSpan": 2.466731744993245
+      }
+    },
+    {
+      "id": "e88",
+      "name": "Oval 87",
+      "hidden": false,
+      "parentId": "e14",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "5",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "5",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6324890638670166,
+        "y": 4.781195741042605,
+        "w": 0.25424431321084867,
+        "h": 0.2650436866746389
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6641135170603675,
+        "row": 5.737434889251126,
+        "colSpan": 0.2669565288713911,
+        "rowSpan": 0.3180524240095667
+      }
+    },
+    {
+      "id": "e123",
+      "name": "TextBox 122",
+      "hidden": false,
+      "parentId": "e14",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Carlos Orta (Compliance & AML/CFT)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Carlos Orta (Compliance & AML/CFT)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6332578740157481,
+        "y": 6.1313999519886915,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6649207677165354,
+        "row": 7.357679942386429,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e124",
+      "name": "TextBox 123",
+      "hidden": false,
+      "parentId": "e14",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Fernando Antuña (Audit)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Fernando Antuña (Audit)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6332578740157481,
+        "y": 6.37672142074634,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6649207677165354,
+        "row": 7.652065704895608,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e125",
+      "name": "Rectangle 124",
+      "hidden": false,
+      "parentId": "e14",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Mitigates operational, regulatory, and reputational risks by embedding strong risk ownership and control discipline across the organization",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Mitigates operational, regulatory, and reputational risks by embedding strong risk ownership and control discipline across the organization",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6332578740157481,
+        "y": 5.148659571588822,
+        "w": 2.737866360454943,
+        "h": 0.7596947160534011
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6649207677165354,
+        "row": 6.178391485906586,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.9116336592640812
+      }
+    },
+    {
+      "id": "e126",
+      "name": "TextBox 125",
+      "hidden": false,
+      "parentId": "e14",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Pablo Elek (CEO)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Pablo Elek (CEO)",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6332578740157481,
+        "y": 5.886076296004925,
+        "w": 2.737866360454943,
+        "h": 0.2524408897757031
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6649207677165354,
+        "row": 7.063291555205909,
+        "colSpan": 2.87475967847769,
+        "rowSpan": 0.3029290677308437
+      }
+    },
+    {
+      "id": "e4",
+      "name": "Text Placeholder 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "MEXICO",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "MEXICO",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 2.1872265966754155e-06,
+        "y": 0.0,
+        "w": 0.8661417322834646,
+        "h": 0.22321522309711286
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.296587926509186e-06,
+        "row": 0.0,
+        "colSpan": 0.9094488188976377,
+        "rowSpan": 0.2678582677165354
+      }
+    },
+    {
+      "id": "e5",
+      "name": "Text Placeholder 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "ALL BANK",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "ALL BANK",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide51.xml",
+      "relations": [],
+      "box": {
+        "x": 0.8663713910761155,
+        "y": 0.0,
+        "w": 2.466961942257218,
+        "h": 0.22321522309711286
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.9096899606299211,
+        "row": 0.0,
+        "colSpan": 2.590310039370079,
+        "rowSpan": 0.2678582677165354
+      }
+    }
+  ]
+}

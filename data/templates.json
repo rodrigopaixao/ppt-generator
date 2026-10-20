@@ -1,0 +1,499 @@
+[
+  {
+    "id": "source-001",
+    "sourceSlide": 1,
+    "title": "Slide collection ",
+    "layout": "slideLayout2",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-002",
+    "sourceSlide": 2,
+    "title": "PLEASE READ:  To enrich the context of our slides for AI training purposes we have identified 6-9 context variables that will be useful to collect",
+    "layout": "slideLayout3",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-003",
+    "sourceSlide": 3,
+    "title": "Table of Contents",
+    "layout": "slideLayout3",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-004",
+    "sourceSlide": 4,
+    "title": "Executive Summaries",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-005",
+    "sourceSlide": 5,
+    "title": "Executive Summary",
+    "layout": "slideLayout4",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-006",
+    "sourceSlide": 6,
+    "title": "Executive Summary",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-007",
+    "sourceSlide": 7,
+    "title": "Executive Summary",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-008",
+    "sourceSlide": 8,
+    "title": "Executive summary",
+    "layout": "slideLayout45",
+    "master": "slideMaster3"
+  },
+  {
+    "id": "source-009",
+    "sourceSlide": 9,
+    "title": "Agendas",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-010",
+    "sourceSlide": 10,
+    "title": "Agenda | Day 1: Tuesday, March 31st, 2026 ",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-011",
+    "sourceSlide": 11,
+    "title": "Offsite Agenda ",
+    "layout": "slideLayout17",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-012",
+    "sourceSlide": 12,
+    "title": "Agenda | Day 1",
+    "layout": "slideLayout4",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-013",
+    "sourceSlide": 13,
+    "title": "Aligning on guiding principles and future state client contact strategy are foundational to achieving channel strategy outcomes",
+    "layout": "slideLayout17",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-014",
+    "sourceSlide": 14,
+    "title": "Recalls",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-015",
+    "sourceSlide": 15,
+    "title": "Recall | Multiple workshops have been conducted with the virtual and digital working teams based on prioritized topics for channel strategy",
+    "layout": "slideLayout4",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-016",
+    "sourceSlide": 16,
+    "title": "Workshop Pre-Read | Since the last board session, we have continued to progress on the Bank’s Digital Assets Strategy",
+    "layout": "slideLayout64",
+    "master": "slideMaster4"
+  },
+  {
+    "id": "source-017",
+    "sourceSlide": 17,
+    "title": "Recall | Consensus was established on key themes that will inform future state team structure, enabling cost effective, scalable growth",
+    "layout": "slideLayout17",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-018",
+    "sourceSlide": 18,
+    "title": "Project Scopes",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-019",
+    "sourceSlide": 19,
+    "title": "Outline | The BL and Technology Strategic and Financial Updates at the September Board Strategy Session follow a standard format",
+    "layout": "slideLayout17",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-020",
+    "sourceSlide": 20,
+    "title": "Project Milestones & Planning",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-021",
+    "sourceSlide": 21,
+    "title": "Timeline | We are building out a more detailed schedule aligned to Board1, OpCo, and Finance calendars2 we propose 5 SteerCo dates to manage and review progress",
+    "layout": "slideLayout17",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-022",
+    "sourceSlide": 22,
+    "title": "Timeline | We will work collaboratively with the businesses over the next ~4 months to complete program design",
+    "layout": "slideLayout23",
+    "master": "slideMaster2"
+  },
+  {
+    "id": "source-023",
+    "sourceSlide": 23,
+    "title": "Timeline | This engagement will span 12–16-weeks with monthly executive SteerCo's and bi-weekly working sessions ",
+    "layout": "slideLayout24",
+    "master": "slideMaster2"
+  },
+  {
+    "id": "source-024",
+    "sourceSlide": 24,
+    "title": "Commercial and Wealth Partnership History | Since F16, key progress has been made to increase collaboration & partnership between our businesses",
+    "layout": "slideLayout23",
+    "master": "slideMaster2"
+  },
+  {
+    "id": "source-025",
+    "sourceSlide": 25,
+    "title": "Investment Roadmap | ~$20MM in F25 is required to support in execution against our strategic priorities; majority of our initiatives are self funded",
+    "layout": "slideLayout41",
+    "master": "slideMaster2"
+  },
+  {
+    "id": "source-026",
+    "sourceSlide": 26,
+    "title": "Project Governance\n",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-027",
+    "sourceSlide": 27,
+    "title": "Program Team | We will work collaboratively with the business teams and engage with the functional experts to design the program",
+    "layout": "slideLayout23",
+    "master": "slideMaster2"
+  },
+  {
+    "id": "source-028",
+    "sourceSlide": 28,
+    "title": "Each session will include a core team of participants – with potential to invite domain and subject matter experts as needed",
+    "layout": "slideLayout41",
+    "master": "slideMaster2"
+  },
+  {
+    "id": "source-029",
+    "sourceSlide": 29,
+    "title": "Approach | We are planning to run this with a more formal governance structure this year to ensure pace and appropriate leadership involvement",
+    "layout": "slideLayout3",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-030",
+    "sourceSlide": 30,
+    "title": "Current State & Context Setting",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-031",
+    "sourceSlide": 31,
+    "title": "First Impressions | Recent growth driven by mortgages and auto, supported by cost efficiencies (-40% in commercial muscle) but with limited client and revenue growth",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-032",
+    "sourceSlide": 32,
+    "title": "As we reach the midpoint of our 5-year Investor Day journey, revenue momentum is tracking positively, with opportunity to accelerate across strategic metrics",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-033",
+    "sourceSlide": 33,
+    "title": "Competitive Overview & Positioning",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-034",
+    "sourceSlide": 34,
+    "title": "Competitor Offerings | RBC and BMO have built a leading offering in the retail investment space by developing strong hybrid planning and investing tools ",
+    "layout": "slideLayout44",
+    "master": "slideMaster3"
+  },
+  {
+    "id": "source-035",
+    "sourceSlide": 35,
+    "title": "Overview | Competitors are increasingly catering to evolving Mass Affluent preferences of investment offerings while BNS has been slower to innovate",
+    "layout": "slideLayout44",
+    "master": "slideMaster3"
+  },
+  {
+    "id": "source-036",
+    "sourceSlide": 36,
+    "title": "Our Performance | We place second in the $25-100MM band, led by our NAC and REB segments, with opportunity to improve in Mid-Market ($1-25MM)",
+    "layout": "slideLayout41",
+    "master": "slideMaster2"
+  },
+  {
+    "id": "source-037",
+    "sourceSlide": 37,
+    "title": "Leading players have different value props; TD offers best-in-class platforms at high fees while Wealthsimple offers basic features and free trading",
+    "layout": "slideLayout65",
+    "master": "slideMaster4"
+  },
+  {
+    "id": "source-038",
+    "sourceSlide": 38,
+    "title": "Competitive Overview | Six players lead the banking landscape",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-039",
+    "sourceSlide": 39,
+    "title": "Competitive Overview | Among top players, SBM has the highest concentration in mortgages loans and price sensitive deposits resulting in below industry profitability",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-040",
+    "sourceSlide": 40,
+    "title": "Balance sheet gaps | High secured-loan and non-core deposits concentration are impacting all-bank yield",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-041",
+    "sourceSlide": 41,
+    "title": "Asset Market Overview | Our market share has improved over 5 years within the $25-100MM band; however, we have fallen behind in the $1-25MM band ",
+    "layout": "slideLayout17",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-042",
+    "sourceSlide": 42,
+    "title": "Our competitive relationship | Wealthsimple has evolved its product offerings beyond robo, now competing with us across key products that drive primacy",
+    "layout": "slideLayout3",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-043",
+    "sourceSlide": 43,
+    "title": "Market Landscape | We are well positioned to capture the EHNW & HNW growth opportunity through an integrated offering ",
+    "layout": "slideLayout21",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-044",
+    "sourceSlide": 44,
+    "title": "Market share | Over the last five years, BNS has steadily lost market share across key IB Markets, notably in Mexico and Peru",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-045",
+    "sourceSlide": 45,
+    "title": "BNS North Star | Scotiabank to leverage its inherent strengths in product & advice while enhancing digital capabilities and improving client-centricity",
+    "layout": "slideLayout3",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-046",
+    "sourceSlide": 46,
+    "title": "Industry Trends, Headwinds or Tailwinds",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-047",
+    "sourceSlide": 47,
+    "title": "Competitive Landscape | With a young, highly digitalized market with rapid financial inclusion led by fintechs, SBM must strengthen capabilities to capture the opportunity",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-048",
+    "sourceSlide": 48,
+    "title": "Headwinds and Tailwinds | Impact of current environment on SBM strategy",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-049",
+    "sourceSlide": 49,
+    "title": "Mission, Strategic Frameworks, Strategic Priorities",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-050",
+    "sourceSlide": 50,
+    "title": "SBM Forward Looking Strategy | Our 2030 plan is anchored on our four strategic pillars",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-051",
+    "sourceSlide": 51,
+    "title": "All-Bank Strategic Priorities | We identified eight strategic priorities to address these challenges and achieve our 2030 goals",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-052",
+    "sourceSlide": 52,
+    "title": "Med-to-long-term roadmap | We have initiatives underway across key value levers to achieve a competitive value proposition over time",
+    "layout": "slideLayout3",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-053",
+    "sourceSlide": 53,
+    "title": "Deep Dives and assorted analysis",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-054",
+    "sourceSlide": 54,
+    "title": "Global Market | The North American corridor drives 90% of GBM revenue, with additional opportunity to capture prospective subsidiaries within this geography",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-055",
+    "sourceSlide": 55,
+    "title": "Loyalty | Fragmentation and subpar UX dilutes value and returns, driving differences in cost, profitability and engagement, requiring consolidation at scale",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-056",
+    "sourceSlide": 56,
+    "title": "NTB Incremental Revenue Analysis | Mexico: ~50% of incremental revenue upside driven by Top of Mass with Auto Loans, D2D, and Credit Cards as the ideal mix",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-057",
+    "sourceSlide": 57,
+    "title": "Products (medium term) | Cards and SPLs remain top growth drivers, with rising card contribution in Peru and easing deposits decline in Mexico and Peru",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-058",
+    "sourceSlide": 58,
+    "title": "Deep-dive: iTRADE | We have multiple tactics in-flight to support growth despite increased competition",
+    "layout": "slideLayout44",
+    "master": "slideMaster3"
+  },
+  {
+    "id": "source-059",
+    "sourceSlide": 59,
+    "title": "Client Experience & Client Journey",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-060",
+    "sourceSlide": 60,
+    "title": "CX gaps in Retail | Digital experience gaps undermine competitiveness and client satisfaction",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-061",
+    "sourceSlide": 61,
+    "title": "Client-centric growth approach | Leveraged client behavior insights to identify highest‑impact strategic levers to drive revenue growth",
+    "layout": "slideLayout20",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-062",
+    "sourceSlide": 62,
+    "title": "Mass Affluent Clients | Age segments have distinct motivations; younger clients show the strongest demand for advice and are the most willing to pay",
+    "layout": "slideLayout85",
+    "master": "slideMaster5"
+  },
+  {
+    "id": "source-063",
+    "sourceSlide": 63,
+    "title": "Overviews of Strategic Work Packages, Roadmaps, Milestones etc.",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-064",
+    "sourceSlide": 64,
+    "title": "Points of Intersection | To scale virtual successfully, entry points need to be embedded into digital to connect inbound clients to virtual / branch ",
+    "layout": "slideLayout4",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-065",
+    "sourceSlide": 65,
+    "title": "BNS & TNG Roadmap | Red Bank and Tangerine have planned strategies and investments to continue strengthening the value proposition",
+    "layout": "slideLayout45",
+    "master": "slideMaster3"
+  },
+  {
+    "id": "source-066",
+    "sourceSlide": 66,
+    "title": "Measures of Success, Metrics, KPIs, Targets",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-067",
+    "sourceSlide": 67,
+    "title": "Performance – Fortify the Bank | We report on a set of Board-approved Key Risk Indicators (KRIs) which are published in the Quarterly Board Report",
+    "layout": "slideLayout106",
+    "master": "slideMaster6"
+  },
+  {
+    "id": "source-068",
+    "sourceSlide": 68,
+    "title": "Q2 F26 Summary | Dashboard (1 of 2)",
+    "layout": "slideLayout126",
+    "master": "slideMaster7"
+  },
+  {
+    "id": "source-069",
+    "sourceSlide": 69,
+    "title": "Risk and Key Considerations",
+    "layout": "slideLayout5",
+    "master": "slideMaster1"
+  },
+  {
+    "id": "source-070",
+    "sourceSlide": 70,
+    "title": "Risk Perspectives | Capital Management and Strategic Risk Oversight",
+    "layout": "slideLayout86",
+    "master": "slideMaster5"
+  },
+  {
+    "id": "source-071",
+    "sourceSlide": 71,
+    "title": "Economic Conditions | More broadly, economic conditions will play a role in future of our wealth & asset mgmt. businesses, with persistent volatility likely ",
+    "layout": "slideLayout85",
+    "master": "slideMaster5"
+  }
+]

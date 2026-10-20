@@ -1,0 +1,1938 @@
+{
+  "number": 65,
+  "part": "ppt/slides/slide65.xml",
+  "hidden": false,
+  "title": "BNS & TNG Roadmap | Red Bank and Tangerine have planned strategies and investments to continue strengthening the value proposition",
+  "layout": "ppt/slideLayouts/slideLayout45.xml",
+  "master": "ppt/slideMasters/slideMaster3.xml",
+  "elements": [
+    {
+      "id": "e9",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag444.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image277.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject55.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "BNS & TNG Roadmap | Red Bank and Tangerine have planned strategies and investments to continue strengthening the value proposition",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "BNS & TNG Roadmap | Red Bank and Tangerine have planned strategies and investments to continue strengthening the value proposition",
+            "size": 24.0,
+            "runSizes": [
+              24.0,
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.7137073490813648,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.8564488188976377,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Text Placeholder 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout45.xml",
+      "kind": "shape",
+      "text": "PATH FORWARD",
+      "placeholder": {
+        "type": "body",
+        "idx": "13"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PATH FORWARD",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.37495297462817145,
+        "w": 5.905511811023622,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.4499435695538057,
+        "colSpan": 6.200787401574803,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Rectangle 9",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 14.0,
+            "runSizes": [
+              14.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 0.0020866141732283463,
+        "y": 1.8211811023622047,
+        "w": 2.780211067366579,
+        "h": 4.881944444444445
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0021909448818897637,
+        "row": 2.185417322834646,
+        "colSpan": 2.9192216207349078,
+        "rowSpan": 5.858333333333333
+      }
+    },
+    {
+      "id": "e16",
+      "name": "Text Placeholder 48",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "OVERVIEW",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "OVERVIEW",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 0.3736800087489064,
+        "y": 2.0807206911636045,
+        "w": 2.0643208661417325,
+        "h": 0.22157152230971128
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.39236400918635167,
+        "row": 2.4968648293963254,
+        "colSpan": 2.167536909448819,
+        "rowSpan": 0.2658858267716535
+      }
+    },
+    {
+      "id": "e20",
+      "name": "TextBox 19",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "There are multiple short- and long-term initiatives underway to continue strengthening the value proposition and overall competitiveness \nFocus will remain on these efforts to execute and realize benefits, particularly Project Clarity and our digital customer experience",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "There are multiple short- and long-term initiatives underway to continue strengthening the value proposition and overall competitiveness ",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0,
+              11.0,
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Focus will remain on these efforts to execute and realize benefits, particularly Project Clarity and our digital customer experience",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 0.2714818460192476,
+        "y": 2.44117782152231,
+        "w": 2.3337325021872264,
+        "h": 4.1139873140857395
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.2850559383202099,
+        "row": 2.929413385826772,
+        "colSpan": 2.4504191272965876,
+        "rowSpan": 4.936784776902887
+      }
+    },
+    {
+      "id": "e80",
+      "name": "TextBox 79",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "WEALTH",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "WEALTH",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.0356660104986877,
+        "y": 3.722292213473316,
+        "w": 0.32431430446194226,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.187449311023622,
+        "row": 4.466750656167979,
+        "colSpan": 0.3405300196850393,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e28",
+      "name": "Text Placeholder 48",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "LONG-TERM INITIATIVES in design / UNDERWAY ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "LONG-TERM INITIATIVES in design / UNDERWAY ",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.0356660104986877,
+        "y": 1.8352515310586177,
+        "w": 5.428373797025372,
+        "h": 0.21
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.187449311023622,
+        "row": 2.2023018372703413,
+        "colSpan": 5.69979248687664,
+        "rowSpan": 0.252
+      }
+    },
+    {
+      "id": "e64",
+      "name": "Rectangle 63",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "iTRADE Strategy\nAccelerate growth by enhancing foundational capabilities & building differentiators",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "iTRADE Strategy",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Accelerate growth by enhancing foundational capabilities & building differentiators",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.46916447944007,
+        "y": 3.716453412073491,
+        "w": 3.0,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.6426227034120737,
+        "row": 4.459744094488189,
+        "colSpan": 3.1499999999999995,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e76",
+      "name": "Rectangle 75",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Project Clarity",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Project Clarity",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.469165573053368,
+        "y": 5.300479002624672,
+        "w": 9.326879921259842,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.642623851706036,
+        "row": 6.360574803149607,
+        "colSpan": 9.793223917322832,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e84",
+      "name": "TextBox 83",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "RETAIL",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "RETAIL",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.0356660104986877,
+        "y": 2.1516491688538935,
+        "w": 0.32431430446194226,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.187449311023622,
+        "row": 2.5819790026246725,
+        "colSpan": 0.3405300196850393,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e88",
+      "name": "TextBox 87",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "TANGERINE",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "TANGERINE",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.0356660104986877,
+        "y": 5.300479002624672,
+        "w": 0.32431430446194226,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.187449311023622,
+        "row": 6.360574803149607,
+        "colSpan": 0.3405300196850393,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e94",
+      "name": "Rectangle 93",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.5844630358705163,
+        "y": 3.8361351706036744,
+        "w": 0.3962128171478565,
+        "h": 0.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.763686187664042,
+        "row": 4.60336220472441,
+        "colSpan": 0.4160234580052493,
+        "rowSpan": 0.48000000000000004
+      }
+    },
+    {
+      "id": "e96",
+      "name": "Rectangle 95",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.5844630358705163,
+        "y": 5.615555555555556,
+        "w": 0.3962128171478565,
+        "h": 0.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.763686187664042,
+        "row": 6.738666666666667,
+        "colSpan": 0.4160234580052493,
+        "rowSpan": 0.48000000000000004
+      }
+    },
+    {
+      "id": "e78",
+      "name": "Rectangle 77",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "See appendix for more detail on strategic initiatives",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "See appendix for more detail on strategic initiatives",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.2732895888013998,
+        "y": 6.776192038495188,
+        "w": 6.3,
+        "h": 0.1952723097112861
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.4369540682414694,
+        "row": 8.131430446194226,
+        "colSpan": 6.614999999999999,
+        "rowSpan": 0.2343267716535433
+      }
+    },
+    {
+      "id": "e81",
+      "name": "Graphic 80",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image362.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 3.6119575678040245,
+        "y": 3.865523840769904,
+        "w": 0.34122375328083987,
+        "h": 0.34122375328083987
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.7925554461942257,
+        "row": 4.638628608923884,
+        "colSpan": 0.35828494094488184,
+        "rowSpan": 0.40946850393700784
+      }
+    },
+    {
+      "id": "e57",
+      "name": "Group 56",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId7",
+          "target": "ppt/media/image341.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 9.79604549431321,
+        "y": 3.716453412073491,
+        "w": 3.0,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.285847769028871,
+        "row": 4.459744094488189,
+        "colSpan": 3.1499999999999995,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e56",
+      "name": "Group 55",
+      "hidden": false,
+      "parentId": "e57",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 9.79604549431321,
+        "y": 3.716453412073491,
+        "w": 3.0,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.285847769028871,
+        "row": 4.459744094488189,
+        "colSpan": 3.1499999999999995,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e75",
+      "name": "Rectangle 74",
+      "hidden": false,
+      "parentId": "e56",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Next-Gen Strategy\nWin the next-generation of wealth clients through tailored offerings and servicing",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Next-Gen Strategy",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Win the next-generation of wealth clients through tailored offerings and servicing",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 9.79604549431321,
+        "y": 3.716453412073491,
+        "w": 3.0,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.285847769028871,
+        "row": 4.459744094488189,
+        "colSpan": 3.1499999999999995,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e95",
+      "name": "Rectangle 94",
+      "hidden": false,
+      "parentId": "e56",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 9.906398731408574,
+        "y": 3.8361351706036744,
+        "w": 0.3962128171478565,
+        "h": 0.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.401718667979003,
+        "row": 4.60336220472441,
+        "colSpan": 0.4160234580052493,
+        "rowSpan": 0.48000000000000004
+      }
+    },
+    {
+      "id": "e82",
+      "name": "Graphic 81",
+      "hidden": false,
+      "parentId": "e57",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId7",
+          "target": "ppt/media/image341.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 9.966803368328959,
+        "y": 3.8988757655293087,
+        "w": 0.2823632983377078,
+        "h": 0.2745188101487314
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.465143536745407,
+        "row": 4.67865091863517,
+        "colSpan": 0.2964814632545932,
+        "rowSpan": 0.3294225721784777
+      }
+    },
+    {
+      "id": "e87",
+      "name": "Picture 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId8",
+          "target": "ppt/media/image363.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 3.6947233158355206,
+        "y": 5.727709973753281,
+        "w": 0.17569225721784776,
+        "h": 0.17569225721784776
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.8794594816272965,
+        "row": 6.873251968503937,
+        "colSpan": 0.18447687007874014,
+        "rowSpan": 0.21083070866141732
+      }
+    },
+    {
+      "id": "e59",
+      "name": "Group 58",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId9",
+          "target": "ppt/media/image364.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 7.230578521434821,
+        "y": 2.1516491688538935,
+        "w": 1.7872703412073492,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.592107447506562,
+        "row": 2.5819790026246725,
+        "colSpan": 1.8766338582677164,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e27",
+      "name": "Rectangle 26",
+      "hidden": false,
+      "parentId": "e59",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Channel strategy\nPutting the right channel in front of the right client",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Channel strategy",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Putting the right channel in front of the right client",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 7.230578521434821,
+        "y": 2.1516491688538935,
+        "w": 1.7872703412073492,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.592107447506562,
+        "row": 2.5819790026246725,
+        "colSpan": 1.8766338582677164,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e91",
+      "name": "Rectangle 90",
+      "hidden": false,
+      "parentId": "e59",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 7.358305993000875,
+        "y": 2.25759186351706,
+        "w": 0.3962128171478565,
+        "h": 0.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.726221292650918,
+        "row": 2.7091102362204724,
+        "colSpan": 0.4160234580052493,
+        "rowSpan": 0.48000000000000004
+      }
+    },
+    {
+      "id": "e77",
+      "name": "Graphic 76",
+      "hidden": false,
+      "parentId": "e59",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId9",
+          "target": "ppt/media/image364.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 7.406914916885389,
+        "y": 2.3083606736657916,
+        "w": 0.29563648293963257,
+        "h": 0.2984623797025372
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.777260662729659,
+        "row": 2.77003280839895,
+        "colSpan": 0.31041830708661416,
+        "rowSpan": 0.35815485564304467
+      }
+    },
+    {
+      "id": "e60",
+      "name": "Group 59",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 5.341479658792651,
+        "y": 2.1516491688538935,
+        "w": 1.7872703412073492,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.608553641732284,
+        "row": 2.5819790026246725,
+        "colSpan": 1.8766338582677164,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e110",
+      "name": "Rectangle 109",
+      "hidden": false,
+      "parentId": "e60",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Client segmentation\nTiering that rewards all-bank relationships",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Client segmentation",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Tiering that rewards all-bank relationships",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 5.341479658792651,
+        "y": 2.1516491688538935,
+        "w": 1.7872703412073492,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.608553641732284,
+        "row": 2.5819790026246725,
+        "colSpan": 1.8766338582677164,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e90",
+      "name": "Rectangle 89",
+      "hidden": false,
+      "parentId": "e60",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 5.473561898512686,
+        "y": 2.25759186351706,
+        "w": 0.3962128171478565,
+        "h": 0.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.74723999343832,
+        "row": 2.7091102362204724,
+        "colSpan": 0.4160234580052493,
+        "rowSpan": 0.48000000000000004
+      }
+    },
+    {
+      "id": "e79",
+      "name": "Shape 2580",
+      "hidden": false,
+      "parentId": "e60",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 30.0,
+            "runSizes": [
+              30.0,
+              29.99
+            ]
+          }
+        ],
+        "size": 30.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 5.5488746719160105,
+        "y": 2.321228127734033,
+        "w": 0.245586176727909,
+        "h": 0.27272747156605426
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.8263184055118105,
+        "row": 2.78547375328084,
+        "colSpan": 0.25786548556430444,
+        "rowSpan": 0.3272729658792651
+      }
+    },
+    {
+      "id": "e14",
+      "name": "Rectangle 13",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Cards & Loyalty\nRefreshing credit card 3–5-year growth strategy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Cards & Loyalty",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Refreshing credit card 3–5-year growth strategy",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 9.11967738407699,
+        "y": 2.1516491688538935,
+        "w": 1.7872703412073492,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.57566125328084,
+        "row": 2.5819790026246725,
+        "colSpan": 1.8766338582677164,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e17",
+      "name": "Rectangle 16",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 9.238693132108487,
+        "y": 2.25759186351706,
+        "w": 0.3962128171478565,
+        "h": 0.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.700627788713911,
+        "row": 2.7091102362204724,
+        "colSpan": 0.4160234580052493,
+        "rowSpan": 0.48000000000000004
+      }
+    },
+    {
+      "id": "e21",
+      "name": "Rectangle 20",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Digital Strategy\nRefining vision and optimizing op model",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Digital Strategy",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Refining vision and optimizing op model",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 11.008775153105862,
+        "y": 2.1516491688538935,
+        "w": 1.7872703412073492,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.559213910761155,
+        "row": 2.5819790026246725,
+        "colSpan": 1.8766338582677164,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e22",
+      "name": "Rectangle 21",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 11.123437226596675,
+        "y": 2.25759186351706,
+        "w": 0.3962128171478565,
+        "h": 0.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.679609087926508,
+        "row": 2.7091102362204724,
+        "colSpan": 0.4160234580052493,
+        "rowSpan": 0.48000000000000004
+      }
+    },
+    {
+      "id": "e47",
+      "name": "Graphic 46",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId10",
+          "target": "ppt/media/image365.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 9.295616797900262,
+        "y": 2.3595483377077864,
+        "w": 0.2823632983377078,
+        "h": 0.19608595800524933
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.760397637795274,
+        "row": 2.8314580052493437,
+        "colSpan": 0.2964814632545932,
+        "rowSpan": 0.2353031496062992
+      }
+    },
+    {
+      "id": "e48",
+      "name": "Graphic 47",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId11",
+          "target": "ppt/media/image366.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 11.230951443569554,
+        "y": 2.302292213473316,
+        "w": 0.1811832895888014,
+        "h": 0.31059930008748904
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.792499015748032,
+        "row": 2.762750656167979,
+        "colSpan": 0.19024245406824145,
+        "rowSpan": 0.37271916010498685
+      }
+    },
+    {
+      "id": "e54",
+      "name": "Group 53",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId12",
+          "target": "ppt/media/image367.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 6.632604986876641,
+        "y": 3.716453412073491,
+        "w": 3.0,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.964235236220472,
+        "row": 4.459744094488189,
+        "colSpan": 3.1499999999999995,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e24",
+      "name": "Rectangle 23",
+      "hidden": false,
+      "parentId": "e54",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Scotia Financial Planning Strategy\nEnhancing investments product shelf and operational capabilities",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Scotia Financial Planning Strategy",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Enhancing investments product shelf and operational capabilities",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 6.632604986876641,
+        "y": 3.716453412073491,
+        "w": 3.0,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.964235236220472,
+        "row": 4.459744094488189,
+        "colSpan": 3.1499999999999995,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e25",
+      "name": "Rectangle 24",
+      "hidden": false,
+      "parentId": "e54",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 6.738013998250219,
+        "y": 3.8361351706036744,
+        "w": 0.3962128171478565,
+        "h": 0.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.07491469816273,
+        "row": 4.60336220472441,
+        "colSpan": 0.4160234580052493,
+        "rowSpan": 0.48000000000000004
+      }
+    },
+    {
+      "id": "e50",
+      "name": "Graphic 49",
+      "hidden": false,
+      "parentId": "e54",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId12",
+          "target": "ppt/media/image367.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 6.8184700349956255,
+        "y": 3.8949540682414696,
+        "w": 0.23530074365704287,
+        "h": 0.2823632983377078
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.159393536745407,
+        "row": 4.6739448818897635,
+        "colSpan": 0.247065780839895,
+        "rowSpan": 0.33883595800524935
+      }
+    },
+    {
+      "id": "e58",
+      "name": "Group 57",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId13",
+          "target": "ppt/media/image343.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 3.4523807961504813,
+        "y": 2.1516491688538935,
+        "w": 1.7872703412073492,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.6249998359580053,
+        "row": 2.5819790026246725,
+        "colSpan": 1.8766338582677164,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e13",
+      "name": "Rectangle 12",
+      "hidden": false,
+      "parentId": "e58",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Primacy Must-Win\nDriving deeper client relationships in Canada",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Primacy Must-Win",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Driving deeper client relationships in Canada",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.4523807961504813,
+        "y": 2.1516491688538935,
+        "w": 1.7872703412073492,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.6249998359580053,
+        "row": 2.5819790026246725,
+        "colSpan": 1.8766338582677164,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e15",
+      "name": "Rectangle 14",
+      "hidden": false,
+      "parentId": "e58",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 3.5757524059492565,
+        "y": 2.25759186351706,
+        "w": 0.3962128171478565,
+        "h": 0.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.7545400262467195,
+        "row": 2.7091102362204724,
+        "colSpan": 0.4160234580052493,
+        "rowSpan": 0.48000000000000004
+      }
+    },
+    {
+      "id": "e52",
+      "name": "Graphic 51",
+      "hidden": false,
+      "parentId": "e58",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [
+        {
+          "id": "rId13",
+          "target": "ppt/media/image343.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 3.6514282589676292,
+        "y": 2.308659230096238,
+        "w": 0.2847145669291339,
+        "h": 0.2847145669291339
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.8339996719160103,
+        "row": 2.7703910761154855,
+        "colSpan": 0.2989502952755905,
+        "rowSpan": 0.3416574803149606
+      }
+    },
+    {
+      "id": "e97",
+      "name": "Rectangle 96",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Win For Today\nBuilding foundational capabilities i.e., bundled banking propositions",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Win For Today",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "Building foundational capabilities i.e., bundled banking propositions",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 5.527006780402449,
+        "y": 5.709444444444444,
+        "w": 2.2645702099737535,
+        "h": 0.7927187226596676
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.8033571194225715,
+        "row": 6.851333333333333,
+        "colSpan": 2.377798720472441,
+        "rowSpan": 0.9512624671916011
+      }
+    },
+    {
+      "id": "e98",
+      "name": "Rectangle 97",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Next-Gen Digital Capabilities \ni.e., Engine, Open Architecture Wealth platform ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Next-Gen Digital Capabilities ",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "i.e., Engine, Open Architecture Wealth platform ",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 7.905164041994751,
+        "y": 5.709444444444444,
+        "w": 2.2645702099737535,
+        "h": 0.7927187226596676
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.300422244094488,
+        "row": 6.851333333333333,
+        "colSpan": 2.377798720472441,
+        "rowSpan": 0.9512624671916011
+      }
+    },
+    {
+      "id": "e99",
+      "name": "Rectangle 98",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Strategic Extensions\nDigital wealth, SME Capabilities ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Strategic Extensions",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "Digital wealth, SME Capabilities ",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 10.28332239720035,
+        "y": 5.709444444444444,
+        "w": 2.2645702099737535,
+        "h": 0.7927187226596676
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.797488517060366,
+        "row": 6.851333333333333,
+        "colSpan": 2.377798720472441,
+        "rowSpan": 0.9512624671916011
+      }
+    },
+    {
+      "id": "e4",
+      "name": "Straight Connector 3",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 7.848370516185477,
+        "y": 5.757430008748907,
+        "w": 0.0,
+        "h": 0.696748687664042
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.24078904199475,
+        "row": 6.908916010498688,
+        "colSpan": 0.0,
+        "rowSpan": 0.8360984251968503
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Straight Connector 7",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 10.226527777777777,
+        "y": 5.757430008748907,
+        "w": 0.0,
+        "h": 0.696748687664042
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.737854166666665,
+        "row": 6.908916010498688,
+        "colSpan": 0.0,
+        "rowSpan": 0.8360984251968503
+      }
+    },
+    {
+      "id": "e11",
+      "name": "Rectangle 10",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "BUSINESS PRIORITIES",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "BUSINESS PRIORITIES",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 5.473561898512686,
+        "y": 5.463144138232721,
+        "w": 6.809023403324584,
+        "h": 0.2185728346456693
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.74723999343832,
+        "row": 6.555772965879266,
+        "colSpan": 7.149474573490813,
+        "rowSpan": 0.2622874015748031
+      }
+    },
+    {
+      "id": "e5",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "65",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "65",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Rectangle 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "NOT EXHAUSTIVE",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "NOT EXHAUSTIVE",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide65.xml",
+      "relations": [],
+      "box": {
+        "x": 11.04761811023622,
+        "y": -0.0008475503062117235,
+        "w": 2.3013396762904637,
+        "h": 0.34608595800524933
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.59999901574803,
+        "row": -0.0010170603674540682,
+        "colSpan": 2.416406660104987,
+        "rowSpan": 0.4153031496062992
+      }
+    }
+  ]
+}

@@ -1,0 +1,1734 @@
+{
+  "number": 16,
+  "part": "ppt/slides/slide16.xml",
+  "hidden": false,
+  "title": "Workshop Pre-Read | Since the last board session, we have continued to progress on the Bank’s Digital Assets Strategy",
+  "layout": "ppt/slideLayouts/slideLayout64.xml",
+  "master": "ppt/slideMasters/slideMaster4.xml",
+  "elements": [
+    {
+      "id": "e26",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag38.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image284.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject27.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e17",
+      "name": "Straight Connector 16",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.841076115485564,
+        "y": 2.766946631671041,
+        "w": 0.0,
+        "h": 1.827369860017498
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.083129921259843,
+        "row": 3.3203359580052494,
+        "colSpan": 0.0,
+        "rowSpan": 2.1928438320209973
+      }
+    },
+    {
+      "id": "e97",
+      "name": "Straight Connector 96",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.841076115485564,
+        "y": 4.894316491688539,
+        "w": 0.0,
+        "h": 1.1182458442694663
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.083129921259843,
+        "row": 5.873179790026247,
+        "colSpan": 0.0,
+        "rowSpan": 1.3418950131233593
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Workshop Pre-Read | Since the last board session, we have continued to progress on the Bank’s Digital Assets Strategy",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Workshop Pre-Read | Since the last board session, we have continued to progress on the Bank’s Digital Assets Strategy",
+            "size": 24.0,
+            "runSizes": [
+              24.0,
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout64.xml",
+      "kind": "shape",
+      "text": "16",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "16",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e11",
+      "name": "Rectangle 10",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5120614610673666,
+        "y": 1.9772003499562554,
+        "w": 3.6137521872265967,
+        "h": 4.725925196850394
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5376645341207349,
+        "row": 2.372640419947506,
+        "colSpan": 3.794439796587927,
+        "rowSpan": 5.671110236220472
+      }
+    },
+    {
+      "id": "e55",
+      "name": "TextBox 54",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "At the December Board session, digital assets were discussed as a strategic opportunity",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "At the December Board session, digital assets were discussed as a strategic opportunity",
+            "size": 9.5,
+            "runSizes": [
+              9.5,
+              9.5
+            ]
+          }
+        ],
+        "size": 9.5
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642322834645669,
+        "y": 2.269478346456693,
+        "w": 3.2035925196850394,
+        "h": 0.3197594050743657
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924438976377953,
+        "row": 2.723374015748032,
+        "colSpan": 3.3637721456692913,
+        "rowSpan": 0.3837112860892388
+      }
+    },
+    {
+      "id": "e4",
+      "name": "Text Placeholder 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "WORKSHOP PRE-READ",
+      "placeholder": {
+        "type": "body",
+        "idx": "13"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "WORKSHOP PRE-READ",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.37495297462817145,
+        "w": 5.905511811023622,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.4499435695538057,
+        "colSpan": 6.200787401574803,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e96",
+      "name": "Text Placeholder 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "RECALL",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "RECALL",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564235564304462,
+        "y": 2.0013910761154854,
+        "w": 1.0534153543307088,
+        "h": 0.30500328083989503
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.592447342519685,
+        "row": 2.401669291338582,
+        "colSpan": 1.1060861220472442,
+        "rowSpan": 0.36600393700787404
+      }
+    },
+    {
+      "id": "e13",
+      "name": "Straight Connector 12",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.22369750656168,
+        "y": 1.8974857830271217,
+        "w": 0.0,
+        "h": 4.606456692913386
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.434882381889764,
+        "row": 2.276982939632546,
+        "colSpan": 0.0,
+        "rowSpan": 5.527748031496063
+      }
+    },
+    {
+      "id": "e18",
+      "name": "Group 17",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.06621719160105,
+        "y": 2.0501695100612425,
+        "w": 0.31496062992125984,
+        "h": 0.31496062992125984
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.269528051181101,
+        "row": 2.460203412073491,
+        "colSpan": 0.3307086614173228,
+        "rowSpan": 0.3779527559055118
+      }
+    },
+    {
+      "id": "e14",
+      "name": "Oval 13",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.06621719160105,
+        "y": 2.0501695100612425,
+        "w": 0.31496062992125984,
+        "h": 0.31496062992125984
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.269528051181101,
+        "row": 2.460203412073491,
+        "colSpan": 0.3307086614173228,
+        "rowSpan": 0.3779527559055118
+      }
+    },
+    {
+      "id": "e15",
+      "name": "Isosceles Triangle 14",
+      "hidden": false,
+      "parentId": "e18",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.15370406824147,
+        "y": 2.157444380183852,
+        "w": 0.17132764654418198,
+        "h": 0.10041320467787801
+      },
+      "rotation": 90.0,
+      "grid": {
+        "col": 4.361389271653543,
+        "row": 2.5889332562206224,
+        "colSpan": 0.17989402887139108,
+        "rowSpan": 0.12049584561345361
+      }
+    },
+    {
+      "id": "e27",
+      "name": "Text Placeholder 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "UPDATES PROVIDED",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "UPDATES PROVIDED",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642344706911636,
+        "y": 2.7496325459317585,
+        "w": 1.9291338582677164,
+        "h": 0.30500328083989503
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924461942257218,
+        "row": 3.29955905511811,
+        "colSpan": 2.0255905511811023,
+        "rowSpan": 0.36600393700787404
+      }
+    },
+    {
+      "id": "e22",
+      "name": "TextBox 21",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Industry landscape: Players are pursuing a range of digital asset initiatives, from tokenizing deposits to joining global consortiums\nRegulatory and industry developments: The Canadian government recently introduced legislation for non-OSFI regulated players, while there are several developments in the industry influencing the digital assets space\nCollaboration between banks: In the absence of clear regulatory guidance for OSFI-regulated institutions, banks are collaborating through the CBA to advocate for a comprehensive framework\nDigital Assets Strategy approach: We have aligned on an enterprise approach to define the Digital Assets Strategy for the Bank with specific considerations by market (e.g., Canada, US, Latam)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Industry landscape: Players are pursuing a range of digital asset initiatives, from tokenizing deposits to joining global consortiums",
+            "size": 9.5,
+            "runSizes": [
+              9.5,
+              9.5,
+              9.5
+            ]
+          },
+          {
+            "text": "Regulatory and industry developments: The Canadian government recently introduced legislation for non-OSFI regulated players, while there are several developments in the industry influencing the digital assets space",
+            "size": 9.5,
+            "runSizes": [
+              9.5,
+              9.5,
+              9.5,
+              9.5,
+              9.5,
+              9.5,
+              9.5,
+              9.5,
+              9.5
+            ]
+          },
+          {
+            "text": "Collaboration between banks: In the absence of clear regulatory guidance for OSFI-regulated institutions, banks are collaborating through the CBA to advocate for a comprehensive framework",
+            "size": 9.5,
+            "runSizes": [
+              9.5,
+              9.5,
+              9.5,
+              9.5
+            ]
+          },
+          {
+            "text": "Digital Assets Strategy approach: We have aligned on an enterprise approach to define the Digital Assets Strategy for the Bank with specific considerations by market (e.g., Canada, US, Latam)",
+            "size": 9.5,
+            "runSizes": [
+              9.5,
+              9.5,
+              9.5
+            ]
+          }
+        ],
+        "size": 9.5
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642344706911636,
+        "y": 3.0794772528433945,
+        "w": 3.2035859580052493,
+        "h": 2.86661198600175
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924461942257218,
+        "row": 3.6953727034120734,
+        "colSpan": 3.363765255905512,
+        "rowSpan": 3.4399343832021
+      }
+    },
+    {
+      "id": "e60",
+      "name": "Rectangle 59",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5787040682414698,
+        "y": 5.230534776902887,
+        "w": 3.3736767279090114,
+        "h": 0.9694663167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6076392716535433,
+        "row": 6.276641732283466,
+        "colSpan": 3.542360564304462,
+        "rowSpan": 1.1633595800524934
+      }
+    },
+    {
+      "id": "e61",
+      "name": "TextBox 60",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Working session scheduled for Dec 11th",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Working session scheduled for Dec 11th",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 0.735501968503937,
+        "y": 5.970930664916885,
+        "w": 3.0208180227471564,
+        "h": 0.2524409448818898
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7722770669291338,
+        "row": 7.165116797900263,
+        "colSpan": 3.171858923884514,
+        "rowSpan": 0.30292913385826775
+      }
+    },
+    {
+      "id": "e33",
+      "name": "Rectangle 32",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "September sessions\n(OpCo & Board)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "September sessions",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "(OpCo & Board)",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 5.079452099737533,
+        "y": 2.3714884076990375,
+        "w": 2.164834864391951,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.3334247047244085,
+        "row": 2.8457860892388447,
+        "colSpan": 2.2730766076115483,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Oval 7",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 2.4669444444444446,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 2.9603333333333337,
+        "colSpan": 0.315,
+        "rowSpan": 0.36
+      }
+    },
+    {
+      "id": "e30",
+      "name": "Graphic 29",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image285.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.7295997375328085,
+        "y": 2.5054680664916886,
+        "w": 0.22295166229221347,
+        "h": 0.22295166229221347
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.966079724409449,
+        "row": 3.0065616797900265,
+        "colSpan": 0.23409924540682414,
+        "rowSpan": 0.26754199475065615
+      }
+    },
+    {
+      "id": "e52",
+      "name": "Rectangle 51",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Shared a primer on digital assets and ongoing U.S. developments",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Shared a primer on digital assets and ongoing U.S. developments",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 7.250139982502187,
+        "y": 2.363500656167979,
+        "w": 5.663103674540682,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.612646981627296,
+        "row": 2.836200787401575,
+        "colSpan": 5.946258858267717,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e57",
+      "name": "Rectangle 56",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Kick-Off\n(November 17th)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Kick-Off",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "(November 17th)",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 5.079452099737533,
+        "y": 3.0806124234470693,
+        "w": 2.164834864391951,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.3334247047244085,
+        "row": 3.696734908136483,
+        "colSpan": 2.2730766076115483,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e63",
+      "name": "Oval 62",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 3.176068460192476,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 3.811282152230971,
+        "colSpan": 0.315,
+        "rowSpan": 0.36
+      }
+    },
+    {
+      "id": "e64",
+      "name": "Graphic 63",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image285.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.7295997375328085,
+        "y": 3.21459208223972,
+        "w": 0.22295166229221347,
+        "h": 0.22295166229221347
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.966079724409449,
+        "row": 3.857510498687664,
+        "colSpan": 0.23409924540682414,
+        "rowSpan": 0.26754199475065615
+      }
+    },
+    {
+      "id": "e59",
+      "name": "Rectangle 58",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Kicked off Digital Assets Strategy approach with broader group",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Kicked off Digital Assets Strategy approach with broader group",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 7.250139982502187,
+        "y": 3.0726246719160106,
+        "w": 5.663103674540682,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.612646981627296,
+        "row": 3.6871496062992124,
+        "colSpan": 5.946258858267717,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e66",
+      "name": "Rectangle 65",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Nov & Dec Sessions\n(Nov OpCo & Dec BoD)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Nov & Dec Sessions",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "(Nov OpCo & Dec BoD)",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 5.079452099737533,
+        "y": 3.7897364391951007,
+        "w": 2.164834864391951,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.3334247047244085,
+        "row": 4.547683727034121,
+        "colSpan": 2.2730766076115483,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e69",
+      "name": "Oval 68",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 3.8851924759405074,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 4.66223097112861,
+        "colSpan": 0.315,
+        "rowSpan": 0.36
+      }
+    },
+    {
+      "id": "e70",
+      "name": "Graphic 69",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image285.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.7295997375328085,
+        "y": 3.9237160979877514,
+        "w": 0.22295166229221347,
+        "h": 0.22295166229221347
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.966079724409449,
+        "row": 4.708459317585302,
+        "colSpan": 0.23409924540682414,
+        "rowSpan": 0.26754199475065615
+      }
+    },
+    {
+      "id": "e68",
+      "name": "Rectangle 67",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Provided an update on the market landscape, recent Canadian regulatory developments, the advocacy plan for Canada, and the digital assets strategy approach",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Provided an update on the market landscape, recent Canadian regulatory developments, the advocacy plan for Canada, and the digital assets strategy approach",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 7.250139982502187,
+        "y": 3.781748687664042,
+        "w": 5.663103674540682,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.612646981627296,
+        "row": 4.538098425196851,
+        "colSpan": 5.946258858267717,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e72",
+      "name": "Rectangle 71",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Working Session\nDecember 11th ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Working Session",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "December 11th ",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 5.079452099737533,
+        "y": 4.498860454943132,
+        "w": 2.164834864391951,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.3334247047244085,
+        "row": 5.398632545931759,
+        "colSpan": 2.2730766076115483,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e73",
+      "name": "Group 72",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image285.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 4.594316491688539,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 5.513179790026246,
+        "colSpan": 0.315,
+        "rowSpan": 0.36
+      }
+    },
+    {
+      "id": "e75",
+      "name": "Oval 74",
+      "hidden": false,
+      "parentId": "e73",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 4.594316491688539,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 5.513179790026246,
+        "colSpan": 0.315,
+        "rowSpan": 0.36
+      }
+    },
+    {
+      "id": "e76",
+      "name": "Graphic 75",
+      "hidden": false,
+      "parentId": "e73",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image285.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.7296002019831525,
+        "y": 4.632840578186127,
+        "w": 0.22295182700482402,
+        "h": 0.22295182700482402
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.96608021208231,
+        "row": 5.559408693823353,
+        "colSpan": 0.2340994183550652,
+        "rowSpan": 0.26754219240578886
+      }
+    },
+    {
+      "id": "e74",
+      "name": "Rectangle 73",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Gain perspectives from across the Bank and identify priority digital asset use cases for BNS to outline next steps",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Gain perspectives from across the Bank and identify priority digital asset use cases for BNS to outline next steps",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5,
+              10.5,
+              10.5,
+              10.5,
+              10.5,
+              10.5
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 7.250139982502187,
+        "y": 4.490872703412074,
+        "w": 5.663103674540682,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.612646981627296,
+        "row": 5.389047244094488,
+        "colSpan": 5.946258858267717,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e78",
+      "name": "Rectangle 77",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "SteerCo #2\n(Mid Jan)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "SteerCo #2",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "(Mid Jan)",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 5.079452099737533,
+        "y": 5.207984470691164,
+        "w": 2.164834864391951,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.3334247047244085,
+        "row": 6.249581364829396,
+        "colSpan": 2.2730766076115483,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e79",
+      "name": "Group 78",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image285.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 5.30344050743657,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 6.364128608923885,
+        "colSpan": 0.315,
+        "rowSpan": 0.36
+      }
+    },
+    {
+      "id": "e81",
+      "name": "Oval 80",
+      "hidden": false,
+      "parentId": "e79",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 5.30344050743657,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 6.364128608923885,
+        "colSpan": 0.315,
+        "rowSpan": 0.36
+      }
+    },
+    {
+      "id": "e82",
+      "name": "Graphic 81",
+      "hidden": false,
+      "parentId": "e79",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image285.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.7296002019831525,
+        "y": 5.341964593934159,
+        "w": 0.22295182700482402,
+        "h": 0.22295182700482402
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.96608021208231,
+        "row": 6.41035751272099,
+        "colSpan": 0.2340994183550652,
+        "rowSpan": 0.26754219240578886
+      }
+    },
+    {
+      "id": "e80",
+      "name": "Rectangle 79",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Discuss plan for developing proof-of-concept for selected use case(s)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Discuss plan for developing proof-of-concept for selected use case(s)",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 7.250139982502187,
+        "y": 5.21123031496063,
+        "w": 5.663103674540682,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.612646981627296,
+        "row": 6.253476377952755,
+        "colSpan": 5.946258858267717,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e84",
+      "name": "Rectangle 83",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "OpCo Subcommittee\n(End of Jan)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "OpCo Subcommittee",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "(End of Jan)",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 5.079452099737533,
+        "y": 5.917106299212598,
+        "w": 2.164834864391951,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.3334247047244085,
+        "row": 7.100527559055118,
+        "colSpan": 2.2730766076115483,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e85",
+      "name": "Group 84",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image285.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 6.012562335958005,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 7.215074803149606,
+        "colSpan": 0.315,
+        "rowSpan": 0.36
+      }
+    },
+    {
+      "id": "e87",
+      "name": "Oval 86",
+      "hidden": false,
+      "parentId": "e85",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 6.012562335958005,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 7.215074803149606,
+        "colSpan": 0.315,
+        "rowSpan": 0.36
+      }
+    },
+    {
+      "id": "e88",
+      "name": "Graphic 87",
+      "hidden": false,
+      "parentId": "e85",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image285.svg",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.7296002019831525,
+        "y": 6.051086422455593,
+        "w": 0.22295182700482402,
+        "h": 0.22295182700482402
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.96608021208231,
+        "row": 7.261303706946712,
+        "colSpan": 0.2340994183550652,
+        "rowSpan": 0.26754219240578886
+      }
+    },
+    {
+      "id": "e86",
+      "name": "Rectangle 85",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Provide progress update and review go-forward Digital Assets Strategy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Provide progress update and review go-forward Digital Assets Strategy",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 7.250139982502187,
+        "y": 5.9091185476815395,
+        "w": 5.663103674540682,
+        "h": 0.490913167104112
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.612646981627296,
+        "row": 7.090942257217847,
+        "colSpan": 5.946258858267717,
+        "rowSpan": 0.5890958005249344
+      }
+    },
+    {
+      "id": "e98",
+      "name": "Text Placeholder 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Digital assets TIMELINE",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Digital assets TIMELINE",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 4.691076115485564,
+        "y": 2.0013910761154854,
+        "w": 2.451781496062992,
+        "h": 0.30500328083989503
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9256299212598424,
+        "row": 2.401669291338582,
+        "colSpan": 2.5743705708661415,
+        "rowSpan": 0.36600393700787404
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Text Placeholder 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "TOPICS",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "TOPICS",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide16.xml",
+      "relations": [],
+      "box": {
+        "x": 7.4736843832021,
+        "y": 2.0013910761154854,
+        "w": 1.6567508748906388,
+        "h": 0.30500328083989503
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.847368602362205,
+        "row": 2.401669291338582,
+        "colSpan": 1.7395884186351704,
+        "rowSpan": 0.36600393700787404
+      }
+    }
+  ]
+}

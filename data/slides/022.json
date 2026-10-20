@@ -1,0 +1,1734 @@
+{
+  "number": 22,
+  "part": "ppt/slides/slide22.xml",
+  "hidden": false,
+  "title": "Timeline | We will work collaboratively with the businesses over the next ~4 months to complete program design",
+  "layout": "ppt/slideLayouts/slideLayout23.xml",
+  "master": "ppt/slideMasters/slideMaster2.xml",
+  "elements": [
+    {
+      "id": "e33",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [
+        {
+          "id": "rId3",
+          "target": "ppt/embeddings/oleObject31.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        },
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag65.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/media/image278.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e28",
+      "name": "Rectangle 27",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Today",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Today",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 4.272952755905512,
+        "y": 6.658404418197725,
+        "w": 0.9025328083989501,
+        "h": 0.2285411198600175
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.486600393700788,
+        "row": 7.99008530183727,
+        "colSpan": 0.9476594488188976,
+        "rowSpan": 0.274249343832021
+      }
+    },
+    {
+      "id": "e55",
+      "name": "Rectangle 54",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "INTERVIEWS",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "INTERVIEWS",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 3.594887357830271,
+        "y": 2.350470253718285,
+        "w": 1.0674835958005249,
+        "h": 4.352654199475066
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.7746317257217847,
+        "row": 2.8205643044619424,
+        "colSpan": 1.120857775590551,
+        "rowSpan": 5.22318503937008
+      }
+    },
+    {
+      "id": "e25",
+      "name": "Rectangle 24",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "HOLIDAYS",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "HOLIDAYS",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 7.372110673665792,
+        "y": 2.3504713473315837,
+        "w": 1.0674835958005249,
+        "h": 4.352654199475066
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.740716207349081,
+        "row": 2.8205656167979005,
+        "colSpan": 1.120857775590551,
+        "rowSpan": 5.22318503937008
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout23.xml",
+      "kind": "shape",
+      "text": "Timeline | We will work collaboratively with the businesses over the next ~4 months to complete program design",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Timeline | We will work collaboratively with the businesses over the next ~4 months to complete program design",
+            "size": 24.0,
+            "runSizes": [
+              24.0,
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout23.xml",
+      "kind": "shape",
+      "text": "22",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "22",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          }
+        ],
+        "size": 10.5
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e15",
+      "name": "Straight Connector 14",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 0.579673009623797,
+        "y": 4.211194225721785,
+        "w": 12.2,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6086566601049868,
+        "row": 5.0534330708661415,
+        "colSpan": 12.809999999999999,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e20",
+      "name": "Rectangle 19",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Quick Wins",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Quick Wins",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642333770778653,
+        "y": 3.1320352143482064,
+        "w": 1.2738615485564304,
+        "h": 0.9752941819772528
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924450459317585,
+        "row": 3.7584422572178475,
+        "colSpan": 1.337554625984252,
+        "rowSpan": 1.1703530183727033
+      }
+    },
+    {
+      "id": "e21",
+      "name": "Rectangle 20",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Design Operating Model",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Design Operating Model",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642333770778653,
+        "y": 4.31505905511811,
+        "w": 1.2738615485564304,
+        "h": 0.9752941819772528
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924450459317585,
+        "row": 5.1780708661417325,
+        "colSpan": 1.337554625984252,
+        "rowSpan": 1.1703530183727033
+      }
+    },
+    {
+      "id": "e22",
+      "name": "Rectangle 21",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Design Governance Model",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Design Governance Model",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642333770778653,
+        "y": 5.516881014873141,
+        "w": 1.2738615485564304,
+        "h": 0.9752941819772528
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924450459317585,
+        "row": 6.620257217847769,
+        "colSpan": 1.337554625984252,
+        "rowSpan": 1.1703530183727033
+      }
+    },
+    {
+      "id": "e23",
+      "name": "Straight Connector 22",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564235564304462,
+        "y": 5.403617672790901,
+        "w": 12.2,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.592447342519685,
+        "row": 6.484341207349081,
+        "colSpan": 12.809999999999999,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e24",
+      "name": "Rectangle 23",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Regional Managers onboarded",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Regional Managers onboarded",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 6.1816185476815395,
+        "y": 3.5243449256342956,
+        "w": 1.7811865704286964,
+        "h": 0.3041885389326334
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.490699475065616,
+        "row": 4.229213910761154,
+        "colSpan": 1.8702458989501312,
+        "rowSpan": 0.3650262467191601
+      }
+    },
+    {
+      "id": "e14",
+      "name": "Rectangle 13",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Program management",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Program management",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642333770778653,
+        "y": 2.3854155730533684,
+        "w": 1.2738615485564304,
+        "h": 0.5505282152230971
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924450459317585,
+        "row": 2.8624986876640417,
+        "colSpan": 1.337554625984252,
+        "rowSpan": 0.6606338582677166
+      }
+    },
+    {
+      "id": "e30",
+      "name": "Table 29",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "table",
+      "text": "October\n\n\nNovember\n\n\n\nDecember\n\n\n\n\nJanuary\n\n\n\nFebruary\n\n\n\n14\n21\n28\n4\n11\n18\n25\n2\n9\n16\n23\n30\n6\n13\n20\n27\n3\n10\n17\n24",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 1.9640135608048994,
+        "y": 1.7854461942257218,
+        "w": 10.800218722659668,
+        "h": 0.5583333333333333
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.062214238845144,
+        "row": 2.142535433070866,
+        "colSpan": 11.340229658792651,
+        "rowSpan": 0.67
+      },
+      "headerFontSizes": [
+        11.0,
+        11.0,
+        11.0,
+        10.5,
+        11.0,
+        11.0,
+        11.0,
+        10.5,
+        11.0,
+        11.0,
+        11.0,
+        10.5,
+        10.5,
+        11.0,
+        11.0,
+        11.0,
+        10.5,
+        11.0,
+        10.5,
+        10.5
+      ],
+      "cells": [
+        [
+          "October",
+          "",
+          "",
+          "November",
+          "",
+          "",
+          "",
+          "December",
+          "",
+          "",
+          "",
+          "",
+          "January",
+          "",
+          "",
+          "",
+          "February",
+          "",
+          "",
+          ""
+        ],
+        [
+          "14",
+          "21",
+          "28",
+          "4",
+          "11",
+          "18",
+          "25",
+          "2",
+          "9",
+          "16",
+          "23",
+          "30",
+          "6",
+          "13",
+          "20",
+          "27",
+          "3",
+          "10",
+          "17",
+          "24"
+        ]
+      ]
+    },
+    {
+      "id": "e31",
+      "name": "Diamond 30",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 2.1679516622922135,
+        "y": 2.5684886264216975,
+        "w": 0.17985892388451444,
+        "h": 0.17985892388451444
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.2763492454068244,
+        "row": 3.082186351706037,
+        "colSpan": 0.18885187007874016,
+        "rowSpan": 0.21583070866141732
+      }
+    },
+    {
+      "id": "e32",
+      "name": "Arrow: Pentagon 31",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Wealth training for Comm. bankers",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Wealth training for Comm. bankers",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 5.854458661417323,
+        "y": 3.139058398950131,
+        "w": 1.6143952318460193,
+        "h": 0.33460739282589674
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.147181594488188,
+        "row": 3.766870078740157,
+        "colSpan": 1.69511499343832,
+        "rowSpan": 0.4015288713910761
+      }
+    },
+    {
+      "id": "e37",
+      "name": "Arrow: Pentagon 36",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "     Leads Identification & Analysis\nData gathering for analysis (launched)\nAnalysis for leads identification and opp. sizing ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "     Leads Identification & Analysis",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Data gathering for analysis (launched)",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0
+            ]
+          },
+          {
+            "text": "Analysis for leads identification and opp. sizing ",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 1.971813210848644,
+        "y": 3.607329396325459,
+        "w": 3.203672353455818,
+        "h": 0.5
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.070403871391076,
+        "row": 4.328795275590551,
+        "colSpan": 3.3638559711286087,
+        "rowSpan": 0.6
+      }
+    },
+    {
+      "id": "e53",
+      "name": "Group 52",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 9.808964348206475,
+        "y": 6.706201881014874,
+        "w": 2.953883420822397,
+        "h": 0.2025688976377953
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.299412565616798,
+        "row": 8.047442257217849,
+        "colSpan": 3.101577591863517,
+        "rowSpan": 0.24308267716535434
+      }
+    },
+    {
+      "id": "e16",
+      "name": "Diamond 15",
+      "hidden": false,
+      "parentId": "e53",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 9.808964348206475,
+        "y": 6.717557961504812,
+        "w": 0.17985892388451444,
+        "h": 0.17985892388451444
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.299412565616798,
+        "row": 8.061069553805774,
+        "colSpan": 0.18885187007874016,
+        "rowSpan": 0.21583070866141732
+      }
+    },
+    {
+      "id": "e17",
+      "name": "TextBox 16",
+      "hidden": false,
+      "parentId": "e53",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Key meetings",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Key meetings",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 10.067880577427822,
+        "y": 6.7370089676290466,
+        "w": 1.4495964566929134,
+        "h": 0.1514643482064742
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.571274606299212,
+        "row": 8.084410761154857,
+        "colSpan": 1.522076279527559,
+        "rowSpan": 0.18175721784776905
+      }
+    },
+    {
+      "id": "e70",
+      "name": "Star: 5 Points 69",
+      "hidden": false,
+      "parentId": "e53",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 11.038850612423447,
+        "y": 6.706201881014874,
+        "w": 0.2025688976377953,
+        "h": 0.2025688976377953
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.59079314304462,
+        "row": 8.047442257217849,
+        "colSpan": 0.21269734251968506,
+        "rowSpan": 0.24308267716535434
+      }
+    },
+    {
+      "id": "e39",
+      "name": "TextBox 38",
+      "hidden": false,
+      "parentId": "e53",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Already in progress",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Already in progress",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 11.313251312335957,
+        "y": 6.7370089676290466,
+        "w": 1.4495964566929134,
+        "h": 0.1514643482064742
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.878913877952755,
+        "row": 8.084410761154857,
+        "colSpan": 1.522076279527559,
+        "rowSpan": 0.18175721784776905
+      }
+    },
+    {
+      "id": "e40",
+      "name": "Star: 5 Points 39",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 5.932863079615048,
+        "y": 3.575155293088364,
+        "w": 0.2025688976377953,
+        "h": 0.2025688976377953
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.2295062335958,
+        "row": 4.290186351706036,
+        "colSpan": 0.21269734251968506,
+        "rowSpan": 0.24308267716535434
+      }
+    },
+    {
+      "id": "e41",
+      "name": "Star: 5 Points 40",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 5.929399606299213,
+        "y": 3.205077646544182,
+        "w": 0.2025688976377953,
+        "h": 0.2025688976377953
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.225869586614174,
+        "row": 3.846093175853018,
+        "colSpan": 0.21269734251968506,
+        "rowSpan": 0.24308267716535434
+      }
+    },
+    {
+      "id": "e42",
+      "name": "Rectangle 41",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Program Kick-off",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Program Kick-off",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 2.205404636920385,
+        "y": 2.544146981627297,
+        "w": 0.9025328083989501,
+        "h": 0.2285411198600175
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.315674868766404,
+        "row": 3.052976377952756,
+        "colSpan": 0.9476594488188976,
+        "rowSpan": 0.274249343832021
+      }
+    },
+    {
+      "id": "e45",
+      "name": "Diamond 44",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 5.407501093613298,
+        "y": 2.5684886264216975,
+        "w": 0.17985892388451444,
+        "h": 0.17985892388451444
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.677876148293963,
+        "row": 3.082186351706037,
+        "colSpan": 0.18885187007874016,
+        "rowSpan": 0.21583070866141732
+      }
+    },
+    {
+      "id": "e46",
+      "name": "Rectangle 45",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "SteerCo #1: Diagnostic \nand quick wins",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "SteerCo #1: Diagnostic ",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0,
+              9.0
+            ]
+          },
+          {
+            "text": "and quick wins",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 3.8860126859142605,
+        "y": 2.5021292650918636,
+        "w": 1.5518602362204725,
+        "h": 0.31257655293088366
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.0803133202099735,
+        "row": 3.0025551181102363,
+        "colSpan": 1.629453248031496,
+        "rowSpan": 0.37509186351706036
+      }
+    },
+    {
+      "id": "e47",
+      "name": "Diamond 46",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 10.196181102362205,
+        "y": 2.5684886264216975,
+        "w": 0.17985892388451444,
+        "h": 0.17985892388451444
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.705990157480315,
+        "row": 3.082186351706037,
+        "colSpan": 0.18885187007874016,
+        "rowSpan": 0.21583070866141732
+      }
+    },
+    {
+      "id": "e4",
+      "name": "Oval 3",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "1",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "1",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 1.971813210848644,
+        "y": 3.6243558617672793,
+        "w": 0.17075240594925634,
+        "h": 0.17075240594925634
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.070403871391076,
+        "row": 4.3492270341207355,
+        "colSpan": 0.17929002624671914,
+        "rowSpan": 0.20490288713910762
+      }
+    },
+    {
+      "id": "e49",
+      "name": "Diamond 48",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 12.45251312335958,
+        "y": 2.5684886264216975,
+        "w": 0.17985892388451444,
+        "h": 0.17985892388451444
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 13.075138779527558,
+        "row": 3.082186351706037,
+        "colSpan": 0.18885187007874016,
+        "rowSpan": 0.21583070866141732
+      }
+    },
+    {
+      "id": "e9",
+      "name": "Arrow: Pentagon 8",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "      Joint Client Service Model\nDesign joint engagement model (pricing, co-location etc.) to serve common clients\nDefine incentive model aligned with new engagement model",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "      Joint Client Service Model",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Design joint engagement model (pricing, co-location etc.) to serve common clients",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0
+            ]
+          },
+          {
+            "text": "Define incentive model aligned with new engagement model",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 2.5435411198600173,
+        "y": 4.306856955380577,
+        "w": 6.8774628171478565,
+        "h": 0.48
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.670718175853018,
+        "row": 5.168228346456693,
+        "colSpan": 7.221335958005249,
+        "rowSpan": 0.5760000000000001
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Arrow: Pentagon 9",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "    Technology & Data Enablers\nDetermine required tech tools and data needs",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "    Technology & Data Enablers",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Determine required tech tools and data needs",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 2.542652012248469,
+        "y": 4.8320199037620295,
+        "w": 6.877461723534558,
+        "h": 0.48
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.669784612860892,
+        "row": 5.798423884514435,
+        "colSpan": 7.221334809711285,
+        "rowSpan": 0.5760000000000001
+      }
+    },
+    {
+      "id": "e11",
+      "name": "Arrow: Pentagon 10",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "     Program Governance\nSet up reporting / performance tracking with KPIs\nStand-up governance structure to implement program",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "     Program Governance",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Set up reporting / performance tracking with KPIs",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Stand-up governance structure to implement program",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 9.300862860892389,
+        "y": 5.498081802274716,
+        "w": 3.527263779527559,
+        "h": 0.48
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.765906003937008,
+        "row": 6.597698162729659,
+        "colSpan": 3.7036269685039365,
+        "rowSpan": 0.5760000000000001
+      }
+    },
+    {
+      "id": "e12",
+      "name": "Arrow: Pentagon 11",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "     Change Management\nDevelop training for Wealth & Comm. RMs \nEstablish clear communication strategy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "     Change Management",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Develop training for Wealth & Comm. RMs ",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Establish clear communication strategy",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 9.300862860892389,
+        "y": 6.012175196850394,
+        "w": 3.527262685914261,
+        "h": 0.48
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.765906003937008,
+        "row": 7.214610236220472,
+        "colSpan": 3.703625820209974,
+        "rowSpan": 0.5760000000000001
+      }
+    },
+    {
+      "id": "e18",
+      "name": "Straight Connector 17",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 0.579673009623797,
+        "y": 3.028170384951881,
+        "w": 12.2,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6086566601049868,
+        "row": 3.633804461942257,
+        "colSpan": 12.809999999999999,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e5",
+      "name": "Oval 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "3",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "3",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 2.542250656167979,
+        "y": 4.827158792650919,
+        "w": 0.17075240594925634,
+        "h": 0.17075240594925634
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.6693631889763783,
+        "row": 5.792590551181102,
+        "colSpan": 0.17929002624671914,
+        "rowSpan": 0.20490288713910762
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Oval 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "5",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "5",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 9.310463692038494,
+        "y": 6.024746281714785,
+        "w": 0.17075240594925634,
+        "h": 0.17075240594925634
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.775986876640419,
+        "row": 7.229695538057743,
+        "colSpan": 0.17929002624671914,
+        "rowSpan": 0.20490288713910762
+      }
+    },
+    {
+      "id": "e19",
+      "name": "Oval 18",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "2",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "2",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 2.542250656167979,
+        "y": 4.312037401574803,
+        "w": 0.17075240594925634,
+        "h": 0.17075240594925634
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.6693631889763783,
+        "row": 5.174444881889763,
+        "colSpan": 0.17929002624671914,
+        "rowSpan": 0.20490288713910762
+      }
+    },
+    {
+      "id": "e6",
+      "name": "Oval 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "4",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "4",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 9.310463692038494,
+        "y": 5.519694881889764,
+        "w": 0.17075240594925634,
+        "h": 0.17075240594925634
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.775986876640419,
+        "row": 6.623633858267716,
+        "colSpan": 0.17929002624671914,
+        "rowSpan": 0.20490288713910762
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Rectangle 7",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "SteerCo #2: Operating Model Design",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "SteerCo #2: Operating Model Design",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 8.672484689413823,
+        "y": 2.5021292650918636,
+        "w": 1.5518602362204725,
+        "h": 0.31257655293088366
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.106108923884513,
+        "row": 3.0025551181102363,
+        "colSpan": 1.629453248031496,
+        "rowSpan": 0.37509186351706036
+      }
+    },
+    {
+      "id": "e13",
+      "name": "Rectangle 12",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "SteerCo #3: KPIs and Change management",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "SteerCo #3: KPIs and Change management",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 11.080511811023623,
+        "y": 2.5021292650918636,
+        "w": 1.5518602362204725,
+        "h": 0.31257655293088366
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.634537401574804,
+        "row": 3.0025551181102363,
+        "colSpan": 1.629453248031496,
+        "rowSpan": 0.37509186351706036
+      }
+    },
+    {
+      "id": "e26",
+      "name": "Straight Connector 25",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 4.732255030621173,
+        "y": 2.326395450568679,
+        "w": 0.0,
+        "h": 4.3
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.9688677821522305,
+        "row": 2.791674540682415,
+        "colSpan": 0.0,
+        "rowSpan": 5.16
+      }
+    },
+    {
+      "id": "e29",
+      "name": "Isosceles Triangle 28",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 4.643784995625547,
+        "y": 6.429080271216098,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.875974245406823,
+        "row": 7.714896325459318,
+        "colSpan": 0.21,
+        "rowSpan": 0.24000000000000002
+      }
+    },
+    {
+      "id": "e34",
+      "name": "Text Placeholder 33",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout23.xml",
+      "kind": "shape",
+      "text": "",
+      "placeholder": {
+        "type": "body",
+        "idx": "11"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide22.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642377515310586,
+        "y": 6.911537620297463,
+        "w": 11.614173228346457,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924496391076115,
+        "row": 8.293845144356956,
+        "colSpan": 12.19488188976378,
+        "rowSpan": 0.1889763779527559
+      }
+    }
+  ]
+}

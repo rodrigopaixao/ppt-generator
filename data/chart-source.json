@@ -1,0 +1,935 @@
+{
+  "ppt/charts/chart1.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            529.0,
+            409.0
+          ],
+          "color": "E1111A"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart2.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            939.0,
+            979.0
+          ],
+          "color": "E1111A"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart3.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            2315405.0,
+            2319670.699979454
+          ],
+          "color": "E1111A"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            136743.0,
+            123065.96206639847
+          ],
+          "color": "B10D13"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart4.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            1559.0,
+            1828.0
+          ],
+          "color": "E1111A"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart5.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            4749.0,
+            5317.92340420213,
+            5847.06285127866,
+            6060.970609889
+          ],
+          "color": "D8D6CA"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart6.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            120899.84660855251,
+            58668.487410677546,
+            48859.96483220472,
+            21496.202626360882,
+            41463.12993377979,
+            27909.686108720867
+          ],
+          "color": "EBDFD1"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            22622.619626622778,
+            28473.41838452618,
+            20205.46971454226,
+            13488.046690860112,
+            9348.572711287365,
+            11613.528377417788
+          ],
+          "color": "BCB8A4"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart7.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            29713.34505593176,
+            22000.22447528901,
+            19168.09457892177,
+            19014.17935575592,
+            6007.931460211756,
+            11152.680609076284
+          ],
+          "color": "B10D13"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            124837.36765311086,
+            70578.02386920573,
+            51816.45403868458,
+            20959.407385237013,
+            33475.027124097425,
+            24787.534138950206
+          ],
+          "color": null
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart8.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            50252.75917542744,
+            15460.286580118973,
+            23743.798870141047,
+            11597.964757379625,
+            44655.46784391485,
+            15944.62942871039
+          ],
+          "color": "D6D7D9"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            24897.003254891686,
+            6645.366455909312,
+            5751.805155449136,
+            2958.3598338882857,
+            6033.895768640803,
+            4682.554528788956
+          ],
+          "color": "C0C0C0"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart9.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            41.57652084226368,
+            53.004704927731574,
+            48.891683304776166,
+            49.7531815493853,
+            56.42361924960113,
+            57.311914205881195
+          ],
+          "color": "EBDFD1"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            47.5668582830894,
+            19.22561866555894,
+            31.031201920374414,
+            27.00319288100325,
+            23.76392389000874,
+            18.532742380988342
+          ],
+          "color": "BCB8A4"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            6.03076969153562,
+            3.791732147370075,
+            2.4989434193240845,
+            6.4485866046572475,
+            5.544904797852035,
+            4.339205200551466
+          ],
+          "color": "B10D13"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            4.825851183111296,
+            23.97789584477128,
+            17.578171355525342,
+            16.795144375353786,
+            14.26755206253809,
+            19.81613821257899
+          ],
+          "color": null
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart10.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            38.554626593690045,
+            15.762423974483161,
+            29.384068397298037,
+            29.255545624441375,
+            32.67477125350332,
+            26.27430310219963
+          ],
+          "color": "EBDFD1"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            40.15211304959716,
+            41.32941557974377,
+            44.169342380274436,
+            19.977573738522793,
+            25.277260674836516,
+            39.43172061096503
+          ],
+          "color": "BCB8A4"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            21.293260356712796,
+            42.90816044577307,
+            26.44658922242753,
+            50.766880637035825,
+            42.04796807166016,
+            34.29397628683534
+          ],
+          "color": "E1111A"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart11.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            11.130456135197722,
+            10.987734091567363
+          ],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            8.62073481911849,
+            10.794994632098737
+          ],
+          "color": "D9D9D9"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            14.046520317625127,
+            12.360395836977151
+          ],
+          "color": "F2F2F2"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            12.186228514977598,
+            13.260575106424543
+          ],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            14.694954967511409,
+            15.263463427156093
+          ],
+          "color": "D9D9D9"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            18.235521756423047,
+            17.704454078175512
+          ],
+          "color": "BFBFBF"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            21.085583489146607,
+            19.6283828276006
+          ],
+          "color": "A6A6A6"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart12.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            15.446858744527232,
+            14.124500549015506
+          ],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            7.682810476132429,
+            8.656680797650829
+          ],
+          "color": "D9D9D9"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            12.405190808492877,
+            13.324923264494453
+          ],
+          "color": "F2F2F2"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            13.57827082483859,
+            14.517385127035892
+          ],
+          "color": "D9D9D9"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            18.41122638552546,
+            15.114933521557617
+          ],
+          "color": "BFBFBF"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            14.043915484711222,
+            17.053791385373508
+          ],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            18.431727275772193,
+            17.207785354872197
+          ],
+          "color": "A6A6A6"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart13.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            18.3046729666425,
+            15.195025778390853
+          ],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            9.095652198100545,
+            9.448220920401345
+          ],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            10.003196810898007,
+            10.71140449843847
+          ],
+          "color": "D9D9D9"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            10.896038875127878,
+            11.389465112998899
+          ],
+          "color": "F2F2F2"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            13.140988897390315,
+            14.23042741873639
+          ],
+          "color": "D9D9D9"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            15.68601992274804,
+            15.864352975437724
+          ],
+          "color": "BFBFBF"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            22.873430329092702,
+            23.16110329559632
+          ],
+          "color": "A6A6A6"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart14.xml": [
+    {
+      "type": "scatterChart",
+      "grouping": "",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart15.xml": [
+    {
+      "type": "scatterChart",
+      "grouping": "",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart16.xml": [
+    {
+      "type": "scatterChart",
+      "grouping": "",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [],
+          "color": null
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart17.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            38.2,
+            37.6,
+            33.1,
+            18.1,
+            4.9
+          ],
+          "color": "D8D6CA"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart18.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            45.0,
+            30.0,
+            19.0,
+            19.0,
+            8.0
+          ],
+          "color": "D8D6CA"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart19.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            40.0,
+            32.0,
+            30.0,
+            30.0,
+            26.0,
+            24.0,
+            23.0,
+            23.0,
+            22.0,
+            21.0
+          ],
+          "color": "D8D6CA"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart20.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            2.793296089385475,
+            25.422022330697917
+          ],
+          "color": "BEBBA6"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            10.614525139664805,
+            18.793446763610582
+          ],
+          "color": "EBDFD1"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            44.506517690875235,
+            22.302860995715655
+          ],
+          "color": "D8D6CA"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            12.849162011173188,
+            15.275400806557304
+          ],
+          "color": "B10D13"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            29.2364990689013,
+            18.20626910341854
+          ],
+          "color": null
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart21.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            21.787709497206702,
+            10.665880515197554
+          ],
+          "color": "D8D6CA"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            23.091247672253264,
+            14.537098045397753
+          ],
+          "color": "F89FA3"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            7.635009310986963,
+            6.283121750144105
+          ],
+          "color": "B10D13"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            47.486033519553075,
+            68.51389968926058
+          ],
+          "color": null
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart22.xml": [
+    {
+      "type": "barChart",
+      "grouping": "clustered",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            66.0,
+            64.0,
+            56.99999999999999,
+            63.0,
+            56.00000000000001,
+            56.99999999999999,
+            51.0
+          ],
+          "color": "E1111A"
+        },
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            75.0,
+            66.0,
+            64.0,
+            78.0,
+            61.0,
+            65.0,
+            52.0
+          ],
+          "color": "D8D6CA"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart23.xml": [
+    {
+      "type": "barChart",
+      "grouping": "stacked",
+      "series": [
+        {
+          "name": "",
+          "labels": [],
+          "values": [
+            50.160000000000004,
+            20.51,
+            16.650000000000002,
+            16.470000000000002
+          ],
+          "color": "D8D6CA"
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart24.xml": [
+    {
+      "type": "doughnutChart",
+      "grouping": "",
+      "series": [
+        {
+          "name": "",
+          "labels": [
+            "Complete",
+            "In Progress",
+            "Not Started",
+            "Extra"
+          ],
+          "values": [
+            1.0,
+            8.0,
+            2.0,
+            11.0
+          ],
+          "color": null
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart25.xml": [
+    {
+      "type": "doughnutChart",
+      "grouping": "",
+      "series": [
+        {
+          "name": "",
+          "labels": [
+            "Complete",
+            "In Progress",
+            "Not Started",
+            "Extra"
+          ],
+          "values": [
+            1.0,
+            13.0,
+            6.0,
+            20.0
+          ],
+          "color": null
+        }
+      ]
+    }
+  ],
+  "ppt/charts/chart26.xml": [
+    {
+      "type": "doughnutChart",
+      "grouping": "",
+      "series": [
+        {
+          "name": "",
+          "labels": [
+            "Complete",
+            "In Progress",
+            "Not Started",
+            "Extra"
+          ],
+          "values": [
+            2.0,
+            27.0,
+            7.0,
+            36.0
+          ],
+          "color": null
+        }
+      ]
+    }
+  ]
+}

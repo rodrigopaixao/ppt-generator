@@ -1,0 +1,541 @@
+{
+  "number": 70,
+  "part": "ppt/slides/slide70.xml",
+  "hidden": false,
+  "title": "Risk Perspectives | Capital Management and Strategic Risk Oversight",
+  "layout": "ppt/slideLayouts/slideLayout86.xml",
+  "master": "ppt/slideMasters/slideMaster5.xml",
+  "elements": [
+    {
+      "id": "e9",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag447.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image278.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject58.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e4",
+      "name": "Title 3",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout86.xml",
+      "kind": "shape",
+      "text": "Risk Perspectives | Capital Management and Strategic Risk Oversight",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Risk Perspectives | Capital Management and Strategic Risk Oversight",
+            "size": 24.0,
+            "runSizes": [
+              24.0,
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Text Placeholder 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout86.xml",
+      "kind": "shape",
+      "text": "RISK PERSPECTIVE",
+      "placeholder": {
+        "type": "body",
+        "idx": "13"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "RISK PERSPECTIVE",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.37495297462817145,
+        "w": 5.905511811023622,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.4499435695538057,
+        "colSpan": 6.200787401574803,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Rectangle 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "\nBusiness Strategies and their alignment with Risk Appetite are reviewed/challenged by GRM Senior Management as part of the Bank’s Annual Planning Cycle. \nClear KPI Metrics: Second line has established metrics for monitoring the Bank’s execution against it strategic, financial, and capital plans, which feed into it’s view of the Bank’s Strategic Risk Profile. \nRisk Appetite: As of Q1/26, Strategic Risk profile remains within appetite, with risk appetite metrics within thresholds.\nStrategic Risk is assessed as Moderate High (Residual) driven by external geopolitical events (conflicts, trade barriers) and resulting macro-economic uncertainties. \n\n\n\n\n\n",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "Business Strategies and their alignment with Risk Appetite are reviewed/challenged by GRM Senior Management as part of the Bank’s Annual Planning Cycle. ",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Clear KPI Metrics: Second line has established metrics for monitoring the Bank’s execution against it strategic, financial, and capital plans, which feed into it’s view of the Bank’s Strategic Risk Profile. ",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Risk Appetite: As of Q1/26, Strategic Risk profile remains within appetite, with risk appetite metrics within thresholds.",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Strategic Risk is assessed as Moderate High (Residual) driven by external geopolitical events (conflicts, trade barriers) and resulting macro-economic uncertainties. ",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          },
+          {
+            "text": "",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          },
+          {
+            "text": "",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [],
+      "box": {
+        "x": 9.79928258967629,
+        "y": 1.8144050743657043,
+        "w": 3.5499234470691166,
+        "h": 4.887918853893264
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.289246719160104,
+        "row": 2.1772860892388453,
+        "colSpan": 3.727419619422572,
+        "rowSpan": 5.865502624671917
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Rectangle 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "BOARD INSIGHTS",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "BOARD INSIGHTS",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [],
+      "box": {
+        "x": 9.810627734033245,
+        "y": 1.964083552055993,
+        "w": 2.9628105861767278,
+        "h": 0.2806036745406824
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.301159120734907,
+        "row": 2.3569002624671915,
+        "colSpan": 3.1109511154855642,
+        "rowSpan": 0.3367244094488189
+      }
+    },
+    {
+      "id": "e5",
+      "name": "Shape 2582",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 30.0,
+            "runSizes": [
+              30.0,
+              29.99
+            ]
+          }
+        ],
+        "size": 30.0
+      },
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [],
+      "box": {
+        "x": 9.967760279965004,
+        "y": 1.9793307086614174,
+        "w": 0.22584864391951007,
+        "h": 0.25010936132983375
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.466148293963254,
+        "row": 2.3751968503937007,
+        "colSpan": 0.23714107611548554,
+        "rowSpan": 0.30013123359580046
+      }
+    },
+    {
+      "id": "e6",
+      "name": "TextBox 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "1. RoE: Return on Equity; RoRWA: Return on Risk Weighted Assets; RAM: Risk Adjusted Margin; Strategic Risk Appetite Metrics within the Bank’s Enterprise Risk Appetite Framework;2. NIAT: Net income after Taxes. PTPP: Pre-Tax Pre-Provision Earnings",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "1. RoE: Return on Equity; RoRWA: Return on Risk Weighted Assets; RAM: Risk Adjusted Margin; Strategic Risk Appetite Metrics within the Bank’s Enterprise Risk Appetite Framework;2. NIAT: Net income after Taxes. PTPP: Pre-Tax Pre-Provision Earnings",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0,
+              9.0,
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 6.899305555555555,
+        "w": 11.133681102362205,
+        "h": 0.4039063867016623
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 8.279166666666667,
+        "colSpan": 11.690365157480315,
+        "rowSpan": 0.48468766404199476
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Table 7",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "table",
+      "text": "STRATEGIC RISK OVERSIGHT",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 1.7956102362204724,
+        "w": 8.860576334208224,
+        "h": 0.33723425196850393
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 2.154732283464567,
+        "colSpan": 9.303605150918635,
+        "rowSpan": 0.4046811023622047
+      },
+      "headerFontSizes": [
+        11.0
+      ],
+      "cells": [
+        [
+          "STRATEGIC RISK OVERSIGHT"
+        ]
+      ]
+    },
+    {
+      "id": "e11",
+      "name": "TextBox 10",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "The Bank has an established Strategic Risk Management Framework (SRMF) that integrates inter-related enterprise-wide processes to manage and oversee strategic risk. \nThe SRMF requires the First Line to ensure regulatory capital consumption and growth in Risk Weighted Assets (RWAs) is supported by adequate revenue and profit generation. \nThe Bank’s Strategic Planning incorporates Capital and Financial planning including key capital metrics and constraints. Global Risk Management (GRM) Senior Management, challenges the Bank’s Business Strategies and Plans considering the Bank’s strategic and financial priorities, and established Risk Appetite Metrics. \nGRM monitors the Bank’s execution of its strategy, horizon scan of emerging threats, and business environment via the Top & Emerging Risk Assessment process. This enables the development of an independent second line view of the Bank’s Strategic Risk Profile. \nGRM monitors the following risk metrics to oversee the Business’ capital consumption and revenue/profit generation as part of its monitoring activities: \nRoE, RoRWA, RAM (Enterprise Risk Appetite Metrics)1\nStrategic KPIs (KPIs pertaining to the four pillars of the Bank’s strategy)\nNIAT and PTPP v/s Plan2 \nRoRWA and RWA growth v/s Plan\nThe Bank’s Strategic Risk Profile is reported to the Bank’s Risk Management Committee (RMC) and the Risk Committee of the Board on a quarterly basis via the Quarterly Risk Report (QRR).  ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "The Bank has an established Strategic Risk Management Framework (SRMF) that integrates inter-related enterprise-wide processes to manage and oversee strategic risk. ",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "The SRMF requires the First Line to ensure regulatory capital consumption and growth in Risk Weighted Assets (RWAs) is supported by adequate revenue and profit generation. ",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "The Bank’s Strategic Planning incorporates Capital and Financial planning including key capital metrics and constraints. Global Risk Management (GRM) Senior Management, challenges the Bank’s Business Strategies and Plans considering the Bank’s strategic and financial priorities, and established Risk Appetite Metrics. ",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "GRM monitors the Bank’s execution of its strategy, horizon scan of emerging threats, and business environment via the Top & Emerging Risk Assessment process. This enables the development of an independent second line view of the Bank’s Strategic Risk Profile. ",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "GRM monitors the following risk metrics to oversee the Business’ capital consumption and revenue/profit generation as part of its monitoring activities: ",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "RoE, RoRWA, RAM (Enterprise Risk Appetite Metrics)1",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0,
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Strategic KPIs (KPIs pertaining to the four pillars of the Bank’s strategy)",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          },
+          {
+            "text": "NIAT and PTPP v/s Plan2 ",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "RoRWA and RWA growth v/s Plan",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "The Bank’s Strategic Risk Profile is reported to the Bank’s Risk Management Committee (RMC) and the Risk Committee of the Board on a quarterly basis via the Quarterly Risk Report (QRR).  ",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 2.235282152230971,
+        "w": 8.670623359580052,
+        "h": 4.468213035870516
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 2.6823385826771657,
+        "colSpan": 9.104154527559054,
+        "rowSpan": 5.36185564304462
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Slide Number Placeholder 9",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout86.xml",
+      "kind": "shape",
+      "text": "70",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "70",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide70.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    }
+  ]
+}

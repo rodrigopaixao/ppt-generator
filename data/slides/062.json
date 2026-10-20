@@ -1,0 +1,1431 @@
+{
+  "number": 62,
+  "part": "ppt/slides/slide62.xml",
+  "hidden": false,
+  "title": "Mass Affluent Clients | Age segments have distinct motivations; younger clients show the strongest demand for advice and are the most willing to pay",
+  "layout": "ppt/slideLayouts/slideLayout85.xml",
+  "master": "ppt/slideMasters/slideMaster5.xml",
+  "elements": [
+    {
+      "id": "e14",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag442.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image275.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject53.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout85.xml",
+      "kind": "shape",
+      "text": "Mass Affluent Clients | Age segments have distinct motivations; younger clients show the strongest demand for advice and are the most willing to pay",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Mass Affluent Clients | Age segments have distinct motivations; younger clients show the strongest demand for advice and are the most willing to pay",
+            "size": 24.0,
+            "runSizes": [
+              24.0,
+              24.0,
+              24.0,
+              24.0,
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout85.xml",
+      "kind": "shape",
+      "text": "62",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "62",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e5",
+      "name": "Text Placeholder 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout85.xml",
+      "kind": "shape",
+      "text": "Client Segments",
+      "placeholder": {
+        "type": "body",
+        "idx": "13"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Client Segments",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.37495297462817145,
+        "w": 5.905511811023622,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.4499435695538057,
+        "colSpan": 6.200787401574803,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e6",
+      "name": "Text Placeholder 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout85.xml",
+      "kind": "shape",
+      "text": "Source: Curinos Channel Engagement Survey; 2025 ",
+      "placeholder": {
+        "type": "body",
+        "idx": "11"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Source: Curinos Channel Engagement Survey; 2025 ",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642377515310586,
+        "y": 6.911537620297463,
+        "w": 11.614173228346457,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924496391076115,
+        "row": 8.293845144356956,
+        "colSpan": 12.19488188976378,
+        "rowSpan": 0.1889763779527559
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Picture 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image356.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 7.86082239720035,
+        "y": 2.7563035870516184,
+        "w": 0.669915791776028,
+        "h": 0.6175393700787402
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.253863517060367,
+        "row": 3.307564304461942,
+        "colSpan": 0.7034115813648294,
+        "rowSpan": 0.7410472440944882
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Picture 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [
+        {
+          "id": "rId7",
+          "target": "ppt/media/image357.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 2.4763188976377952,
+        "y": 2.791408573928259,
+        "w": 0.5536482939632545,
+        "h": 0.5371205161854768
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.600134842519685,
+        "row": 3.3496902887139104,
+        "colSpan": 0.5813307086614172,
+        "rowSpan": 0.6445446194225722
+      }
+    },
+    {
+      "id": "e13",
+      "name": "Rectangle 12",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Above 35 years in age, with over $100M in income",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Above 35 years in age, with over $100M in income",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 8.631760717410323,
+        "y": 2.8124081364829396,
+        "w": 4.116816491688539,
+        "h": 0.505330271216098
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.063348753280838,
+        "row": 3.3748897637795277,
+        "colSpan": 4.322657316272966,
+        "rowSpan": 0.6063963254593177
+      }
+    },
+    {
+      "id": "e17",
+      "name": "Rectangle 16",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Below 35 years in age, with over $100M in income",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Below 35 years in age, with over $100M in income",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 3.130990813648294,
+        "y": 2.807303149606299,
+        "w": 4.116816491688539,
+        "h": 0.505330271216098
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.2875403543307082,
+        "row": 3.368763779527559,
+        "colSpan": 4.322657316272966,
+        "rowSpan": 0.6063963254593177
+      }
+    },
+    {
+      "id": "e22",
+      "name": "Rectangle 21",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.350012029746282,
+        "y": 2.176061898512686,
+        "w": 5.070903324584427,
+        "h": 3.9166535433070866
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.467512631233596,
+        "row": 2.611274278215223,
+        "colSpan": 5.324448490813648,
+        "rowSpan": 4.699984251968504
+      }
+    },
+    {
+      "id": "e23",
+      "name": "Rectangle 22",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.702417979002624,
+        "y": 2.181415135608049,
+        "w": 5.070903324584427,
+        "h": 3.911235783027122
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.087538877952756,
+        "row": 2.617698162729659,
+        "colSpan": 5.324448490813648,
+        "rowSpan": 4.6934829396325455
+      }
+    },
+    {
+      "id": "e26",
+      "name": "Rectangle 25",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "HENRY show strong demand and willingness to pay for advice, positioning them as a high opportunity segment",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "HENRY show strong demand and willingness to pay for advice, positioning them as a high opportunity segment",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.350012029746282,
+        "y": 6.031057524059492,
+        "w": 5.070903324584427,
+        "h": 0.5376181102362205
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.467512631233596,
+        "row": 7.237269028871391,
+        "colSpan": 5.324448490813648,
+        "rowSpan": 0.6451417322834646
+      }
+    },
+    {
+      "id": "e31",
+      "name": "Rectangle 30",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Affluent consumers are selective and self-reliant; advice must signal credibility and deliver tangible value",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Affluent consumers are selective and self-reliant; advice must signal credibility and deliver tangible value",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.702417979002624,
+        "y": 6.0361625109361325,
+        "w": 5.070903324584427,
+        "h": 0.5376181102362205
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.087538877952756,
+        "row": 7.24339501312336,
+        "colSpan": 5.324448490813648,
+        "rowSpan": 0.6451417322834646
+      }
+    },
+    {
+      "id": "e71",
+      "name": "Rectangle 70",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "MORE RESEARCH ON SEGMENT UNDERWAY",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "MORE RESEARCH ON SEGMENT UNDERWAY",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 10.392858705161855,
+        "y": -0.0023086176727909013,
+        "w": 2.9404746281714784,
+        "h": 0.38835958005249344
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.912501640419947,
+        "row": -0.002770341207349082,
+        "colSpan": 3.087498359580052,
+        "rowSpan": 0.4660314960629921
+      }
+    },
+    {
+      "id": "e4",
+      "name": "Rectangle 3",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Channel",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Channel",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 0.9478849518810148,
+        "y": 3.6665879265091865,
+        "w": 1.5818493000874891,
+        "h": 0.5729166666666666
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.9952791994750656,
+        "row": 4.399905511811024,
+        "colSpan": 1.6609417650918636,
+        "rowSpan": 0.6874999999999999
+      }
+    },
+    {
+      "id": "e20",
+      "name": "Rectangle 19",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Investments",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Investments",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 0.9052712160979878,
+        "y": 5.375813648293963,
+        "w": 1.5818493000874891,
+        "h": 0.5729166666666666
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.9505347769028871,
+        "row": 6.450976377952756,
+        "colSpan": 1.6609417650918636,
+        "rowSpan": 0.6874999999999999
+      }
+    },
+    {
+      "id": "e25",
+      "name": "Rectangle 24",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Advice",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Advice",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 0.9478849518810148,
+        "y": 4.52741469816273,
+        "w": 1.5818493000874891,
+        "h": 0.5729166666666666
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.9952791994750656,
+        "row": 5.432897637795276,
+        "colSpan": 1.6609417650918636,
+        "rowSpan": 0.6874999999999999
+      }
+    },
+    {
+      "id": "e64",
+      "name": "TextBox 63",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Branch channels are the most preferred channel for receiving advice (30%), followed by phone calls (18%)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Branch channels are the most preferred channel for receiving advice (30%), followed by phone calls (18%)",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.374755030621172,
+        "y": 3.714229002624672,
+        "w": 5.021416229221347,
+        "h": 0.4712237532808399
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.493492782152231,
+        "row": 4.457074803149607,
+        "colSpan": 5.272487040682415,
+        "rowSpan": 0.5654685039370079
+      }
+    },
+    {
+      "id": "e66",
+      "name": "TextBox 65",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Branch channels most preferred channel for advice (24%), with openness to virtual channels (i.e., video call, chat or text message)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Branch channels most preferred channel for advice (24%), with openness to virtual channels (i.e., video call, chat or text message)",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.727160979877516,
+        "y": 3.719333989501312,
+        "w": 5.021416229221347,
+        "h": 0.4712237532808399
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.11351902887139,
+        "row": 4.463200787401575,
+        "colSpan": 5.272487040682415,
+        "rowSpan": 0.5654685039370079
+      }
+    },
+    {
+      "id": "e67",
+      "name": "TextBox 66",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "65% of respondents created a financial plan in the last year\n50% willing to pay for personalized advice; highest of any segment\nHigh use of bank tools & resources relative to other segments (29%)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "65% of respondents created a financial plan in the last year",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0,
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "50% willing to pay for personalized advice; highest of any segment",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "High use of bank tools & resources relative to other segments (29%)",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.374756124234471,
+        "y": 4.359478346456693,
+        "w": 5.021416229221347,
+        "h": 0.9087893700787402
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.4934939304461943,
+        "row": 5.231374015748031,
+        "colSpan": 5.272487040682415,
+        "rowSpan": 1.090547244094488
+      }
+    },
+    {
+      "id": "e70",
+      "name": "Rectangle 69",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "PREFERENCES",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "PREFERENCES",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 0.2744006999125109,
+        "y": 3.245923009623797,
+        "w": 2.2659306649168856,
+        "h": 0.5729166666666666
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.2881207349081365,
+        "row": 3.8951076115485566,
+        "colSpan": 2.3792271981627295,
+        "rowSpan": 0.6874999999999999
+      }
+    },
+    {
+      "id": "e72",
+      "name": "TextBox 71",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Demand for low-cost, innovative investment vehicles tailored to individual values, preferences, and longer investment horizons",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Demand for low-cost, innovative investment vehicles tailored to individual values, preferences, and longer investment horizons",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.374756124234471,
+        "y": 5.423454724409448,
+        "w": 5.021416229221347,
+        "h": 0.4712237532808399
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.4934939304461943,
+        "row": 6.508145669291338,
+        "colSpan": 5.272487040682415,
+        "rowSpan": 0.5654685039370079
+      }
+    },
+    {
+      "id": "e73",
+      "name": "TextBox 72",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Strong preference for expertise (43%)\nValue having a single dedicated advisor (39%)\nMajority (57%) rely on independent research for financial decisions",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Strong preference for expertise (43%)",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Value having a single dedicated advisor (39%)",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Majority (57%) rely on independent research for financial decisions",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.727160979877516,
+        "y": 4.359478346456693,
+        "w": 5.021416229221347,
+        "h": 0.9087893700787402
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.11351902887139,
+        "row": 5.231374015748031,
+        "colSpan": 5.272487040682415,
+        "rowSpan": 1.090547244094488
+      }
+    },
+    {
+      "id": "e75",
+      "name": "TextBox 74",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Need for low-cost products that help achieve long‑term life goals, whether focused on capital growth or income payout",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Need for low-cost products that help achieve long‑term life goals, whether focused on capital growth or income payout",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.727160979877516,
+        "y": 5.4285597112860895,
+        "w": 5.021416229221347,
+        "h": 0.4712237532808399
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.11351902887139,
+        "row": 6.514271653543307,
+        "colSpan": 5.272487040682415,
+        "rowSpan": 0.5654685039370079
+      }
+    },
+    {
+      "id": "e84",
+      "name": "Group 83",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.608056649168854,
+        "y": 2.085531496062992,
+        "w": 5.289717847769029,
+        "h": 0.6110608048993875
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.988459481627296,
+        "row": 2.5026377952755903,
+        "colSpan": 5.55420374015748,
+        "rowSpan": 0.733272965879265
+      }
+    },
+    {
+      "id": "e85",
+      "name": "Rectangle 84",
+      "hidden": false,
+      "parentId": "e84",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Affluent",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Affluent",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.608056649168854,
+        "y": 2.085531496062992,
+        "w": 5.261000087748409,
+        "h": 0.4859913718122671
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.988459481627296,
+        "row": 2.5026377952755903,
+        "colSpan": 5.524050092135829,
+        "rowSpan": 0.5831896461747205
+      }
+    },
+    {
+      "id": "e86",
+      "name": "Isosceles Triangle 90",
+      "hidden": false,
+      "parentId": "e84",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 12.737030275216126,
+        "y": 2.5462102857734106,
+        "w": 0.13879879454295221,
+        "h": 0.1569352453010051
+      },
+      "rotation": 236.15245,
+      "grid": {
+        "col": 13.37388178897693,
+        "row": 3.055452342928093,
+        "colSpan": 0.14573873427009984,
+        "rowSpan": 0.18832229436120615
+      }
+    },
+    {
+      "id": "e87",
+      "name": "Isosceles Triangle 90",
+      "hidden": false,
+      "parentId": "e84",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.608020764342906,
+        "y": 2.578272748039318,
+        "w": 0.17135870575557535,
+        "h": 0.08943644366041315
+      },
+      "rotation": 245.7425,
+      "grid": {
+        "col": 7.988421802560051,
+        "row": 3.0939272976471814,
+        "colSpan": 0.1799266410433541,
+        "rowSpan": 0.10732373239249576
+      }
+    },
+    {
+      "id": "e88",
+      "name": "Group 87",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.2347812773403324,
+        "y": 2.0855358705161855,
+        "w": 5.326884295713036,
+        "h": 0.6110618985126859
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.346520341207349,
+        "row": 2.5026430446194223,
+        "colSpan": 5.593228510498687,
+        "rowSpan": 0.7332742782152231
+      }
+    },
+    {
+      "id": "e89",
+      "name": "Rectangle 88",
+      "hidden": false,
+      "parentId": "e88",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "HENRYs",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "HENRYs",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.2347812773403324,
+        "y": 2.0855358705161855,
+        "w": 5.2979647598768445,
+        "h": 0.48599224158925663
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.346520341207349,
+        "row": 2.5026430446194223,
+        "colSpan": 5.5628629978706865,
+        "rowSpan": 0.583190689907108
+      }
+    },
+    {
+      "id": "e90",
+      "name": "Isosceles Triangle 90",
+      "hidden": false,
+      "parentId": "e88",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.399791935373927,
+        "y": 2.5462154847017566,
+        "w": 0.13977401823550545,
+        "h": 0.15693552616744252
+      },
+      "rotation": 236.15245,
+      "grid": {
+        "col": 7.769781532142623,
+        "row": 3.0554585816421076,
+        "colSpan": 0.14676271914728073,
+        "rowSpan": 0.18832263140093103
+      }
+    },
+    {
+      "id": "e91",
+      "name": "Isosceles Triangle 90",
+      "hidden": false,
+      "parentId": "e88",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.2347451403815572,
+        "y": 2.5782780043497375,
+        "w": 0.17256270086467212,
+        "h": 0.08943660372449014
+      },
+      "rotation": 245.77955,
+      "grid": {
+        "col": 2.346482397400635,
+        "row": 3.093933605219685,
+        "colSpan": 0.18119083590790575,
+        "rowSpan": 0.10732392446938815
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Oval 9",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "1",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "1",
+            "size": 14.0,
+            "runSizes": [
+              14.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 0.12649278215223098,
+        "y": 0.7238079615048119,
+        "w": 0.33,
+        "h": 0.33
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.1328174212598425,
+        "row": 0.8685695538057743,
+        "colSpan": 0.34650000000000003,
+        "rowSpan": 0.396
+      }
+    },
+    {
+      "id": "e30",
+      "name": "Straight Connector 29",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.3777898075240596,
+        "y": 5.370708661417323,
+        "w": 5.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.4966792979002626,
+        "row": 6.444850393700788,
+        "colSpan": 5.25,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e35",
+      "name": "Straight Connector 34",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.757836832895888,
+        "y": 5.370708661417323,
+        "w": 5.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.145728674540683,
+        "row": 6.444850393700788,
+        "colSpan": 5.25,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e36",
+      "name": "Straight Connector 35",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.3777898075240596,
+        "y": 4.267620297462817,
+        "w": 5.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.4966792979002626,
+        "row": 5.12114435695538,
+        "colSpan": 5.25,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e37",
+      "name": "Straight Connector 36",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.757836832895888,
+        "y": 4.267620297462817,
+        "w": 5.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.145728674540683,
+        "row": 5.12114435695538,
+        "colSpan": 5.25,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e38",
+      "name": "Straight Connector 37",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 2.3777898075240596,
+        "y": 3.5083606736657917,
+        "w": 5.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.4966792979002626,
+        "row": 4.21003280839895,
+        "colSpan": 5.25,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e39",
+      "name": "Straight Connector 38",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide62.xml",
+      "relations": [],
+      "box": {
+        "x": 7.757836832895888,
+        "y": 3.5083606736657917,
+        "w": 5.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.145728674540683,
+        "row": 4.21003280839895,
+        "colSpan": 5.25,
+        "rowSpan": 0.0
+      }
+    }
+  ]
+}

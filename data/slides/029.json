@@ -1,0 +1,960 @@
+{
+  "number": 29,
+  "part": "ppt/slides/slide29.xml",
+  "hidden": false,
+  "title": "Approach | We are planning to run this with a more formal governance structure this year to ensure pace and appropriate leadership involvement",
+  "layout": "ppt/slideLayouts/slideLayout3.xml",
+  "master": "ppt/slideMasters/slideMaster1.xml",
+  "elements": [
+    {
+      "id": "e9",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag72.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image275.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject37.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout3.xml",
+      "kind": "shape",
+      "text": "29",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "29",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Approach | We are planning to run this with a more formal governance structure this year to ensure pace and appropriate leadership involvement",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Approach | We are planning to run this with a more formal governance structure this year to ensure pace and appropriate leadership involvement",
+            "size": 22.0,
+            "runSizes": [
+              22.0,
+              22.0
+            ]
+          }
+        ],
+        "size": 22.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e29",
+      "name": "Rectangle 28",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Workstream Teams",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Workstream Teams",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.614319772528434,
+        "y": 5.240364173228347,
+        "w": 8.417938538932633,
+        "h": 2.002597331583552
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6450357611548556,
+        "row": 6.288437007874016,
+        "colSpan": 8.838835465879264,
+        "rowSpan": 2.403116797900262
+      }
+    },
+    {
+      "id": "e30",
+      "name": "Rectangle 29",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Steering Committee",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Steering Committee",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.614319772528434,
+        "y": 2.381689632545932,
+        "w": 8.417938538932633,
+        "h": 1.2992125984251968
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6450357611548556,
+        "row": 2.8580275590551185,
+        "colSpan": 8.838835465879264,
+        "rowSpan": 1.5590551181102361
+      }
+    },
+    {
+      "id": "e41",
+      "name": "TextBox 40",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Jonathan Echeverria – MD & CIO, OCIO (P1,4,5) \nColleen Ward -  SVP, Enterprise Delivery Office (2)\nTy Panagoplos - EVP and Chief Technology Officer (2,3)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Jonathan Echeverria – MD & CIO, OCIO (P1,4,5) ",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Colleen Ward -  SVP, Enterprise Delivery Office (2)",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Ty Panagoplos - EVP and Chief Technology Officer (2,3)",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6143186789151356,
+        "y": 2.6395384951881016,
+        "w": 4.114852362204725,
+        "h": 1.0209853455818023
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6450346128608924,
+        "row": 3.167446194225722,
+        "colSpan": 4.320594980314961,
+        "rowSpan": 1.2251824146981627
+      }
+    },
+    {
+      "id": "e42",
+      "name": "TextBox 41",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Luis Alfredo - SVP & CIO, IB (2,3)\nCaren Morrison - SVP & CIO, Global Tech. and Enterprise Platforms (3)\nJoe Martinez -  EVP and Chief Security Officer (4)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Luis Alfredo - SVP & CIO, IB (2,3)",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Caren Morrison - SVP & CIO, Global Tech. and Enterprise Platforms (3)",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Joe Martinez -  EVP and Chief Security Officer (4)",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 4.917404855643045,
+        "y": 2.6395384951881016,
+        "w": 4.114852362204725,
+        "h": 1.0209853455818023
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.1632750984251965,
+        "row": 3.167446194225722,
+        "colSpan": 4.320594980314961,
+        "rowSpan": 1.2251824146981627
+      }
+    },
+    {
+      "id": "e47",
+      "name": "TextBox 46",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Guide scope, provide thought leadership, and shape content / recommendations across workstreams\nProposed cadence: 4-5 meetings between July and September Board",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Guide scope, provide thought leadership, and shape content / recommendations across workstreams",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Proposed cadence: 4-5 meetings between July and September Board",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 9.141843832020998,
+        "y": 2.367325021872266,
+        "w": 3.627252843394576,
+        "h": 1.3634656605424322
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.598936023622048,
+        "row": 2.840790026246719,
+        "colSpan": 3.8086154855643044,
+        "rowSpan": 1.6361587926509187
+      }
+    },
+    {
+      "id": "e48",
+      "name": "TextBox 47",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Provide core content and topic expertise, ensuring alignment with Pillar Sponsors and Steering Committee members\nProposed cadence: To be tailored to availability of content",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Provide core content and topic expertise, ensuring alignment with Pillar Sponsors and Steering Committee members",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Proposed cadence: To be tailored to availability of content",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 9.141843832020998,
+        "y": 5.240364173228347,
+        "w": 3.627252843394576,
+        "h": 1.7456856955380577
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.598936023622048,
+        "row": 6.288437007874016,
+        "colSpan": 3.8086154855643044,
+        "rowSpan": 2.094822834645669
+      }
+    },
+    {
+      "id": "e49",
+      "name": "TextBox 48",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Approve content and present at August TCoB and Sept Full  Board",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Approve content and present at August TCoB and Sept Full  Board",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 9.141843832020998,
+        "y": 1.6510126859142606,
+        "w": 3.627252843394576,
+        "h": 0.6326793525809273
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.598936023622048,
+        "row": 1.9812152230971127,
+        "colSpan": 3.8086154855643044,
+        "rowSpan": 0.7592152230971128
+      }
+    },
+    {
+      "id": "e50",
+      "name": "TextBox 49",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "WS2: Deep Dive on Falcon\nKevin Blagrove \nGeorge Adams \n“Big Rock” Sponsor Delegates as needed ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "WS2: Deep Dive on Falcon",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Kevin Blagrove ",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "George Adams ",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "“Big Rock” Sponsor Delegates as needed ",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 3.4270833333333335,
+        "y": 5.560018591426072,
+        "w": 2.7659306649168856,
+        "h": 1.2790365266841646
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.5984374999999997,
+        "row": 6.672022309711286,
+        "colSpan": 2.9042271981627295,
+        "rowSpan": 1.5348438320209974
+      }
+    },
+    {
+      "id": "e52",
+      "name": "Rectangle 51",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Executive Sponsor(s)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Executive Sponsor(s)",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.614319772528434,
+        "y": 1.6510126859142606,
+        "w": 8.417938538932633,
+        "h": 0.6326793525809273
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6450357611548556,
+        "row": 1.9812152230971127,
+        "colSpan": 8.838835465879264,
+        "rowSpan": 0.7592152230971128
+      }
+    },
+    {
+      "id": "e53",
+      "name": "TextBox 52",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Tim Clark - Group Head & CIO",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Tim Clark - Group Head & CIO",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0,
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6143186789151356,
+        "y": 1.9232261592300963,
+        "w": 4.114852362204725,
+        "h": 0.3029297900262467
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6450346128608924,
+        "row": 2.307871391076116,
+        "colSpan": 4.320594980314961,
+        "rowSpan": 0.36351574803149606
+      }
+    },
+    {
+      "id": "e54",
+      "name": "TextBox 53",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Jonathan Echeverria – MD & CIO, OCIO",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Jonathan Echeverria – MD & CIO, OCIO",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 4.917404855643045,
+        "y": 1.9232261592300963,
+        "w": 4.114852362204725,
+        "h": 0.3029297900262467
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.1632750984251965,
+        "row": 2.307871391076116,
+        "colSpan": 4.320594980314961,
+        "rowSpan": 0.36351574803149606
+      }
+    },
+    {
+      "id": "e55",
+      "name": "Rectangle 54",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Core Team",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Core Team",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.614319772528434,
+        "y": 3.778899825021872,
+        "w": 8.417938538932633,
+        "h": 1.3634656605424322
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6450357611548556,
+        "row": 4.534679790026247,
+        "colSpan": 8.838835465879264,
+        "rowSpan": 1.6361587926509187
+      }
+    },
+    {
+      "id": "e56",
+      "name": "TextBox 55",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Kelly Duffin – VP, Enterprise Strategy\nTom Deupmann – Director, Enterprise Strategy\nDalin Wang – Senior Manager, Enterprise Strategy\nDarcy Yang – Manager, Enterprise Strategy ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Kelly Duffin – VP, Enterprise Strategy",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Tom Deupmann – Director, Enterprise Strategy",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Dalin Wang – Senior Manager, Enterprise Strategy",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Darcy Yang – Manager, Enterprise Strategy ",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6143186789151356,
+        "y": 4.041797900262467,
+        "w": 4.114852362204725,
+        "h": 1.035009842519685
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6450346128608924,
+        "row": 4.8501574803149605,
+        "colSpan": 4.320594980314961,
+        "rowSpan": 1.242011811023622
+      }
+    },
+    {
+      "id": "e57",
+      "name": "TextBox 56",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Brandon Taylor - VP, Technology Strategy & Business Operations\nJeremy Pinto - Director, Technology Strategy & Business Operations",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Brandon Taylor - VP, Technology Strategy & Business Operations",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Jeremy Pinto - Director, Technology Strategy & Business Operations",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 4.917404855643045,
+        "y": 4.041797900262467,
+        "w": 4.114852362204725,
+        "h": 0.9648873578302712
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.1632750984251965,
+        "row": 4.8501574803149605,
+        "colSpan": 4.320594980314961,
+        "rowSpan": 1.1578648293963256
+      }
+    },
+    {
+      "id": "e58",
+      "name": "TextBox 57",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "WS3: Financials, KPI Results, Risk\nParul Gupta – VP & CFO Global Tech",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "WS3: Financials, KPI Results, Risk",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Parul Gupta – VP & CFO Global Tech",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 6.239846894138233,
+        "y": 5.560018591426072,
+        "w": 2.7659306649168856,
+        "h": 1.0069608486439194
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.551839238845144,
+        "row": 6.672022309711286,
+        "colSpan": 2.9042271981627295,
+        "rowSpan": 1.2083530183727031
+      }
+    },
+    {
+      "id": "e59",
+      "name": "TextBox 58",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "WS1: Pillar 2 - Accomplishments & Updates\nKaleigh Sainthill – VP, EDO Governance\nAlina Nitcheva – VP, Technology Governance & Performance IB\nTony Lau",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "WS1: Pillar 2 - Accomplishments & Updates",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Kaleigh Sainthill – VP, EDO Governance",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Alina Nitcheva – VP, Technology Governance & Performance IB",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          },
+          {
+            "text": "Tony Lau",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.614319772528434,
+        "y": 5.560018591426072,
+        "w": 2.7659306649168856,
+        "h": 1.6829429133858267
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6450357611548556,
+        "row": 6.672022309711286,
+        "colSpan": 2.9042271981627295,
+        "rowSpan": 2.0195314960629918
+      }
+    },
+    {
+      "id": "e60",
+      "name": "TextBox 59",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Drive process, problem-solving, and recommendations – in alignment with September Board Strategy standards\nProposed cadence: Every week through September Board",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Drive process, problem-solving, and recommendations – in alignment with September Board Strategy standards",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Proposed cadence: Every week through September Board",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 9.141843832020998,
+        "y": 3.771719160104987,
+        "w": 3.627252843394576,
+        "h": 1.3634645669291339
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.598936023622048,
+        "row": 4.5260629921259845,
+        "colSpan": 3.8086154855643044,
+        "rowSpan": 1.6361574803149606
+      }
+    },
+    {
+      "id": "e6",
+      "name": "Text Placeholder 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "High-level overview of September board",
+      "placeholder": {
+        "type": "body",
+        "idx": "13"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "High-level overview of September board",
+            "size": 10.51,
+            "runSizes": [
+              10.51
+            ]
+          }
+        ],
+        "size": 10.51
+      },
+      "sourcePart": "ppt/slides/slide29.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.37495297462817145,
+        "w": 6.141732283464567,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.4499435695538057,
+        "colSpan": 6.4488188976377945,
+        "rowSpan": 0.2362204724409449
+      }
+    }
+  ]
+}

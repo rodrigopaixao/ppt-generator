@@ -1,0 +1,24 @@
+{
+  "grid": { "columns": 14, "rows": 9, "gapX": 0.12, "gapY": 0.10 },
+  "theme": {
+    "colors": { "primary": "EC111A", "surface": "F5EFE8" },
+    "fonts": { "body": "Scotia", "heading": "Scotia Headline" },
+    "spacing": { "marginX": 0.56, "marginY": 0.26 }
+  },
+  "template": { "showNumber": true, "showLogo": true, "showGrid": false },
+  "templates": {
+    "strategicPillars": { "headerRows": 1.35 },
+    "executionDashboard": { "showLogo": false }
+  },
+  "components": {
+    "strategicPillars": { "gap": 0.24, "minWidth": 2.2, "fontSize": 19 },
+    "table": { "padding": 0.045 },
+    "clientJourney": { "fontSize": 9, "minStepWidth": 1.3 }
+  },
+  "slides": {
+    "50": { "data": { "mission": "BE THE MOST TRUSTED FINANCIAL PARTNER FOR OUR CLIENTS…" } }
+  },
+  "elements": {
+    "50.pillars.items.0.title": { "fontSize": 18, "align": "center" }
+  }
+}

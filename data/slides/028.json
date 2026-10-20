@@ -1,0 +1,911 @@
+{
+  "number": 28,
+  "part": "ppt/slides/slide28.xml",
+  "hidden": false,
+  "title": "Each session will include a core team of participants – with potential to invite domain and subject matter experts as needed",
+  "layout": "ppt/slideLayouts/slideLayout41.xml",
+  "master": "ppt/slideMasters/slideMaster2.xml",
+  "elements": [
+    {
+      "id": "e4",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag71.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image197.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject36.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout41.xml",
+      "kind": "shape",
+      "text": "Each session will include a core team of participants – with potential to invite domain and subject matter experts as needed",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Each session will include a core team of participants – with potential to invite domain and subject matter experts as needed",
+            "size": 24.0,
+            "runSizes": [
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e14",
+      "name": "Slide Number Placeholder 13",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout41.xml",
+      "kind": "shape",
+      "text": "28",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "28",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e49",
+      "name": "Right Bracket 48",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 6.6272965879265096,
+        "y": -3.588454724409449,
+        "w": 0.07874015748031496,
+        "h": 12.204724409448819
+      },
+      "rotation": 270.0,
+      "grid": {
+        "col": 6.958661417322835,
+        "row": -4.306145669291339,
+        "colSpan": 0.0826771653543307,
+        "rowSpan": 14.645669291338582
+      }
+    },
+    {
+      "id": "e50",
+      "name": "TextBox 49",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Proposed core team (included in each working session)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Proposed core team (included in each working session)",
+            "size": 12.0,
+            "runSizes": [
+              12.0,
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 4.479712379702537,
+        "y": 2.347412510936133,
+        "w": 4.946193132108487,
+        "h": 0.3029297900262467
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.703697998687664,
+        "row": 2.816895013123359,
+        "colSpan": 5.193502788713911,
+        "rowSpan": 0.36351574803149606
+      }
+    },
+    {
+      "id": "e19",
+      "name": "Group 18",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 2.9876990376202976,
+        "w": 12.204724409448819,
+        "h": 2.8001498250218724
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 3.5852388451443575,
+        "colSpan": 12.81496062992126,
+        "rowSpan": 3.360179790026247
+      }
+    },
+    {
+      "id": "e21",
+      "name": "Rectangle: Rounded Corners 20",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Shradha Oberoi\nManager, Enterprise Strategy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Shradha Oberoi",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          },
+          {
+            "text": "Manager, Enterprise Strategy",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 9.923068588748812,
+        "y": 4.451132983377078,
+        "w": 2.8458924786177646,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.419222018186252,
+        "row": 5.341359580052494,
+        "colSpan": 2.9881871025486526,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e24",
+      "name": "Rectangle: Rounded Corners 23",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Mehnaz Ahmed\nAnalyst, Enterprise Strategy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Mehnaz Ahmed",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Analyst, Enterprise Strategy",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 9.923068588748812,
+        "y": 5.18284886264217,
+        "w": 2.8458924786177646,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.419222018186252,
+        "row": 6.219418635170603,
+        "colSpan": 2.9881871025486526,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e26",
+      "name": "Rectangle: Rounded Corners 25",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Matija Rekalic\nDirector, Enterprise Strategy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Matija Rekalic",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Director, Enterprise Strategy",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 9.923068588748812,
+        "y": 3.7194160104986875,
+        "w": 2.8458924786177646,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.419222018186252,
+        "row": 4.463299212598425,
+        "colSpan": 2.9881871025486526,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e23",
+      "name": "Rectangle: Rounded Corners 22",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Stephan Trusevych\nVP, Enterprise Strategy",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Stephan Trusevych",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "VP, Enterprise Strategy",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 9.923069961031077,
+        "y": 2.9876990376202976,
+        "w": 2.845889734053236,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.41922345908263,
+        "row": 3.5852388451443575,
+        "colSpan": 2.9881842207558975,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e8",
+      "name": "Rectangle: Rounded Corners 7",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Sadaf Sajjad-Lopez\nDirector, Strategic Initiatives",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Sadaf Sajjad-Lopez",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Director, Strategic Initiatives",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 5.18284886264217,
+        "w": 2.8458897340532374,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 6.219418635170603,
+        "colSpan": 2.9881842207558993,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e28",
+      "name": "Rectangle: Rounded Corners 27",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Matt Smit\nDirector, Goal Planning and Measurement",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Matt Smit",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Director, Goal Planning and Measurement",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 6.666598862642169,
+        "y": 4.451132983377078,
+        "w": 2.8458897340532374,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.999928805774277,
+        "row": 5.341359580052494,
+        "colSpan": 2.9881842207558993,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e30",
+      "name": "Rectangle: Rounded Corners 29",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "James Popalis\nVP, Omni Channel Development",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "James Popalis",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0
+            ]
+          },
+          {
+            "text": "VP, Omni Channel Development",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 6.666597490359905,
+        "y": 3.7194160104986875,
+        "w": 2.8458897340532374,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.9999273648779,
+        "row": 4.463299212598425,
+        "colSpan": 2.9881842207558993,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Rectangle: Rounded Corners 9",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Scott Gamble\nSVP, Retail Performance",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Scott Gamble",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "SVP, Retail Performance",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 6.666600234924433,
+        "y": 2.9876990376202976,
+        "w": 2.8458897340532374,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.999930246670654,
+        "row": 3.5852388451443575,
+        "colSpan": 2.9881842207558993,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e9",
+      "name": "Rectangle: Rounded Corners 8",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Francisco Martinek\nVP, Centralized Operations & Governance",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Francisco Martinek",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "VP, Centralized Operations & Governance",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 3.7194160104986875,
+        "w": 2.8458897340532374,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 4.463299212598425,
+        "colSpan": 2.9881842207558993,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e15",
+      "name": "Rectangle: Rounded Corners 14",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Iker Brito\nDirector, Salesforce Effectiveness",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Iker Brito",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Director, Salesforce Effectiveness",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 4.451132983377078,
+        "w": 2.8458897340532374,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 5.341359580052494,
+        "colSpan": 2.9881842207558993,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e51",
+      "name": "Rectangle: Rounded Corners 50",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Eric Scipio Del Campo\nSVP, Global Contact Centre",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Eric Scipio Del Campo",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "SVP, Global Contact Centre",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 2.9876990376202976,
+        "w": 2.8458897340532374,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 3.5852388451443575,
+        "colSpan": 2.9881842207558993,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e20",
+      "name": "Rectangle: Rounded Corners 19",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Brendan Paes\nDirector, Sales Effectiveness Transformation",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Brendan Paes",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Director, Sales Effectiveness Transformation",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 3.6154170741388327,
+        "y": 3.7194160104986875,
+        "w": 2.8458897340532374,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.7961879278457746,
+        "row": 4.463299212598425,
+        "colSpan": 2.9881842207558993,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e52",
+      "name": "Rectangle: Rounded Corners 51",
+      "hidden": false,
+      "parentId": "e19",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Jeff Snowden\nSVP, Special Projects Retail and Small Business",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Jeff Snowden",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "SVP, Special Projects Retail and Small Business",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 3.615418446421097,
+        "y": 2.9876990376202976,
+        "w": 2.8458897340532374,
+        "h": 0.605
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.796189368742152,
+        "row": 3.5852388451443575,
+        "colSpan": 2.9881842207558993,
+        "rowSpan": 0.726
+      }
+    },
+    {
+      "id": "e53",
+      "name": "Speech Bubble: Rectangle 52",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Considerations for participation\nOther participants may be added on a session-by-session basis\nConsider adding Contact Center and Branch representation \nIs it valuable to invite stakeholders from other channels (e.g. digital) to provide visibility?",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Considerations for participation",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          },
+          {
+            "text": "Other participants may be added on a session-by-session basis",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0
+            ]
+          },
+          {
+            "text": "Consider adding Contact Center and Branch representation ",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0
+            ]
+          },
+          {
+            "text": "Is it valuable to invite stakeholders from other channels (e.g. digital) to provide visibility?",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 4.07832239720035,
+        "y": 5.224538495188101,
+        "w": 4.35917760279965,
+        "h": 1.4
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.282238517060367,
+        "row": 6.269446194225722,
+        "colSpan": 4.577136482939633,
+        "rowSpan": 1.6799999999999997
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Text Placeholder 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout41.xml",
+      "kind": "shape",
+      "text": "",
+      "placeholder": {
+        "type": "body",
+        "idx": "11"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide28.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642377515310586,
+        "y": 6.911537620297463,
+        "w": 11.614173228346457,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924496391076115,
+        "row": 8.293845144356956,
+        "colSpan": 12.19488188976378,
+        "rowSpan": 0.1889763779527559
+      }
+    }
+  ]
+}

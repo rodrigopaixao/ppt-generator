@@ -1,0 +1,1310 @@
+{
+  "number": 71,
+  "part": "ppt/slides/slide71.xml",
+  "hidden": false,
+  "title": "Economic Conditions | More broadly, economic conditions will play a role in future of our wealth & asset mgmt. businesses, with persistent volatility likely ",
+  "layout": "ppt/slideLayouts/slideLayout85.xml",
+  "master": "ppt/slideMasters/slideMaster5.xml",
+  "elements": [
+    {
+      "id": "e8",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag448.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image3.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject59.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e52",
+      "name": "Rectangle 51",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 14.0,
+            "runSizes": [
+              14.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": -1.0936132983377078e-06,
+        "y": 1.7975153105861768,
+        "w": 4.691363735783027,
+        "h": 4.978676727909011
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": -1.148293963254593e-06,
+        "row": 2.157018372703412,
+        "colSpan": 4.925931922572179,
+        "rowSpan": 5.974412073490814
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Economic Conditions | More broadly, economic conditions will play a role in future of our wealth & asset mgmt. businesses, with persistent volatility likely ",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Economic Conditions | More broadly, economic conditions will play a role in future of our wealth & asset mgmt. businesses, with persistent volatility likely ",
+            "size": 24.0,
+            "runSizes": [
+              24.0,
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout85.xml",
+      "kind": "shape",
+      "text": "71",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "71",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e5",
+      "name": "Text Placeholder 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout85.xml",
+      "kind": "shape",
+      "text": "Economic considerations",
+      "placeholder": {
+        "type": "body",
+        "idx": "13"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Economic considerations",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.37495297462817145,
+        "w": 5.905511811023622,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.4499435695538057,
+        "colSpan": 6.200787401574803,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e6",
+      "name": "Text Placeholder 5",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout85.xml",
+      "kind": "shape",
+      "text": "1. Behavioral Finance Perspective on Stock Market Investment Decisions by the International Journal of Environmental Sciences, 2025; 2. Impact of Sentiment on Realized Higher-Order Moments in the S&P 500 by the Journal of risk and Financial Management, 2025",
+      "placeholder": {
+        "type": "body",
+        "idx": "11"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "1. Behavioral Finance Perspective on Stock Market Investment Decisions by the International Journal of Environmental Sciences, 2025; 2. Impact of Sentiment on Realized Higher-Order Moments in the S&P 500 by the Journal of risk and Financial Management, 2025",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642377515310586,
+        "y": 6.911537620297463,
+        "w": 11.614173228346457,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924496391076115,
+        "row": 8.293845144356956,
+        "colSpan": 12.19488188976378,
+        "rowSpan": 0.1889763779527559
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Rectangle 9",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Investor behavior is heavily shaped by market conditions, with significant implications for wealth and asset managers",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Investor behavior is heavily shaped by market conditions, with significant implications for wealth and asset managers",
+            "size": 13.0,
+            "runSizes": [
+              13.0,
+              13.0
+            ]
+          }
+        ],
+        "size": 13.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564235564304462,
+        "y": 2.8162773403324586,
+        "w": 3.5434055118110237,
+        "h": 0.503416447944007
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.592447342519685,
+        "row": 3.37953280839895,
+        "colSpan": 3.7205757874015744,
+        "rowSpan": 0.6040997375328084
+      }
+    },
+    {
+      "id": "e14",
+      "name": "Rectangle 13",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "As volatility continues to be influenced by various macroeconomic forces, long-term success will be driven by our ability to adapt to new and emerging risks ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "As volatility continues to be influenced by various macroeconomic forces, long-term success will be driven by our ability to adapt to new and emerging risks ",
+            "size": 13.0,
+            "runSizes": [
+              13.0
+            ]
+          }
+        ],
+        "size": 13.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 5.297325021872266,
+        "y": 1.9311614173228346,
+        "w": 7.222374234470691,
+        "h": 0.503416447944007
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.562191272965879,
+        "row": 2.3173937007874015,
+        "colSpan": 7.583492946194225,
+        "rowSpan": 0.6040997375328084
+      }
+    },
+    {
+      "id": "e20",
+      "name": "Rectangle 19",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "As we shape the future of our business, we must design a resilient and responsive organization that can navigate across a wide range of possible outcomes",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "As we shape the future of our business, we must design a resilient and responsive organization that can navigate across a wide range of possible outcomes",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0,
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 5.297325021872266,
+        "y": 6.06053258967629,
+        "w": 7.209992344706912,
+        "h": 0.5184328521434821
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.562191272965879,
+        "row": 7.272639107611549,
+        "colSpan": 7.570491961942256,
+        "rowSpan": 0.6221194225721786
+      }
+    },
+    {
+      "id": "e21",
+      "name": "Rectangle 20",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Market Conditions\nGDP growth\nInflation\nEmployment\nInterest rates\nProductivity ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Market Conditions",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "GDP growth",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Inflation",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Employment",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Interest rates",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Productivity ",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 5.297325021872266,
+        "y": 3.1296194225721785,
+        "w": 1.66,
+        "h": 2.748157261592301
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.562191272965879,
+        "row": 3.755543307086614,
+        "colSpan": 1.7429999999999999,
+        "rowSpan": 3.2977887139107613
+      }
+    },
+    {
+      "id": "e34",
+      "name": "Rectangle 33",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 5.503898731408574,
+        "y": 3.3123753280839896,
+        "w": 0.4320691163604549,
+        "h": 0.4320691163604549
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.779093667979003,
+        "row": 3.9748503937007875,
+        "colSpan": 0.4536725721784777,
+        "rowSpan": 0.5184829396325459
+      }
+    },
+    {
+      "id": "e41",
+      "name": "Shape 2545",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 30.0,
+            "runSizes": [
+              30.0,
+              29.99
+            ]
+          }
+        ],
+        "size": 30.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 5.587747156605424,
+        "y": 3.39622375328084,
+        "w": 0.26437226596675417,
+        "h": 0.26437226596675417
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.867134514435694,
+        "row": 4.075468503937008,
+        "colSpan": 0.27759087926509185,
+        "rowSpan": 0.31724671916010505
+      }
+    },
+    {
+      "id": "e24",
+      "name": "Rectangle 23",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Institutional Forces\nTax regime\nPublic spending \nRegulations\nIndustrial policy\n",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Institutional Forces",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Tax regime",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Public spending ",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Regulations",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Industrial policy",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 7.151450131233596,
+        "y": 3.1296194225721785,
+        "w": 1.66,
+        "h": 2.748157261592301
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.509022637795276,
+        "row": 3.755543307086614,
+        "colSpan": 1.7429999999999999,
+        "rowSpan": 3.2977887139107613
+      }
+    },
+    {
+      "id": "e35",
+      "name": "Rectangle 34",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 7.358023840769904,
+        "y": 3.3123753280839896,
+        "w": 0.4320691163604549,
+        "h": 0.4320691163604549
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.725925032808398,
+        "row": 3.9748503937007875,
+        "colSpan": 0.4536725721784777,
+        "rowSpan": 0.5184829396325459
+      }
+    },
+    {
+      "id": "e42",
+      "name": "Shape 2624",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 30.0,
+            "runSizes": [
+              30.0,
+              29.99
+            ]
+          }
+        ],
+        "size": 30.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 7.441872265966754,
+        "y": 3.39622375328084,
+        "w": 0.26437226596675417,
+        "h": 0.26437226596675417
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.8139658792650915,
+        "row": 4.075468503937008,
+        "colSpan": 0.27759087926509185,
+        "rowSpan": 0.31724671916010505
+      }
+    },
+    {
+      "id": "e22",
+      "name": "Rectangle 21",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Geopolitical Tensions\nTrade disputes\nSanctions\nConflicts\nShift in global alliances",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Geopolitical Tensions",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Trade disputes",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Sanctions",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Conflicts",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Shift in global alliances",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 9.005575240594926,
+        "y": 3.1296194225721785,
+        "w": 1.66,
+        "h": 2.748157261592301
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.455854002624672,
+        "row": 3.755543307086614,
+        "colSpan": 1.7429999999999999,
+        "rowSpan": 3.2977887139107613
+      }
+    },
+    {
+      "id": "e36",
+      "name": "Rectangle 35",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 9.212148950131233,
+        "y": 3.3123753280839896,
+        "w": 0.4320691163604549,
+        "h": 0.4320691163604549
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.672756397637794,
+        "row": 3.9748503937007875,
+        "colSpan": 0.4536725721784777,
+        "rowSpan": 0.5184829396325459
+      }
+    },
+    {
+      "id": "e43",
+      "name": "Shape 2941",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 30.0,
+            "runSizes": [
+              30.0,
+              29.99
+            ]
+          }
+        ],
+        "size": 30.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 9.295057961504812,
+        "y": 3.395285433070866,
+        "w": 0.26625109361329835,
+        "h": 0.2662489063867017
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.759810859580053,
+        "row": 4.07434251968504,
+        "colSpan": 0.2795636482939633,
+        "rowSpan": 0.319498687664042
+      }
+    },
+    {
+      "id": "e23",
+      "name": "Rectangle 22",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Black Swan Events\nNatural disasters\nGlobal pandemics\nCyberattacks\nTerrorism",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Black Swan Events",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Natural disasters",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Global pandemics",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Cyberattacks",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          },
+          {
+            "text": "Terrorism",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 10.859699256342957,
+        "y": 3.1296194225721785,
+        "w": 1.66,
+        "h": 2.748157261592301
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.402684219160104,
+        "row": 3.755543307086614,
+        "colSpan": 1.7429999999999999,
+        "rowSpan": 3.2977887139107613
+      }
+    },
+    {
+      "id": "e37",
+      "name": "Rectangle 36",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 11.066272965879264,
+        "y": 3.3123753280839896,
+        "w": 0.4320691163604549,
+        "h": 0.4320691163604549
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.619586614173228,
+        "row": 3.9748503937007875,
+        "colSpan": 0.4536725721784777,
+        "rowSpan": 0.5184829396325459
+      }
+    },
+    {
+      "id": "e44",
+      "name": "Shape 2625",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 30.0,
+            "runSizes": [
+              30.0,
+              29.99
+            ]
+          }
+        ],
+        "size": 30.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 11.150121391076116,
+        "y": 3.4202569991251095,
+        "w": 0.26437226596675417,
+        "h": 0.21630577427821523
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.70762746062992,
+        "row": 4.104308398950131,
+        "colSpan": 0.27759087926509185,
+        "rowSpan": 0.2595669291338583
+      }
+    },
+    {
+      "id": "e59",
+      "name": "Group 58",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 5.669010279965004,
+        "y": 2.6093766404199474,
+        "w": 6.466620734908137,
+        "h": 0.30724300087489065
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.952460793963255,
+        "row": 3.131251968503937,
+        "colSpan": 6.789951771653543,
+        "rowSpan": 0.3686916010498688
+      }
+    },
+    {
+      "id": "e46",
+      "name": "Left Bracket 45",
+      "hidden": false,
+      "parentId": "e59",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 8.835377296587927,
+        "y": -0.41563320209973753,
+        "w": 0.13388670166229222,
+        "h": 6.466620734908137
+      },
+      "rotation": 90.0,
+      "grid": {
+        "col": 9.277146161417322,
+        "row": -0.4987598425196851,
+        "colSpan": 0.1405810367454068,
+        "rowSpan": 7.759944881889764
+      }
+    },
+    {
+      "id": "e40",
+      "name": "Rectangle 39",
+      "hidden": false,
+      "parentId": "e59",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "DRIVERS OF LONG-TERM VOLATILITY ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "DRIVERS OF LONG-TERM VOLATILITY ",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 6.565393700787402,
+        "y": 2.6093766404199474,
+        "w": 4.673853893263342,
+        "h": 0.30724300087489065
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.8936633858267715,
+        "row": 3.131251968503937,
+        "colSpan": 4.907546587926508,
+        "rowSpan": 0.3686916010498688
+      }
+    },
+    {
+      "id": "e60",
+      "name": "Rectangle 59",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "MARKET-INVESTOR DYNAMICS",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "MARKET-INVESTOR DYNAMICS",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 1.2899529746281715,
+        "y": 2.139014654418198,
+        "w": 2.3926793525809273,
+        "h": 0.30724300087489065
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 1.35445062335958,
+        "row": 2.566817585301837,
+        "colSpan": 2.5123133202099734,
+        "rowSpan": 0.3686916010498688
+      }
+    },
+    {
+      "id": "e61",
+      "name": "Rectangle 60",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 1.6790223097112862,
+        "w": 0.5368252405949256,
+        "h": 0.9204877515310587
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 2.0148267716535435,
+        "colSpan": 0.5636665026246719,
+        "rowSpan": 1.1045853018372704
+      }
+    },
+    {
+      "id": "e63",
+      "name": "Isosceles Triangle 62",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 2.1138167104111987,
+        "y": 3.630648512685914,
+        "w": 0.4637270341207349,
+        "h": 0.149080271216098
+      },
+      "rotation": 180.0,
+      "grid": {
+        "col": 2.2195075459317586,
+        "row": 4.3567782152230965,
+        "colSpan": 0.4869133858267717,
+        "rowSpan": 0.1788963254593176
+      }
+    },
+    {
+      "id": "e64",
+      "name": "Shape 2589",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 30.0,
+            "runSizes": [
+              30.0,
+              29.99
+            ]
+          }
+        ],
+        "size": 30.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6663954505686789,
+        "y": 2.098950131233596,
+        "w": 0.3325109361329834,
+        "h": 0.30229440069991254
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.6997152230971128,
+        "row": 2.518740157480315,
+        "colSpan": 0.34913648293963256,
+        "rowSpan": 0.36275328083989505
+      }
+    },
+    {
+      "id": "e9",
+      "name": "Rectangle 8",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Behavioural biases have strong correlation with market returns – research shows 47% of return variance can be attributed to investor behaviour1\nTypes of behavioural biases include:\nOverconfidence: overestimating skills, knowledge, or predictive ability\nAnchoring: bias towards early information\nHerding: following other’s actions\nFear has been shown to correlate with greater price swings and return patterns, exacerbating volatility during periods of economic uncertainty2",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Behavioural biases have strong correlation with market returns – research shows 47% of return variance can be attributed to investor behaviour1",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Types of behavioural biases include:",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Overconfidence: overestimating skills, knowledge, or predictive ability",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Anchoring: bias towards early information",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Herding: following other’s actions",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0
+            ]
+          },
+          {
+            "text": "Fear has been shown to correlate with greater price swings and return patterns, exacerbating volatility during periods of economic uncertainty2",
+            "size": 11.0,
+            "runSizes": [
+              11.0,
+              11.0,
+              11.0,
+              11.0,
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564235564304462,
+        "y": 3.915075459317585,
+        "w": 3.5947550306211724,
+        "h": 2.632891513560805
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.592447342519685,
+        "row": 4.698090551181102,
+        "colSpan": 3.7744927821522305,
+        "rowSpan": 3.1594698162729657
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Oval 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "6",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "6",
+            "size": 14.0,
+            "runSizes": [
+              14.0
+            ]
+          }
+        ],
+        "size": 14.0
+      },
+      "sourcePart": "ppt/slides/slide71.xml",
+      "relations": [],
+      "box": {
+        "x": 0.12649278215223098,
+        "y": 0.7238079615048119,
+        "w": 0.33,
+        "h": 0.33
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.1328174212598425,
+        "row": 0.8685695538057743,
+        "colSpan": 0.34650000000000003,
+        "rowSpan": 0.396
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "number": 1,
+  "part": "ppt/slides/slide1.xml",
+  "hidden": false,
+  "title": "Slide collection ",
+  "layout": "ppt/slideLayouts/slideLayout2.xml",
+  "master": "ppt/slideMasters/slideMaster1.xml",
+  "elements": [
+    {
+      "id": "e2",
+      "name": "Text Placeholder 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout2.xml",
+      "kind": "shape",
+      "text": "Slide collection ",
+      "placeholder": {
+        "type": "body",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Slide collection ",
+            "size": 60.0,
+            "runSizes": [
+              60.0
+            ]
+          }
+        ],
+        "size": 60.0
+      },
+      "sourcePart": "ppt/slides/slide1.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 3.3828444881889763,
+        "w": 12.195515091863516,
+        "h": 0.9629505686789152
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 4.059413385826772,
+        "colSpan": 12.80529084645669,
+        "rowSpan": 1.1555406824146983
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Text Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout2.xml",
+      "kind": "shape",
+      "text": "Enriched Context for AI model training",
+      "placeholder": {
+        "type": "body",
+        "idx": "11"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Enriched Context for AI model training",
+            "size": 16.0,
+            "runSizes": [
+              16.0
+            ]
+          }
+        ],
+        "size": 16.0
+      },
+      "sourcePart": "ppt/slides/slide1.xml",
+      "relations": [],
+      "box": {
+        "x": 0.564238845144357,
+        "y": 4.456434820647419,
+        "w": 12.195515091863516,
+        "h": 0.3543307086614173
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924507874015748,
+        "row": 5.347721784776903,
+        "colSpan": 12.80529084645669,
+        "rowSpan": 0.4251968503937008
+      }
+    },
+    {
+      "id": "e4",
+      "name": "Text Placeholder 3",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout2.xml",
+      "kind": "shape",
+      "text": "May 2026",
+      "placeholder": {
+        "type": "body",
+        "idx": "12"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "May 2026",
+            "size": 14.01,
+            "runSizes": [
+              14.01
+            ]
+          }
+        ],
+        "size": 14.01
+      },
+      "sourcePart": "ppt/slides/slide1.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 5.4805314960629925,
+        "w": 3.4675885826771653,
+        "h": 0.3543307086614173
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 6.576637795275591,
+        "colSpan": 3.6409680118110233,
+        "rowSpan": 0.4251968503937008
+      }
+    }
+  ]
+}

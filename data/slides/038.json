@@ -1,0 +1,844 @@
+{
+  "number": 38,
+  "part": "ppt/slides/slide38.xml",
+  "hidden": false,
+  "title": "Competitive Overview | Six players lead the banking landscape",
+  "layout": "ppt/slideLayouts/slideLayout20.xml",
+  "master": "ppt/slideMasters/slideMaster1.xml",
+  "elements": [
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout20.xml",
+      "kind": "shape",
+      "text": "38",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "38",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282602799650043,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896732939632544,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e4",
+      "name": "Text Placeholder 3",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Source: Mexican banking and securities commission as of December 2025; 1. Proxy calculated as: adjuster × number of unique active contracts per bank (with balances greater than zero), considering that a client may have more than one unique contract; 2. Multired is an alliance with 8 banks that gives free access to all ATMs in the network. 3. Front-to-back ratio refers to the amount of frontline workers (Branches, distribution teams) compared to the corporative amount of workers. Based on AMB report as of Sep 2025, considering Business & Branches functions",
+      "placeholder": {
+        "type": "body",
+        "idx": "11"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Source: Mexican banking and securities commission as of December 2025; 1. Proxy calculated as: adjuster × number of unique active contracts per bank (with balances greater than zero), considering that a client may have more than one unique contract; 2. Multired is an alliance with 8 banks that gives free access to all ATMs in the network. 3. Front-to-back ratio refers to the amount of frontline workers (Branches, distribution teams) compared to the corporative amount of workers. Based on AMB report as of Sep 2025, considering Business & Branches functions",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642322834645669,
+        "y": 6.9143667979002625,
+        "w": 11.614173228346457,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924438976377953,
+        "row": 8.297240157480315,
+        "colSpan": 12.19488188976378,
+        "rowSpan": 0.1889763779527559
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout20.xml",
+      "kind": "shape",
+      "text": "Competitive Overview | Six players lead the banking landscape",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Competitive Overview | Six players lead the banking landscape",
+            "size": 22.01,
+            "runSizes": [
+              22.01,
+              22.01
+            ]
+          }
+        ],
+        "size": 22.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e10",
+      "name": "Text Placeholder 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "MEXICO",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "MEXICO",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 2.1872265966754155e-06,
+        "y": 0.0,
+        "w": 0.8661417322834646,
+        "h": 0.22321522309711286
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.296587926509186e-06,
+        "row": 0.0,
+        "colSpan": 0.9094488188976377,
+        "rowSpan": 0.2678582677165354
+      }
+    },
+    {
+      "id": "e14",
+      "name": "Text Placeholder 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "INDUSTRY OVERVIEW",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "INDUSTRY OVERVIEW",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 0.8663735783027121,
+        "y": 0.0,
+        "w": 2.128805774278215,
+        "h": 0.22321522309711286
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.9096922572178477,
+        "row": 0.0,
+        "colSpan": 2.235246062992126,
+        "rowSpan": 0.2678582677165354
+      }
+    },
+    {
+      "id": "e19",
+      "name": "Rectangle 18",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 1.7570133420822398,
+        "y": 1.5451399825021872,
+        "w": 1.7716535433070866,
+        "h": 5.31496062992126
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 1.8448640091863517,
+        "row": 1.8541679790026246,
+        "colSpan": 1.8602362204724407,
+        "rowSpan": 6.377952755905513
+      }
+    },
+    {
+      "id": "e20",
+      "name": "Rectangle 19",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 3.603449256342957,
+        "y": 1.5451399825021872,
+        "w": 1.7716535433070866,
+        "h": 5.31496062992126
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.7836217191601045,
+        "row": 1.8541679790026246,
+        "colSpan": 1.8602362204724407,
+        "rowSpan": 6.377952755905513
+      }
+    },
+    {
+      "id": "e23",
+      "name": "Rectangle 22",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 5.4498818897637795,
+        "y": 1.5451399825021872,
+        "w": 1.7716535433070866,
+        "h": 5.31496062992126
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.722375984251968,
+        "row": 1.8541679790026246,
+        "colSpan": 1.8602362204724407,
+        "rowSpan": 6.377952755905513
+      }
+    },
+    {
+      "id": "e24",
+      "name": "Rectangle 23",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 7.296317804024497,
+        "y": 1.5451399825021872,
+        "w": 1.7716535433070866,
+        "h": 5.31496062992126
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.661133694225722,
+        "row": 1.8541679790026246,
+        "colSpan": 1.8602362204724407,
+        "rowSpan": 6.377952755905513
+      }
+    },
+    {
+      "id": "e25",
+      "name": "Rectangle 24",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 9.142752624671916,
+        "y": 1.5451399825021872,
+        "w": 1.7716535433070866,
+        "h": 5.31496062992126
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.59989025590551,
+        "row": 1.8541679790026246,
+        "colSpan": 1.8602362204724407,
+        "rowSpan": 6.377952755905513
+      }
+    },
+    {
+      "id": "e26",
+      "name": "Rectangle 25",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.01,
+            "runSizes": [
+              10.01
+            ]
+          }
+        ],
+        "size": 10.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 10.989188538932634,
+        "y": 1.5451399825021872,
+        "w": 1.7716535433070866,
+        "h": 5.31496062992126
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.538647965879266,
+        "row": 1.8541679790026246,
+        "colSpan": 1.8602362204724407,
+        "rowSpan": 6.377952755905513
+      }
+    },
+    {
+      "id": "e9",
+      "name": "Table 8",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "table",
+      "text": "\n\nSBM\n\nBest in class\n\nPeer\n\nPeer\n\nPeer\n\nPeer\nDeposits\nMS % & Rank\n6% | 6th\n24% | 1st\n15% | 2nd\n11% | 3rd\n 8% | 4th\n7% | 5th\nLoans\nMS % & Rank\n7% | 4th\n25% | 1st\n15% | 2nd\n12% | 3rd\n6% | 5th\n6% | 7th\nAUMs\nMS % & Rank\n5% | 6th\n24% | 1st\n9% | 4th\n10% | 3rd\n19% | 2nd\n6% | 5th\nCurrent accounts1\n2 MM\n29 MM\n10 MM\n10 MM\n11 MM\n7 MM\nBranches\n407\n1,632\n1,208\n999\n1,260\n747\nATMs\nSBM + Cardtronics: 2,117\nMultired2: 11,938\n14,381\n12,168\n11,049\n9,113\nHSBC: 5,475\nMultired2: 11,938\nFTEs\nFront-to-back ratio3\n8,387\n0.7\n44,469\n1.4\n29,554\n1.6\n24,480\n1.1\n31,051\n1.4\n13,229\n3.5\nKnown for\nSecured loan portfolio\nPrivate banking value proposition\nStrong digital capabilities (#1 App)\nHigh payroll and mass-market penetration\nLargest local bank\n#1 in Small Business and Corporate Banking\nStrong consumer lending\nFocus on digital transformation\nAffluent client base\nFranchise leader in transaction banking\nStrong cross-border and trade finance capabilities\nFocus on corporates",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642344706911636,
+        "y": 1.707069116360455,
+        "w": 12.195033902012248,
+        "h": 5.272017716535433
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924461942257218,
+        "row": 2.048482939632546,
+        "colSpan": 12.804785597112861,
+        "rowSpan": 6.326421259842519
+      },
+      "headerFontSizes": [
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0
+      ],
+      "cells": [
+        [
+          "",
+          "\nSBM",
+          "\nBest in class",
+          "\nPeer",
+          "\nPeer",
+          "\nPeer",
+          "\nPeer"
+        ],
+        [
+          "Deposits\nMS % & Rank",
+          "6% | 6th",
+          "24% | 1st",
+          "15% | 2nd",
+          "11% | 3rd",
+          " 8% | 4th",
+          "7% | 5th"
+        ],
+        [
+          "Loans\nMS % & Rank",
+          "7% | 4th",
+          "25% | 1st",
+          "15% | 2nd",
+          "12% | 3rd",
+          "6% | 5th",
+          "6% | 7th"
+        ],
+        [
+          "AUMs\nMS % & Rank",
+          "5% | 6th",
+          "24% | 1st",
+          "9% | 4th",
+          "10% | 3rd",
+          "19% | 2nd",
+          "6% | 5th"
+        ],
+        [
+          "Current accounts1",
+          "2 MM",
+          "29 MM",
+          "10 MM",
+          "10 MM",
+          "11 MM",
+          "7 MM"
+        ],
+        [
+          "Branches",
+          "407",
+          "1,632",
+          "1,208",
+          "999",
+          "1,260",
+          "747"
+        ],
+        [
+          "ATMs",
+          "SBM + Cardtronics: 2,117\nMultired2: 11,938",
+          "14,381",
+          "12,168",
+          "11,049",
+          "9,113",
+          "HSBC: 5,475\nMultired2: 11,938"
+        ],
+        [
+          "FTEs\nFront-to-back ratio3",
+          "8,387\n0.7",
+          "44,469\n1.4",
+          "29,554\n1.6",
+          "24,480\n1.1",
+          "31,051\n1.4",
+          "13,229\n3.5"
+        ],
+        [
+          "Known for",
+          "Secured loan portfolio\nPrivate banking value proposition",
+          "Strong digital capabilities (#1 App)\nHigh payroll and mass-market penetration",
+          "Largest local bank\n#1 in Small Business and Corporate Banking",
+          "Strong consumer lending\nFocus on digital transformation",
+          "Affluent client base\nFranchise leader in transaction banking",
+          "Strong cross-border and trade finance capabilities\nFocus on corporates"
+        ]
+      ]
+    },
+    {
+      "id": "e13",
+      "name": "Group 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 2.572182852143482,
+        "y": 1.6612171916010499,
+        "w": 0.25475503062117233,
+        "h": 0.26175634295713035
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.7007919947506562,
+        "row": 1.9934606299212598,
+        "colSpan": 0.26749278215223093,
+        "rowSpan": 0.31410761154855643
+      }
+    },
+    {
+      "id": "e16",
+      "name": "Freeform 5",
+      "hidden": false,
+      "parentId": "e13",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.01,
+            "runSizes": [
+              18.01
+            ]
+          }
+        ],
+        "size": 18.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 2.579308866986032,
+        "y": 1.6612171916010499,
+        "w": 0.24762901577862242,
+        "h": 0.12170836328579951
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.7082743103353337,
+        "row": 1.9934606299212598,
+        "colSpan": 0.26001046656755356,
+        "rowSpan": 0.1460500359429594
+      }
+    },
+    {
+      "id": "e17",
+      "name": "Freeform 6",
+      "hidden": false,
+      "parentId": "e13",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.01,
+            "runSizes": [
+              18.01
+            ]
+          }
+        ],
+        "size": 18.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 2.572182852143482,
+        "y": 1.8012651712723806,
+        "w": 0.24762901577862242,
+        "h": 0.12170836328579951
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.7007919947506562,
+        "row": 2.161518205526857,
+        "colSpan": 0.26001046656755356,
+        "rowSpan": 0.1460500359429594
+      }
+    },
+    {
+      "id": "e18",
+      "name": "Oval 7",
+      "hidden": false,
+      "parentId": "e13",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.01,
+            "runSizes": [
+              18.01
+            ]
+          }
+        ],
+        "size": 18.01
+      },
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [],
+      "box": {
+        "x": 2.6291909708838834,
+        "y": 1.7262394678770248,
+        "w": 0.14073879314036933,
+        "h": 0.1317117904051804
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.7606505194280775,
+        "row": 2.0714873614524296,
+        "colSpan": 0.1477757327973878,
+        "rowSpan": 0.1580541484862165
+      }
+    },
+    {
+      "id": "e6",
+      "name": "Picture 19",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [
+        {
+          "id": "rId3",
+          "target": "ppt/media/image300.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 4.277485783027122,
+        "y": 1.7516087051618547,
+        "w": 0.4993099300087489,
+        "h": 0.16169728783902013
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.491360072178478,
+        "row": 2.101930446194226,
+        "colSpan": 0.5242754265091863,
+        "rowSpan": 0.19403674540682417
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Picture 14",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [
+        {
+          "id": "rId4",
+          "target": "ppt/media/image301.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 5.791944444444445,
+        "y": 1.7807753718285215,
+        "w": 1.1029975940507437,
+        "h": 0.13486001749781276
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.081541666666666,
+        "row": 2.1369304461942256,
+        "colSpan": 1.1581474737532809,
+        "rowSpan": 0.16183202099737531
+      }
+    },
+    {
+      "id": "e11",
+      "name": "Picture 16",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [
+        {
+          "id": "rId5",
+          "target": "ppt/media/image302.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 7.593578302712161,
+        "y": 1.7374431321084864,
+        "w": 1.0342530621172354,
+        "h": 0.18059055118110237
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.973257217847769,
+        "row": 2.0849317585301836,
+        "colSpan": 1.0859657152230973,
+        "rowSpan": 0.21670866141732284
+      }
+    },
+    {
+      "id": "e12",
+      "name": "Picture 8",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [
+        {
+          "id": "rId6",
+          "target": "ppt/media/image303.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 9.51837489063867,
+        "y": 1.7428466754155731,
+        "w": 0.8966458880139982,
+        "h": 0.19730971128608923
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.994293635170603,
+        "row": 2.091416010498688,
+        "colSpan": 0.9414781824146982,
+        "rowSpan": 0.2367716535433071
+      }
+    },
+    {
+      "id": "e15",
+      "name": "Picture 18",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide38.xml",
+      "relations": [
+        {
+          "id": "rId7",
+          "target": "ppt/media/image304.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 11.454791119860017,
+        "y": 1.7409765966754156,
+        "w": 0.6946905074365705,
+        "h": 0.18723972003499562
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.027530675853018,
+        "row": 2.089171916010499,
+        "colSpan": 0.7294250328083989,
+        "rowSpan": 0.22468766404199472
+      }
+    }
+  ]
+}

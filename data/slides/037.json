@@ -1,0 +1,6615 @@
+{
+  "number": 37,
+  "part": "ppt/slides/slide37.xml",
+  "hidden": false,
+  "title": "Leading players have different value props; TD offers best-in-class platforms at high fees while Wealthsimple offers basic features and free trading",
+  "layout": "ppt/slideLayouts/slideLayout65.xml",
+  "master": "ppt/slideMasters/slideMaster4.xml",
+  "elements": [
+    {
+      "id": "e199",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag137.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image278.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject42.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Leading players have different value props; TD offers best-in-class platforms at high fees while Wealthsimple offers basic features and free trading",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Leading players have different value props; TD offers best-in-class platforms at high fees while Wealthsimple offers basic features and free trading",
+            "size": 24.0,
+            "runSizes": [
+              24.0,
+              24.0,
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "37",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "37",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e255",
+      "name": "Text Placeholder 254",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "1. EasyTrade offers basic features and 50 free trades every year to all users;   2. Stock scoring system based on market factors (analyst ratings, technical analysis, etc.);   Source: Market research and iTRADE teams",
+      "placeholder": {
+        "type": "body",
+        "idx": "11"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "1. EasyTrade offers basic features and 50 free trades every year to all users;   2. Stock scoring system based on market factors (analyst ratings, technical analysis, etc.);   Source: Market research and iTRADE teams",
+            "size": 9.0,
+            "runSizes": [
+              9.0,
+              9.0,
+              9.0,
+              9.0,
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642377515310586,
+        "y": 6.911537620297463,
+        "w": 11.7,
+        "h": 0.15748031496062992
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924496391076115,
+        "row": 8.293845144356956,
+        "colSpan": 12.285,
+        "rowSpan": 0.1889763779527559
+      }
+    },
+    {
+      "id": "e561",
+      "name": "Rectangle 560",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.4004505686789153,
+        "y": 1.9959186351706037,
+        "w": 1.4,
+        "h": 4.142228783902012
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.5204730971128613,
+        "row": 2.3951023622047245,
+        "colSpan": 1.4699999999999998,
+        "rowSpan": 4.970674540682414
+      }
+    },
+    {
+      "id": "e562",
+      "name": "Rectangle 561",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 3.8952252843394577,
+        "y": 1.9959186351706037,
+        "w": 1.4,
+        "h": 4.142228783902012
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.089986548556431,
+        "row": 2.3951023622047245,
+        "colSpan": 1.4699999999999998,
+        "rowSpan": 4.970674540682414
+      }
+    },
+    {
+      "id": "e568",
+      "name": "Rectangle 567",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.369096675415573,
+        "y": 1.9959186351706037,
+        "w": 1.4,
+        "h": 4.142228783902012
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.937551509186353,
+        "row": 2.3951023622047245,
+        "colSpan": 1.4699999999999998,
+        "rowSpan": 4.970674540682414
+      }
+    },
+    {
+      "id": "e205",
+      "name": "Group 204",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.892481408573928,
+        "y": 1.7822233158355205,
+        "w": 0.41593832020997373,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.0371054790026246,
+        "row": 2.1386679790026246,
+        "colSpan": 0.4367352362204724,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e206",
+      "name": "Oval 205",
+      "hidden": false,
+      "parentId": "e205",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.892481408573928,
+        "y": 1.7822233158355205,
+        "w": 0.41593832020997323,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.0371054790026246,
+        "row": 2.1386679790026246,
+        "colSpan": 0.4367352362204719,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e207",
+      "name": "Freeform 16",
+      "hidden": false,
+      "parentId": "e205",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.949521826172945,
+        "y": 1.899775155005637,
+        "w": 0.30185748501194,
+        "h": 0.1829343794025498
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.096997917481592,
+        "row": 2.2797301860067645,
+        "colSpan": 0.31695035926253695,
+        "rowSpan": 0.21952125528305977
+      }
+    },
+    {
+      "id": "e211",
+      "name": "Group 210",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.386206255468067,
+        "y": 1.7822233158355205,
+        "w": 0.41803805774278213,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.60551656824147,
+        "row": 2.1386679790026246,
+        "colSpan": 0.43893996062992124,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e212",
+      "name": "Group 211",
+      "hidden": false,
+      "parentId": "e211",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.386206255468067,
+        "y": 1.7822233158355205,
+        "w": 0.41803805774278213,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.60551656824147,
+        "row": 2.1386679790026246,
+        "colSpan": 0.43893996062992124,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e216",
+      "name": "Oval 215",
+      "hidden": false,
+      "parentId": "e212",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.386206255468067,
+        "y": 1.7822233158355203,
+        "w": 0.41803805774278213,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.60551656824147,
+        "row": 2.138667979002624,
+        "colSpan": 0.43893996062992124,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e217",
+      "name": "Group 216",
+      "hidden": false,
+      "parentId": "e212",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.492330239701569,
+        "y": 1.838762080705242,
+        "w": 0.21306725906801743,
+        "h": 0.27660220595241625
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.716946751686647,
+        "row": 2.2065144968462906,
+        "colSpan": 0.2237206220214183,
+        "rowSpan": 0.3319226471428995
+      }
+    },
+    {
+      "id": "e218",
+      "name": "Freeform 21",
+      "hidden": false,
+      "parentId": "e217",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.4927127661989985,
+        "y": 1.9393099454813103,
+        "w": 0.0992656260828558,
+        "h": 0.10972333532597565
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.717348404508948,
+        "row": 2.3271719345775725,
+        "colSpan": 0.10422890738699858,
+        "rowSpan": 0.13166800239117077
+      }
+    },
+    {
+      "id": "e219",
+      "name": "Freeform 22",
+      "hidden": false,
+      "parentId": "e217",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.492330239701569,
+        "y": 1.838762080705242,
+        "w": 0.21306725906801743,
+        "h": 0.2158147135592795
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.716946751686647,
+        "row": 2.2065144968462906,
+        "colSpan": 0.2237206220214183,
+        "rowSpan": 0.2589776562711354
+      }
+    },
+    {
+      "id": "e220",
+      "name": "Freeform 23",
+      "hidden": false,
+      "parentId": "e217",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.571895751166825,
+        "y": 2.0543856386280654,
+        "w": 0.05852655410665413,
+        "h": 0.059831714210854064
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.800490538725166,
+        "row": 2.4652627663536784,
+        "colSpan": 0.06145288181198684,
+        "rowSpan": 0.07179805705302489
+      }
+    },
+    {
+      "id": "e221",
+      "name": "Freeform 24",
+      "hidden": false,
+      "parentId": "e217",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.503232244878299,
+        "y": 2.0543856386280654,
+        "w": 0.06254308232966041,
+        "h": 0.060405181120223375
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.728393857122214,
+        "row": 2.4652627663536784,
+        "colSpan": 0.06567023644614343,
+        "rowSpan": 0.07248621734426805
+      }
+    },
+    {
+      "id": "e222",
+      "name": "Freeform 25",
+      "hidden": false,
+      "parentId": "e217",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.641898100196354,
+        "y": 2.053812171718696,
+        "w": 0.05240613014778865,
+        "h": 0.061552114938962
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.873993005206171,
+        "row": 2.464574606062435,
+        "colSpan": 0.05502643665517808,
+        "rowSpan": 0.0738625379267544
+      }
+    },
+    {
+      "id": "e213",
+      "name": "Group 212",
+      "hidden": false,
+      "parentId": "e211",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.4661218890315775,
+        "y": 1.8621000347076222,
+        "w": 0.25329104700968924,
+        "h": 0.2582846199985782
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.6894279834831565,
+        "row": 2.2345200416491466,
+        "colSpan": 0.26595559936017366,
+        "rowSpan": 0.3099415439982939
+      }
+    },
+    {
+      "id": "e214",
+      "name": "Freeform 21",
+      "hidden": false,
+      "parentId": "e213",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.4661218890315775,
+        "y": 1.9844934948143642,
+        "w": 0.1173732722629514,
+        "h": 0.13131568162587645
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.6894279834831565,
+        "row": 2.381392193777237,
+        "colSpan": 0.12324193587609895,
+        "rowSpan": 0.15757881795105175
+      }
+    },
+    {
+      "id": "e215",
+      "name": "Freeform 22",
+      "hidden": false,
+      "parentId": "e213",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.467478578745471,
+        "y": 1.862100034707622,
+        "w": 0.25193435729579566,
+        "h": 0.2582846199985785
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.690852507682744,
+        "row": 2.234520041649146,
+        "colSpan": 0.26453107516058544,
+        "rowSpan": 0.3099415439982942
+      }
+    },
+    {
+      "id": "e232",
+      "name": "Group 231",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [
+        {
+          "id": "rId7",
+          "target": "ppt/media/hdphoto2.wdp",
+          "type": "http://schemas.microsoft.com/office/2007/relationships/hdphoto"
+        },
+        {
+          "id": "rId6",
+          "target": "ppt/media/image297.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 11.861127515310587,
+        "y": 1.7822233158355205,
+        "w": 0.41593832020997373,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.454183891076116,
+        "row": 2.1386679790026246,
+        "colSpan": 0.4367352362204724,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e233",
+      "name": "Oval 232",
+      "hidden": false,
+      "parentId": "e232",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.861127515310587,
+        "y": 1.7822233158355205,
+        "w": 0.41593832020997373,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.454183891076116,
+        "row": 2.1386679790026246,
+        "colSpan": 0.4367352362204724,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e234",
+      "name": "Picture 10",
+      "hidden": false,
+      "parentId": "e232",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [
+        {
+          "id": "rId7",
+          "target": "ppt/media/hdphoto2.wdp",
+          "type": "http://schemas.microsoft.com/office/2007/relationships/hdphoto"
+        },
+        {
+          "id": "rId6",
+          "target": "ppt/media/image297.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 11.898028022787866,
+        "y": 1.8991560793249094,
+        "w": 0.355887783486172,
+        "h": 0.21790867741037234
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.492929423927258,
+        "row": 2.278987295189891,
+        "colSpan": 0.37368217266048054,
+        "rowSpan": 0.2614904128924468
+      }
+    },
+    {
+      "id": "e511",
+      "name": "Rectangle 510",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Equity Commission",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Equity Commission",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6998053368328959,
+        "y": 3.114750656167979,
+        "w": 1.538059930008749,
+        "h": 0.5805643044619423
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7347956036745407,
+        "row": 3.737700787401575,
+        "colSpan": 1.6149629265091863,
+        "rowSpan": 0.6966771653543308
+      }
+    },
+    {
+      "id": "e559",
+      "name": "Rectangle 558",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Product Suite",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Product Suite",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6998053368328959,
+        "y": 4.695870516185477,
+        "w": 1.538059930008749,
+        "h": 0.5805643044619423
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7347956036745407,
+        "row": 5.6350446194225725,
+        "colSpan": 1.6149629265091863,
+        "rowSpan": 0.6966771653543308
+      }
+    },
+    {
+      "id": "e378",
+      "name": "Rectangle 377",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Advanced Features",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Advanced Features",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6998053368328959,
+        "y": 5.486432633420822,
+        "w": 1.538059930008749,
+        "h": 0.5805643044619423
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7347956036745407,
+        "row": 6.5837191601049865,
+        "colSpan": 1.6149629265091863,
+        "rowSpan": 0.6966771653543308
+      }
+    },
+    {
+      "id": "e453",
+      "name": "Rectangle 452",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Onboarding Experience",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Onboarding Experience",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6998053368328959,
+        "y": 3.905310586176728,
+        "w": 1.538059930008749,
+        "h": 0.5805643044619423
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7347956036745407,
+        "row": 4.686372703412074,
+        "colSpan": 1.6149629265091863,
+        "rowSpan": 0.6966771653543308
+      }
+    },
+    {
+      "id": "e563",
+      "name": "Rectangle 562",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.415482283464567,
+        "y": 1.9959186351706037,
+        "w": 1.4,
+        "h": 4.142228783902012
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.686256397637795,
+        "row": 2.3951023622047245,
+        "colSpan": 1.4699999999999998,
+        "rowSpan": 4.970674540682414
+      }
+    },
+    {
+      "id": "e208",
+      "name": "Group 207",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.882030839895013,
+        "y": 1.7822233158355205,
+        "w": 0.41593832020997373,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.176132381889763,
+        "row": 2.1386679790026246,
+        "colSpan": 0.4367352362204724,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e209",
+      "name": "Oval 208",
+      "hidden": false,
+      "parentId": "e208",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.882030839895013,
+        "y": 1.7822233158355205,
+        "w": 0.41593832020997373,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.176132381889763,
+        "row": 2.1386679790026246,
+        "colSpan": 0.4367352362204724,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e210",
+      "name": "Freeform 50",
+      "hidden": false,
+      "parentId": "e208",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.9712566063950305,
+        "y": 1.8482875349074066,
+        "w": 0.2344399472122176,
+        "h": 0.26304456115032315
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.269819436714782,
+        "row": 2.2179450418888877,
+        "colSpan": 0.24616194457282847,
+        "rowSpan": 0.3156534733803878
+      }
+    },
+    {
+      "id": "e565",
+      "name": "Rectangle 564",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.379549431321085,
+        "y": 1.9959186351706037,
+        "w": 1.4,
+        "h": 4.142228783902012
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.798526902887138,
+        "row": 2.3951023622047245,
+        "colSpan": 1.4699999999999998,
+        "rowSpan": 4.970674540682414
+      }
+    },
+    {
+      "id": "e223",
+      "name": "Group 222",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [
+        {
+          "id": "rId8",
+          "target": "ppt/media/image298.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 8.871580271216098,
+        "y": 1.7822233158355205,
+        "w": 0.41593832020997373,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.315159284776902,
+        "row": 2.1386679790026246,
+        "colSpan": 0.4367352362204724,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e224",
+      "name": "Oval 223",
+      "hidden": false,
+      "parentId": "e223",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.871580271216098,
+        "y": 1.7822233158355205,
+        "w": 0.41593832020997373,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.315159284776902,
+        "row": 2.1386679790026246,
+        "colSpan": 0.4367352362204724,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e225",
+      "name": "Picture 224",
+      "hidden": false,
+      "parentId": "e223",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [
+        {
+          "id": "rId8",
+          "target": "ppt/media/image298.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 8.971875892222492,
+        "y": 1.865153620828726,
+        "w": 0.21150031864306174,
+        "h": 0.25982795123296615
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.420469686833616,
+        "row": 2.238184344994471,
+        "colSpan": 0.2220753345752148,
+        "rowSpan": 0.3117935414795594
+      }
+    },
+    {
+      "id": "e564",
+      "name": "Rectangle 563",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 6.8847747156605426,
+        "y": 1.9959186351706037,
+        "w": 1.4,
+        "h": 4.142228783902012
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.22901345144357,
+        "row": 2.3951023622047245,
+        "colSpan": 1.4699999999999998,
+        "rowSpan": 4.970674540682414
+      }
+    },
+    {
+      "id": "e200",
+      "name": "Group 199",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.375755686789152,
+        "y": 1.7822233158355205,
+        "w": 0.41803805774278213,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.744543471128609,
+        "row": 2.1386679790026246,
+        "colSpan": 0.43893996062992124,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e201",
+      "name": "Oval 200",
+      "hidden": false,
+      "parentId": "e200",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.375755686789152,
+        "y": 1.7822233158355205,
+        "w": 0.41803805774278213,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.744543471128609,
+        "row": 2.1386679790026246,
+        "colSpan": 0.43893996062992124,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e202",
+      "name": "Group 201",
+      "hidden": false,
+      "parentId": "e200",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.437660430143083,
+        "y": 1.8524133811776777,
+        "w": 0.2995051668961917,
+        "h": 0.27765892075939996
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.809543451650238,
+        "row": 2.2228960574132133,
+        "colSpan": 0.31448042524100134,
+        "rowSpan": 0.33319070491127994
+      }
+    },
+    {
+      "id": "e203",
+      "name": "Freeform: Shape 202",
+      "hidden": false,
+      "parentId": "e202",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.545203239099408,
+        "y": 1.8524193433832707,
+        "w": 0.19196235793986752,
+        "h": 0.277652958553807
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.922463401054379,
+        "row": 2.222903212059925,
+        "colSpan": 0.20156047583686088,
+        "rowSpan": 0.3331835502645684
+      }
+    },
+    {
+      "id": "e204",
+      "name": "Freeform: Shape 203",
+      "hidden": false,
+      "parentId": "e202",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 18.0,
+            "runSizes": [
+              18.0
+            ]
+          }
+        ],
+        "size": 18.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.437660430143082,
+        "y": 1.8524133811776777,
+        "w": 0.1497725327708229,
+        "h": 0.2776221538249108
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.809543451650236,
+        "row": 2.2228960574132133,
+        "colSpan": 0.15726115940936403,
+        "rowSpan": 0.33314658458989294
+      }
+    },
+    {
+      "id": "e566",
+      "name": "Rectangle 565",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 9.874324146981627,
+        "y": 1.9959186351706037,
+        "w": 1.4,
+        "h": 4.142228783902012
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.368040354330708,
+        "row": 2.3951023622047245,
+        "colSpan": 1.4699999999999998,
+        "rowSpan": 4.970674540682414
+      }
+    },
+    {
+      "id": "e226",
+      "name": "Group 225",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [
+        {
+          "id": "rId10",
+          "target": "ppt/media/hdphoto3.wdp",
+          "type": "http://schemas.microsoft.com/office/2007/relationships/hdphoto"
+        },
+        {
+          "id": "rId9",
+          "target": "ppt/media/image299.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 10.365305118110236,
+        "y": 1.7822233158355205,
+        "w": 0.41803805774278213,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.883570374015747,
+        "row": 2.1386679790026246,
+        "colSpan": 0.43893996062992124,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e227",
+      "name": "Oval 226",
+      "hidden": false,
+      "parentId": "e226",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.365305118110236,
+        "y": 1.7822233158355205,
+        "w": 0.41803805774278213,
+        "h": 0.41803805774278213
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.883570374015747,
+        "row": 2.1386679790026246,
+        "colSpan": 0.43893996062992124,
+        "rowSpan": 0.5016456692913386
+      }
+    },
+    {
+      "id": "e228",
+      "name": "Picture 2",
+      "hidden": false,
+      "parentId": "e226",
+      "inheritedFrom": null,
+      "kind": "image",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [
+        {
+          "id": "rId10",
+          "target": "ppt/media/hdphoto3.wdp",
+          "type": "http://schemas.microsoft.com/office/2007/relationships/hdphoto"
+        },
+        {
+          "id": "rId9",
+          "target": "ppt/media/image299.png",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        }
+      ],
+      "box": {
+        "x": 10.40661019081634,
+        "y": 1.8642404096720837,
+        "w": 0.3354289097967089,
+        "h": 0.2540038700696559
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.926940700357155,
+        "row": 2.2370884916065004,
+        "colSpan": 0.35220035528654436,
+        "rowSpan": 0.3048046440835871
+      }
+    },
+    {
+      "id": "e20",
+      "name": "Group 19",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7065791776027996,
+        "y": 3.3285925196850394,
+        "w": 9.756389982502187,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.8419081364829397,
+        "row": 3.994311023622047,
+        "colSpan": 10.244209481627296,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e576",
+      "name": "Group 575",
+      "hidden": false,
+      "parentId": "e20",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7065791776027996,
+        "y": 3.3285925196850394,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.8419081364829397,
+        "row": 3.994311023622047,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e573",
+      "name": "Rectangle 572",
+      "hidden": false,
+      "parentId": "e576",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7065791776027996,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.8419081364829397,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e574",
+      "name": "Rectangle 573",
+      "hidden": false,
+      "parentId": "e576",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.9688615485564305,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.117304625984252,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e575",
+      "name": "Rectangle 574",
+      "hidden": false,
+      "parentId": "e576",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 3.232040682414698,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.3936427165354326,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e577",
+      "name": "Group 576",
+      "hidden": false,
+      "parentId": "e20",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.2013538932633425,
+        "y": 3.3285925196850394,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.411421587926509,
+        "row": 3.994311023622047,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e578",
+      "name": "Rectangle 577",
+      "hidden": false,
+      "parentId": "e577",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.2013538932633425,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.411421587926509,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e579",
+      "name": "Rectangle 578",
+      "hidden": false,
+      "parentId": "e577",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.463636264216973,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.686818077427821,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e580",
+      "name": "Rectangle 579",
+      "hidden": false,
+      "parentId": "e577",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.7268153980752405,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.963156167979003,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e605",
+      "name": "Group 604",
+      "hidden": false,
+      "parentId": "e20",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.675225284339458,
+        "y": 3.3285925196850394,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.25898654855643,
+        "row": 3.994311023622047,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e606",
+      "name": "Rectangle 605",
+      "hidden": false,
+      "parentId": "e605",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.675225284339458,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.25898654855643,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e607",
+      "name": "Rectangle 606",
+      "hidden": false,
+      "parentId": "e605",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.93750765529309,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.534383038057744,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e608",
+      "name": "Rectangle 607",
+      "hidden": false,
+      "parentId": "e605",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 12.200686789151357,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.810721128608924,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e581",
+      "name": "Group 580",
+      "hidden": false,
+      "parentId": "e20",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.689534120734908,
+        "y": 3.3285925196850394,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.974010826771654,
+        "row": 3.994311023622047,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e582",
+      "name": "Rectangle 581",
+      "hidden": false,
+      "parentId": "e581",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.689534120734908,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.974010826771654,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e583",
+      "name": "Rectangle 582",
+      "hidden": false,
+      "parentId": "e581",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.951816491688539,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.249407316272965,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e584",
+      "name": "Rectangle 583",
+      "hidden": false,
+      "parentId": "e581",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 6.214995625546806,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.5257454068241465,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e593",
+      "name": "Group 592",
+      "hidden": false,
+      "parentId": "e20",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.68567804024497,
+        "y": 3.3285925196850394,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.119961942257216,
+        "row": 3.994311023622047,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e594",
+      "name": "Rectangle 593",
+      "hidden": false,
+      "parentId": "e593",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.68567804024497,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.119961942257216,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e595",
+      "name": "Rectangle 594",
+      "hidden": false,
+      "parentId": "e593",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.9479604111986,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.395358431758531,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e596",
+      "name": "Rectangle 595",
+      "hidden": false,
+      "parentId": "e593",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 9.211139545056868,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.671696522309713,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e589",
+      "name": "Group 588",
+      "hidden": false,
+      "parentId": "e20",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.190903324584427,
+        "y": 3.3285925196850394,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.550448490813649,
+        "row": 3.994311023622047,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e590",
+      "name": "Rectangle 589",
+      "hidden": false,
+      "parentId": "e589",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.190903324584427,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.550448490813649,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e591",
+      "name": "Rectangle 590",
+      "hidden": false,
+      "parentId": "e589",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.453185695538058,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.82584498031496,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e592",
+      "name": "Rectangle 591",
+      "hidden": false,
+      "parentId": "e589",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.716364829396325,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.102183070866142,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e597",
+      "name": "Group 596",
+      "hidden": false,
+      "parentId": "e20",
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.180452755905511,
+        "y": 3.3285925196850394,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.689475393700787,
+        "row": 3.994311023622047,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e598",
+      "name": "Rectangle 597",
+      "hidden": false,
+      "parentId": "e597",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.180452755905511,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.689475393700787,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e599",
+      "name": "Rectangle 598",
+      "hidden": false,
+      "parentId": "e597",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.442735126859143,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.964871883202099,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e600",
+      "name": "Rectangle 599",
+      "hidden": false,
+      "parentId": "e597",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.70591426071741,
+        "y": 3.3285925196850394,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.24120997375328,
+        "row": 3.994311023622047,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e641",
+      "name": "Group 640",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7065791776027996,
+        "y": 5.700274496937883,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.8419081364829397,
+        "row": 6.84032939632546,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e642",
+      "name": "Rectangle 641",
+      "hidden": false,
+      "parentId": "e641",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7065791776027996,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.8419081364829397,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e643",
+      "name": "Rectangle 642",
+      "hidden": false,
+      "parentId": "e641",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.9688615485564305,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.117304625984252,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e644",
+      "name": "Rectangle 643",
+      "hidden": false,
+      "parentId": "e641",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 3.232040682414698,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.3936427165354326,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e669",
+      "name": "Group 668",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.675225284339458,
+        "y": 5.700274496937883,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.25898654855643,
+        "row": 6.84032939632546,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e670",
+      "name": "Rectangle 669",
+      "hidden": false,
+      "parentId": "e669",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.675225284339458,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.25898654855643,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e671",
+      "name": "Rectangle 670",
+      "hidden": false,
+      "parentId": "e669",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.93750765529309,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.534383038057744,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e672",
+      "name": "Rectangle 671",
+      "hidden": false,
+      "parentId": "e669",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 12.200686789151357,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.810721128608924,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e649",
+      "name": "Group 648",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.689534120734908,
+        "y": 5.700274496937883,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.974010826771654,
+        "row": 6.84032939632546,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e650",
+      "name": "Rectangle 649",
+      "hidden": false,
+      "parentId": "e649",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.689534120734908,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.974010826771654,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e651",
+      "name": "Rectangle 650",
+      "hidden": false,
+      "parentId": "e649",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.951816491688539,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.249407316272965,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e652",
+      "name": "Rectangle 651",
+      "hidden": false,
+      "parentId": "e649",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 6.214995625546806,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.5257454068241465,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e657",
+      "name": "Group 656",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.68567804024497,
+        "y": 5.700274496937883,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.119961942257216,
+        "row": 6.84032939632546,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e658",
+      "name": "Rectangle 657",
+      "hidden": false,
+      "parentId": "e657",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.68567804024497,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.119961942257216,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e659",
+      "name": "Rectangle 658",
+      "hidden": false,
+      "parentId": "e657",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.9479604111986,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.395358431758531,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e660",
+      "name": "Rectangle 659",
+      "hidden": false,
+      "parentId": "e657",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 9.211139545056868,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.671696522309713,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e653",
+      "name": "Group 652",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.190903324584427,
+        "y": 5.700274496937883,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.550448490813649,
+        "row": 6.84032939632546,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e654",
+      "name": "Rectangle 653",
+      "hidden": false,
+      "parentId": "e653",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.190903324584427,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.550448490813649,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e655",
+      "name": "Rectangle 654",
+      "hidden": false,
+      "parentId": "e653",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.453185695538058,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.82584498031496,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e656",
+      "name": "Rectangle 655",
+      "hidden": false,
+      "parentId": "e653",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.716364829396325,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.102183070866142,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e859",
+      "name": "Group 858",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.180452755905511,
+        "y": 5.700274496937883,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.689475393700787,
+        "row": 6.84032939632546,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e860",
+      "name": "Rectangle 859",
+      "hidden": false,
+      "parentId": "e859",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.180452755905511,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.689475393700787,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e861",
+      "name": "Rectangle 860",
+      "hidden": false,
+      "parentId": "e859",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.442735126859143,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.964871883202099,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e862",
+      "name": "Rectangle 861",
+      "hidden": false,
+      "parentId": "e859",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.70591426071741,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.24120997375328,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e617",
+      "name": "Group 616",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.689534120734908,
+        "y": 4.11915135608049,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.974010826771654,
+        "row": 4.942981627296588,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e618",
+      "name": "Rectangle 617",
+      "hidden": false,
+      "parentId": "e617",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.689534120734908,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.974010826771654,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e619",
+      "name": "Rectangle 618",
+      "hidden": false,
+      "parentId": "e617",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.951816491688539,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.249407316272965,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e620",
+      "name": "Rectangle 619",
+      "hidden": false,
+      "parentId": "e617",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 6.214995625546806,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.5257454068241465,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e625",
+      "name": "Group 624",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.68567804024497,
+        "y": 4.11915135608049,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.119961942257216,
+        "row": 4.942981627296588,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e626",
+      "name": "Rectangle 625",
+      "hidden": false,
+      "parentId": "e625",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.68567804024497,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.119961942257216,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e627",
+      "name": "Rectangle 626",
+      "hidden": false,
+      "parentId": "e625",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.9479604111986,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.395358431758531,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e628",
+      "name": "Rectangle 627",
+      "hidden": false,
+      "parentId": "e625",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 9.211139545056868,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.671696522309713,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e637",
+      "name": "Group 636",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.675225284339458,
+        "y": 4.11915135608049,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.25898654855643,
+        "row": 4.942981627296588,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e638",
+      "name": "Rectangle 637",
+      "hidden": false,
+      "parentId": "e637",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.675225284339458,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.25898654855643,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e639",
+      "name": "Rectangle 638",
+      "hidden": false,
+      "parentId": "e637",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.93750765529309,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.534383038057744,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e640",
+      "name": "Rectangle 639",
+      "hidden": false,
+      "parentId": "e637",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 12.200686789151357,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.810721128608924,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e846",
+      "name": "Group 845",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.190903324584427,
+        "y": 4.11915135608049,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.550448490813649,
+        "row": 4.942981627296588,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e847",
+      "name": "Rectangle 846",
+      "hidden": false,
+      "parentId": "e846",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.190903324584427,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.550448490813649,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e848",
+      "name": "Rectangle 847",
+      "hidden": false,
+      "parentId": "e846",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.453185695538058,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.82584498031496,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e849",
+      "name": "Rectangle 848",
+      "hidden": false,
+      "parentId": "e846",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.716364829396325,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.102183070866142,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e864",
+      "name": "Group 863",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.180452755905511,
+        "y": 4.11915135608049,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.689475393700787,
+        "row": 4.942981627296588,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e865",
+      "name": "Rectangle 864",
+      "hidden": false,
+      "parentId": "e864",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.180452755905511,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.689475393700787,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e866",
+      "name": "Rectangle 865",
+      "hidden": false,
+      "parentId": "e864",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.442735126859143,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.964871883202099,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e867",
+      "name": "Rectangle 866",
+      "hidden": false,
+      "parentId": "e864",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.70591426071741,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.24120997375328,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e868",
+      "name": "Rectangle 867",
+      "hidden": false,
+      "parentId": "e864",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.844280402449694,
+        "y": 4.11915135608049,
+        "w": 0.12391622922134733,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.386494422572179,
+        "row": 4.942981627296588,
+        "colSpan": 0.1301120406824147,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e18",
+      "name": "Rectangle 17",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Key Value Proposition",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Key Value Proposition",
+            "size": 11.0,
+            "runSizes": [
+              11.0
+            ]
+          }
+        ],
+        "size": 11.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6998053368328959,
+        "y": 2.3241907261592303,
+        "w": 1.538059930008749,
+        "h": 0.5805643044619423
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7347956036745407,
+        "row": 2.7890288713910762,
+        "colSpan": 1.6149629265091863,
+        "rowSpan": 0.6966771653543308
+      }
+    },
+    {
+      "id": "e24",
+      "name": "TextBox 23",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Advanced platforms; banking integration; fractional shares",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Advanced platforms; banking integration; fractional shares",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.4179615048118985,
+        "y": 2.362030839895013,
+        "w": 1.3776695100612424,
+        "h": 0.5048829833770778
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.5388595800524936,
+        "row": 2.8344370078740155,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.6058595800524934
+      }
+    },
+    {
+      "id": "e25",
+      "name": "TextBox 24",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Integrated application, portfolio dashboards",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Integrated application, portfolio dashboards",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 3.9116786964129484,
+        "y": 2.362030839895013,
+        "w": 1.3776695100612424,
+        "h": 0.5048829833770778
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.107262631233596,
+        "row": 2.8344370078740155,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.6058595800524934
+      }
+    },
+    {
+      "id": "e26",
+      "name": "TextBox 25",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "~110 commission free ETFs, OLB with advice offering",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "~110 commission free ETFs, OLB with advice offering",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.405395888013998,
+        "y": 2.362030839895013,
+        "w": 1.3776695100612424,
+        "h": 0.5048829833770778
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.675665682414698,
+        "row": 2.8344370078740155,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.6058595800524934
+      }
+    },
+    {
+      "id": "e27",
+      "name": "TextBox 26",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Strong research library; lowest fees among Big-Five",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Strong research library; lowest fees among Big-Five",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 6.899113079615048,
+        "y": 2.362030839895013,
+        "w": 1.3776695100612424,
+        "h": 0.5048829833770778
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.2440687335958,
+        "row": 2.8344370078740155,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.6058595800524934
+      }
+    },
+    {
+      "id": "e28",
+      "name": "TextBox 27",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Strong research library; 120+ commission free ETFs",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Strong research library; 120+ commission free ETFs",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.392830271216098,
+        "y": 2.3620319335083115,
+        "w": 1.3776695100612424,
+        "h": 0.5048829833770778
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.812471784776903,
+        "row": 2.8344383202099737,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.6058595800524934
+      }
+    },
+    {
+      "id": "e29",
+      "name": "TextBox 28",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Advanced platforms with free trading; ",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Advanced platforms with free trading; ",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 9.886547462817148,
+        "y": 2.44617782152231,
+        "w": 1.3776695100612424,
+        "h": 0.3365890201224847
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.380874835958005,
+        "row": 2.935413385826772,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.40390682414698165
+      }
+    },
+    {
+      "id": "e31",
+      "name": "TextBox 30",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Free, simple & easy; fractional shares; crypto",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Free, simple & easy; fractional shares; crypto",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.380262467191601,
+        "y": 2.362030839895013,
+        "w": 1.3776695100612424,
+        "h": 0.5048829833770778
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.949275590551181,
+        "row": 2.8344370078740155,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.6058595800524934
+      }
+    },
+    {
+      "id": "e9",
+      "name": "TextBox 8",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "($9.99 /trade)1",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "($9.99 /trade)1",
+            "size": 8.0,
+            "runSizes": [
+              8.0,
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.589263998250219,
+        "y": 3.498976377952756,
+        "w": 1.0350634295713035,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.7187271981627297,
+        "row": 4.198771653543307,
+        "colSpan": 1.0868166010498688,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e673",
+      "name": "Group 672",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7065791776027996,
+        "y": 4.909711286089239,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.8419081364829397,
+        "row": 5.891653543307087,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e674",
+      "name": "Rectangle 673",
+      "hidden": false,
+      "parentId": "e673",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7065791776027996,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.8419081364829397,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e675",
+      "name": "Rectangle 674",
+      "hidden": false,
+      "parentId": "e673",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.9688615485564305,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.117304625984252,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e676",
+      "name": "Rectangle 675",
+      "hidden": false,
+      "parentId": "e673",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 3.232040682414698,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.3936427165354326,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e677",
+      "name": "Group 676",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.2013538932633425,
+        "y": 4.909711286089239,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.411421587926509,
+        "row": 5.891653543307087,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e678",
+      "name": "Rectangle 677",
+      "hidden": false,
+      "parentId": "e677",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.2013538932633425,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.411421587926509,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e679",
+      "name": "Rectangle 678",
+      "hidden": false,
+      "parentId": "e677",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.463636264216973,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.686818077427821,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e680",
+      "name": "Rectangle 679",
+      "hidden": false,
+      "parentId": "e677",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.7268153980752405,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.963156167979003,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e757",
+      "name": "Group 756",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.689534120734908,
+        "y": 4.909711286089239,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.974010826771654,
+        "row": 5.891653543307087,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e758",
+      "name": "Rectangle 757",
+      "hidden": false,
+      "parentId": "e757",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.689534120734908,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.974010826771654,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e759",
+      "name": "Rectangle 758",
+      "hidden": false,
+      "parentId": "e757",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.951816491688539,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.249407316272965,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e760",
+      "name": "Rectangle 759",
+      "hidden": false,
+      "parentId": "e757",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 6.214995625546806,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.5257454068241465,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e689",
+      "name": "Group 688",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.68567804024497,
+        "y": 4.909711286089239,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.119961942257216,
+        "row": 5.891653543307087,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e690",
+      "name": "Rectangle 689",
+      "hidden": false,
+      "parentId": "e689",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.68567804024497,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.119961942257216,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e691",
+      "name": "Rectangle 690",
+      "hidden": false,
+      "parentId": "e689",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.9479604111986,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.395358431758531,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e692",
+      "name": "Rectangle 691",
+      "hidden": false,
+      "parentId": "e689",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 9.211139545056868,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.671696522309713,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e761",
+      "name": "Group 760",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.190903324584427,
+        "y": 4.909711286089239,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.550448490813649,
+        "row": 5.891653543307087,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e762",
+      "name": "Rectangle 761",
+      "hidden": false,
+      "parentId": "e761",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.190903324584427,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.550448490813649,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e763",
+      "name": "Rectangle 762",
+      "hidden": false,
+      "parentId": "e761",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.453185695538058,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.82584498031496,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e764",
+      "name": "Rectangle 763",
+      "hidden": false,
+      "parentId": "e761",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.716364829396325,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 8.102183070866142,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e693",
+      "name": "Group 692",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.180452755905511,
+        "y": 4.909711286089239,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.689475393700787,
+        "row": 5.891653543307087,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e694",
+      "name": "Rectangle 693",
+      "hidden": false,
+      "parentId": "e693",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.180452755905511,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.689475393700787,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e695",
+      "name": "Rectangle 694",
+      "hidden": false,
+      "parentId": "e693",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.442735126859143,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.964871883202099,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e696",
+      "name": "Rectangle 695",
+      "hidden": false,
+      "parentId": "e693",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.70591426071741,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.24120997375328,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e197",
+      "name": "Group 196",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.674775809273841,
+        "y": 4.909711286089239,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.258514599737532,
+        "row": 5.891653543307087,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e193",
+      "name": "Rectangle 192",
+      "hidden": false,
+      "parentId": "e197",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.674775809273841,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.258514599737532,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e194",
+      "name": "Rectangle 193",
+      "hidden": false,
+      "parentId": "e197",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.937058180227472,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.533911089238845,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e195",
+      "name": "Rectangle 194",
+      "hidden": false,
+      "parentId": "e197",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 12.20023731408574,
+        "y": 4.909711286089239,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.810249179790027,
+        "row": 5.891653543307087,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e557",
+      "name": "Straight Connector 556",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6998042432195976,
+        "y": 3.8003127734033244,
+        "w": 12.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7347944553805774,
+        "row": 4.560375328083989,
+        "colSpan": 12.599999999999998,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e558",
+      "name": "Straight Connector 557",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6998042432195976,
+        "y": 4.5908727034120735,
+        "w": 12.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7347944553805774,
+        "row": 5.5090472440944875,
+        "colSpan": 12.599999999999998,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e560",
+      "name": "Straight Connector 559",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6998042432195976,
+        "y": 5.381432633420823,
+        "w": 12.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7347944553805774,
+        "row": 6.457719160104987,
+        "colSpan": 12.599999999999998,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e19",
+      "name": "Straight Connector 18",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "connector",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 0.6998042432195976,
+        "y": 3.0097528433945757,
+        "w": 12.0,
+        "h": 0.0
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.7347944553805774,
+        "row": 3.6117034120734908,
+        "colSpan": 12.599999999999998,
+        "rowSpan": 0.0
+      }
+    },
+    {
+      "id": "e231",
+      "name": "TextBox 230",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "(Online Global Trading,\nFractional trading)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "(Online Global Trading,",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          },
+          {
+            "text": "Fractional trading)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.4179615048118985,
+        "y": 5.080143263342082,
+        "w": 1.3776695100612424,
+        "h": 0.26927055993000876
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.5388595800524936,
+        "row": 6.096171916010499,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.3231246719160105
+      }
+    },
+    {
+      "id": "e236",
+      "name": "TextBox 235",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "(Fractional , Alternatives, But no MF/FI)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "(Fractional , Alternatives, But no MF/FI)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.380262467191601,
+        "y": 5.080143263342082,
+        "w": 1.3776695100612424,
+        "h": 0.26927055993000876
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.949275590551181,
+        "row": 6.096171916010499,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.3231246719160105
+      }
+    },
+    {
+      "id": "e237",
+      "name": "Group 236",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7065791776027996,
+        "y": 4.11915135608049,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.8419081364829397,
+        "row": 4.942981627296588,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e238",
+      "name": "Rectangle 237",
+      "hidden": false,
+      "parentId": "e237",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.7065791776027996,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.8419081364829397,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e239",
+      "name": "Rectangle 238",
+      "hidden": false,
+      "parentId": "e237",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.9688615485564305,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.117304625984252,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e240",
+      "name": "Rectangle 239",
+      "hidden": false,
+      "parentId": "e237",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 3.232040682414698,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.3936427165354326,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e241",
+      "name": "Rectangle 240",
+      "hidden": false,
+      "parentId": "e237",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 3.370406824146982,
+        "y": 4.11915135608049,
+        "w": 0.12391622922134733,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 3.538927165354331,
+        "row": 4.942981627296588,
+        "colSpan": 0.1301120406824147,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e242",
+      "name": "TextBox 241",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "(Same-day Trading)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "(Same-day Trading)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.499811898512686,
+        "y": 4.301043307086614,
+        "w": 1.1385695538057743,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.07480249343832,
+        "row": 5.161251968503937,
+        "colSpan": 1.1954980314960628,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e243",
+      "name": "TextBox 242",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "($6.95 /trade)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "($6.95 /trade)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 7.231009405074365,
+        "y": 3.498976377952756,
+        "w": 0.7069619422572179,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 7.5925598753280825,
+        "row": 4.198771653543307,
+        "colSpan": 0.7423100393700788,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e246",
+      "name": "TextBox 245",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "(Online Forex Trading, Robo, Fractional in 2025)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "(Online Forex Trading, Robo, Fractional in 2025)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 9.885489938757654,
+        "y": 5.080143263342082,
+        "w": 1.3776695100612424,
+        "h": 0.26927055993000876
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.379764435695538,
+        "row": 6.096171916010499,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.3231246719160105
+      }
+    },
+    {
+      "id": "e248",
+      "name": "TextBox 247",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "(Analyst center, screener)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "(Analyst center, screener)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 2.411616360454943,
+        "y": 5.8642300962379705,
+        "w": 1.3776695100612424,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 2.5321971784776904,
+        "row": 7.037076115485565,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e249",
+      "name": "TextBox 248",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "(SmartScore2)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "(SmartScore2)",
+            "size": 8.0,
+            "runSizes": [
+              8.0,
+              8.0,
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 9.885489938757654,
+        "y": 5.8642300962379705,
+        "w": 1.3776695100612424,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.379764435695538,
+        "row": 7.037076115485565,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e251",
+      "name": "TextBox 250",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "($9.99 /trade)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "($9.99 /trade)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.245260279965004,
+        "y": 3.498976377952756,
+        "w": 0.7069619422572179,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.457523293963254,
+        "row": 4.198771653543307,
+        "colSpan": 0.7423100393700788,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e252",
+      "name": "TextBox 251",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "($9.99 /trade)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "($9.99 /trade)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 5.762001312335958,
+        "y": 3.498976377952756,
+        "w": 0.7069619422572179,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 6.050101377952755,
+        "row": 4.198771653543307,
+        "colSpan": 0.7423100393700788,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e253",
+      "name": "TextBox 252",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "($9.99 /trade)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "($9.99 /trade)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 8.726068460192476,
+        "y": 3.498976377952756,
+        "w": 0.7069619422572179,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 9.1623718832021,
+        "row": 4.198771653543307,
+        "colSpan": 0.7423100393700788,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e254",
+      "name": "TextBox 253",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "(Free)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "(Free)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 11.715615704286964,
+        "y": 3.498976377952756,
+        "w": 0.7069619422572179,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.301396489501311,
+        "row": 4.198771653543307,
+        "colSpan": 0.7423100393700788,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e352",
+      "name": "TextBox 351",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "(Free)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "(Free)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.2259208223972,
+        "y": 3.498976377952756,
+        "w": 0.7069619422572179,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 10.737216863517059,
+        "row": 4.198771653543307,
+        "colSpan": 0.7423100393700788,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e354",
+      "name": "Group 353",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.2013538932633425,
+        "y": 4.11915135608049,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.411421587926509,
+        "row": 4.942981627296588,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e355",
+      "name": "Rectangle 354",
+      "hidden": false,
+      "parentId": "e354",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.2013538932633425,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.411421587926509,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e356",
+      "name": "Rectangle 355",
+      "hidden": false,
+      "parentId": "e354",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.463636264216973,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.686818077427821,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e357",
+      "name": "Rectangle 356",
+      "hidden": false,
+      "parentId": "e354",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.7268153980752405,
+        "y": 4.11915135608049,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.963156167979003,
+        "row": 4.942981627296588,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e358",
+      "name": "TextBox 357",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "(Opened via banking app)",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "(Opened via banking app)",
+            "size": 8.0,
+            "runSizes": [
+              8.0
+            ]
+          }
+        ],
+        "size": 8.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 3.9385115923009626,
+        "y": 4.307775590551181,
+        "w": 1.3776695100612424,
+        "h": 0.13463582677165353
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.135437171916011,
+        "row": 5.169330708661417,
+        "colSpan": 1.4465529855643044,
+        "rowSpan": 0.16156299212598424
+      }
+    },
+    {
+      "id": "e359",
+      "name": "Group 358",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "group",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.2013538932633425,
+        "y": 5.700274496937883,
+        "w": 0.7877438757655293,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.411421587926509,
+        "row": 6.84032939632546,
+        "colSpan": 0.8271310695538058,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e360",
+      "name": "Rectangle 359",
+      "hidden": false,
+      "parentId": "e359",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.2013538932633425,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.411421587926509,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e361",
+      "name": "Rectangle 360",
+      "hidden": false,
+      "parentId": "e359",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.463636264216973,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.686818077427821,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e362",
+      "name": "Rectangle 361",
+      "hidden": false,
+      "parentId": "e359",
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "",
+            "size": 10.0,
+            "runSizes": [
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.7268153980752405,
+        "y": 5.700274496937883,
+        "w": 0.2622823709536308,
+        "h": 0.15288167104111985
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 4.963156167979003,
+        "row": 6.84032939632546,
+        "colSpan": 0.2753964895013123,
+        "rowSpan": 0.1834580052493438
+      }
+    },
+    {
+      "id": "e363",
+      "name": "Speech Bubble: Rectangle 362",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "Wealthsimple offers free advice to $100M+ clients",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Wealthsimple offers free advice to $100M+ clients",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 10.803560804899387,
+        "y": 6.21090769903762,
+        "w": 1.9655358705161854,
+        "h": 0.47043853893263343
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 11.343738845144356,
+        "row": 7.453089238845145,
+        "colSpan": 2.0638126640419943,
+        "rowSpan": 0.5645262467191601
+      }
+    },
+    {
+      "id": "e366",
+      "name": "Speech Bubble: Rectangle 365",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "BMO Direct Investing offers adviceDirect to $10-500M+ clients at 75bps /yr",
+      "placeholder": null,
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "BMO Direct Investing offers adviceDirect to $10-500M+ clients at 75bps /yr",
+            "size": 10.0,
+            "runSizes": [
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ]
+          }
+        ],
+        "size": 10.0
+      },
+      "sourcePart": "ppt/slides/slide37.xml",
+      "relations": [],
+      "box": {
+        "x": 4.952222222222222,
+        "y": 6.21090769903762,
+        "w": 2.7699114173228345,
+        "h": 0.47043853893263343
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 5.199833333333332,
+        "row": 7.453089238845145,
+        "colSpan": 2.9084069881889762,
+        "rowSpan": 0.5645262467191601
+      }
+    }
+  ]
+}

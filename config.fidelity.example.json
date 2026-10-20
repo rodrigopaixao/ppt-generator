@@ -1,0 +1,13 @@
+{
+  "mode": "fidelity",
+  "grid": { "columns": 14, "rows": 9, "gapX": 0, "gapY": 0 },
+  "theme": {
+    "colors": { "primary": "EC111A", "surface": "F5EFE8" },
+    "fonts": { "body": "Scotia", "heading": "Scotia Headline" }
+  },
+  "templates": {},
+  "masters": {},
+  "slides": {},
+  "elements": {},
+  "additions": {}
+}

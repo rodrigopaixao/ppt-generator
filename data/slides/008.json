@@ -1,0 +1,394 @@
+{
+  "number": 8,
+  "part": "ppt/slides/slide8.xml",
+  "hidden": false,
+  "title": "Executive summary",
+  "layout": "ppt/slideLayouts/slideLayout45.xml",
+  "master": "ppt/slideMasters/slideMaster3.xml",
+  "elements": [
+    {
+      "id": "e9",
+      "name": "think-cell data - do not delete",
+      "hidden": true,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "frame",
+      "text": "",
+      "placeholder": null,
+      "typography": null,
+      "sourcePart": "ppt/slides/slide8.xml",
+      "relations": [
+        {
+          "id": "rId1",
+          "target": "ppt/tags/tag33.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tags"
+        },
+        {
+          "id": "rId5",
+          "target": "ppt/media/image277.emf",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+        },
+        {
+          "id": "rId4",
+          "target": "ppt/embeddings/oleObject22.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+        }
+      ],
+      "box": {
+        "x": 0.00173665791776028,
+        "y": 0.00173665791776028,
+        "w": 0.00173665791776028,
+        "h": 0.00173665791776028
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.0018234908136482938,
+        "row": 0.002083989501312336,
+        "colSpan": 0.0018234908136482938,
+        "rowSpan": 0.002083989501312336
+      }
+    },
+    {
+      "id": "e2",
+      "name": "Title 1",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout45.xml",
+      "kind": "shape",
+      "text": "Executive summary",
+      "placeholder": {
+        "type": "title",
+        "idx": "0"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "Executive summary",
+            "size": 24.0,
+            "runSizes": [
+              24.0
+            ]
+          }
+        ],
+        "size": 24.0
+      },
+      "sourcePart": "ppt/slides/slide8.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.7238079615048119,
+        "w": 12.204860017497813,
+        "h": 0.7874015748031497
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.8685695538057743,
+        "colSpan": 12.815103018372703,
+        "rowSpan": 0.9448818897637796
+      }
+    },
+    {
+      "id": "e3",
+      "name": "Slide Number Placeholder 2",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout45.xml",
+      "kind": "shape",
+      "text": "8",
+      "placeholder": {
+        "type": "sldNum",
+        "idx": "10"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "8",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide8.xml",
+      "relations": [],
+      "box": {
+        "x": 12.282601706036745,
+        "y": 0.37027777777777776,
+        "w": 0.476667760279965,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 12.896731791338581,
+        "row": 0.44433333333333336,
+        "colSpan": 0.5005011482939632,
+        "rowSpan": 0.2362204724409449
+      }
+    },
+    {
+      "id": "e5",
+      "name": "Content Placeholder 4",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": null,
+      "kind": "shape",
+      "text": "CONTEXT AND OBJECTIVES\nWealthsimple’s (“WS”) recent product announcements have garnered interest and attention across FIs and consumers on its offerings and value proposition\nGiven the attention, this fact-base was developed with the objectives to: 1) outline WS’s growth and impact on BNS; 2) understand their relative strengths, and 3) frame next steps and discuss if a further strategic response is required\nWEALTHSIMPLE GROWTH STORY\nSince its inception, WS has experienced strong growth; it now has ~3MM clients and has seen ~70% CAGR in assets since 2018 (vs. 8% for BNS and 4% for TNG) \nWhile outflows to WS across Retail, iTRADE and TNG account for 2% of total, net outflows to WS have grown by ~100% Y/Y and are overindexed from primary clients (~50% of outflows) \nClients sending funds to WS skew younger and less affluent (e.g., clients aged 18–34 make up ~70% of WS outflow activity, despite representing only ~35% of our total client base)\nWS leads the market in net switching-gains across most banking and investing products; BNS leads in GIC net-switching gains, and TNG is top three in chequing accts and RRSPs\nContinued net outflows to WS could reduce our assets by $60-230Bn in next five years (~$0.2-1.2Bn impact on F30 run-rate revenue) and our primary clients by 5-20% of today’s base \nWEALTHSIMPLE STRENGTHS\nThrough primary and secondary research, Wealthsimple’s strengths have been identified along the following dimensions: \nProducts: WS has strong direct investing and retail investing offerings (e.g., robo); WS continues to evolve its offering to meet client needs (e.g., banking) \nPricing: WS offers value for money in the form of low cost, high rates; additionally, WS offers incentives and promotions with high rewards \nExperience: WS has created strong brand equity among its clients through its digital capabilities, branding, and two-way client engagement \nEnablers: WS’s ability to execute at pace can be attributed to their modern tech stack, agile delivery, calculated risk-taking culture, and long-term profitability horizon\nPATH FORWARD\nNear-term, WS will likely deepen its wealth and banking offerings; Medium-to-long-term, IPO is the likely destination for WS, allowing Power Corp. to unlock value from its stake\nAcross BNS and Tangerine, there are several strategies and investments in-flight that are expected to combat outflows to WS (e.g., Retail segmentation, iTRADE growth strategy, Project Clarity); time and resources are required to execute on these initiatives and realize benefits\nSpecifically, the highest priority initiatives to compete are:  \nTangerine ‘Project Clarity’ strategy, including the crypto offering\nCX initiatives within CB and Wealth, particularly the digital experience\nAt this time, these initiatives are moving as quickly as possible; no further action is needed but we will continue to monitor progress",
+      "placeholder": {
+        "type": "obj",
+        "idx": "12"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "CONTEXT AND OBJECTIVES",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Wealthsimple’s (“WS”) recent product announcements have garnered interest and attention across FIs and consumers on its offerings and value proposition",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Given the attention, this fact-base was developed with the objectives to: 1) outline WS’s growth and impact on BNS; 2) understand their relative strengths, and 3) frame next steps and discuss if a further strategic response is required",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5,
+              10.5,
+              10.5,
+              10.5,
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "WEALTHSIMPLE GROWTH STORY",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Since its inception, WS has experienced strong growth; it now has ~3MM clients and has seen ~70% CAGR in assets since 2018 (vs. 8% for BNS and 4% for TNG) ",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "While outflows to WS across Retail, iTRADE and TNG account for 2% of total, net outflows to WS have grown by ~100% Y/Y and are overindexed from primary clients (~50% of outflows) ",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Clients sending funds to WS skew younger and less affluent (e.g., clients aged 18–34 make up ~70% of WS outflow activity, despite representing only ~35% of our total client base)",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "WS leads the market in net switching-gains across most banking and investing products; BNS leads in GIC net-switching gains, and TNG is top three in chequing accts and RRSPs",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          },
+          {
+            "text": "Continued net outflows to WS could reduce our assets by $60-230Bn in next five years (~$0.2-1.2Bn impact on F30 run-rate revenue) and our primary clients by 5-20% of today’s base ",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5,
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "WEALTHSIMPLE STRENGTHS",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Through primary and secondary research, Wealthsimple’s strengths have been identified along the following dimensions: ",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Products: WS has strong direct investing and retail investing offerings (e.g., robo); WS continues to evolve its offering to meet client needs (e.g., banking) ",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Pricing: WS offers value for money in the form of low cost, high rates; additionally, WS offers incentives and promotions with high rewards ",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Experience: WS has created strong brand equity among its clients through its digital capabilities, branding, and two-way client engagement ",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Enablers: WS’s ability to execute at pace can be attributed to their modern tech stack, agile delivery, calculated risk-taking culture, and long-term profitability horizon",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "PATH FORWARD",
+            "size": 12.0,
+            "runSizes": [
+              12.0
+            ]
+          },
+          {
+            "text": "Near-term, WS will likely deepen its wealth and banking offerings; Medium-to-long-term, IPO is the likely destination for WS, allowing Power Corp. to unlock value from its stake",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Across BNS and Tangerine, there are several strategies and investments in-flight that are expected to combat outflows to WS (e.g., Retail segmentation, iTRADE growth strategy, Project Clarity); time and resources are required to execute on these initiatives and realize benefits",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Specifically, the highest priority initiatives to compete are:  ",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5,
+              10.5
+            ]
+          },
+          {
+            "text": "Tangerine ‘Project Clarity’ strategy, including the crypto offering",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          },
+          {
+            "text": "CX initiatives within CB and Wealth, particularly the digital experience",
+            "size": 10.5,
+            "runSizes": [
+              10.5
+            ]
+          },
+          {
+            "text": "At this time, these initiatives are moving as quickly as possible; no further action is needed but we will continue to monitor progress",
+            "size": 10.5,
+            "runSizes": [
+              10.5,
+              10.5,
+              10.5
+            ]
+          }
+        ],
+        "size": 12.0
+      },
+      "sourcePart": "ppt/slides/slide8.xml",
+      "relations": [],
+      "box": {
+        "x": 0.38371937882764656,
+        "y": 1.3584055118110236,
+        "w": 12.47543416447944,
+        "h": 5.766641513560805
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.40290534776902887,
+        "row": 1.6300866141732284,
+        "colSpan": 13.099205872703411,
+        "rowSpan": 6.919969816272967
+      }
+    },
+    {
+      "id": "e7",
+      "name": "Text Placeholder 6",
+      "hidden": false,
+      "parentId": null,
+      "inheritedFrom": "ppt/slideLayouts/slideLayout45.xml",
+      "kind": "shape",
+      "text": "WEALTHSIMPLE OVERVIEW",
+      "placeholder": {
+        "type": "body",
+        "idx": "13"
+      },
+      "typography": {
+        "paragraphs": [
+          {
+            "text": "WEALTHSIMPLE OVERVIEW",
+            "size": 9.0,
+            "runSizes": [
+              9.0
+            ]
+          }
+        ],
+        "size": 9.0
+      },
+      "sourcePart": "ppt/slides/slide8.xml",
+      "relations": [],
+      "box": {
+        "x": 0.5642366579177602,
+        "y": 0.37495297462817145,
+        "w": 5.905511811023622,
+        "h": 0.1968503937007874
+      },
+      "rotation": 0.0,
+      "grid": {
+        "col": 0.5924484908136481,
+        "row": 0.4499435695538057,
+        "colSpan": 6.200787401574803,
+        "rowSpan": 0.2362204724409449
+      }
+    }
+  ]
+}
