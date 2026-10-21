@@ -3,3 +3,14 @@ output/
 __pycache__/
 *.py[cod]
 .DS_Store
+.next/
+.next-e2e/
+build/
+*.tsbuildinfo
+.env
+.env.local
+.editor-data/
+playwright-report/
+test-results/
+.adonisjs/
+apps/web/next-env.d.ts

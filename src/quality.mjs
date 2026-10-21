@@ -1,8 +1,8 @@
 /**
- * Perfil de revisão: recompõe os sete layouts reportados e mantém os demais
- * objetos editáveis. Tokens são pt (fontes), in (geometria) e pt (margem de tabela).
- * quality.elements['slide.id'] substitui qualquer propriedade da declaração
- * gerada; slides/elements nativos continuam disponíveis para o restante do deck.
+ * Review profile: reconstruct reported layouts while retaining other editable objects. Font
+ * tokens use points; geometry uses inches; table margins use points.
+ * quality.elements['slide.id'] overrides generated declarations. Native slides/elements
+ * remain available for the rest of the deck.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -660,10 +660,15 @@ export const qualityDefaults = {
     component:12, chartTitle:10, tableHeader:10, kicker:10, statement:16, display:18 }, roles: {} },
 };
 
+// Source-bound review constraints are data, so every box, role, and gap remains
+// configurable through quality.flow without duplicating the normalization code.
+qualityDefaults.flow = merge(qualityDefaults.flow,
+  JSON.parse(fs.readFileSync(new URL('../data/layout-review.json', import.meta.url))));
+
 /**
- * Papéis de matrizes e diagramas do repositório, identificados por ID original.
- * Permanecem configuráveis em quality.roles. Não são texto corrido: representam
- * células de matrizes, organogramas, anotações de cronograma e legendas de figuras.
+ * Matrix and diagram roles bound to original repository IDs. Configure them through
+ * quality.roles. These objects represent matrix cells, organization charts, timeline
+ * annotations and figure legends rather than narrative body text.
  */
 const diagramRoles = {
   21:['e34','e35','e37','e38','e48'],
@@ -675,42 +680,52 @@ const diagramRoles = {
   61: ['e1129','e1093','e1094'], 62: ['e66','e67','e72','e75'],
 };
 
-/** Obtém texto de um ID estável do catálogo, sem reescrever conteúdo ou valores. */
+/**
+ * Get text by a stable catalog ID without rewriting content or values.
+ */
 function sourceText(catalog, number, id) {
   return catalog.slides[number-1].elements.find(e => e.id === id)?.text.trim() || '';
 }
 
-/** Obtém a matriz de uma tabela original; a cópia permite alterar só sua composição. */
+/**
+ * Get an original table matrix; copy it so only its composition can change.
+ */
 function sourceTable(catalog, number, id) {
   return structuredClone(catalog.slides[number-1].elements.find(e => e.id === id).cells);
 }
 
 /**
- * Cria primitivas declarativas para um slide. out recebe as declarações; q contém
- * tokens resolvidos. Cada objeto tem ID e pode ser configurado antes do scaffold.
+ * Create declarative slide primitives. out receives declarations; q contains resolved
+ * tokens. Every object has an ID and can be configured before scaffold generation.
  */
 function toolsFor(out, q) {
   return {
-    /** Texto com tamanho explícito e sem shrink silencioso do PowerPoint. */
+    /**
+     * Text with an explicit font size and no silent PowerPoint shrinking.
+     */
     text(id, text, box, style = {}) {
       out.push({ id, kind: 'text', text, box, style: { fontFace: q.font,
         fontSize: q.type.body.size, margin: 0, breakLine: false, valign: 'top',
         color: '000000', paraSpaceAfterPt: 0, ...style } });
     },
-    /** Forma editável para faixas e divisórias; não depende de fonte de ícones. */
+    /**
+     * Editable shape for bands and dividers without icon-font dependencies.
+     */
     shape(id, box, color, line = color) {
       out.push({ id, kind: 'shape', type: 'rect', box,
         style: { fill: { color }, line: { color: line, width: 0.6 } } });
     },
     /**
-     * Tabela nativa com linhas dimensionadas pelo conteúdo de TODAS as colunas.
-     * widths são polegadas, somando box.w. Não reduz fonte abaixo de dense.min.
-     * Uma caixa insuficiente interrompe a geração em vez de recortar os dados.
+     * Native table whose rows are sized from every column's content. widths uses inches and sums
+     * to box.w. Do not shrink below dense.min. Insufficient space fails generation rather than
+     * clipping data.
      */
     table(id, matrix, box, widths, options = {}) {
       let fontSize = options.fontSize || q.type.dense.size;
       const padding = q.spacing.tablePadding;
-      /** Mede toda a tabela com uma fonte uniforme, incluindo padding e cabeçalho. */
+      /**
+       * Measure the entire table with one font size, including padding and headers.
+       */
       const measure = size => matrix.map((row, ri) => Math.max(0.23,
         ...row.map((value, ci) => textHeight(value, widths[ci]-2*padding/72, size,
           { bold: ri === 0, leading: q.spacing.leading, safety: 1.02 })+2*padding/72)));
@@ -720,7 +735,7 @@ function toolsFor(out, q) {
         heights = measure(fontSize);
       }
       const required = heights.reduce((a, b) => a+b, 0);
-      if (required > box.h+0.01) throw new Error(`Tabela ${id}: precisa ${required.toFixed(2)}in, disponível ${box.h.toFixed(2)}in a ${fontSize}pt`);
+      if (required > box.h+0.01) throw new Error(`Table ${id}: requires ${required.toFixed(2)}in, available ${box.h.toFixed(2)}in at ${fontSize}pt`);
       const extra = (box.h-required)/heights.length;
       const rows = matrix.map((row, ri) => row.map(value => ({ text: value,
         options: { bold: ri === 0, color: ri === 0 ? 'FFFFFF' : '000000',
@@ -731,8 +746,8 @@ function toolsFor(out, q) {
         valign: 'middle', autoPage: false, ...options, fontSize } });
     },
     /**
-     * Gráfico Office editável, com categorias, valores e workbook incorporado.
-     * series contém os caches numéricos originais; style controla eixos/legendas.
+     * Editable Office chart with categories, values and an embedded workbook. series contains
+     * original numeric caches; style controls axes and legends.
      */
     chart(id, series, box, style = {}) {
       out.push({ id, kind: 'chart', type: 'bar', series, box,
@@ -753,7 +768,9 @@ function toolsFor(out, q) {
   };
 }
 
-/** Agenda completa em tabela, com largura suficiente para Length e última linha. */
+/**
+ * Complete agenda in a table with sufficient width for Length and its final row.
+ */
 function agenda(catalog, out, q) {
   const t = toolsFor(out, q), rows = sourceTable(catalog, 10, 'e8');
   t.table('agenda', rows, { x: 0.56, y: 1.20, w: 12.21, h: 6.10 },
@@ -761,9 +778,9 @@ function agenda(catalog, out, q) {
 }
 
 /**
- * Timeline densa em tabela + barras editáveis. A posição horizontal de cada
- * barra é a transformação linear da geometria original, sem inventar datas.
- * As alturas das linhas seguem a medição de entregáveis, não o desenho antigo.
+ * Dense timeline using a table and editable bars. Each bar's horizontal position linearly
+ * transforms the original geometry without inventing dates. Row heights follow deliverable
+ * measurements rather than the old drawing.
  */
 function timeline(catalog, out, q) {
   const t = toolsFor(out, q), data = sourceTable(catalog, 23, 'e57');
@@ -798,10 +815,14 @@ function timeline(catalog, out, q) {
     { fontSize: 10, color: 'EC111A', bold: true });
 }
 
-/** Governança nativa em matriz: cada nível e seu mandato ocupam a mesma linha. */
+/**
+ * Native governance matrix with each level and its mandate on the same row.
+ */
 function governance(catalog, out, q) {
   const t = toolsFor(out, q);
-  /** Texto original de um elemento da matriz de governança. */
+  /**
+   * Original text of a governance matrix element.
+   */
   const s = id => sourceText(catalog, 29, id);
   t.table('governance', [
     ['Governance', 'Team / participants', 'Team / participants', 'Mandate and cadence'],
@@ -813,8 +834,8 @@ function governance(catalog, out, q) {
 }
 
 /**
- * Recria os quatro gráficos a partir dos valores originais; nenhuma barra é SVG.
- * Os rótulos usam anos explícitos. A série de clientes converte pessoas em milhões.
+ * Rebuild four charts from original values; no bar uses SVG. Labels use explicit years.
+ * Convert customer counts to millions.
  */
 function impressions(catalog, out, q, charts) {
   const t = toolsFor(out, q), s = id => sourceText(catalog, 31, id);
@@ -854,7 +875,9 @@ function impressions(catalog, out, q, charts) {
     { fontSize: q.type.body.size, bold: true, color: 'FFFFFF' });
 }
 
-/** Comparação em tabela editável, sem margens internas negativas nem texto invertido. */
+/**
+ * Editable comparison table without negative inner margins or inverted text.
+ */
 function comparison(catalog, out, q) {
   const t = toolsFor(out, q), s = id => sourceText(catalog, 34, id);
   const rows = [
@@ -883,7 +906,9 @@ function comparison(catalog, out, q) {
     { x: 0.56, y: 6.94, w: 11.7, h: 0.2 }, { fontSize: 10 });
 }
 
-/** Mix de balanço: duas séries de barras empilhadas nativas e KPIs sem sobreposições. */
+/**
+ * Balance-sheet mix: two native stacked-bar series and non-overlapping KPIs.
+ */
 function balance(catalog, out, q, charts) {
   const t = toolsFor(out, q);
   const banks = ['Scotia','BBVA','HSBC','Santander','Banorte','System'];
@@ -914,14 +939,16 @@ function balance(catalog, out, q, charts) {
 }
 
 /**
- * Desenha um ícone Office editável em uma caixa quadrada. kind seleciona o
- * símbolo sem usar fontes de ícones. Coordenadas locais 0–1 escalam com box;
- * prefix identifica todas as peças para ancoragem posterior à linha da tabela.
+ * Draw an editable Office icon in a square box. kind selects a symbol without icon fonts.
+ * Local 0–1 coordinates scale with box; prefix identifies pieces for later anchoring to
+ * table rows.
  */
 function tacticIcon(out, prefix, kind, box, q) {
   const t = toolsFor(out,q);
   let index = 0;
-  /** Adiciona uma peça vetorial proporcional à caixa, com contorno branco. */
+  /**
+   * Add a vector piece proportional to the box with a white outline.
+   */
   const piece = (type,x,y,w,h,solid=false,rotation=0) => out.push({
     id:`${prefix}-${index++}`,kind:'shape',type,
     box:{x:box.x+x*box.w,y:box.y+y*box.h,w:Math.max(w,0.001)*box.w,h:Math.max(h,0.001)*box.h},
@@ -953,9 +980,9 @@ function tacticIcon(out, prefix, kind, box, q) {
 }
 
 /**
- * Táticas em tabela com coluna exclusiva de ícones antes do texto. size/gap
- * vêm de flow.tableIcons; o adaptador ancora as peças nas alturas finais das
- * linhas, inclusive quando uma descrição cresce ou a fonte é reconfigurada.
+ * Tactics table with a dedicated icon column before text. size/gap come from
+ * flow.tableIcons. The adapter anchors pieces to final row heights, including when
+ * descriptions grow or fonts change.
  */
 function tactics(catalog, out, q) {
   const t = toolsFor(out, q), original = sourceTable(catalog, 58, 'e14');
@@ -964,7 +991,7 @@ function tactics(catalog, out, q) {
   const table = out.find(e=>e.id==='tactics');
   const settings = q.flow.tableIcons['58.custom.tactics'];
   const kinds = settings.kinds || ['youth','winter','team','inbound','outbound','pricing','wealth','engagement'];
-  if (kinds.length!==rows.length-1) throw new Error('Tactics: configure um ícone por linha');
+  if (kinds.length!==rows.length-1) throw new Error('Tactics: configure one icon per row');
   let y = table.box.y+table.style.rowH[0];
   for (let row=0;row<kinds.length;row++) {
     tacticIcon(out,`${settings.prefix}-${row+1}`,kinds[row],{
@@ -975,7 +1002,9 @@ function tactics(catalog, out, q) {
   }
 }
 
-/** Roadmap em matriz de iniciativas: cada célula tem título e objetivo completos. */
+/**
+ * Initiative roadmap matrix with complete headings and objectives in each cell.
+ */
 function roadmap(catalog, out, q) {
   const t = toolsFor(out, q), s = id => sourceText(catalog, 65, id);
   t.text('overview-heading', 'OVERVIEW', { x: 0.56, y: 1.85, w: 2.2, h: 0.25 }, { bold: true });
@@ -1004,31 +1033,30 @@ function roadmap(catalog, out, q) {
 }
 
 /**
- * Resolve tokens e configura substituições apenas dos layouts solicitados.
- * catalog é o catálogo imutável. patch é clonado. Todas as remoções referem-se
- * a IDs originais de primeiro nível, para não remover filhos duas vezes.
- * As funções da biblioteca geram tabelas e gráficos; a importação OPC conserva
- * workbook e relações. O perfil Python normaliza a tipografia do pacote final.
+ * Resolve tokens and configure replacements only for requested layouts. catalog is immutable
+ * and patch is cloned. Removals target original top-level IDs to avoid deleting children
+ * twice. Library functions produce tables/charts; OPC import retains workbooks and
+ * relationships. The Python profile normalizes final package typography.
  */
 export function prepareQuality(patch, catalog) {
   const config = structuredClone(patch), q = merge(qualityDefaults, patch.quality);
   if (!Number.isFinite(q.fontFit.step) || q.fontFit.step < 0.01)
-    throw new Error('fontFit.step deve ser pelo menos 0.01 pt');
+    throw new Error('fontFit.step must be at least 0.01 pt');
   for (const [number, ids] of Object.entries(diagramRoles))
     for (const id of ids) q.roles[`${number}.${id}`] ||= 'dense';
   for (const [role, limits] of Object.entries(q.type))
-    if (!(limits.min > 0 && limits.max >= limits.min && limits.size >= limits.min && limits.size <= limits.max)) throw new Error(`Escala inválida: ${role}`);
+    if (!(limits.min > 0 && limits.max >= limits.min && limits.size >= limits.min && limits.size <= limits.max)) throw new Error(`Invalid type scale: ${role}`);
   for (const [role,size] of Object.entries(q.hierarchy.sizes))
-    if (!Number.isFinite(size) || size <= 0) throw new Error(`Token tipográfico inválido: ${role}`);
+    if (!Number.isFinite(size) || size <= 0) throw new Error(`Invalid typography token: ${role}`);
   for (const role of Object.values(q.hierarchy.roles))
-    if (!(role in q.hierarchy.sizes)) throw new Error(`Nível tipográfico desconhecido: ${role}`);
-  if (q.spacing.tablePadding < 0 || q.spacing.gap < 0) throw new Error('Espaçamentos não podem ser negativos');
+    if (!(role in q.hierarchy.sizes)) throw new Error(`Unknown typography level: ${role}`);
+  if (q.spacing.tablePadding < 0 || q.spacing.gap < 0) throw new Error('Spacing cannot be negative');
   // Capture reference sizes before any transformation; explicit element tokens win.
   for (const slide of catalog.slides) for (const item of slide.elements)
     if (item.typography?.size) q.referenceTypography.elements[`${slide.number || catalog.slides.indexOf(slide)+1}.${item.id}`] ||= item.typography;
-  // Capas usam placeholders body na referência: não podem herdar corpo 12 pt.
-  // A classificação usa tamanho/posição do catálogo, com tokens globais e
-  // overrides explícitos preservados. A geometria cresce no adaptador nativo.
+  // Reference covers use body placeholders and must not inherit 12 pt body styling.
+  // Classification uses catalog size/position, retaining global tokens and
+  // explicit overrides. The native adapter expands geometry.
   for (const slide of catalog.slides) {
     const cover = slide.elements.find(item=>item.typography?.size>=48 && item.box?.y>2);
     if (!cover) continue;
@@ -1045,6 +1073,13 @@ export function prepareQuality(patch, catalog) {
     }
   }
   const charts = catalog.chartSources || JSON.parse(fs.readFileSync(path.join(root, 'data/chart-source.json')));
+  // Remove the redundant upper logo from the shared timeline layout. Its
+  // footer logo remains; callers can override this native layout patch.
+  config.templates ||= {};
+  for (const [layout, ids] of Object.entries(q.flow.hideLayoutElements || {})) {
+    config.templates[layout] = merge({ elements: Object.fromEntries(ids.map(id => [id, { visible: false }])) },
+      config.templates[layout] || {});
+  }
   config.quality = q;
   config.theme = merge({ fonts: { body: q.font, heading: q.font } }, config.theme || {});
   config.slides ||= {}; config.additions ||= {};
@@ -1091,7 +1126,7 @@ export function prepareQuality(patch, catalog) {
       if (!isHeader && !isNote) elements[item.id] = { visible: false };
     }
     const out = [];
-    if (!builders[number]) throw new Error(`Não existe reparo específico para ${number}`);
+    if (!builders[number]) throw new Error(`No slide-specific repair exists for ${number}`);
     builders[number](catalog, out, q, charts);
     // Rebuilt structural text inherits its source size, rather than a body token.
     const headingSources = {
@@ -1141,7 +1176,7 @@ export function prepareQuality(patch, catalog) {
         const role = q.roles[`${number}.custom.${effective.id}`];
         const size = effective.style.fontSize || q.type.dense.size;
         if (!q.referenceTypography.elements[`${number}.custom.${effective.id}`]?.locked && (size < q.type[role].min || size > q.type[role].max))
-          throw new Error(`${number}.${effective.id}: fonte ${size}pt fora dos limites de ${role}`);
+          throw new Error(`${number}.${effective.id}: font ${size}pt outside the limits for ${role}`);
       }
       if (q.hierarchy.enabled && q.referenceTypography.elements[`${number}.custom.${item.id}`]?.locked)
         effective.style.fontSize = q.hierarchy.sizes[q.hierarchy.roles[`${number}.custom.${item.id}`]];

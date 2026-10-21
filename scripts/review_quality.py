@@ -1,8 +1,7 @@
-"""Renderiza a saída revisada e cria contatos privados para inspeção humana.
+"""Render reviewed output and create private contact sheets for human inspection.
 
-Os PNGs/PDFs servem apenas a QA e nunca substituem objetos do PowerPoint.
-O relatório registra hash, contagem, mapeamento de páginas e motor usado.
-"""
+PNGs/PDFs are QA evidence and never replace PowerPoint objects. Record hashes,
+page counts, page mapping and the rendering engine in the report."""
 import argparse
 import hashlib
 import json
@@ -12,17 +11,16 @@ from PIL import Image, ImageDraw
 
 
 def run(arguments):
-    """Executa lista de argumentos sem shell; qualquer falha interrompe a revisão."""
+    """Run an argument list without a shell; fail immediately if review commands fail."""
     subprocess.run([str(value) for value in arguments], check=True, timeout=600)
 
 
 def review(source, directory):
-    """Exporta PPTX, renderiza páginas e monta contatos 3×4 em ordem de leitura.
+    """Export a PPTX, render pages and compose 3×4 contact sheets in reading order.
 
-    source é PPTX existente, directory recebe evidência privada. O manifesto do
-    build fornece os números originais, inclusive as continuações. O hash final
-    confirma que renderizar não modificou o pacote revisado.
-    """
+    source is an existing PPTX; directory receives private evidence. The build
+    manifest supplies original slide numbers, including continuations. The final
+    hash confirms that rendering did not modify the reviewed package."""
     source, directory = source.resolve(), directory.resolve()
     directory.mkdir(parents=True, exist_ok=True)
     digest = hashlib.sha256(source.read_bytes()).hexdigest()
@@ -32,7 +30,7 @@ def review(source, directory):
     run(['pdftoppm','-scale-to','1100','-png',pdf,directory/'page'])
     images = sorted(directory.glob('page-*.png'))
     if len(images) != manifest['counts']['outputSlides']:
-        raise ValueError('Quantidade de páginas renderizadas diverge do manifesto')
+        raise ValueError('Rendered page count does not match the manifest')
     for start in range(0,len(images),12):
         contact = Image.new('RGB',(1500,1240),'#e8e8e8')
         draw = ImageDraw.Draw(contact)
@@ -56,7 +54,7 @@ def review(source, directory):
 
 
 def main():
-    """Recebe caminhos de entrada/saída da CLI e inicia a revisão da saída real."""
+    """Read CLI input/output paths and start reviewing the actual output."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source',type=Path,default=Path('output/recreated-slides.pptx'))
     parser.add_argument('--directory',type=Path,default=Path('output/review/quality-final'))

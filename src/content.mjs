@@ -1,7 +1,8 @@
 /**
- * Conteúdo dos sete templates adaptativos. A fonte do modo fiel para todos os
- * slides é data/catalog.json e data/slides/NNN.json, gerada do PPTX completo.
- * Textos e índices abaixo pertencem à referência versionada; não são inferências.
+ * Content for the seven responsive templates. Fidelity mode reads all slides from
+ * data/catalog.json and data/slides/NNN.json extracted from the complete PPTX. Wording and
+ * indices come from the versioned reference, not inference.
+ *
  * @module content
  */
 import fs from 'node:fs';
@@ -9,7 +10,9 @@ import path from 'node:path';
 import { root } from './components.mjs';
 
 export const source = JSON.parse(fs.readFileSync(path.join(root, 'data/source.json'))).slides;
-/** Retorna textos na ordem XML do slide de origem; number é seu número original. */
+/**
+ * Return source slide text in XML order; number is the original slide number.
+ */
 const texts = number => source[number].texts.map(t => t.text);
 
 export const contents = {

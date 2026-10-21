@@ -1,5 +1,8 @@
 # Extending and maintaining the system
 
+Use English for identifiers, comments, docstrings, diagnostics, interface copy,
+test descriptions and documentation throughout the project.
+
 [Documentation index](README.md)
 
 Choose the extension point that matches the intended result. Use a native patch for a small change to existing content, a quality recipe for a source layout that needs recomposition, and a semantic template for reusable data-driven authoring.
@@ -9,7 +12,7 @@ Choose the extension point that matches the intended result. Use a native patch 
 A component receives a `Canvas`, stable ID, data, available box, and options. Derive child boxes from the available box. Use tokens for repeated style choices, preserve reading order, and keep icon and text lanes separate.
 
 ```js
-import { inset, split } from './src/layout.mjs';
+import { inset, split } from "./src/layout.mjs";
 
 /**
  * Draws one reusable message card within an available region.
@@ -21,7 +24,7 @@ import { inset, split } from './src/layout.mjs';
  * @returns {void}
  */
 export function messageCard(c, id, data, box, options = {}) {
-  const o = c.options('messageCard', id, {
+  const o = c.options("messageCard", id, {
     padding: c.theme.spacing.padding,
     gap: c.theme.spacing.gap,
     titleWeight: 1,
@@ -32,13 +35,20 @@ export function messageCard(c, id, data, box, options = {}) {
   c.shape(`${id}.background`, region, {
     fill: { color: c.theme.colors.surface },
   });
-  const [titleBox, bodyBox] = split(inset(region, o.padding),
-    [o.titleWeight, o.bodyWeight], 'y', o.gap);
+  const [titleBox, bodyBox] = split(
+    inset(region, o.padding),
+    [o.titleWeight, o.bodyWeight],
+    "y",
+    o.gap,
+  );
   c.text(`${id}.title`, data.title, titleBox, {
-    bold: true, fontSize: 12, minFontSize: 12,
+    bold: true,
+    fontSize: 12,
+    minFontSize: 12,
   });
   c.text(`${id}.body`, data.body, bodyBox, {
-    fontSize: 12, minFontSize: 10,
+    fontSize: 12,
+    minFontSize: 10,
   });
 }
 ```

@@ -1,9 +1,8 @@
-"""Workbooks OOXML portáveis para os gráficos editáveis, inclusive no Keynote.
+"""Portable OOXML workbooks for editable charts, including Keynote support.
 
-O perfil quality conserva séries, caches, estilos e fórmulas do gráfico. Corrige
-os ranges XLSX emitidos por PptxGenJS 4.0.1 e oferece XLSX no lugar de XLSB para
-importadores que não leem a planilha binária. Não rasteriza os gráficos.
-"""
+The quality profile preserves chart series, caches, styles and formulas. It repairs
+XLSX ranges emitted by PptxGenJS 4.0.1 and provides XLSX replacements for XLSB
+workbooks when readers do not support binary spreadsheets. Charts stay native."""
 import io
 import posixpath
 import re
@@ -17,14 +16,14 @@ CT = 'http://schemas.openxmlformats.org/package/2006/content-types'
 
 
 def column_index(label):
-    """Converte uma coluna Excel A–XFD em inteiro base um, sem dependências."""
+    """Convert an Excel column A–XFD to a one-based integer without dependencies."""
     result = 0
     for char in label:result = result*26+ord(char)-64
     return result
 
 
 def column_name(index):
-    """Converte índice base um em letras Excel, para endereçar células XLSX."""
+    """Convert a one-based index to Excel column letters for XLSX cell addresses."""
     result = ''
     while index:
         index,digit = divmod(index-1,26);result = chr(65+digit)+result
@@ -32,21 +31,20 @@ def column_name(index):
 
 
 def cached_cells(chart):
-    """Lê fórmulas e caches em células por sheet, preservando pontos esparsos.
+    """Read formulas and caches into cells by sheet, preserving sparse points.
 
-    O mapa resultante é {sheet: {(linha,coluna): (valor,é_número)}}. As fórmulas
-    originais de c:numRef/c:strRef não são alteradas. Ranges retangulares seguem
-    ordem por linha; não cria zeros onde a referência original não tem pontos.
-    """
+    Return {sheet: {(row, column): (value, is_number)}}. Original c:numRef/c:strRef
+    formulas are unchanged. Rectangular ranges use row-major order; missing source
+    points do not become artificial zeros."""
     sheets = {}
     for reference in list(chart.iter(q('c','numRef')))+list(chart.iter(q('c','strRef'))):
         formula = reference.findtext('c:f',namespaces=NS) or ''
         match = re.fullmatch(r"(?:'((?:[^']|'')+)'|([^!]+))!\$?([A-Z]+)\$?(\d+)(?::\$?([A-Z]+)\$?(\d+))?",formula)
-        if not match:raise ValueError(f'Referência de workbook não suportada: {formula}')
+        if not match:raise ValueError(f'Unsupported workbook reference: {formula}')
         quoted,plain,start_col,start_row,end_col,end_row = match.groups()
         sheet = (quoted or plain).replace("''", "'")
         start = column_index(start_col);width = column_index(end_col or start_col)-start+1
-        if width<1:raise ValueError(f'Range invertido: {formula}')
+        if width<1:raise ValueError(f'Reversed range: {formula}')
         cells = sheets.setdefault(sheet,{})
         cache = reference.find('c:numCache',NS) if reference.tag==q('c','numRef') else reference.find('c:strCache',NS)
         if cache is None:continue
@@ -58,11 +56,10 @@ def cached_cells(chart):
 
 
 def workbook_bytes(sheets):
-    """Constrói XLSX mínimo válido com strings inline, números e estilos padrão.
+    """Build a minimal valid XLSX with inline strings, numbers and default styles.
 
-    sheets é o mapa de cached_cells. Gera partes OPC usuais e não inclui tables
-    artificiais, macros ou fórmulas externas. Os endereços mantêm os c:f originais.
-    """
+    sheets is the cached_cells map. Generate standard OPC parts without artificial
+    tables, macros or external formulas. Cell addresses retain the original c:f values."""
     book = ET.Element(f'{{{S}}}workbook');sheet_list = ET.SubElement(book,f'{{{S}}}sheets')
     rels = ET.Element(f'{{{R}}}Relationships');types = ET.Element(f'{{{CT}}}Types')
     ET.SubElement(types,f'{{{CT}}}Default',Extension='rels',ContentType='application/vnd.openxmlformats-package.relationships+xml')
@@ -91,13 +88,12 @@ def workbook_bytes(sheets):
 
 
 def normalize_chart_workbooks(parts):
-    """Repara as planilhas dos gráficos ativos do pacote e retorna auditoria.
+    """Repair active chart workbooks and return an audit report.
 
-    XLSB recebe substituto XLSX construído dos caches do próprio gráfico. XLSX
-    existente mantém todas as partes: remove apóstrofo final de table@ref e
-    restaura números zero de caches onde 4.0.1 gravou um v vazio. Ranges inválidos
-    restantes interrompem o build. O chamador aplica isto somente em quality.
-    """
+    Replace XLSB with XLSX built from the chart's own caches. Preserve existing XLSX
+    parts, remove trailing apostrophes from table@ref, and restore numeric zeros where
+    4.0.1 wrote empty v nodes. Remaining invalid ranges fail the build. The caller
+    enables this repair only in quality mode."""
     repairs = []
     for part in list(parts):
         if not re.fullmatch(r'ppt/charts/(?:generated-)*chart\d+\.xml',part):continue
@@ -107,7 +103,7 @@ def normalize_chart_workbooks(parts):
         if relationship_part not in parts:continue
         relationships = parse_xml(parts[relationship_part])
         relationship = next((r for r in relationships if r.get('Id')==external.get(q('r','id'))),None)
-        if relationship is None:raise ValueError(f'{part}: workbook sem relação')
+        if relationship is None:raise ValueError(f'{part}: workbook has no relationship')
         old = posixpath.normpath(posixpath.join(posixpath.dirname(part),relationship.get('Target')))
         if old.endswith('.xlsb'):
             target = f'ppt/embeddings/keynote-{posixpath.basename(part)[:-4]}.xlsx'
@@ -124,7 +120,7 @@ def normalize_chart_workbooks(parts):
                     for node in root.iter():
                         if 'ref' not in node.attrib:continue
                         before = node.get('ref');after = before.rstrip("'")
-                        if not re.fullmatch(r'\$?[A-Z]+\$?\d+(?::\$?[A-Z]+\$?\d+)?',after):raise ValueError(f'{old}: range inválido {before}')
+                        if not re.fullmatch(r'\$?[A-Z]+\$?\d+(?::\$?[A-Z]+\$?\d+)?',after):raise ValueError(f'{old}: invalid range {before}')
                         if after!=before:node.set('ref',after);ranges+=1
                     if ranges:changed[name] = xml_bytes(root)
             zero_repairs = 0

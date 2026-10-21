@@ -1,17 +1,21 @@
 /**
- * Geometria independente do PowerPoint. Não escreve arquivos nem desenha assets.
- * @typedef {{x:number,y:number,w:number,h:number}} Box Caixa em polegadas.
+ * Geometry independent of PowerPoint, without file writes or artwork rendering. Box uses
+ * inches; GridOptions defines columns, rows and inch-based gaps. Grid coordinates are
+ * zero-based and may be fractional. Inches and tracks are never implicitly interchangeable.
+ * Reject impossible layout regions.
+ *
+ * @typedef {{x:number,y:number,w:number,h:number}} Box
  * @typedef {{columns:number,rows:number,gapX:number,gapY:number}} GridOptions
- * Coordenadas de grid usam base zero e aceitam frações. Polegadas e tracks nunca
- * são intercambiados implicitamente. Todo layout rejeita áreas impossíveis.
  */
 export class Grid {
   /**
-   * Divide box em tracks iguais, descontando intervalos antes da divisão.
-   * @param {Box} box Região disponível no canvas.
-   * @param {GridOptions} options Quantidade de tracks e gaps em polegadas.
-   * cw/rh são largura/altura úteis de cada track; box permanece em coordenadas
-   * globais. A validação impede divisões por zero e gaps maiores que a região.
+   * Divide box into equal tracks after subtracting gaps. box is the available canvas region;
+   * options supplies track counts and inch-based gaps. cw/rh are usable track dimensions; box
+   * stays in global coordinates. Validation prevents division by zero and gaps larger than the
+   * region.
+   *
+   * @param {Box} box
+   * @param {GridOptions} options
    */
   constructor(box, { columns = 14, rows = 9, gapX = 0.12, gapY = 0.1 } = {}) {
     if (!(columns > 0 && rows > 0 && Number.isInteger(columns) && Number.isInteger(rows)))
@@ -24,12 +28,15 @@ export class Grid {
     if (!(this.cw > 0 && this.rh > 0)) throw new Error('Grid gaps exceed available space.');
   }
   /**
-   * Resolve uma região do grid para polegadas, incluindo gaps internos ao span.
-   * @param {number} col Coluna inicial, base zero.
-   * @param {number} row Linha inicial, base zero.
-   * @param {number} colSpan Quantidade de colunas, inclusive fracionárias.
-   * @param {number} rowSpan Quantidade de linhas.
-   * @returns {Box} Caixa física; falha se ultrapassar os limites do grid.
+   * Resolve a grid region to inches, including internal gaps within its span. col/row are
+   * zero-based starts; colSpan/rowSpan may be fractional. Return a physical box and fail if it
+   * exceeds grid bounds.
+   *
+   * @param {number} col
+   * @param {number} row
+   * @param {number} colSpan
+   * @param {number} rowSpan
+   * @returns {Box}
    */
   cell(col, row, colSpan = 1, rowSpan = 1) {
     if (col < 0 || row < 0 || colSpan <= 0 || rowSpan <= 0 ||
@@ -41,11 +48,13 @@ export class Grid {
       h: rowSpan * (this.rh + this.gapY) - this.gapY };
   }
   /**
-   * Distribui itens da esquerda para a direita, continuando na próxima linha.
-   * @param {object[]} items Itens com colSpan e rowSpan opcionais.
-   * @returns {object[]} Novos itens com box; a lista de entrada não é alterada.
-   * col é o cursor horizontal; row é a linha atual; lineHeight guarda a maior
-   * altura da linha anterior, evitando sobreposição de itens de spans distintos.
+   * Distribute items left to right, continuing on the next row. items may specify
+   * colSpan/rowSpan. Return new items with boxes without mutating input. col/row track the
+   * cursor; lineHeight retains the previous row's greatest height to prevent overlap between
+   * different spans.
+   *
+   * @param {object[]} items
+   * @returns {object[]}
    */
   flow(items) {
     let col = 0, row = 0, lineHeight = 0;
@@ -60,10 +69,13 @@ export class Grid {
 }
 
 /**
- * Desconta padding e desloca a origem para dentro da caixa.
- * @param {Box} box Caixa externa.
- * @param {number|object} pad Polegadas iguais ou {top,right,bottom,left}.
- * @returns {Box} Caixa interna. Campos omitidos valem zero; área vazia falha.
+ * Subtract padding and move the origin inside the box. box is the outer area; pad is uniform
+ * inches or {top, right, bottom, left}. Return the inner box. Missing sides default to zero;
+ * empty areas fail.
+ *
+ * @param {Box} box
+ * @param {number|object} pad
+ * @returns {Box}
  */
 export function inset(box, pad) {
   const p = typeof pad === 'number' ? { top: pad, right: pad, bottom: pad, left: pad } : pad;
@@ -74,13 +86,15 @@ export function inset(box, pad) {
 }
 
 /**
- * Divide uma caixa proporcionalmente em uma linha ou coluna.
- * @param {Box} box Espaço a dividir.
- * @param {number[]} weights Pesos positivos, sem obrigação de somar 1.
- * @param {'x'|'y'} axis Direção da distribuição.
- * @param {number} gap Intervalo em polegadas entre regiões.
- * @returns {Box[]} Regiões consecutivas que ocupam exatamente o espaço.
- * available desconta gaps; total normaliza pesos; cursor avança após cada item.
+ * Split a box proportionally along a row or column. weights are positive and need not sum to
+ * one; axis selects x/y; gap uses inches. Return consecutive regions filling the available
+ * space. available excludes gaps; total normalizes weights; cursor advances after each item.
+ *
+ * @param {Box} box
+ * @param {number[]} weights
+ * @param {'x'|'y'} axis
+ * @param {number} gap
+ * @returns {Box[]}
  */
 export function split(box, weights, axis = 'x', gap = 0.12) {
   if (!weights.length || weights.some(w => !(w > 0)) || !['x', 'y'].includes(axis) || gap < 0)
@@ -98,13 +112,15 @@ export function split(box, weights, axis = 'x', gap = 0.12) {
 }
 
 /**
- * Reflow de coleção com células iguais, na ordem de leitura.
- * @param {Box} box Região total.
- * @param {number} count Quantidade positiva de itens.
- * @param {object} options minWidth e gap em polegadas; maxColumns limita colunas.
- * @returns {Box[]} Uma caixa por item. Uma última linha incompleta preserva as
- * larguras das colunas para manter alinhamento. cols deriva da largura mínima;
- * rows deriva de count/cols; linhas compartilham igualmente a altura disponível.
+ * Reflow a collection into equal cells in reading order. box is the total region and count
+ * is a positive integer. minWidth/gap use inches; maxColumns limits columns. Incomplete
+ * final rows retain column widths for alignment. cols derives from minimum width, rows from
+ * count/cols; rows share available height equally.
+ *
+ * @param {Box} box
+ * @param {number} count
+ * @param {object} options
+ * @returns {Box[]}
  */
 export function wrap(box, count, { minWidth = 1.8, gap = 0.12, maxColumns = count } = {}) {
   if (!Number.isInteger(count) || count < 1 || !(minWidth > 0) || maxColumns < 1)
@@ -117,13 +133,16 @@ export function wrap(box, count, { minWidth = 1.8, gap = 0.12, maxColumns = coun
 }
 
 /**
- * Converte frações de uma caixa pai em coordenadas físicas.
- * @param {Box} box Pai em polegadas.
- * @param {number} x Fração de deslocamento horizontal.
- * @param {number} y Fração de deslocamento vertical.
- * @param {number} w Fração da largura do pai.
- * @param {number} h Fração da altura do pai.
- * @returns {Box} Caixa filha; quem renderiza valida seus limites finais.
+ * Convert fractions of a parent box into physical coordinates. box uses inches; x/y are
+ * offset fractions and w/h are size fractions. Return a child box whose final bounds are
+ * validated by the renderer.
+ *
+ * @param {Box} box
+ * @param {number} x
+ * @param {number} y
+ * @param {number} w
+ * @param {number} h
+ * @returns {Box}
  */
 export function relative(box, x, y, w, h) {
   return { x: box.x + box.w * x, y: box.y + box.h * y, w: box.w * w, h: box.h * h };

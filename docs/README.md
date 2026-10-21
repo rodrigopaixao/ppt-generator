@@ -8,6 +8,7 @@ Start with [Getting started](getting-started.md) and [Architecture](architecture
 
 | Document | Questions it answers |
 | --- | --- |
+| [Inline web editor](editor.md) | How do I run Next.js/AdonisJS, edit text and export a PPTX? |
 | [Getting started](getting-started.md) | What should I install and run? Where are the results? |
 | [Architecture](architecture.md) | Why JavaScript and Python? How do native resources survive? |
 | [Native configuration](configuration.md) | How do I edit existing elements and add new ones? |

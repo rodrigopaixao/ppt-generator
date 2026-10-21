@@ -1,15 +1,13 @@
-"""Preserva e configura DrawingML original sem rasterizar os slides.
+"""Preserve and configure original DrawingML without rasterizing slides.
 
-O PptxGenJS não importa uma apresentação existente de maneira sem perdas. Este
-adaptador recebe o pacote gerado pela biblioteca e restaura as partes nativas
-da referência. Somente partes explicitamente configuradas são serializadas de
-novo. Assim, um build sem overrides conserva os bytes de todos os componentes
-visuais, inclusive recursos que o PptxGenJS não sabe reconstruir.
+PptxGenJS cannot import arbitrary presentations without loss. This adapter takes
+the library's generated package and restores native reference parts. Only
+explicitly configured parts are serialized again. A build without overrides
+preserves every visual component's bytes, including unsupported PptxGenJS objects.
 
-Unidades: ``box`` usa polegadas; ``localBox`` usa EMU (914400 por polegada);
-``grid`` usa colunas/linhas fracionárias. ``eN`` é o ID nativo p:cNvPr/@id,
-estável dentro do slide/layout/master. Grupos mantêm seus filhos e coordenadas.
-"""
+Units: box uses inches; localBox uses EMU (914400 per inch); grid uses fractional
+columns/rows. eN is the native p:cNvPr/@id, stable within a slide/layout/master.
+Groups retain their children and coordinate systems."""
 import argparse
 import copy
 import hashlib
@@ -45,11 +43,10 @@ NAMESPACE_HINTS = dict(NS)
 
 
 def parse_xml(payload):
-    """Lê XML e lembra seus prefixos, inclusive os usados só por mc:Ignorable.
+    """Parse XML and retain prefixes, including those used only by mc:Ignorable.
 
-    ElementTree normalmente descarta declarações não usadas em tags. Guardá-las
-    evita um PPTX que um renderizador aceite mas PowerPoint peça para reparar.
-    """
+    ElementTree normally discards declarations unused in tags. Retaining them avoids
+    PPTX packages that one reader accepts but PowerPoint asks to repair."""
     for _, (prefix, uri) in ET.iterparse(io.BytesIO(payload), events=('start-ns',)):
         if prefix:
             NAMESPACE_HINTS[prefix] = uri
@@ -59,29 +56,27 @@ def parse_xml(payload):
 
 
 def q(prefix, name):
-    """Retorna uma tag expandida de namespace.
+    """Return a namespace-expanded tag.
 
-    Args: prefix é uma chave de NS; name é o nome local da tag/atributo.
-    Returns: string ``{URI}name``, aceita pelo ElementTree.
-    """
+    Args: prefix is a key in NS; name is the local tag/attribute name.
+    Returns: the {URI}name string accepted by ElementTree."""
     return '{' + NS[prefix] + '}' + name
 
 
 def local(tag):
-    """Remove somente o namespace de uma tag XML; não modifica o documento."""
+    """Remove only an XML tag's namespace without changing the document."""
     return tag.rsplit('}', 1)[-1]
 
 
 def xml_bytes(node):
-    """Serializa uma árvore modificada em UTF-8 com declaração XML.
+    """Serialize a modified tree as UTF-8 with an XML declaration.
 
-    Usada apenas para partes alteradas. Partes intocadas mantêm seus bytes.
-    """
+    Used only for changed parts; untouched parts retain their original bytes."""
     namespace = node.tag.split('}')[0].lstrip('{')
     if namespace in (NS['rel'], NS['ct'], NS['s'],
                      'http://schemas.openxmlformats.org/officeDocument/2006/extended-properties'):
-        # Alguns leitores OPC detectam o pacote por nomes lexicais sem prefixo.
-        # Manter o namespace padrão evita arquivos válidos em XML mas não abertos.
+        # Some OPC readers identify package parts by unprefixed lexical names.
+        # Keep the default namespace so XML-valid files also open in OPC readers.
         ET.register_namespace('', namespace)
     value = ET.tostring(node, encoding='unicode')
     required = set()
@@ -93,7 +88,7 @@ def xml_bytes(node):
     for prefix in required:
         if not re.search(r'xmlns:'+re.escape(prefix)+r'=', value):
             if prefix not in NAMESPACE_HINTS:
-                raise ValueError(f'Prefixo de compatibilidade sem declaração: {prefix}')
+                raise ValueError(f'Undeclared compatibility prefix: {prefix}')
             missing.append(f' xmlns:{prefix}="{NAMESPACE_HINTS[prefix]}"')
     if missing:
         end = value.find('>')
@@ -103,21 +98,20 @@ def xml_bytes(node):
 
 
 def rel_path(part):
-    """Calcula o nome da parte .rels correspondente a part dentro do ZIP."""
+    """Compute the ZIP path of the .rels part associated with part."""
     return posixpath.join(posixpath.dirname(part), '_rels', posixpath.basename(part) + '.rels')
 
 
 def resolve_target(part, target):
-    """Resolve um Target OPC relativo à sua parte, sem acessar o filesystem."""
+    """Resolve an OPC target relative to its part without filesystem access."""
     return posixpath.normpath(posixpath.join(posixpath.dirname(part), target)).lstrip('/')
 
 
 def relationships(parts, part):
-    """Lê os relacionamentos internos de uma parte.
+    """Read a part's internal relationships.
 
-    Args: parts mapeia nomes ZIP para bytes; part é a parte proprietária.
-    Returns: mapa rId -> {target, type}; referências externas são ignoradas.
-    """
+    Args: parts maps ZIP names to bytes; part identifies the owning part.
+    Returns: rId -> {target, type}; external references are ignored."""
     payload = parts.get(rel_path(part))
     if payload is None:
         return {}
@@ -127,7 +121,7 @@ def relationships(parts, part):
 
 
 def identity(node):
-    """Lê o ID/nome/estado oculto do objeto DrawingML, sem confundir IDs filhos."""
+    """Read a DrawingML object's ID, name and hidden state without mixing in child IDs."""
     for child in node:
         if local(child.tag).startswith('nv'):
             prop = child.find('p:cNvPr', NS)
@@ -138,21 +132,20 @@ def identity(node):
 
 
 def text_of(node):
-    """Extrai parágrafos visíveis sem interpretar fórmulas ou instruções em texto."""
+    """Extract visible paragraphs without interpreting formulas or text instructions."""
     return '\n'.join(''.join(t.text or '' for t in p.iter(q('a', 't')))
                      for p in node.iter(q('a', 'p')))
 
 
 def drawable_children(node):
-    """Itera somente objetos de desenho diretos, preservando ordem de sobreposição.
+    """Iterate only direct drawing objects while preserving stacking order.
 
-    Não percorre tabelas/caches como se suas células fossem objetos de slide.
-    """
+    Tables and caches are not traversed as if their cells were slide objects."""
     return [child for child in node if local(child.tag) in KINDS]
 
 
 def transform_of(node):
-    """Encontra o xfrm próprio do objeto, distinguindo formas, frames e grupos."""
+    """Find an object's own xfrm, distinguishing shapes, frames and groups."""
     for selector in ('p:spPr/a:xfrm', 'p:xfrm', 'p:grpSpPr/a:xfrm'):
         value = node.find(selector, NS)
         if value is not None:
@@ -161,7 +154,7 @@ def transform_of(node):
 
 
 def placeholder_of(node):
-    """Retorna a chave de placeholder (tipo, índice), ou None para um objeto comum."""
+    """Return the placeholder key (type, index), or None for an ordinary object."""
     for child in node:
         if local(child.tag).startswith('nv'):
             ph = child.find('p:nvPr/p:ph', NS)
@@ -171,11 +164,10 @@ def placeholder_of(node):
 
 
 def inherited_node(node, ancestors):
-    """Procura a geometria herdada no layout e depois no master.
+    """Find inherited geometry in the layout, then the master.
 
-    ancestors é uma lista ordenada [layout, master]. Primeiro tenta índice de
-    placeholder, depois tipo. Retorna também a origem para auditoria do catálogo.
-    """
+    ancestors is ordered [layout, master]. Match placeholder index first, then type.
+    Also return the source part for catalog auditing."""
     ph = placeholder_of(node)
     if not ph:
         return None, None
@@ -200,23 +192,23 @@ def compose(a, b):
 
 
 def point(matrix, x, y):
-    """Aplica uma transformação afim a um ponto local x,y em EMU."""
+    """Apply an affine transform to a local x,y point in EMU."""
     a, b, c, d, e, f = matrix
     return a*x + c*y + e, b*x + d*y + f
 
 
 def inverse(matrix):
-    """Inverte uma transformação afim. Rejeita grupos degenerados (escala zero)."""
+    """Invert an affine transform and reject degenerate groups with zero scale."""
     a, b, c, d, e, f = matrix
     determinant = a*d - b*c
     if abs(determinant) < 1e-12:
-        raise ValueError('Transformação de grupo não invertível')
+        raise ValueError('Non-invertible group transform')
     return (d/determinant, -b/determinant, -c/determinant, a/determinant,
             (c*f-d*e)/determinant, (b*e-a*f)/determinant)
 
 
 def transform_values(xfrm):
-    """Lê off/ext de xfrm. Valores ausentes usam zero, sem alterar a herança XML."""
+    """Read xfrm off/ext, defaulting missing values to zero without changing inheritance."""
     off, ext = xfrm.find('a:off', NS), xfrm.find('a:ext', NS)
     return (float(off.get('x', 0)) if off is not None else 0,
             float(off.get('y', 0)) if off is not None else 0,
@@ -225,11 +217,10 @@ def transform_values(xfrm):
 
 
 def group_matrix(xfrm):
-    """Calcula escala, translação, rotação e espelhamento de um grupo nativo.
+    """Compute a native group's scale, translation, rotation and reflection.
 
-    off/ext descrevem o grupo no pai; chOff/chExt descrevem seu espaço interno.
-    A rotação DrawingML está em 1/60000 de grau. Nenhum valor é arredondado aqui.
-    """
+    off/ext describe the group in its parent; chOff/chExt describe its internal space.
+    DrawingML rotation uses 1/60000 degree units. No values are rounded here."""
     x, y, w, h = transform_values(xfrm)
     co, ce = xfrm.find('a:chOff', NS), xfrm.find('a:chExt', NS)
     ox = float(co.get('x', 0)) if co is not None else 0
@@ -250,11 +241,10 @@ def group_matrix(xfrm):
 
 
 def box_for(xfrm, parent):
-    """Converte o retângulo local em box no slide, em polegadas.
+    """Convert a local rectangle to a slide box in inches.
 
-    box representa o envelope dos cantos após transformações dos grupos. A
-    rotação própria do objeto fica no campo rotation do catálogo, separadamente.
-    """
+    box is the envelope of the corners after parent group transforms. The object's
+    own rotation remains separate in the catalog's rotation field."""
     x, y, w, h = transform_values(xfrm)
     corners = [point(parent, x+dx, y+dy) for dx, dy in ((0, 0), (w, 0), (0, h), (w, h))]
     xs, ys = zip(*corners)
@@ -262,7 +252,7 @@ def box_for(xfrm, parent):
 
 
 def ancestors_for(parts, part):
-    """Resolve a cadeia slide -> layout -> master, sem achatar seus estilos."""
+    """Resolve the slide -> layout -> master chain without flattening its styles."""
     if '/slideMasters/' in part:
         return []
     result, current = [], part
@@ -276,17 +266,16 @@ def ancestors_for(parts, part):
 
 
 def scene_nodes(root, ancestors=()):
-    """Indexa recursivamente os objetos nativos com seus pais e matrizes.
+    """Recursively index native objects with their parents and transformation matrices.
 
-    Returns: mapa eID -> registro interno contendo node (XML), parent (XML),
-    parentMatrix, effectiveTransform e inheritedFrom. Esses objetos não são
-    gravados em JSON diretamente; describe_scene produz a visão serializável.
-    """
+    Return eID -> internal record containing node (XML), parent (XML), parentMatrix,
+    effectiveTransform and inheritedFrom. These records are not serialized directly;
+    describe_scene produces their serializable representation."""
     tree = root.find('p:cSld/p:spTree', NS)
     result = {}
 
     def visit(container, parent_matrix, parent_id=None):
-        """Percorre um grupo em ordem de desenho e acumula a transformação dos pais."""
+        """Traverse a group in drawing order and accumulate parent transformations."""
         for node in drawable_children(container):
             ident = identity(node)
             if not ident:
@@ -295,7 +284,7 @@ def scene_nodes(root, ancestors=()):
             inherited, inherited_part = inherited_node(node, ancestors) if own is None else (None, None)
             effective = own if own is not None else transform_of(inherited) if inherited is not None else None
             if ident['id'] in result:
-                raise ValueError(f'ID DrawingML duplicado: {ident["id"]}')
+                raise ValueError(f'Duplicate DrawingML ID: {ident["id"]}')
             result[ident['id']] = {**ident, 'node': node, 'parent': container,
                 'parentId': parent_id, 'parentMatrix': parent_matrix,
                 'effectiveTransform': effective, 'inheritedFrom': inherited_part}
@@ -309,11 +298,10 @@ def scene_nodes(root, ancestors=()):
 
 
 def reference_typography(node, ancestors):
-    """Resolve tamanhos em pt por parágrafo na referência, antes de aplicar tokens.
+    """Resolve reference font sizes in points per paragraph before applying tokens.
 
-    A precedência é run, parágrafo, lista local, placeholder do layout/master e
-    txStyles do master. O catálogo registra a origem para não depender de autofit.
-    """
+    Precedence is run, paragraph, local list, layout/master placeholder, then master
+    txStyles. The catalog records original values rather than relying on autofit."""
     body = node.find('p:txBody', NS)
     if body is None:
         return None
@@ -353,11 +341,10 @@ def reference_typography(node, ancestors):
 
 
 def describe_scene(parts, part, dimensions):
-    """Produz o catálogo configurável de uma parte, mantendo IDs e hierarquia.
+    """Build a part's configurable catalog, retaining IDs and hierarchy.
 
-    dimensions é {width,height}, em polegadas. As posições grid são fracionárias
-    em 14×9, sem snap: arredondar o original destruiria a fidelidade.
-    """
+    dimensions is {width, height} in inches. Grid coordinates are fractional on a
+    14×9 grid without snapping; rounding the source would destroy fidelity."""
     root = parse_xml(parts[part])
     ancestors = ancestors_for(parts, part)
     records = scene_nodes(root, ancestors)
@@ -396,18 +383,17 @@ def describe_scene(parts, part, dimensions):
 
 
 def read_parts(source):
-    """Lê um pacote OPC em memória. Não extrai arquivos e não altera a referência."""
+    """Read an OPC package into memory without extracting or changing the reference."""
     with zipfile.ZipFile(source) as archive:
         return {name: archive.read(name) for name in archive.namelist()}
 
 
 def chart_sources(parts):
-    """Extrai dados originais de gráficos para recomposição PptxGenJS.
+    """Extract original chart data for PptxGenJS reconstruction.
 
-    Retorna tipo, agrupamento, nomes, categorias e valores sem arredondar.
-    O arquivo derivado nunca é uma fonte manual de números: cada catalogação
-    o regenera a partir do mesmo PPTX cujo hash aparece no manifesto.
-    """
+    Return chart types, grouping, names, categories and unrounded values. The derived
+    file is not a manually maintained data source: each catalog run regenerates it
+    from the same PPTX whose hash appears in the manifest."""
     output = {}
     for name, payload in parts.items():
         if not re.fullmatch(r'ppt/charts/chart\d+\.xml', name):
@@ -430,11 +416,10 @@ def chart_sources(parts):
 
 
 def write_json_atomic(destination, value):
-    """Publica JSON completo por rename, seguro para builds simultâneos.
+    """Publish complete JSON through rename, safely supporting concurrent builds.
 
-    destination é Path; value precisa ser serializável. O temporário fica no
-    mesmo filesystem e é removido em falhas. Leitores nunca veem JSON parcial.
-    """
+    destination is a Path; value must be serializable. The temporary file stays on
+    the same filesystem and is removed on failure. Readers never see partial JSON."""
     destination = Path(destination)
     with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=destination.parent,
                                      prefix='.catalog-', delete=False) as stream:
@@ -447,12 +432,12 @@ def write_json_atomic(destination, value):
 
 
 def source_catalog(source=SOURCE, output=ROOT/'data/catalog.json'):
-    """Cataloga todos os slides, layouts, masters e recursos do PPTX.
+    """Catalog all PPTX slides, layouts, masters and resources.
 
-    Efeitos: grava catalog.json e data/slides/NNN.json. O SHA-256 identifica a
-    referência usada. Títulos são rótulos de busca; não reescrevem o conteúdo.
-    Returns: dicionário serializável com dimensões, contagens e cenas completas.
-    """
+    By default write catalog.json, data/slides/NNN.json and companion catalogs.
+    Pass output=None to return data without writing files. SHA-256 identifies the
+    reference. Titles are search labels and do not rewrite slide content. Return a
+    serializable dictionary with dimensions, counts and complete scenes."""
     source = Path(source)
     parts = read_parts(source)
     presentation = parse_xml(parts['ppt/presentation.xml'])
@@ -488,9 +473,12 @@ def source_catalog(source=SOURCE, output=ROOT/'data/catalog.json'):
             'elements': sum(len(s['elements']) for s in slides),
             'charts': sum(bool(re.fullmatch(r'ppt/charts/chart\d+\.xml', p)) for p in parts),
             'tables': sum(e['kind'] == 'table' for s in slides for e in s['elements'])}}
+    # Builds need catalog data without mutating the shared extraction directory.
+    result['chartSources'] = chart_sources(parts)
+    if output is None:
+        return result
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
-    result['chartSources'] = chart_sources(parts)
     write_json_atomic(output, result)
     write_json_atomic(output.parent/'chart-source.json', result['chartSources'])
     per_slide = output.parent/'slides'
@@ -505,15 +493,15 @@ def source_catalog(source=SOURCE, output=ROOT/'data/catalog.json'):
 
 
 def ensure(parent, tag):
-    """Obtém um filho direto ou o cria. tag precisa estar em formato expandido."""
+    """Get a direct child or create it; tag must use namespace-expanded notation."""
     node = parent.find(tag)
     return node if node is not None else ET.SubElement(parent, tag)
 
 
 def set_color(parent, color):
-    """Define um preenchimento sólido sRGB e remove opções de fill conflitantes."""
+    """Set an sRGB solid fill and remove conflicting fill options."""
     if not re.fullmatch(r'[0-9a-fA-F]{6}', color):
-        raise ValueError(f'Cor inválida: {color}')
+        raise ValueError(f'Invalid color: {color}')
     insertion = None
     for index, child in enumerate(list(parent)):
         if local(child.tag) in ('solidFill', 'noFill', 'gradFill', 'pattFill', 'blipFill', 'grpFill'):
@@ -533,17 +521,16 @@ def set_color(parent, color):
 
 
 def replace_text(node, value):
-    """Substitui texto mantendo os estilos do primeiro parágrafo/run como base.
+    """Replace text using the first paragraph/run's styles as the base.
 
-    Args: node é forma/célula/txBody; value é string, com \n para novos parágrafos.
-    A substituição integral é intencional: para manter ênfases distintas, use
-    textRuns ou textReplacements, que editam os runs individualmente.
-    """
+    Args: node is a shape/cell/txBody; value is a string with newline-separated
+    paragraphs. Full replacement is intentional. To preserve distinct emphasis,
+    use textRuns or textReplacements to edit individual runs instead."""
     body = node if local(node.tag) in ('txBody', 'rich') else node.find('p:txBody', NS)
     if body is None:
         body = node.find('a:txBody', NS)
     if body is None:
-        raise ValueError('Objeto não possui um corpo de texto configurável')
+        raise ValueError('Object has no configurable text body')
     existing = body.findall('a:p', NS)
     basis = copy.deepcopy(existing[0]) if existing else ET.Element(q('a', 'p'))
     for p in existing:
@@ -563,16 +550,15 @@ def replace_text(node, value):
 
 
 def text_style(node, style):
-    """Materializa estilo de texto nos runs e padrões do objeto.
+    """Materialize text styles in runs and object defaults.
 
-    style aceita fontFace, fontSize (pt), bold, italic, color, align, rotation,
-    margin (polegadas), vertical e wrap. Variáveis rpr/pp representam propriedades
-    de run/parágrafo. Opções desconhecidas falham para evitar configuração ignorada.
-    """
+    style accepts fontFace, fontSize (points), bold, italic, color, align, rotation,
+    margin (inches), vertical and wrap. rpr/pp hold run/paragraph properties.
+    Unknown options fail rather than silently ignoring configuration."""
     allowed = {'fontFace', 'fontSize', 'bold', 'italic', 'color', 'align', 'margin', 'vertical', 'wrap'}
     unknown = set(style)-allowed
     if unknown:
-        raise ValueError(f'Opções textStyle desconhecidas: {unknown}')
+        raise ValueError(f'Unknown textStyle options: {unknown}')
     for p in node.iter(q('a', 'p')):
         pp = p.find('a:pPr', NS)
         if pp is None:
@@ -591,7 +577,7 @@ def text_style(node, style):
         for rpr in props:
             if 'fontSize' in style:
                 if float(style['fontSize']) <= 0:
-                    raise ValueError('fontSize deve ser positivo')
+                    raise ValueError('fontSize must be positive')
                 rpr.set('sz', str(round(style['fontSize']*100)))
             for key, attr in [('bold', 'b'), ('italic', 'i')]:
                 if key in style:
@@ -611,17 +597,16 @@ def text_style(node, style):
 
 
 def materialize_transform(record):
-    """Cria geometria própria para um placeholder que antes herdava do layout.
+    """Give a placeholder its own geometry instead of inheriting the layout's.
 
-    Retorna xfrm editável. Copia a geometria herdada antes de alterar, preservando
-    rotação, espelhamento e, para grupos, o espaço interno chOff/chExt.
-    """
+    Return an editable xfrm. Copy inherited geometry before modifying it to retain
+    rotation, reflection and, for groups, internal chOff/chExt coordinates."""
     node = record['node']
     own = transform_of(node)
     if own is not None:
         return own
     if record['effectiveTransform'] is None:
-        raise ValueError(f'{record["id"]} não possui geometria nem herança resolvível')
+        raise ValueError(f'{record["id"]} has no geometry or resolvable inheritance')
     own = copy.deepcopy(record['effectiveTransform'])
     if local(node.tag) == 'graphicFrame':
         own.tag = q('p', 'xfrm')
@@ -632,12 +617,11 @@ def materialize_transform(record):
 
 
 def apply_box(record, patch, grid, slide_size):
-    """Aplica box global, grid fracionário ou localBox ao xfrm original.
+    """Apply a global box, fractional grid or localBox to the original xfrm.
 
-    box usa polegadas no slide. localBox usa EMU no espaço do pai. grid usa a
-    região de conteúdo definida por grid.marginX/Y e gapX/Y (padrão zero no modo
-    fiel). Para filhos de grupos rotacionados use localBox para controle exato.
-    """
+    box uses slide inches; localBox uses EMU in the parent's space. grid uses the
+    content region defined by grid.marginX/Y and gapX/Y (zero by default in fidelity
+    mode). Use localBox for exact control of children inside rotated groups."""
     xf = materialize_transform(record)
     current = dict(zip(('x', 'y', 'w', 'h'), transform_values(xf)))
     if 'localBox' in patch:
@@ -652,11 +636,11 @@ def apply_box(record, patch, grid, slide_size):
             cw = (slide_size['width']-2*mx-(cols-1)*gx)/cols
             rh = (slide_size['height']-2*my-(rows-1)*gy)/rows
             if cw <= 0 or rh <= 0:
-                raise ValueError('Grid sem área útil')
+                raise ValueError('Grid has no usable space')
             col, row = gp['col'], gp['row']
             cs, rs = gp.get('colSpan', 1), gp.get('rowSpan', 1)
             if min(col, row) < 0 or min(cs, rs) <= 0 or col+cs > cols or row+rs > rows:
-                raise ValueError('Posicionamento ultrapassa o grid')
+                raise ValueError('Placement exceeds grid bounds')
             box = dict(x=mx+col*(cw+gx), y=my+row*(rh+gy),
                        w=cs*(cw+gx)-gx, h=rs*(rh+gy)-gy)
         box.update(patch.get('box', {}))
@@ -667,31 +651,30 @@ def apply_box(record, patch, grid, slide_size):
         w, h = box['w']*EMU/sx, box['h']*EMU/sy
         current = dict(x=cx-w/2, y=cy-h/2, w=w, h=h)
     if current['w'] < 0 or current['h'] < 0:
-        raise ValueError('Dimensões negativas não são permitidas')
+        raise ValueError('Negative dimensions are not allowed')
     off, ext = ensure(xf, q('a', 'off')), ensure(xf, q('a', 'ext'))
     off.attrib.update(x=str(round(current['x'])), y=str(round(current['y'])))
     ext.attrib.update(cx=str(round(current['w'])), cy=str(round(current['h'])))
 
 
 def patch_table(node, patch):
-    """Atualiza células e dimensões de uma tabela nativa, mantendo estilos.
+    """Update native table cells and dimensions while retaining styles.
 
-    rows substitui valores e permite mais/menos linhas clonando a última linha.
-    cells usa chaves 'linha.coluna' (base zero) para text/fill/textStyle. Larguras
-    e alturas são polegadas; a quantidade de colunas precisa ser preservada.
-    """
+    rows replaces values and adds/removes rows by cloning the last row. cells uses
+    zero-based row.column keys for text/fill/textStyle. Widths and heights use inches;
+    the original column count must remain unchanged."""
     unknown = set(patch)-{'rows', 'cells', 'columnWidths', 'rowHeights'}
     if unknown:
-        raise ValueError(f'Opções de tabela desconhecidas: {unknown}')
+        raise ValueError(f'Unknown table options: {unknown}')
     table = node.find('.//a:tbl', NS)
     if table is None:
-        raise ValueError('Objeto não é uma tabela')
+        raise ValueError('Object is not a table')
     columns = table.findall('a:tblGrid/a:gridCol', NS)
     original_height = sum(int(row.get('h', 0)) for row in table.findall('a:tr', NS))
     if 'rows' in patch:
         values = patch['rows']
         if not values or any(len(row) != len(columns) for row in values):
-            raise ValueError('rows precisa manter o número de colunas e ter pelo menos uma linha')
+            raise ValueError('rows must retain the column count and contain at least one row')
         existing = table.findall('a:tr', NS)
         while len(existing) < len(values):
             clone = copy.deepcopy(existing[-1])
@@ -709,10 +692,10 @@ def patch_table(node, patch):
             row.set('h', str(round(int(row.get('h', 0))*original_height/(total or 1))))
     for key, cell_patch in patch.get('cells', {}).items():
         if set(cell_patch)-{'text', 'fill', 'textStyle'}:
-            raise ValueError(f'Opções de célula desconhecidas: {key}')
+            raise ValueError(f'Unknown cell options: {key}')
         r, c = map(int, key.split('.'))
         if r < 0 or c < 0:
-            raise ValueError('Índices de célula precisam ser não negativos')
+            raise ValueError('Cell indices must be nonnegative')
         cell = rows[r].findall('a:tc', NS)[c]
         if 'text' in cell_patch:
             replace_text(cell, cell_patch['text'])
@@ -723,13 +706,13 @@ def patch_table(node, patch):
     for key, nodes, attr in [('columnWidths', columns, 'w'), ('rowHeights', rows, 'h')]:
         if key in patch:
             if len(patch[key]) != len(nodes) or any(float(v) <= 0 for v in patch[key]):
-                raise ValueError(f'{key} precisa ter um valor positivo por coluna/linha')
+                raise ValueError(f'{key} requires one positive value per column/row')
             for item, value in zip(nodes, patch[key]):
                 item.set(attr, str(round(value*EMU)))
 
 
 def add_content_type(parts, name, content_type):
-    """Registra uma parte nova no manifesto OPC, evitando overrides duplicados."""
+    """Register a new part in the OPC manifest without duplicate overrides."""
     root = parse_xml(parts['[Content_Types].xml'])
     full = '/' + name
     if not any(c.get('PartName') == full for c in root):
@@ -738,7 +721,7 @@ def add_content_type(parts, name, content_type):
 
 
 def replace_relation(parts, owner, rid, target):
-    """Redireciona um relacionamento existente para uma parte privada nova."""
+    """Redirect an existing relationship to a new private part."""
     name = rel_path(owner)
     root = parse_xml(parts[name])
     relation = next(r for r in root if r.get('Id') == rid)
@@ -747,12 +730,11 @@ def replace_relation(parts, owner, rid, target):
 
 
 def workbook_cells(payload, updates):
-    """Sincroniza células XLSX referidas pelos caches de um gráfico.
+    """Synchronize XLSX cells referenced by chart caches.
 
-    updates contém tuplas (fórmula A1 de uma célula/range, valores). Cada range
-    deve ter a mesma quantidade de valores. Escreve inlineStr para rótulos e
-    números para medidas. Mantém todas as outras partes e células do workbook.
-    """
+    updates contains (A1 cell/range formula, values) tuples. Each range must retain
+    its value count. Write inlineStr for labels and numbers for measurements.
+    Preserve all other workbook parts and cells."""
     parts = {}
     with zipfile.ZipFile(__import__('io').BytesIO(payload)) as archive:
         parts = {n: archive.read(n) for n in archive.namelist()}
@@ -763,16 +745,16 @@ def workbook_cells(payload, updates):
     for formula, values in updates:
         match = re.fullmatch(r"('?[^!]+?'?)!\$?([A-Z]+)\$?(\d+)(?::\$?([A-Z]+)\$?(\d+))?", formula)
         if not match:
-            raise ValueError(f'Fórmula de gráfico não suportada: {formula}')
+            raise ValueError(f'Unsupported chart formula: {formula}')
         sheet, c1, r1, c2, r2 = match.groups()
         c2, r2 = c2 or c1, int(r2 or r1)
         r1 = int(r1)
         if c1 != c2 and r1 != r2:
-            raise ValueError('Ranges de gráfico precisam ser vetores')
+            raise ValueError('Chart ranges must be vectors')
         addresses = [f'{c1}{i}' for i in range(r1, r2+1)] if c1 == c2 else [
             f'{_column_label(i)}{r1}' for i in range(_column_number(c1), _column_number(c2)+1)]
         if len(addresses) != len(values):
-            raise ValueError('Alterar a quantidade de pontos requer atualizar a fórmula explicitamente')
+            raise ValueError('Changing the point count requires an explicit formula update')
         part = sheets[sheet.strip("'")]
         root = parse_xml(parts[part])
         data = root.find('s:sheetData', NS)
@@ -801,12 +783,12 @@ def workbook_cells(payload, updates):
 
 
 def _column_number(column):
-    """Converte letras Excel para índice base 1 (A=1, AA=27), sem acessar workbook."""
+    """Convert Excel letters to a one-based index (A=1, AA=27) without opening a workbook."""
     return sum((ord(char)-64)*26**index for index, char in enumerate(reversed(column)))
 
 
 def _column_label(value):
-    """Converte índice Excel base 1 para letras (1=A, 27=AA)."""
+    """Convert a one-based Excel index to letters (1=A, 27=AA)."""
     result = ''
     while value:
         value, remainder = divmod(value-1, 26)
@@ -815,17 +797,16 @@ def _column_label(value):
 
 
 def patch_chart(parts, owner, node, patch, suffix):
-    """Clona um gráfico por instância e sincroniza caches e XLSX incorporado.
+    """Clone a chart per instance and synchronize its caches and embedded XLSX.
 
-    series aceita name, labels, values, xValues e yValues. Mantém quantidade de
-    séries/pontos e a configuração visual original. O clone evita alterar outro
-    slide que use o mesmo gráfico/workbook. suffix identifica slide e elemento.
-    """
+    series accepts name, labels, values, xValues and yValues. Preserve series/point
+    counts and original visual settings. Cloning isolates other slides sharing the
+    same chart/workbook. suffix identifies the slide and element."""
     if set(patch)-{'series', 'xmlPatches'}:
-        raise ValueError('chart aceita somente series e xmlPatches')
+        raise ValueError('chart accepts only series and xmlPatches')
     reference = node.find('.//c:chart', NS)
     if reference is None:
-        raise ValueError('Objeto não é um gráfico')
+        raise ValueError('Object is not a chart')
     rid = reference.get(q('r', 'id'))
     original = relationships(parts, owner)[rid]['target']
     target = f'ppt/charts/config-{suffix}.xml'
@@ -833,30 +814,30 @@ def patch_chart(parts, owner, node, patch, suffix):
     series_nodes = root.findall('.//c:ser', NS)
     configured = patch.get('series', [{} for _ in series_nodes])
     if len(configured) != len(series_nodes):
-        raise ValueError('chart.series precisa manter a quantidade de séries')
+        raise ValueError('chart.series must retain the series count')
     updates = []
     for series, changes in zip(series_nodes, configured):
         mapping = {'name': 'c:tx', 'labels': 'c:cat', 'values': 'c:val',
                    'xValues': 'c:xVal', 'yValues': 'c:yVal'}
         if set(changes)-set(mapping):
-            raise ValueError(f'Opções de série desconhecidas: {set(changes)-set(mapping)}')
+            raise ValueError(f'Unknown series options: {set(changes)-set(mapping)}')
         for key, path in mapping.items():
             if key not in changes:
                 continue
             values = [changes[key]] if key == 'name' else changes[key]
             container = series.find(path, NS)
             if container is None:
-                raise ValueError(f'Gráfico não possui {key}')
+                raise ValueError(f'Chart has no {key}')
             cache = next((e for e in container.iter() if local(e.tag) in ('strCache', 'numCache', 'numLit', 'strLit')), None)
             if cache is None:
                 direct = container.find('c:v', NS)
                 if key == 'name' and direct is not None:
                     direct.text = str(values[0])
                     continue
-                raise ValueError(f'Cache de gráfico não suportado: {key}')
+                raise ValueError(f'Unsupported chart cache: {key}')
             points = cache.findall('c:pt', NS)
             if len(points) != len(values):
-                raise ValueError('Quantidade de pontos precisa permanecer igual no modo fiel')
+                raise ValueError('Point count must remain unchanged in fidelity mode')
             for pt, value in zip(points, values):
                 ensure(pt, q('c', 'v')).text = str(value)
             formula = container.find('.//c:f', NS)
@@ -884,30 +865,29 @@ def patch_chart(parts, owner, node, patch, suffix):
 
 
 def patch_picture(parts, owner, node, filename, suffix):
-    """Substitui uma imagem por instância, mantendo crop, efeitos e geometria.
+    """Replace an image per instance, retaining cropping, effects and geometry.
 
-    filename é arquivo local ou {path,fallback}. Para SVG, fallback é PNG criado
-    pelo wrapper JavaScript. O pacote mantém o vetor mais PNG de compatibilidade;
-    recursos antigos compartilhados não são alterados.
-    """
+    filename is a local path or {path, fallback}. SVG fallbacks are PNG files created
+    by the JavaScript wrapper. Keep the vector and compatibility PNG in the package;
+    existing shared resources remain unchanged."""
     fallback = filename.get('fallback') if isinstance(filename, dict) else None
     source = (ROOT/(filename['path'] if isinstance(filename, dict) else filename)).resolve()
     extension = source.suffix.lower()
     types = {'.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
              '.svg': 'image/svg+xml', '.gif': 'image/gif'}
     if extension not in types:
-        raise ValueError(f'Formato de imagem não suportado: {extension}')
+        raise ValueError(f'Unsupported image format: {extension}')
     blip = node.find('.//a:blip', NS)
     if blip is None:
-        raise ValueError('Objeto não possui imagem')
+        raise ValueError('Object has no image')
     target = f'ppt/media/config-{suffix}{extension}'
     parts[target] = source.read_bytes()
     rid = blip.get(q('r', 'embed'))
     if rid is None:
-        raise ValueError('Imagem vinculada externamente: forneça um override XML explícito')
+        raise ValueError('Image is externally linked: provide an explicit XML override')
     if extension == '.svg':
         if not fallback:
-            raise ValueError('SVG novo requer fallback PNG; gere pela API JavaScript ou forneça {path,fallback}')
+            raise ValueError('New SVG images require a PNG fallback; use the JavaScript API or supply {path,fallback}')
         raster = f'ppt/media/config-{suffix}.png'
         parts[raster] = (ROOT/fallback).resolve().read_bytes()
         replace_relation(parts, owner, rid, raster)
@@ -930,20 +910,19 @@ def patch_picture(parts, owner, node, filename, suffix):
 
 
 def xml_operations(root, operations, context):
-    """Aplica escape hatch DrawingML com XPath, atributos, texto, remoção ou append.
+    """Apply the DrawingML escape hatch: XPath, attributes, text, removal or append.
 
-    root é a parte/objeto proprietário. Cada operação exige path; attributes e
-    text editam nós existentes; remove elimina o nó; appendXml insere um fragmento
-    completo com namespaces declarados. context aparece nas mensagens de erro.
-    Esta API avançada expõe propriedades sem equivalente no PptxGenJS.
-    """
+    root is the owning part/object. Each operation requires path; attributes/text
+    modify existing nodes, remove deletes a node, and appendXml inserts a complete
+    fragment with declared namespaces. context appears in errors. This advanced API
+    exposes properties without PptxGenJS equivalents."""
     for operation in operations:
         if set(operation)-{'path', 'attributes', 'text', 'remove', 'appendXml'}:
-            raise ValueError(f'Operação XML desconhecida: {context}')
+            raise ValueError(f'Unknown XML operation: {context}')
         namespaces = {**NAMESPACE_HINTS, **NS}
         targets = root.findall(operation['path'], namespaces)
         if not targets:
-            raise ValueError(f'XPath não encontrado em {context}: {operation["path"]}')
+            raise ValueError(f'XPath not found in {context}: {operation["path"]}')
         for target in targets:
             for key, value in operation.get('attributes', {}).items():
                 if ':' in key and not key.startswith('{'):
@@ -957,24 +936,22 @@ def xml_operations(root, operations, context):
             if operation.get('remove'):
                 parent = next((p for p in root.iter() if target in list(p)), None)
                 if parent is None:
-                    raise ValueError('Não é possível remover a raiz de uma parte')
+                    raise ValueError('Cannot remove a part root')
                 parent.remove(target)
 
 
 def apply_element(parts, owner, record, patch, config, slide_size, suffix):
-    """Aplica overrides a um objeto nativo sem reconstruir os irmãos.
+    """Apply overrides to a native object without rebuilding its siblings.
 
-    Ordem: texto/runs -> estilo -> geometria -> fill/linha -> tabela/gráfico/
-    imagem -> XML avançado -> visibilidade. Remover um grupo remove seus filhos.
-    Não aceita chaves desconhecidas. xmlPatches permite configurar propriedades
-    DrawingML não cobertas pela API amigável, preservando acesso completo.
-    """
+    Order: text/runs -> style -> geometry -> fill/line -> table/chart/image -> advanced
+    XML -> visibility. Removing a group removes its children. Reject unknown keys.
+    xmlPatches exposes DrawingML properties outside the higher-level API."""
     allowed = {'text', 'textRuns', 'textReplacements', 'textStyle', 'box', 'localBox',
         'grid', 'fill', 'line', 'rotation', 'visible', 'table', 'chart', 'image',
         'xmlPatches', 'shapeType', 'name'}
     unknown = set(patch)-allowed
     if unknown:
-        raise ValueError(f'Opções desconhecidas em {suffix}: {sorted(unknown)}')
+        raise ValueError(f'Unknown options in {suffix}: {sorted(unknown)}')
     node = record['node']
     if 'text' in patch:
         replace_text(node, patch['text'])
@@ -995,7 +972,7 @@ def apply_element(parts, owner, record, patch, config, slide_size, suffix):
     if any(key in patch for key in ('fill', 'line', 'shapeType')):
         properties = node.find('p:spPr', NS)
         if properties is None:
-            raise ValueError('fill/line/shapeType requer uma forma; tabelas usam table.cells')
+            raise ValueError('fill/line/shapeType requires a shape; tables use table.cells')
         if 'fill' in patch:
             set_color(properties, patch['fill'])
         if 'line' in patch:
@@ -1024,47 +1001,45 @@ def apply_element(parts, owner, record, patch, config, slide_size, suffix):
 
 
 def flow_patches(scene, flow, config, size):
-    """Calcula posições de uma coleção em ordem de leitura, sem alterar texto.
+    """Compute collection positions in reading order without changing text.
 
-    flow define elements (IDs na ordem desejada), region (polegadas), minWidth,
-    gap e maxColumns. A quantidade de colunas depende da largura disponível;
-    os itens continuam na linha seguinte, da esquerda para a direita. Cada item
-    recebe uma caixa de mesmo tamanho. Resize de grupo preserva seu espaço interno.
-    """
+    flow defines elements (IDs in order), region (inches), minWidth, gap and maxColumns.
+    Column count depends on available width; items continue on the next row from
+    left to right. Every item receives an equal-sized box. Group resizing preserves
+    its internal coordinate system."""
     if set(flow)-{'elements', 'region', 'minWidth', 'gap', 'maxColumns'}:
-        raise ValueError('flow contém opções desconhecidas')
+        raise ValueError('flow contains unknown options')
     ids = flow['elements']
     if not ids or any(key not in scene for key in ids):
-        raise ValueError('flow.elements precisa referenciar objetos existentes')
+        raise ValueError('flow.elements must reference existing objects')
     if len(set(ids)) != len(ids):
-        raise ValueError('flow.elements contém IDs duplicados')
+        raise ValueError('flow.elements contains duplicate IDs')
     if any(scene[key]['parentId'] in ids for key in ids):
-        raise ValueError('Não reordene simultaneamente um grupo e seu filho')
+        raise ValueError('Do not reorder a group and its child simultaneously')
     region = flow.get('region', {'x': 0.56, 'y': 1.3, 'w': size['width']-1.12, 'h': size['height']-1.9})
     gap = float(flow.get('gap', 0.12))
     minimum = float(flow.get('minWidth', 2))
     if minimum <= 0 or gap < 0 or min(region['w'], region['h']) <= 0:
-        raise ValueError('flow possui dimensões inválidas')
+        raise ValueError('flow has invalid dimensions')
     if int(flow.get('maxColumns', len(ids))) < 1:
-        raise ValueError('flow.maxColumns precisa ser positivo')
+        raise ValueError('flow.maxColumns must be positive')
     columns = max(1, min(len(ids), int(flow.get('maxColumns', len(ids))),
                         int((region['w']+gap)/(minimum+gap))))
     rows = math.ceil(len(ids)/columns)
     w = (region['w']-(columns-1)*gap)/columns
     h = (region['h']-(rows-1)*gap)/rows
     if min(w, h) <= 0:
-        raise ValueError('flow não tem área suficiente')
+        raise ValueError('flow has insufficient space')
     return {key: {'box': dict(x=region['x']+(i % columns)*(w+gap),
                              y=region['y']+(i//columns)*(h+gap), w=w, h=h)}
             for i, key in enumerate(ids)}
 
 
 def patch_part(parts, part, patch, config, dimensions, suffix):
-    """Aplica configuração a slide/layout/master e serializa somente essa parte.
+    """Apply slide/layout/master configuration and serialize only that part.
 
-    element IDs são validados. A cena é recalculada após cada geometria de pai
-    para que um override posterior de filho use a transformação atualizada.
-    """
+    Validate element IDs. Recompute the scene after each parent geometry change so
+    later child overrides use the updated transformation."""
     root = parse_xml(parts[part])
     ancestors = ancestors_for(parts, part)
     scene = scene_nodes(root, ancestors)
@@ -1075,7 +1050,7 @@ def patch_part(parts, part, patch, config, dimensions, suffix):
     for key, changes in elements.items():
         scene = scene_nodes(root, ancestors)
         if key not in scene:
-            raise ValueError(f'{suffix}: elemento inexistente {key}')
+            raise ValueError(f'{suffix}: element does not exist {key}')
         apply_element(parts, part, scene[key], changes, config, dimensions, suffix+'-'+key)
     if 'background' in patch:
         common = root.find('p:cSld', NS)
@@ -1092,18 +1067,17 @@ def patch_part(parts, part, patch, config, dimensions, suffix):
 
 
 def apply_theme(parts, theme):
-    """Aplica tokens apenas quando solicitados, deixando o baseline intacto.
+    """Apply explicitly requested theme tokens while preserving the baseline.
 
-    colorMap/fontMap substituem valores exatos em todas as partes XML. colors
-    aceita primary/surface/paper/text; fonts aceita body/heading. Não recolore
-    arquivos de imagem: logos oficiais e artwork incorporado permanecem originais.
-    """
+    colorMap/fontMap replace exact values in all XML parts. colors accepts
+    primary/surface/paper/text; fonts accepts body/heading. Image pixels, official
+    logos and embedded artwork are not recolored."""
     color_map = dict(theme.get('colorMap', {}))
     font_map = dict(theme.get('fontMap', {}))
     base_colors = {'primary': 'EC111A', 'surface': 'F5EFE8', 'paper': 'FFFFFF', 'text': '1E1117'}
     for key, color in theme.get('colors', {}).items():
         if key not in base_colors:
-            raise ValueError(f'Token de cor desconhecido: {key}; use colorMap para valores específicos')
+            raise ValueError(f'Unknown color token: {key}; use colorMap for specific values')
         if color.upper() != base_colors[key]:
             color_map[base_colors[key]] = color.upper()
     for key, font in theme.get('fonts', {}).items():
@@ -1117,35 +1091,33 @@ def apply_theme(parts, theme):
         value = payload.decode('utf-8')
         for before, after in color_map.items():
             if not re.fullmatch(r'[A-Fa-f0-9]{6}', after):
-                raise ValueError('Cor de token inválida')
+                raise ValueError('Invalid token color')
             value = re.sub(r'(<(?:\w+:)?srgbClr\b[^>]*\bval=")'+re.escape(before)+r'(")',
                            lambda m: m.group(1)+after+m.group(2), value, flags=re.I)
         for before, after in font_map.items():
             if any(ch in after for ch in '<>&"'):
-                raise ValueError('Nome de fonte contém caracteres XML inválidos')
+                raise ValueError('Font name contains invalid XML characters')
             value = value.replace(f'typeface="{before}"', f'typeface="{after}"')
         if value.encode('utf-8') != payload:
             parts[part] = value.encode('utf-8')
 
 
 def merge_additions(parts, scaffold_parts, selection):
-    """Importa objetos novos efetivamente gerados pelo PptxGenJS.
+    """Import new objects actually produced by PptxGenJS.
 
-    Aceita texto, formas, tabelas e gráficos com suas dependências OPC. IDs são realocados acima
-    do maior ID original. Objetos nomeados custom.* são os únicos importados;
-    títulos auxiliares do scaffold não substituem os objetos de referência.
-    """
+    Accept text, shapes, tables and charts with their OPC dependencies. Reassign IDs
+    above the highest original ID. Import only custom.* objects; scaffold helper
+    titles do not replace reference objects."""
     added = 0
     imported = {}
     content_types = parse_xml(parts['[Content_Types].xml'])
     source_types = parse_xml(scaffold_parts['[Content_Types].xml'])
 
     def import_resource(source):
-        """Copia uma dependência e sua árvore de relações com nomes privados.
+        """Copy a dependency and its relationship tree using private names.
 
-        source é uma parte do scaffold; imported evita cópias duplicadas/ciclos.
-        Workbooks, imagens e estilos dos gráficos recebem o mesmo tratamento.
-        """
+        source is a scaffold part; imported prevents duplicate copies and cycles.
+        Workbooks, images and chart styles receive the same treatment."""
         if source in imported:
             return imported[source]
         target = posixpath.join(posixpath.dirname(source), 'generated-'+posixpath.basename(source))
@@ -1219,59 +1191,57 @@ def merge_additions(parts, scaffold_parts, selection):
 
 
 def validate_config(config):
-    """Rejeita opções desconhecidas antes de escrever qualquer saída.
+    """Reject unknown options before writing output.
 
-    O modo fiel tem seu próprio contrato. As opções dos sete templates adaptativos
-    continuam disponíveis pelo modo responsive, evitando overrides silenciosos.
-    """
+    Fidelity mode has its own contract. Seven-template options remain available
+    through responsive mode, avoiding silently ignored overrides."""
     allowed = {'mode', 'grid', 'theme', 'slides', 'templates', 'masters', 'elements',
                'selection', 'additions', 'showHidden', 'source', 'slide', 'nativeParts', 'quality'}
     if set(config)-allowed:
-        raise ValueError(f'Chaves desconhecidas no modo fidelity: {sorted(set(config)-allowed)}')
+        raise ValueError(f'Unknown keys in fidelity mode: {sorted(set(config)-allowed)}')
     for key in ('columns', 'rows'):
         value = config.get('grid', {}).get(key, 14 if key == 'columns' else 9)
         if not isinstance(value, int) or value < 1:
-            raise ValueError(f'grid.{key} precisa ser inteiro positivo')
+            raise ValueError(f'grid.{key} must be a positive integer')
     for number, patch in config.get('slides', {}).items():
         if set(patch)-{'elements', 'flows', 'background', 'hidden'}:
-            raise ValueError(f'Slide {number}: opções desconhecidas')
+            raise ValueError(f'Slide {number}: unknown options')
     for group in ('templates', 'masters'):
         for key, patch in config.get(group, {}).items():
             if set(patch)-{'elements', 'flows', 'background'}:
-                raise ValueError(f'{group}.{key}: opções desconhecidas')
+                raise ValueError(f'{group}.{key}: unknown options')
 
 
 def build_native(source, scaffold, config, output):
-    """Monta o PPTX fiel e produz um relatório verificável.
+    """Assemble the fidelity PPTX and produce a verifiable report.
 
-    source é a referência imutável; scaffold é o PPTX criado pelo PptxGenJS;
-    config contém overrides explícitos; output é o arquivo de destino. O pacote
-    original é preservado e recebe metadados e adições do scaffold. O relatório
-    distingue igualdade dos bytes visuais de qualquer mudança configurada.
-    """
+    source is the immutable reference; scaffold is the PptxGenJS package; config
+    contains explicit overrides; output is the destination. Preserve the original
+    package and import scaffold metadata/additions. The report distinguishes visual
+    byte equality from configured changes."""
     validate_config(config)
     source, output = Path(source), Path(output)
     if output.resolve() == source.resolve():
-        raise ValueError('A saída não pode sobrescrever o PPTX de referência')
+        raise ValueError('Output cannot overwrite the reference PPTX')
     original = read_parts(source)
     parts = dict(original)
     generated = read_parts(scaffold)
-    catalog = source_catalog(source)
+    catalog = source_catalog(source, output=None)
     dimensions = catalog['slide']
     requested_size = config.get('slide', dimensions)
     if requested_size != dimensions:
-        raise ValueError('Modo fiel preserva o canvas original 16:9. Use grid/box ou modo responsive para redimensionar.')
+        raise ValueError('Fidelity mode preserves the original 16:9 canvas. Use grid/box or responsive mode to resize.')
     selection = config.get('selection', list(range(1, len(catalog['slides'])+1)))
     if not selection or len(selection) != len(set(selection)) or any(n not in range(1, len(catalog['slides'])+1) for n in selection):
-        raise ValueError('selection deve conter números de slides existentes, sem repetições')
+        raise ValueError('selection must contain existing slide numbers without duplicates')
     generated_count = sum(bool(re.fullmatch(r'ppt/slides/slide\d+\.xml', name)) for name in generated)
     if generated_count != len(selection):
-        raise ValueError('Quantidade de slides do scaffold diverge da seleção')
+        raise ValueError('Scaffold slide count does not match the selection')
     apply_theme(parts, config.get('theme', {}))
     for group, source_group in [('masters', 'masters'), ('templates', 'layouts')]:
         for key, patch in config.get(group, {}).items():
             if key not in catalog[source_group]:
-                raise ValueError(f'{group} não encontrado: {key}')
+                raise ValueError(f'{group} not found: {key}')
             patch_part(parts, catalog[source_group][key]['part'], patch, config, dimensions, key)
     slide_patches = copy.deepcopy(config.get('slides', {}))
     for key, value in config.get('elements', {}).items():
@@ -1283,11 +1253,11 @@ def build_native(source, scaffold, config, output):
                 slide_patches.setdefault(str(slide['number']), {})['hidden'] = False
     for number, patch in slide_patches.items():
         if not number.isdigit() or int(number) not in range(1, len(catalog['slides'])+1):
-            raise ValueError(f'Slide inexistente: {number}')
+            raise ValueError(f'Slide does not exist: {number}')
         patch_part(parts, f'ppt/slides/slide{number}.xml', patch, config, dimensions, 's'+number)
     for name, operations in config.get('nativeParts', {}).items():
         if name not in parts or not name.endswith(('.xml', '.rels')):
-            raise ValueError(f'Parte XML inexistente: {name}')
+            raise ValueError(f'XML part does not exist: {name}')
         root = parse_xml(parts[name])
         xml_operations(root, operations, name)
         parts[name] = xml_bytes(root)
@@ -1301,7 +1271,7 @@ def build_native(source, scaffold, config, output):
             children.remove(entry)
         for number in selection:
             children.append(entries[number-1])
-        # Seções de navegação com slides omitidos não devem apontar para páginas ausentes.
+        # Navigation sections must not reference omitted slides.
         for parent in root.iter():
             for child in list(parent):
                 if local(child.tag) == 'sectionLst':
@@ -1352,7 +1322,7 @@ def build_native(source, scaffold, config, output):
 
 
 def main():
-    """Executa catalog/build pela CLI; falhas interrompem o build com contexto."""
+    """Run catalog/build from the CLI and include context when a build fails."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command', choices=['catalog', 'build'])
     parser.add_argument('--source', default=str(SOURCE))

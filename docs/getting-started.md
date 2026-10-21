@@ -6,7 +6,7 @@
 
 | Requirement | Used for |
 | --- | --- |
-| Node.js 20+, npm | ES modules, PptxGenJS, Sharp |
+| Node.js 24+, npm | ES modules, PptxGenJS, Sharp, AdonisJS API |
 | Python 3 | Catalog extraction, package editing, normalization, verification |
 | Reference PPTX in the project root | Full-deck source and extraction |
 | Scotia / Scotia Headline fonts | Source and responsive brand typography |

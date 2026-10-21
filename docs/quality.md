@@ -137,6 +137,7 @@ These declarations bind existing IDs; they are not automatic semantic detection 
 | `stacks[source]` | Array of `{ids,right}`; measures ordered row blocks and moves linked elements within the right boundary |
 | `tableHeaders['source.id']` | `{minHeight,anchor}`; reserves header space, e.g. `38.e9` has 0.72 in and DrawingML anchor `b` |
 | `tableIcons['source.objectName']` | `{column,textColumn,prefix,size,gap,kinds,enabled}`; zero-based icon/text columns, square icon size, fixed gap, optional per-row symbols |
+| `tableBars['source.objectName']` | `column`, `items:[{name,row}]`; anchors bars to final native table rows, with header row zero |
 | `panels[source]` | `padding`, `gap`, `paragraphGap`, `markerLane`, `markerGap`, `markerSize`, `panels`, `legend`, `labels` |
 | `cards[source]` | `group`, `bannerGroup`, `banner`, `bannerTop`, `bannerHeight`, `padding`, `compactPadding`, `internalGap`, `badgeSize`, `badgeGap`, `gap`, `columns`, `cards` |
 | `iconCards[source]` | `padding`, `gap`, `paragraphGap`, `iconSize`, `cards` with `body`, `icon` IDs and optional `headingParagraphs` |
@@ -146,7 +147,7 @@ These declarations bind existing IDs; they are not automatic semantic detection 
 
 Panel members bind `background`, `header`, `body`, `icon` IDs, and `markers`. `labels` binds side `header`/`body`; `legend` binds a group and marker/label pairs. Card members bind `group`, `title`, `badge`, `body`, and `owners`. The planner aligns header bands across peers, measures owners, and anchors them above a consistent bottom padding.
 
-`regions.elements` supports partial `box`, `role`, `inset`, `paragraphs` role arrays, `compact`, `rich`, `paragraphGap`, and `bottom`. Callout rows use `top`, `padding`, `gap`, and `rows` containing `background`, `text`, and `icon` IDs. They divide the remaining height equally and reject text that exceeds its padded cell. Legend entries use `right`, `y`, `size`, `gap`, `itemGap`, and `items:[{marker,label}]` to align a measured row from its right boundary. Numbered associations reserve marker space before text. These low-level bindings should be extended by following an existing entry and its implementation in [layout_constraints.py](../scripts/layout_constraints.py).
+`regions.elements` supports partial `box`, `role`, `fontSize`, `inset`, `leftInset`, `tracking`, `trimLeading`, `splitSoftBreaks`, `align`, `anchor`, `paragraphs` role arrays, `compact`, `rich`, `paragraphGap`, and `bottom`. Callout rows use `top`, `padding`, `gap`, and `rows` containing `background`, `text`, and `icon` IDs. They divide the remaining height equally and reject text that exceeds its padded cell. Legend entries use `right`, `y`, `size`, `gap`, `itemGap`, and `items:[{marker,label}]` to align a measured row from its right boundary. Numbered associations reserve marker space before text. These low-level bindings should be extended by following an existing entry and its implementation in [layout_constraints.py](../scripts/layout_constraints.py).
 
 ### Implemented linked layouts
 
@@ -207,3 +208,27 @@ All 26 active charts in the default full quality output are native Office charts
 ## Audit fields
 
 The final manifest's `quality` section records resolved tokens, role assignments, `estimatedOverflow`, `continuations`, `layoutConstraints`, and workbook repairs. Typography records include semantic role, resolved size, and reference-lock information where applicable. Use these records to distinguish a configured exception from an accidental style mismatch. See [Validation](validation.md).
+
+
+## Screenshot review constraints and SVG compatibility
+
+[data/layout-review.json](../data/layout-review.json) contains source-bound review
+regions merged into `qualityDefaults.flow` before user overrides. This keeps row
+bounds, preferred font sizes, left edges, paragraph gaps, and timeline anchors
+configurable. A region's `fontSize` is its content target, constrained by its role's
+minimum and maximum. The fitter reduces it in configured steps before considering
+box growth. `bottom` prevents growth into the next row. `paragraphGap` accepts a
+number or an array of gaps after successive paragraphs, in inches; the same gaps
+participate in measurement and exported DrawingML. `regions.fontGroups` lists peer IDs that must share the smallest fitted size required by any member. `flow.hideLayoutElements` maps layout names to redundant inherited objects to remove; explicit native layout patches can override those defaults.
+
+Soft DrawingML line breaks count as actual lines in both plain and rich text
+measurement. Filled text shapes retain their own geometry even when they overlap
+another filled background; padding belongs to their text body. This avoids
+shrinking one arrow independently of its neighboring rows.
+
+[scripts/picture_compat.py](../scripts/picture_compat.py) adds standard PNG blips to
+SVG-only pictures while keeping their original SVG relationships, dimensions,
+crop, and artwork. JavaScript prepares the fallbacks with Sharp in the private
+build directory. This restores icons in Keynote without replacing any native
+charts or tables. The manifest records affected picture owners and media under
+`quality.pictureRepairs`. Fidelity builds bypass the compatibility repair.

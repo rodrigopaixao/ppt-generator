@@ -87,7 +87,7 @@ Arrays replace rather than append. `record(id,box,extra={})` checks finite geome
 
 | Option | Default / behavior |
 | --- | --- |
-| `text` | Replaces `value` when supplied |
+| `text` | Replaces plain text; string overrides on rich runs retain surrounding formatting |
 | `box` | Merges over the calculated box |
 | `visible` | `false` skips this primitive |
 | `padding` | Optional number or edge object in inches; applied before fitting |
@@ -121,6 +121,7 @@ Images record the requested region, although their actual contained rectangle ca
 | Option | Default | Meaning |
 | --- | --- | --- |
 | `values` | Argument | Replace matrix |
+| `cellTexts` | `{}` | Replace individual cells by zero-based `row.column` before measuring and fitting; empty strings are valid |
 | `weights` | Equal columns | Relative widths, normalized to box width |
 | `fontSize`, `minFontSize` | 10, 7 pt | Shared size fitting in 0.25-point steps |
 | `padding` | 0.045 in | Cell padding; converted to points for PptxGenJS |

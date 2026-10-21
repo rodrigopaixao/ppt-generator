@@ -1,99 +1,102 @@
 /**
- * Contrato documentado do modo fiel. Este arquivo é código importável, não uma
- * configuração aplicada automaticamente. Os exemplos alteram a apresentação;
- * a configuração padrão sem overrides é a referência para igualdade visual.
+ * Documented fidelity-mode contract. Importing this file does not apply settings.
+ * Examples modify the presentation; the configuration without overrides is the
+ * reference for visual equality.
  *
- * @typedef {{x:number,y:number,w:number,h:number}} NativeBox Polegadas no slide.
- * @typedef {{x:number,y:number,w:number,h:number}} LocalBox EMU no pai (914400/in).
+ * @typedef {{x:number,y:number,w:number,h:number}} NativeBox Slide inches.
+ * @typedef {{x:number,y:number,w:number,h:number}} LocalBox Parent-space EMU (914400/in).
  * @typedef {{col:number,row:number,colSpan:number,rowSpan:number}} GridPlacement
- * Tracks base zero; frações são permitidas. As dimensões do slide continuam 16:9.
+ * Zero-based tracks may be fractional; slide dimensions remain 16:9.
  *
  * @typedef {Object} TextStyle
- * @property {string} [fontFace] Nome exato da fonte instalada.
- * @property {number} [fontSize] Tamanho em pontos, positivo.
- * @property {boolean} [bold] Materializa negrito nos runs.
- * @property {boolean} [italic] Materializa itálico.
- * @property {string} [color] Cor sRGB, seis caracteres, sem #.
- * @property {'left'|'center'|'right'|'justify'} [align] Alinhamento do parágrafo.
- * @property {number} [margin] Margens internas iguais, em polegadas.
- * @property {'top'|'middle'|'bottom'} [vertical] Âncora vertical.
- * @property {boolean} [wrap] Quebra automática de linha no corpo de texto.
+ * @property {string} [fontFace] Exact installed font name.
+ * @property {number} [fontSize] Positive size in points.
+ * @property {boolean} [bold] Materialize bold styling in runs.
+ * @property {boolean} [italic] Materialize italic styling.
+ * @property {string} [color] Six-character sRGB color without #.
+ * @property {'left'|'center'|'right'|'justify'} [align] Paragraph alignment.
+ * @property {number} [margin] Equal internal margins in inches.
+ * @property {'top'|'middle'|'bottom'} [vertical] Vertical anchor.
+ * @property {boolean} [wrap] Automatic wrapping in the text body.
  *
  * @typedef {Object} TablePatch
- * @property {string[][]} [rows] Substitui valores. Mantém colunas; linhas novas
- * clonam a última linha e redistribuem a altura total original proporcionalmente.
- * @property {Object.<string,object>} [cells] Chaves "linha.coluna", base zero;
- * valores aceitam text, fill e textStyle. Uma edição não perde os estilos irmãos.
- * @property {number[]} [columnWidths] Uma largura positiva por coluna, em in.
- * @property {number[]} [rowHeights] Uma altura positiva por linha, em in.
+ * @property {string[][]} [rows] Replace values while retaining columns. New rows
+ * clone the last row and redistribute the original total height proportionally.
+ * @property {Object.<string,object>} [cells] Zero-based row.column keys whose values
+ * accept text, fill and textStyle without losing neighboring styles.
+ * @property {number[]} [columnWidths] One positive width per column in inches.
+ * @property {number[]} [rowHeights] One positive height per row in inches.
  *
  * @typedef {Object} ChartPatch
- * @property {object[]} [series] Uma entrada por série; {} preserva uma série.
- * Cada entrada aceita name, labels, values, xValues e yValues, conforme o tipo
- * de gráfico. A quantidade de pontos é preservada. XML e XLSX são sincronizados
- * e clonados por instância, evitando efeitos em outros slides.
- * @property {object[]} [xmlPatches] Altera eixos, cores, formatos, legendas etc.
- * diretamente no XML do gráfico, com a mesma sintaxe de XmlOperation.
+ * @property {object[]} [series] One entry per series; {} preserves a series. Entries
+ * accept name, labels, values, xValues and yValues according to chart type. Preserve
+ * point counts and synchronize XML/XLSX, cloning per instance to isolate other slides.
+ * @property {object[]} [xmlPatches] Change axes, colors, formats and legends directly
+ * in chart XML using XmlOperation syntax.
  *
  * @typedef {Object} XmlOperation
- * @property {string} path XPath relativo à raiz do objeto/parte; usa a:, p:, c:.
- * @property {Object.<string,string|number>} [attributes] Atributos a substituir.
- * @property {string} [text] Conteúdo textual do nó selecionado.
- * @property {boolean} [remove] Remove o nó; a raiz não pode ser removida.
- * @property {string} [appendXml] Fragmento XML com namespaces completos.
+ * @property {string} path XPath relative to the object/part root; uses a:, p:, c:.
+ * @property {Object.<string,string|number>} [attributes] Attributes to replace.
+ * @property {string} [text] Selected node's text content.
+ * @property {boolean} [remove] Remove a node; the root cannot be removed.
+ * @property {string} [appendXml] XML fragment with complete namespace declarations.
  *
  * @typedef {Object} ElementPatch
- * @property {string} [text] Substitui o corpo, usando o primeiro estilo como base.
- * @property {Object.<string,string>} [textRuns] Edita runs por índice, preservando
- * as ênfases e estilos de cada run existente.
- * @property {Object.<string,string>} [textReplacements] Substituições dentro de
- * cada run; não cruza fronteiras de runs para não apagar formatação.
- * @property {TextStyle} [textStyle] Estilo explícito de texto.
- * @property {NativeBox} [box] Move/redimensiona no slide; grupos mantêm os filhos.
- * @property {LocalBox} [localBox] Controle exato no espaço interno de um grupo.
- * @property {GridPlacement} [grid] Posiciona com o grid atual.
- * @property {string} [fill] Preenchimento sólido de uma forma.
- * @property {{color?:string,width?:number}} [line] Cor e espessura em pontos.
- * @property {number} [rotation] Rotação em graus; convertida para DrawingML.
- * @property {boolean} [visible] false remove o objeto da saída, sem tocar na fonte.
- * @property {TablePatch} [table] Configuração de uma tabela nativa.
- * @property {ChartPatch} [chart] Configuração de gráfico nativo.
- * @property {string|{path:string,fallback:string}} [image] Arquivo relativo ou
- * absoluto. SVG recebe PNG de compatibilidade automaticamente no build JS.
- * @property {string} [shapeType] Preset DrawingML (rect, ellipse, chevron etc.).
- * @property {string} [name] Nome no painel de seleção do PowerPoint.
- * @property {XmlOperation[]} [xmlPatches] Propriedades avançadas não expostas acima.
+ * @property {string} [text] Replace the body using its first style as a base.
+ * @property {Object.<string,string>} [textRuns] Edit runs by index, retaining each
+ * existing run's emphasis and style.
+ * @property {Object.<string,string>} [textReplacements] Replace text within each run;
+ * matches never cross run boundaries or erase mixed formatting.
+ * @property {TextStyle} [textStyle] Explicit text styling.
+ * @property {NativeBox} [box] Move/resize on the slide; groups retain children.
+ * @property {LocalBox} [localBox] Exact control in a group's internal space.
+ * @property {GridPlacement} [grid] Position using the current grid.
+ * @property {string} [fill] Solid shape fill.
+ * @property {{color?:string,width?:number}} [line] Color and width in points.
+ * @property {number} [rotation] Rotation in degrees, converted to DrawingML.
+ * @property {boolean} [visible] false removes the output object, leaving source intact.
+ * @property {TablePatch} [table] Native table configuration.
+ * @property {ChartPatch} [chart] Native chart configuration.
+ * @property {string|{path:string,fallback:string}} [image] Relative/absolute file path.
+ * The JS build automatically creates a PNG compatibility fallback for SVG files.
+ * @property {string} [shapeType] DrawingML preset (rect, ellipse, chevron, etc.).
+ * @property {string} [name] Name in PowerPoint's selection pane.
+ * @property {XmlOperation[]} [xmlPatches] Advanced properties not exposed above.
  *
  * @typedef {Object} FidelityConfig
- * @property {object} [grid] columns/rows inteiros; gapX/Y e marginX/Y em in.
- * @property {object} [theme] colors/fontes por tokens; colorMap/fontMap por valor.
- * Alterações lexicais aplicam-se a DrawingML, não recolorem pixels de imagens.
- * @property {Object.<string,object>} [masters] Chaves slideMasterN do catálogo.
- * @property {Object.<string,object>} [templates] Chaves slideLayoutN do catálogo.
- * @property {Object.<string,object>} [slides] Números originais. Cada slide aceita
- * elements, flows, background e hidden. Layout/master aceitam elements/background.
- * @property {Object.<string,ElementPatch>} [elements] Chaves "slide.eID". Tem maior
- * precedência que slides.<n>.elements. Ex.: "5.e5".
- * @property {Object.<string,object[]>} [additions] Novos objetos PptxGenJS text/shape
- * por slide. Aceitam id, kind, text/type, box ou grid e style (opções PptxGenJS).
- * @property {number[]} [selection] Subconjunto/ordem sem números repetidos.
- * @property {Object.<string,XmlOperation[]>} [nativeParts] Escape hatch por nome
- * de parte OPC existente, como ppt/charts/chart24.xml. Aplicado depois dos slides.
+ * @property {object} [grid] Integer columns/rows; gapX/Y and marginX/Y in inches.
+ * @property {object} [theme] Token-based colors/fonts; value-based colorMap/fontMap.
+ * Lexical changes apply to DrawingML and do not recolor image pixels.
+ * @property {Object.<string,object>} [masters] Catalog slideMasterN keys.
+ * @property {Object.<string,object>} [templates] Catalog slideLayoutN keys.
+ * @property {Object.<string,object>} [slides] Original slide numbers. Slides accept
+ * elements, flows, background and hidden; layouts/masters accept elements/background.
+ * @property {Object.<string,ElementPatch>} [elements] slide.eID keys override
+ * slides.<n>.elements; for example, 5.e5.
+ * @property {Object.<string,object[]>} [additions] New PptxGenJS text/shape objects
+ * per slide, with id, kind, text/type, box or grid, and native style options.
+ * @property {number[]} [selection] Subset/order without duplicate slide numbers.
+ * @property {Object.<string,XmlOperation[]>} [nativeParts] Escape hatch keyed by an
+ * existing OPC part name, such as ppt/charts/chart24.xml; applied after slide patches.
  */
 
-/** @type {FidelityConfig} Exemplo funcional, sem efeito até ser passado para build(). */
+/**
+ * Working example; it has no effect until passed to build().
+ *
+ * @type {FidelityConfig}
+ */
 export const documentedFidelityExample = {
   grid: { columns: 14, rows: 9, gapX: 0, gapY: 0 },
-  // Sem overrides, o baseline mantém os 71 slides e todas as partes visuais.
+  // Without overrides, the baseline retains all 71 slides and every visual part.
   selection: [5, 10, 50, 68],
   elements: {
-    // ID real: título do slide 5; outros e5 pertencem a outras cenas.
+    // Actual ID: slide 5 title; other e5 IDs belong to different scenes.
     '5.e5': { text: 'Configured executive summary', textStyle: { fontSize: 19 } },
   },
   slides: {
     10: { elements: { e8: { table: { cells: { '1.2': { text: 'New meeting' } } } } } },
     68: { hidden: false, elements: {
-      // O quarto número conserva o espaço invisível do semicírculo.
+      // The fourth value preserves the invisible semicircle spacer.
       e114: { chart: { series: [{ values: [2, 7, 2, 11] }] } },
     } },
   },

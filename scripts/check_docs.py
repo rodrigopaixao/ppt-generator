@@ -1,9 +1,8 @@
-"""Verifica documentação inline de funções nomeadas e métodos do projeto.
+"""Check inline documentation for named project functions and methods.
 
-Callbacks anônimos pequenos são explicados pela função que os contém. Funções
-nomeadas Python exigem docstring; funções/métodos/helpers nomeados JavaScript
-exigem JSDoc. Isto verifica presença, não certifica a qualidade editorial.
-"""
+Small anonymous callbacks are documented by their enclosing function. Named Python
+functions require docstrings; named JavaScript functions, methods and helpers
+require JSDoc. This checks presence rather than editorial quality."""
 import ast
 import json
 import re
@@ -11,7 +10,7 @@ from pathlib import Path
 
 
 def previous_jsdoc(source, start):
-    """Confere se a declaração é precedida imediatamente por comentário JSDoc."""
+    """Check whether a declaration is immediately preceded by a JSDoc comment."""
     prefix = source[:start].rstrip()
     if not prefix.endswith('*/'):
         return False
@@ -20,11 +19,10 @@ def previous_jsdoc(source, start):
 
 
 def check(root):
-    """Retorna declarações documentadas e ausentes em src/ e scripts/.
+    """Return documented and undocumented declarations in src/ and scripts/.
 
-    O scanner JS reconhece declarations, métodos e helpers arrow nomeados;
-    o Python usa AST real, incluindo funções internas como scene_nodes.visit.
-    """
+    The JavaScript scanner recognizes declarations, methods and named arrow helpers.
+    Python uses its AST, including nested functions such as scene_nodes.visit."""
     missing, documented = [], []
     patterns = [r'^(?:export )?(?:async )?function\s+(\w+)\s*\(',
                 r'^  (constructor|\w+)\([^;\n]*\)\s*\{',
@@ -50,7 +48,7 @@ def check(root):
 
 
 def main():
-    """Imprime o relatório; termina com erro se houver declaração sem documentação."""
+    """Print the report and exit with an error if any declaration lacks documentation."""
     root = Path(__file__).resolve().parent.parent
     report = check(root)
     (root/'output/documentation-report.json').write_text(json.dumps(report, indent=2))

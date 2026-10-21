@@ -1,7 +1,8 @@
 /**
- * Sete templates semânticos adaptativos da primeira implementação. Eles compõem
- * objetos novos e deliberadamente redistribuem o conteúdo. Para os 71 slides
- * com fidelidade integral, use generate.mjs e o catálogo nativo data/slides/.
+ * Seven initial semantic responsive templates. They compose new objects and intentionally
+ * reflow content. For full fidelity across all 71 slides, use generate.mjs and the native
+ * data/slides catalog.
+ *
  * @module templates
  */
 import { Grid, inset, relative, split } from './layout.mjs';
@@ -9,10 +10,12 @@ import { merge } from './theme.mjs';
 import { collection, table, panel, donut, richParagraphs, labelBody } from './components.mjs';
 
 /**
- * Resolve cabeçalho, corpo e rodapé a partir do grid configurável.
- * @param {object} config Configuração validada por configure.
+ * Resolve header, body and footer from the configurable grid. config is validated by
+ * configure. s supplies physical margins; h/f are track spans; the body uses the remaining
+ * tracks.
+ *
+ * @param {object} config
  * @returns {{grid:Grid,header:object,body:object,footer:object}}
- * s fornece margens físicas; h/f são spans em tracks; o corpo usa o restante.
  */
 export function regions(config) {
   const { width, height } = config.slide;
@@ -27,12 +30,15 @@ export function regions(config) {
 }
 
 /**
- * Registra os masters/layouts PptxGenJS com o fundo e chrome estático.
- * @param {object} pptx Instância da biblioteca.
- * @param {object} config Tokens e overrides templates.<nome>.
- * @param {object} assets Imagens preparadas, com dimensões para preservar proporção.
- * @returns {void} Define layouts reutilizáveis ligados ao master exportado.
- * local combina defaults com overrides; objects recebe objetos estáticos extras.
+ * Register PptxGenJS masters/layouts with a background and static chrome. pptx is the
+ * library instance; config supplies tokens and templates.<name> overrides; assets holds
+ * prepared images and dimensions. Define reusable layouts linked to the exported master.
+ * local merges defaults/overrides and objects collects extra static elements.
+ *
+ * @param {object} pptx
+ * @param {object} config
+ * @param {object} assets
+ * @returns {void}
  */
 export function registerMasters(pptx, config, assets) {
   for (const name of Object.keys(templates)) {
@@ -52,12 +58,15 @@ export function registerMasters(pptx, config, assets) {
 }
 
 /**
- * Desenha os elementos comuns que variam por instância de slide.
- * @param {Canvas} c Contexto de desenho.
- * @param {object} data title, kicker/tags, sourceNumber e footnote.
- * @param {object} region Regiões calculadas por regions.
- * @returns {void} Título/rótulos/numeração são editáveis; o logo fica no master.
- * runs separa tópico vermelho de mensagem; t controla visibilidade e estilos.
+ * Draw shared elements that vary per slide instance. c is the drawing context; data supplies
+ * title, kicker/tags, sourceNumber and footnote; region comes from regions. Titles, labels
+ * and page numbers remain editable; the logo lives on the master. runs separates the red
+ * topic from its message; t controls visibility and styles.
+ *
+ * @param {Canvas} c
+ * @param {object} data
+ * @param {object} region
+ * @returns {void}
  */
 export function chrome(c, data, region) {
   const { header, footer } = region, { colors, fonts, type } = c.theme;
@@ -101,11 +110,14 @@ export function chrome(c, data, region) {
 }
 
 /**
- * Template de resumo: conserva parágrafos/ênfases e ajusta um corpo de rich text.
- * @param {Canvas} c Contexto.
- * @param {object} data paragraphs extraídos, sem resumo automático do conteúdo.
- * @param {object} box Corpo disponível em polegadas.
- * @returns {void} o contém limites de fonte; Canvas rejeita overflow impossível.
+ * Executive-summary template retaining paragraphs and emphasis in a fitted rich-text body.
+ * data contains extracted paragraphs without automatic summarization. box is usable body
+ * space in inches; o supplies font limits. Canvas rejects impossible overflow.
+ *
+ * @param {Canvas} c
+ * @param {object} data
+ * @param {object} box
+ * @returns {void}
  */
 function executiveSummary(c, data, box) {
   const o = c.options('executiveSummary', 'summary', { fontSize: 10.25, minFontSize: 8 });
@@ -114,11 +126,14 @@ function executiveSummary(c, data, box) {
 }
 
 /**
- * Template de agenda em tabela nativa com larguras proporcionais.
- * @param {Canvas} c Contexto.
- * @param {object} data rows é a matriz completa com cabeçalho.
- * @param {object} box Região do corpo.
- * @returns {void} rowStyles destaca intervalos/transfers; nenhuma linha é omitida.
+ * Agenda template using a native table with proportional widths. data.rows is the complete
+ * matrix including its header; box is the body region. rowStyles highlights breaks/transfers
+ * without omitting rows.
+ *
+ * @param {Canvas} c
+ * @param {object} data
+ * @param {object} box
+ * @returns {void}
  */
 function agenda(c, data, box) {
   const rowStyles = {};
@@ -132,12 +147,14 @@ function agenda(c, data, box) {
 }
 
 /**
- * Alinha logos com as colunas da comparação e destaca a coluna do banco.
- * @param {Canvas} c Contexto.
- * @param {object} data logos e rows definem a evidência original.
- * @param {object} box Região do corpo.
- * @returns {void} areas divide logos/tabela; columns compartilha os mesmos pesos
- * da tabela; cellStyles personaliza cada célula sem convertê-la em uma imagem.
+ * Align logos with comparison columns and highlight the bank column. data.logos/rows carry
+ * source evidence and box defines the body. areas splits logos/table; columns shares table
+ * weights; cellStyles customizes cells without converting them to images.
+ *
+ * @param {Canvas} c
+ * @param {object} data
+ * @param {object} box
+ * @returns {void}
  */
 function competitiveComparison(c, data, box) {
   const areas = split(box, [0.11, 0.89], 'y', 0.03);
@@ -161,13 +178,15 @@ function competitiveComparison(c, data, box) {
 }
 
 /**
- * Compõe missão, coleção de pilares e resultado esperado.
- * @param {Canvas} c Contexto.
- * @param {object} data mission, outcome e pillars[{title,icon}].
- * @param {object} box Região total.
- * @returns {void} bands reserva as faixas superior/inferior; collection calcula
- * quantos pilares cabem e continua em outra linha quando necessário. o contém
- * ratios, padding, gap e limites mínimos configuráveis.
+ * Compose mission, pillar collection and expected outcome. data supplies mission, outcome
+ * and pillars[{title, icon}]; box is the total region. bands reserves upper/lower strips;
+ * collection determines capacity and wraps when necessary. o contains configurable ratios,
+ * padding, gaps and minimums.
+ *
+ * @param {Canvas} c
+ * @param {object} data
+ * @param {object} box
+ * @returns {void}
  */
 function strategicPillars(c, data, box) {
   const o = c.options('strategicPillars', 'pillars', { bandRatio: 0.11, padding: 0.38,
@@ -195,12 +214,15 @@ function strategicPillars(c, data, box) {
 }
 
 /**
- * Distribui faixas de jornada, etapas e conexões sem distorcer seus ícones.
- * @param {Canvas} c Contexto.
- * @param {object} data journeys contém rótulo, descrição e steps por faixa.
- * @param {object} box Região total.
- * @returns {void} rows divide as faixas; label/steps separam contexto e processo;
- * diameter preserva círculos; conectores só unem vizinhos da mesma linha visual.
+ * Distribute journey lanes, steps and connections without distorting icons. data.journeys
+ * supplies labels, descriptions and steps per lane; box is the total area. rows splits
+ * lanes; label/steps separates context and process; diameter preserves circles. Connect only
+ * adjacent items on the same visual row.
+ *
+ * @param {Canvas} c
+ * @param {object} data
+ * @param {object} box
+ * @returns {void}
  */
 function clientJourney(c, data, box) {
   const o = c.options('clientJourney', 'journey', { labelWeight: 1.6, contentWeight: 10,
@@ -251,12 +273,15 @@ function clientJourney(c, data, box) {
 }
 
 /**
- * Compõe painéis de execução com saúde, rosca, realizações e preocupações.
- * @param {Canvas} c Contexto.
- * @param {object} data pillars define títulos, cinco status e séries de gráfico.
- * @param {object} box Região total.
- * @returns {void} metrics/achievements/concerns são regiões proporcionais;
- * effectiveSeries mantém os números exibidos sincronizados com overrides.
+ * Compose execution panels with health, doughnut charts, accomplishments and concerns.
+ * data.pillars supplies headings, five status values and chart series. box is the total
+ * region; metrics/achievements/concerns are proportional areas. effectiveSeries synchronizes
+ * displayed values with overrides.
+ *
+ * @param {Canvas} c
+ * @param {object} data
+ * @param {object} box
+ * @returns {void}
  */
 function executionDashboard(c, data, box) {
   const o = c.options('executionDashboard', 'dashboard', { gap: 0.30, minWidth: 3.25, minColumnSpan: 4,
@@ -305,19 +330,23 @@ function executionDashboard(c, data, box) {
 }
 
 /**
- * Compõe calendário, eventos, disponibilidade e comitês em ordem cronológica.
- * @param {Canvas} c Contexto.
- * @param {object} data start/end ISO, months/weeks, milestones, availability,
- * committees e legend são dados independentes do layout.
- * @param {object} box Região disponível.
- * @returns {void} bands define faixas; lanes separa rótulos de eventos próximos;
- * os cartões usam reflow e os marcos usam datas reais como âncoras horizontais.
+ * Compose the calendar, events, availability and committees in chronological order. data
+ * supplies ISO start/end, months/weeks, milestones, availability, committees and legend
+ * independently of layout. box is available space. bands defines strips; lanes separates
+ * nearby labels; cards reflow while milestones use actual dates as horizontal anchors.
+ *
+ * @param {Canvas} c
+ * @param {object} data
+ * @param {object} box
+ * @returns {void}
  */
 function timeline(c, data, box) {
   const o = c.options('timeline', 'timeline', { labelRatio: 0.13, fontSize: 7,
     lanes: 4, gap: 0.10, committeeMinWidth: 1.7 });
   const bands = split(box, [0.10, 0.31, 0.15, 0.38, 0.06], 'y', 0.035);
-  /** Divide uma faixa entre rótulo à esquerda e conteúdo cronológico à direita. */
+  /**
+   * Split a band between its left label and chronological content on the right.
+   */
   const splitBand = b => split(b, [o.labelRatio, 1 - o.labelRatio], 'x', 0.08);
   const [, calendar] = splitBand(bands[0]);
   const monthBoxes = split(relative(calendar, 0, 0, 1, 0.5), data.months.map(m => m.weeks), 'x', 0);
@@ -330,13 +359,15 @@ function timeline(c, data, box) {
     c.shape(`timeline.week.${i}.frame`, b, {});
     c.text(`timeline.week.${i}.text`, data.weeks[i], inset(b, 0.025), { fontSize: 8, align: 'center' });
   });
-  /** Converte data ISO em fração 0..1 do intervalo, sem depender do timezone local. */
+  /**
+   * Convert an ISO date to a 0..1 interval fraction independently of local time zone.
+   */
   const dateRatio = date => Math.max(0, Math.min(1,
     (Date.parse(date) - Date.parse(data.start)) / (Date.parse(data.end) - Date.parse(data.start))));
   /**
-   * Posiciona eventos por data dentro de lanes. ordered ordena cada faixa;
-   * left/right são limites entre eventos vizinhos; labelWidth evita rótulos
-   * excessivamente largos e anchor continua ligado à data correta.
+   * Position events by date within lanes. ordered sorts each lane; left/right bound
+   * neighboring events; labelWidth limits label width while anchor remains tied to the correct
+   * date.
    */
   const renderEvents = (id, events, target, lanes) => {
     const laneBoxes = split(target, Array(lanes).fill(1), 'y', 0.02);
@@ -419,11 +450,14 @@ export const templates = {
 };
 
 /**
- * Resolve a instância do template, desenha chrome e delega seu corpo.
- * @param {Canvas} c Contexto.
- * @param {object} data Precisa informar template e title, além dos dados da família.
- * @returns {void} overrides altera a estrutura comum por nome; r contém regiões
- * físicas; render é a função registrada. Nome desconhecido é erro de configuração.
+ * Resolve the template instance, draw chrome and delegate its body. data requires
+ * template/title and the family-specific content. overrides changes shared structure by
+ * template name; r holds physical regions; render is the registered function. Unknown
+ * template names are configuration errors.
+ *
+ * @param {Canvas} c
+ * @param {object} data
+ * @returns {void}
  */
 export function renderTemplate(c, data) {
   const overrides = c.config.templates[data.template] || {};

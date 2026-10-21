@@ -4,7 +4,7 @@ An editable PowerPoint generator built with **PptxGenJS**, a configurable layout
 
 ## Quick start
 
-Requires Node.js 20+, npm, Python 3, and `2606 Context Enriched Slide Repository.pptx` in the project root.
+Requires Node.js 24+, npm, Python 3, and `2606 Context Enriched Slide Repository.pptx` in the project root.
 
 ```sh
 npm install
@@ -25,6 +25,14 @@ The default build writes `output/recreated-slides.pptx` and `output/recreated-sl
 | Inspect responsive geometry | `npm run build:debug` | Responsive build with grid and text bounds |
 
 Quality is a profile of the fidelity engine, not a third CLI mode. The CLI without arguments uses fidelity; the npm default explicitly supplies the quality configuration. Responsive and native configurations have different contracts.
+
+## Inline web editor
+
+The repository also includes a Next.js/TypeScript editor and an AdonisJS API.
+With Node.js 24+, run `npm ci` and `npm run dev`, then open
+[Slide Studio](http://127.0.0.1:3000). Create a project, edit simple text directly
+on a slide, and export an editable PPTX. See the [editor guide](docs/editor.md)
+for preview dependencies, routes, persistence, limitations and tests.
 
 ## Documentation
 

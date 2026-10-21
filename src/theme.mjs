@@ -1,15 +1,19 @@
 /**
- * Tokens e configuração dos sete templates adaptativos. O modo fiel preserva
- * os temas do arquivo original e usa apply_theme em native_deck.py.
+ * Tokens and configuration for seven responsive templates. Fidelity mode preserves the
+ * original themes and applies requested changes through native_deck.py apply_theme.
+ *
  * @module theme
  */
 
 /**
- * Faz merge recursivo sem modificar base ou patch.
- * @param {object} base Padrões ou configuração de menor precedência.
- * @param {object} patch Overrides. Arrays substituem o array completo.
- * @returns {object} Cópia independente. result acumula os valores; objetos
- * aninhados passam pela mesma regra e valores escalares prevalecem diretamente.
+ * Recursively merge without mutating base or patch. base supplies defaults/lower-precedence
+ * settings; patch supplies overrides. Arrays replace entire arrays. Return an independent
+ * copy: result accumulates values, nested objects follow the same rule, and scalars replace
+ * directly.
+ *
+ * @param {object} base
+ * @param {object} patch
+ * @returns {object}
  */
 export function merge(base, patch = {}) {
   const result = structuredClone(base);
@@ -20,7 +24,10 @@ export function merge(base, patch = {}) {
   return result;
 }
 
-/** Tokens extraídos da referência: cores hex sem #, tipografia em pt, espaço em in. */
+/**
+ * Tokens extracted from the reference: hex colors without #, typography in points and
+ * spacing in inches.
+ */
 export const brand = {
   colors: {
     primary: 'EC111A', text: '1E1117', muted: '666666', paper: 'FFFFFF',
@@ -34,7 +41,9 @@ export const brand = {
   line: { thin: 0.5, regular: 0.8, emphasis: 1.1 },
 };
 
-/** Configuração adaptativa: canvas 16:9, grid 14×9 e regiões comuns do template. */
+/**
+ * Responsive defaults: 16:9 canvas, 14×9 grid and shared template regions.
+ */
 export const defaults = {
   slide: { width: 13.333333, height: 7.5 },
   grid: { columns: 14, rows: 9, gapX: 0.12, gapY: 0.10 },
@@ -53,11 +62,13 @@ export const defaults = {
 };
 
 /**
- * Resolve overrides adaptativos e valida invariantes antes de renderizar.
- * @param {object} patch Overrides de tokens, templates, componentes ou elementos.
- * @returns {object} Configuração independente dos defaults.
- * width/height são polegadas; headerRows/footerRows são tracks fracionários.
- * Um canvas fora de 16:9 ou regiões sem corpo falham de forma explícita.
+ * Resolve responsive overrides and validate invariants before rendering. patch supplies
+ * token/template/component/element overrides. Return configuration independent of defaults.
+ * width/height use inches; headerRows/footerRows use fractional tracks. Fail explicitly for
+ * non-16:9 canvases or regions without body space.
+ *
+ * @param {object} patch
+ * @returns {object}
  */
 export function configure(patch = {}) {
   const config = merge(defaults, patch);

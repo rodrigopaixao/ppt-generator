@@ -15,14 +15,13 @@ NS = {k: f'http://schemas.openxmlformats.org/{v}' for k, v in {
 
 
 def geometry_svg(sp, color='EC111A'):
-    """Traduz geometrias originais em SVG para os sete templates adaptativos.
+    """Convert original geometry to SVG for the seven responsive templates.
 
-    Args: sp é uma forma XML; color é sRGB sem # usado no asset derivado.
-    Returns: SVG com viewBox nas unidades originais ou None se não houver path.
-    paths guarda subpaths; commands converte move/line/Bezier/close. A largura
-    física normalizada em 1000 px evita alocações enormes por causa de EMU.
-    Não desenha artwork novo nem modifica o objeto do PPTX de referência.
-    """
+    Args: sp is an XML shape; color is the derived asset's sRGB value without #.
+    Returns: SVG with a viewBox in source units, or None when no path exists.
+    paths holds subpaths; commands converts move, line, Bezier and close operations.
+    A physical width normalized to 1000 px avoids excessive EMU-based allocations.
+    This neither draws new artwork nor changes the reference PPTX object."""
     geom = sp.find('p:spPr/a:custGeom', NS)
     if geom is None:
         return None
@@ -47,17 +46,16 @@ def geometry_svg(sp, color='EC111A'):
 
 
 def text(node):
-    """Extrai o texto por parágrafo de um nó XML, mantendo quebras entre parágrafos."""
+    """Extract an XML node's text by paragraph, preserving paragraph breaks."""
     return '\n'.join(''.join(t.text or '' for t in p.findall('.//a:t', NS))
                      for p in node.findall('.//a:p', NS)).strip()
 
 
 def relationships(z, part):
-    """Resolve relações OPC internas da parte em um ZipFile aberto.
+    """Resolve a part's internal OPC relationships in an open ZipFile.
 
-    part identifica a parte proprietária; path é sua parte .rels. Retorna mapa
-    rId -> caminho normalizado no ZIP, sem buscar URLs ou arquivos externos.
-    """
+    part identifies the owning part; path is its .rels part. Return an rId to
+    normalized ZIP path map without fetching external URLs or files."""
     path = posixpath.join(posixpath.dirname(part), '_rels', posixpath.basename(part) + '.rels')
     if path not in z.namelist():
         return {}
@@ -66,12 +64,11 @@ def relationships(z, part):
 
 
 def paragraphs(node):
-    """Extrai runs e propriedades explícitas para o modo adaptativo.
+    """Extract runs and explicit properties for responsive mode.
 
-    Args: node é uma forma com p:txBody. Returns: parágrafos com text/runs/level/
-    bullet. pp representa propriedades de parágrafo; rp, propriedades do run.
-    A resolução completa de estilos herdados fica no modo fiel, sem achatamento.
-    """
+    Args: node is a shape with p:txBody. Returns paragraphs with text/runs/level/bullet.
+    pp represents paragraph properties; rp represents run properties. Full inherited
+    style resolution belongs to fidelity mode and is not flattened here."""
     result = []
     for p in node.findall('./p:txBody/a:p', NS):
         pp = p.find('a:pPr', NS)
@@ -93,13 +90,12 @@ def paragraphs(node):
 
 
 def extract():
-    """Extrai os sete exemplos semânticos e seus assets para data/source.json.
+    """Extract seven semantic examples and their assets into data/source.json.
 
-    SELECTED é a lista dos números originais. result separa texto, tabelas,
-    gráficos e notas; master/group reaproveitam o logo original. Arquivos SVG e
-    metadados são derivados; SOURCE é somente leitura. Retorna None e imprime
-    um resumo. Para todos os 71 slides, use native_deck.py catalog.
-    """
+    SELECTED contains original slide numbers. result separates text, tables, charts
+    and notes; master/group reuse the original logo. SVG files and metadata are
+    derived; SOURCE is read-only. Return None and print a summary. Use native_deck.py
+    catalog to extract all 71 slides."""
     (ROOT / 'assets').mkdir(exist_ok=True)
     (ROOT / 'data').mkdir(exist_ok=True)
     with zipfile.ZipFile(SOURCE) as z:

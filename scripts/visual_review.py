@@ -1,9 +1,8 @@
-"""Compara todos os slides por pixels usando o mesmo LibreOffice e as mesmas fontes.
+"""Compare all slides pixel by pixel using the same LibreOffice and fonts.
 
-Não converte o produto final em imagens. As imagens são evidência privada de QA.
-O slide oculto 68 é exposto em cópias temporárias de AMBOS os arquivos para ser
-comparado. Metadados do PDF são ignorados; somente pixels de cada página contam.
-"""
+Images are private QA evidence rather than final slide content. Expose hidden
+slide 68 in temporary copies of both files. Ignore PDF metadata and compare only
+the rendered pixels on each page."""
 import argparse
 import hashlib
 import json
@@ -16,11 +15,10 @@ import zipfile
 
 
 def visible_copy(source, destination):
-    """Cria cópia de revisão expondo slides ocultos, sem tocar no arquivo de entrada.
+    """Create a review copy exposing hidden slides without changing the input file.
 
-    A alteração é lexical (show="0" -> show="1") e não reserializa DrawingML.
-    source/destination são Paths. Retorna o caminho da cópia criada.
-    """
+    Replace show=0 with show=1 lexically without reserializing DrawingML.
+    source/destination are Paths. Return the created copy's path."""
     with zipfile.ZipFile(source) as original, zipfile.ZipFile(destination, 'w', zipfile.ZIP_DEFLATED) as target:
         for name in original.namelist():
             payload = original.read(name)
@@ -31,44 +29,42 @@ def visible_copy(source, destination):
 
 
 def command(arguments):
-    """Executa um binário sem shell e falha com stderr completo se houver erro.
+    """Run a binary without a shell and surface its stderr on failure.
 
-    argumentos contém cada item da linha de comando separado. O timeout limita
-    uma conversão travada a dez minutos; o chamador pode acompanhar o processo.
-    """
+    arguments contains individual command-line items. A ten-minute timeout limits
+    stalled conversions; the caller can monitor the process."""
     subprocess.run([str(value) for value in arguments], check=True, timeout=600)
 
 
 def compare(reference, output, directory, scale=960):
-    """Renderiza referência e resultado e calcula igualdade exata por página.
+    """Render reference/output and compute exact pixel equality per page.
 
-    Args: reference/output são PPTX; directory recebe PDFs/PNGs/relatório;
-    scale é a largura máxima, em pixels. Usa Pillow apenas para ler/comparar e
-    montar contatos, nunca para desenhar conteúdo da apresentação.
-    Returns: relatório com matches, erros médios e hashes das entradas.
-    """
+    Args: reference/output are PPTX files; directory receives PDFs, PNGs and reports;
+    scale is maximum width in pixels. Pillow reads/compares images and builds contact
+    sheets, but never draws presentation content. Return matches, mean errors and
+    input hashes."""
     from PIL import Image, ImageChops, ImageStat, ImageDraw
     directory.mkdir(parents=True, exist_ok=True)
     ref = visible_copy(reference, directory/'reference-visible.pptx')
     candidate = visible_copy(output, directory/'candidate-visible.pptx')
-    print('Renderizando 71 slides da referência e da saída...', flush=True)
+    print('Rendering 71 slides from the reference and output...', flush=True)
     command(['soffice', '--headless', '--convert-to', 'pdf', '--outdir', directory, ref, candidate])
     for name in ('reference', 'candidate'):
-        print('Rasterizando '+name+'...', flush=True)
+        print('Rasterizing '+name+'...', flush=True)
         command(['pdftoppm', '-scale-to', str(scale), '-png', directory/f'{name}-visible.pdf', directory/name])
     reference_pages = sorted(directory.glob('reference-*.png'))
     candidate_pages = sorted(directory.glob('candidate-*.png'))
     if len(reference_pages) != len(candidate_pages) or not reference_pages:
-        raise ValueError('Número de páginas renderizadas diverge')
+        raise ValueError('Rendered page counts differ')
     pages = []
     for index, (a, b) in enumerate(zip(reference_pages, candidate_pages), 1):
         left, right = Image.open(a).convert('RGB'), Image.open(b).convert('RGB')
         if left.size != right.size:
-            raise ValueError(f'Página {index} com dimensões diferentes')
+            raise ValueError(f'Page {index} has different dimensions')
         delta = ImageChops.difference(left, right)
         pages.append({'slide': index, 'pixelIdentical': delta.getbbox() is None,
                       'meanAbsoluteError': sum(ImageStat.Stat(delta).mean)/3})
-    # Todas as 71 páginas cabem em seis contatos; o último contato pode ter menos páginas.
+    # All 71 pages fit on six contact sheets; the last sheet may contain fewer pages.
     for start in range(0, len(candidate_pages), 12):
         width, height = Image.open(candidate_pages[start]).size
         sheet = Image.new('RGB', (width*3, (height+25)*4), '#dddddd')
@@ -90,7 +86,7 @@ def compare(reference, output, directory, scale=960):
 
 
 def main():
-    """CLI: permite trocar a saída/referência e mantém a revisão em pasta dedicada."""
+    """CLI: configure output/reference paths and keep review evidence in a dedicated folder."""
     root = Path(__file__).resolve().parent.parent
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--reference', type=Path, default=root/'2606 Context Enriched Slide Repository.pptx')
@@ -100,7 +96,7 @@ def main():
     args = parser.parse_args()
     result = compare(args.reference, args.output, args.directory, args.scale)
     if result['exactPixelMatches'] != result['pages']:
-        sys.exit('A revisão encontrou diferenças visuais; veja visual-report.json')
+        sys.exit('Review found visual differences; see visual-report.json')
 
 
 if __name__ == '__main__':

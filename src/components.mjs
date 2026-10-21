@@ -1,10 +1,12 @@
 /**
- * Componentes editáveis do modo responsive. Coordenadas são polegadas; fontes
- * são pontos; IDs são estáveis por slide e aparecem no manifesto de layout.
- * Não substituem o adaptador fiel: este mantém todos os objetos originais.
+ * Editable components for responsive mode. Coordinates use inches; font sizes use points.
+ * IDs are stable within each slide and appear in the layout manifest. The fidelity adapter
+ * separately preserves original objects.
+ *
  * @module components
  */
 import fs from 'node:fs';
+import { editRichText } from './text-edit.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { merge } from './theme.mjs';
@@ -12,22 +14,30 @@ import { inset, relative, split, wrap } from './layout.mjs';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const metrics = JSON.parse(fs.readFileSync(path.join(root, 'data/font-metrics.json')));
-/** Normaliza string/rich runs para medição; conserva o texto, sem aplicar estilos. */
+/**
+ * Normalize plain text/rich-text runs for measurement without changing wording or applying
+ * styles.
+ */
 const plain = value => Array.isArray(value) ? value.map(r => r.text || '').join('') : String(value ?? '');
 
 /**
- * Estima linhas usando avanços reais de caracteres Arial extraídos em em.
- * @param {string|object[]} value Texto simples ou runs PptxGenJS.
- * @param {number} width Largura útil em polegadas.
- * @param {number} size Fonte em pontos.
- * @param {boolean} bold Seleciona tabela de larguras em negrito.
- * @param {number} safety Margem multiplicativa para variação entre renderizadores.
- * @returns {number} Total de linhas; palavras maiores que a caixa são quebradas.
- * used acumula largura da linha; measure converte avanço em em para polegadas.
+ * Estimate line counts using measured Arial character advances in em. value is plain text or
+ * PptxGenJS runs; width is usable inches and size is points. bold selects bold metrics;
+ * safety allows for renderer differences. Split words wider than the box. used accumulates
+ * line width; measure converts em advances to inches.
+ *
+ * @param {string|object[]} value
+ * @param {number} width
+ * @param {number} size
+ * @param {boolean} bold
+ * @param {number} safety
+ * @returns {number}
  */
 export function textLines(value, width, size, bold = false, safety = 1.05) {
   const widths = metrics.widths[bold ? 'bold' : 'regular'];
-  /** Soma avanços de uma palavra e converte em -> pt -> in, com margem de segurança. */
+  /**
+   * Sum word advances and convert em to points to inches with a safety factor.
+   */
   const measure = word => [...word].reduce((sum, c) => sum + (widths[c] ?? 0.56), 0) * size / 72 * safety;
   return plain(value).split('\n').reduce((total, paragraph) => {
     let lines = 1, used = 0;
@@ -42,12 +52,15 @@ export function textLines(value, width, size, bold = false, safety = 1.05) {
 }
 
 /**
- * Converte linhas estimadas em altura física, incluindo espaço entre parágrafos.
- * @param {string|object[]} value Conteúdo a medir.
- * @param {number} width Largura em polegadas.
- * @param {number} size Fonte em pt.
- * @param {object} options bold, safety, leading e paraSpaceAfter (pt).
- * @returns {number} Altura em polegadas; largura inválida retorna Infinity.
+ * Convert estimated lines to physical height, including paragraph spacing. width is inches
+ * and size is points. options accepts bold, safety, leading and paraSpaceAfter in points.
+ * Return height in inches or Infinity for an invalid width.
+ *
+ * @param {string|object[]} value
+ * @param {number} width
+ * @param {number} size
+ * @param {object} options
+ * @returns {number}
  */
 export function textHeight(value, width, size, options = {}) {
   if (width <= 0) return Infinity;
@@ -57,12 +70,14 @@ export function textHeight(value, width, size, options = {}) {
 }
 
 /**
- * Procura uma fonte que acomode TODO o texto, reduzindo em passos de 0,25 pt.
- * @param {string|object[]} value Conteúdo completo.
- * @param {object} box Caixa útil, já sem padding.
- * @param {object} options fontSize é o máximo; minFontSize é o limite inferior.
- * @returns {number} Fonte escolhida. Rejeita conteúdo que não caiba no mínimo,
- * sem truncar texto nem adicionar slides silenciosamente.
+ * Find a font size that fits all text, shrinking in 0.25-point steps. box is usable space
+ * after padding. fontSize is the maximum and minFontSize the lower limit. Reject content
+ * that cannot fit at the minimum rather than truncating text or silently adding slides.
+ *
+ * @param {string|object[]} value
+ * @param {object} box
+ * @param {object} options
+ * @returns {number}
  */
 export function fitText(value, box, options = {}) {
   const max = options.fontSize ?? 10.5, min = options.minFontSize ?? 7;
@@ -76,14 +91,17 @@ export function fitText(value, box, options = {}) {
 
 export class Canvas {
   /**
-   * Encapsula um slide e sua auditoria sem manter estado global de desenho.
-   * @param {object} pptx Instância PptxGenJS.
-   * @param {object} slide Slide nativo a preencher.
-   * @param {object} config Configuração adaptativa resolvida.
-   * @param {number} number Número de origem, usado no namespace dos IDs.
-   * @param {object} assets Mapa de caminhos e dimensões dos assets preparados.
-   * @param {object[]} manifest Destino compartilhado de registros dos slides.
-   * records acumula objetos do slide; theme aponta para os tokens resolvidos.
+   * Encapsulate a slide and its audit without global drawing state. pptx is the PptxGenJS
+   * instance; slide is the native destination; config contains resolved responsive settings.
+   * number namespaces source IDs; assets maps prepared paths/dimensions. manifest collects
+   * slide records. records accumulates objects and theme references resolved tokens.
+   *
+   * @param {object} pptx
+   * @param {object} slide
+   * @param {object} config
+   * @param {number} number
+   * @param {object} assets
+   * @param {object[]} manifest
    */
   constructor(pptx, slide, config, number, assets, manifest) {
     Object.assign(this, { pptx, slide, config, number, assets, manifest });
@@ -91,11 +109,14 @@ export class Canvas {
     this.records = [];
   }
   /**
-   * Resolve opções na ordem: defaults locais, componente global, slide, elemento.
-   * @param {string} kind Família (text, table, collection etc.).
-   * @param {string} id Identificador local, sem o prefixo do slide.
-   * @param {object} local Padrões específicos dessa chamada.
-   * @returns {object} Cópia mesclada; o elemento é sempre a maior precedência.
+   * Resolve options in order: local defaults, global component, slide, then element. kind is
+   * the component family; id omits the slide prefix. local contains call-specific defaults.
+   * Return a merged copy with element options taking precedence.
+   *
+   * @param {string} kind
+   * @param {string} id
+   * @param {object} local
+   * @returns {object}
    */
   options(kind, id, local = {}) {
     return merge(merge(merge(local, this.config.components[kind] || {}),
@@ -103,11 +124,14 @@ export class Canvas {
       this.config.elements[`${this.number}.${id}`] || {});
   }
   /**
-   * Valida limites do canvas e registra um objeto para QA e configuração futura.
-   * @param {string} id ID local.
-   * @param {object} box Caixa global em polegadas.
-   * @param {object} extra Metadados como kind, text, fontSize e series.
-   * @returns {object} Registro inserido. Não desenha nada.
+   * Validate canvas bounds and record an object for QA and future configuration. id is local,
+   * box uses global inches, and extra holds kind/text/fontSize/series metadata. Return the
+   * inserted record without drawing.
+   *
+   * @param {string} id
+   * @param {object} box
+   * @param {object} extra
+   * @returns {object}
    */
   record(id, box, extra = {}) {
     const { width, height } = this.config.slide;
@@ -119,18 +143,21 @@ export class Canvas {
     return entry;
   }
   /**
-   * Cria texto/rich text nativo com padding, override e ajuste de fonte.
-   * @param {string} id ID configurável do texto.
-   * @param {string|object[]} value Texto ou runs.
-   * @param {object} box Região externa em polegadas.
-   * @param {object} style Defaults e opções PptxGenJS.
-   * @returns {void} Modifica slide e records; visible=false não cria objeto.
-   * b é a caixa com override; inner desconta padding; fontSize vem de fitText.
+   * Create native plain/rich text with padding, overrides and font fitting. id is
+   * configurable; value is text or runs; box uses external inches; style supplies defaults and
+   * PptxGenJS options. Update slide and records unless visible=false. b includes box
+   * overrides; inner subtracts padding; fitText resolves fontSize.
+   *
+   * @param {string} id
+   * @param {string|object[]} value
+   * @param {object} box
+   * @param {object} style
+   * @returns {void}
    */
   text(id, value, box, style = {}) {
     const o = this.options('text', id, style);
     if (o.visible === false) return;
-    value = o.text ?? value;
+    value = o.text === undefined ? value : editRichText(value, o.text);
     const b = { ...box, ...o.box };
     const pad = o.padding ?? 0;
     const inner = pad ? inset(b, pad) : b;
@@ -148,11 +175,14 @@ export class Canvas {
       estimatedHeight: textHeight(value, inner.w, fontSize, o) });
   }
   /**
-   * Cria forma/conector nativo e registra seus limites.
-   * @param {string} id ID estável.
-   * @param {object} box Caixa em polegadas; linhas podem ter dimensão zero.
-   * @param {object} style type, fill, line e demais opções PptxGenJS.
-   * @returns {void} A geometria permanece editável no PowerPoint.
+   * Create a native shape/connector and record its bounds. id is stable; box uses inches and
+   * lines may have a zero dimension. style accepts type, fill, line and other PptxGenJS
+   * options. Geometry stays editable in PowerPoint.
+   *
+   * @param {string} id
+   * @param {object} box
+   * @param {object} style
+   * @returns {void}
    */
   shape(id, box, style = {}) {
     const o = this.options('shape', id, style);
@@ -165,14 +195,17 @@ export class Canvas {
     this.record(id, b, { kind: 'shape' });
   }
   /**
-   * Converte dois extremos em uma forma line, inclusive em direção invertida.
-   * @param {string} id ID do conector.
-   * @param {number} x1 Primeiro x, em polegadas.
-   * @param {number} y1 Primeiro y.
-   * @param {number} x2 Segundo x.
-   * @param {number} y2 Segundo y.
-   * @param {object} options Propriedades de linha, cor, espessura e setas.
-   * @returns {void} flipV conserva o sentido da diagonal após normalizar a caixa.
+   * Convert two endpoints to a line shape, including reversed directions. x1/y1/x2/y2 use
+   * inches; options controls color, width and arrows. flipV preserves diagonal direction after
+   * normalizing the box.
+   *
+   * @param {string} id
+   * @param {number} x1
+   * @param {number} y1
+   * @param {number} x2
+   * @param {number} y2
+   * @param {object} options
+   * @returns {void}
    */
   line(id, x1, y1, x2, y2, options = {}) {
     this.shape(id, { x: Math.min(x1, x2), y: Math.min(y1, y2),
@@ -182,12 +215,16 @@ export class Canvas {
     });
   }
   /**
-   * Insere asset original com proporção preservada e centralização contain.
-   * @param {string} id ID do elemento.
-   * @param {string} asset Chave no mapa assets (não é URL arbitrária).
-   * @param {object} box Região disponível em polegadas.
-   * @param {object} options Overrides de asset, box e opções PptxGenJS.
-   * @returns {void} scale é o menor fator entre largura e altura; evita distorção.
+   * Insert original artwork with preserved aspect ratio and centered contain fitting. asset is
+   * a key in the prepared assets map, not an arbitrary URL. box uses inches; options may
+   * override asset, box and PptxGenJS properties. scale uses the smaller width/height factor
+   * to avoid distortion.
+   *
+   * @param {string} id
+   * @param {string} asset
+   * @param {object} box
+   * @param {object} options
+   * @returns {void}
    */
   image(id, asset, box, options = {}) {
     const o = this.options('image', id, options);
@@ -205,9 +242,11 @@ export class Canvas {
     this.record(id, b, { kind: 'image', asset });
   }
   /**
-   * Finaliza a auditoria e, se solicitado, desenha limites de debug dos textos.
-   * @returns {void} Acrescenta exatamente um registro de slide ao manifest.
-   * Debug não faz parte de um build fiel e fica limitado ao modo responsive.
+   * Finish the audit and optionally draw text debug bounds. Append exactly one slide record to
+   * manifest. Debug rendering is restricted to responsive mode and is not part of a fidelity
+   * build.
+   *
+   * @returns {void}
    */
   finish() {
     if (this.config.template.showGrid) {
@@ -220,11 +259,14 @@ export class Canvas {
 }
 
 /**
- * Converte parágrafos extraídos para runs PptxGenJS, mantendo ênfase e sobrescrito.
- * @param {object[]} paragraphs Lista com text, runs, level e bullet.
- * @param {object} options headingColor remapeia vermelhos de marca; bullet ativa
- * os marcadores visíveis. Os estilos dos runs não alteram o conteúdo textual.
- * @returns {object[]} Runs com quebras entre parágrafos, prontos para addText.
+ * Convert extracted paragraphs to PptxGenJS runs, retaining emphasis and superscripts.
+ * paragraphs contains text/runs/level/bullet; headingColor remaps brand reds and bullet
+ * enables visible markers. Run styles do not change wording. Return runs with paragraph
+ * breaks, ready for addText.
+ *
+ * @param {object[]} paragraphs
+ * @param {object} options
+ * @returns {object[]}
  */
 export function richParagraphs(paragraphs, { headingColor, bullet = true } = {}) {
   return paragraphs.flatMap((p, index) => {
@@ -242,16 +284,19 @@ export function richParagraphs(paragraphs, { headingColor, bullet = true } = {})
 }
 
 /**
- * Escreve tabela nativa depois de medir cada célula.
- * @param {Canvas} c Contexto de desenho.
- * @param {string} id ID configurável.
- * @param {string[][]} values Matriz de células.
- * @param {object} box Região da tabela em polegadas.
- * @param {object} options weights define larguras proporcionais; padding é in;
- * rowStyles/cellStyles personalizam linhas/células; pptx expõe opções nativas.
- * @returns {{widths:number[],heights:number[]}} Dimensões efetivas das colunas/linhas.
- * measured soma a altura mínima; o excedente da caixa se distribui entre linhas.
- * Paginação automática fica desligada para não alterar a contagem de slides.
+ * Write a native table after measuring every cell. values is a cell matrix; box uses inches.
+ * weights controls proportional widths; padding uses inches; rowStyles/cellStyles customize
+ * rows/cells; cellTexts overrides individual row.column text before fitting.
+ * pptx exposes native options. Return effective column widths/row heights.
+ * measured sums minimum height; distribute extra box height across rows. Disable automatic
+ * pagination to preserve slide count.
+ *
+ * @param {Canvas} c
+ * @param {string} id
+ * @param {string[][]} values
+ * @param {object} box
+ * @param {object} options
+ * @returns {{widths:number[],heights:number[]}}
  */
 export function table(c, id, values, box, options = {}) {
   const o = c.options('table', id, {
@@ -260,14 +305,19 @@ export function table(c, id, values, box, options = {}) {
     headerColor: c.theme.colors.paper, header: true, ...options,
   });
   values = o.values ?? values;
+  if (o.cellTexts) values = values.map((row, r) => row.map((value, col) => o.cellTexts[`${r}.${col}`] ?? value));
   if (o.visible === false) return { widths: [], heights: [] };
   const b = { ...box, ...o.box };
   const sum = o.weights.reduce((a, b) => a + b, 0);
   const widths = o.weights.map(w => b.w * w / sum);
   let size = o.fontSize, heights;
-  /** Combina estilo de linha e célula, com a célula tendo maior precedência. */
+  /**
+   * Merge row and cell styles with the cell taking precedence.
+   */
   const rowStyle = (r, col) => merge(o.rowStyles?.[r] || {}, o.cellStyles?.[`${r}.${col}`] || {});
-  /** Calcula altura mínima de cada linha a partir de sua célula mais alta. */
+  /**
+   * Compute each row's minimum height from its tallest cell.
+   */
   const measure = () => values.map((row, r) => Math.max(...row.map((value, col) =>
     textHeight(value, widths[col] - o.padding * 2, size, {
       bold: (o.header && r === 0) || rowStyle(r, col).bold,
@@ -301,14 +351,18 @@ export function table(c, id, values, box, options = {}) {
 }
 
 /**
- * Faz reflow e invoca o renderer de cada item na ordem de leitura.
- * @param {Canvas} c Contexto de desenho.
- * @param {string} id ID do conjunto; filhos recebem .0, .1 etc.
- * @param {object[]} items Conteúdo da coleção.
- * @param {object} box Espaço total.
- * @param {object} options minWidth/gap são in; minColumnSpan vincula ao grid.
- * @param {Function} render Callback (item, box, id, options) que compõe cada filho.
- * @returns {void} A entrada não é reordenada nem modificada.
+ * Reflow a collection and invoke each item renderer in reading order. id prefixes child IDs
+ * with .0, .1 and so on. items holds content; box is total space. minWidth/gap use inches;
+ * minColumnSpan binds to the grid. render receives (item, box, id, options). Do not reorder
+ * or mutate input.
+ *
+ * @param {Canvas} c
+ * @param {string} id
+ * @param {object[]} items
+ * @param {object} box
+ * @param {object} options
+ * @param {Function} render
+ * @returns {void}
  */
 export function collection(c, id, items, box, options, render) {
   const o = c.options('collection', id, { minWidth: 1.8, gap: c.theme.spacing.gap,
@@ -320,14 +374,16 @@ export function collection(c, id, items, box, options, render) {
 }
 
 /**
- * Compõe moldura e faixa de título e devolve a área útil do painel.
- * @param {Canvas} c Contexto.
- * @param {string} id Prefixo dos elementos frame/bar/title.
- * @param {object} box Caixa externa.
- * @param {string} title Texto da faixa.
- * @param {object} options headingRatio é fração da altura; padding é in;
- * frame/bar/title aceitam estilos separados.
- * @returns {object} Caixa interna disponível para conteúdo do chamador.
+ * Compose a frame and heading band, then return the usable panel area. id prefixes
+ * frame/bar/title elements; box is the outer area; title is the band text. headingRatio is a
+ * height fraction and padding uses inches. frame/bar/title accept separate styles.
+ *
+ * @param {Canvas} c
+ * @param {string} id
+ * @param {object} box
+ * @param {string} title
+ * @param {object} options
+ * @returns {object}
  */
 export function panel(c, id, box, title, options = {}) {
   const o = c.options('panel', id, { padding: c.theme.spacing.padding,
@@ -345,13 +401,17 @@ export function panel(c, id, box, title, options = {}) {
 }
 
 /**
- * Cria rosca nativa com um ponto branco extra para produzir o semicírculo.
- * @param {Canvas} c Contexto.
- * @param {string} id ID do gráfico.
- * @param {object} series {labels,values}; o último valor é espaçador, não indicador.
- * @param {object} box Área física do gráfico.
- * @param {object} options holeSize, firstSliceAng, series e pptx são configuráveis.
- * @returns {object} Série efetiva após overrides, para manter rótulos sincronizados.
+ * Create a native doughnut with an extra white point forming the hidden semicircle. series
+ * contains labels/values; the last value is a spacer rather than a metric. box is the
+ * physical chart area. holeSize, firstSliceAng, series and pptx are configurable. Return the
+ * effective series after overrides to synchronize labels.
+ *
+ * @param {Canvas} c
+ * @param {string} id
+ * @param {object} series
+ * @param {object} box
+ * @param {object} options
+ * @returns {object}
  */
 export function donut(c, id, series, box, options = {}) {
   const o = c.options('chart', id, { holeSize: 53, firstSliceAng: 270,
@@ -374,14 +434,18 @@ export function donut(c, id, series, box, options = {}) {
 }
 
 /**
- * Divide uma região entre título e texto, sem acrescentar um fundo decorativo.
- * @param {Canvas} c Contexto.
- * @param {string} id Prefixo de heading/body.
- * @param {string} title Rótulo.
- * @param {string|object[]} body Texto ou runs.
- * @param {object} box Região total.
- * @param {object} options titleRatio define a divisão; heading/body são overrides.
- * @returns {void} Ambos os textos são medidos e ajustados independentemente.
+ * Split a region between a heading and body without a decorative background. id prefixes
+ * heading/body; title is the label; body is text or runs. box is the total region;
+ * titleRatio sets the split and heading/body supply overrides. Measure and fit the two text
+ * areas independently.
+ *
+ * @param {Canvas} c
+ * @param {string} id
+ * @param {string} title
+ * @param {string|object[]} body
+ * @param {object} box
+ * @param {object} options
+ * @returns {void}
  */
 export function labelBody(c, id, title, body, box, options = {}) {
   const o = c.options('labelBody', id, { titleRatio: 0.18, titleFontSize: 10,

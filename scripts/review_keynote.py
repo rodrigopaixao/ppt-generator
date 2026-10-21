@@ -1,4 +1,4 @@
-"""Valida o PPTX no Keynote usando uma cópia temporária e exportação PDF privada."""
+"""Validate a PPTX in Keynote using a temporary copy and private PDF export."""
 import argparse
 import hashlib
 import json
@@ -9,12 +9,11 @@ import tempfile
 
 
 def review(source, directory):
-    """Abre somente cópia privada; conta slides/charts e exporta o PDF do Keynote.
+    """Open a private copy, count slides/charts and export a Keynote PDF.
 
-    source é o PPTX final com manifesto .layout.json. directory recebe PDF e
-    auditoria de hash. Nunca salva ou fecha documentos previamente abertos pelo
-    usuário. Erros de importação ou contagem interrompem a validação.
-    """
+    source is the final PPTX with a .layout.json manifest. directory receives the
+    PDF and hash audit. Never save or close documents already open in the user's
+    session. Import or count errors fail validation."""
     source=source.resolve();directory=directory.resolve();directory.mkdir(parents=True,exist_ok=True)
     manifest=json.loads(source.with_suffix('.layout.json').read_text())
     expected_charts=sum(e['kind']=='chart' for s in manifest['slides'] for e in s['elements'])
@@ -45,15 +44,15 @@ end timeout
         result=subprocess.run(['osascript',str(script)],capture_output=True,text=True,check=True,timeout=270)
     slides,charts,version=result.stdout.strip().split(',')
     if int(slides)!=manifest['counts']['outputSlides'] or int(charts)!=expected_charts:
-        raise ValueError(f'Keynote: slides={slides}, charts={charts}; esperado {manifest["counts"]["outputSlides"]}, {expected_charts}')
-    if hashlib.sha256(source.read_bytes()).hexdigest()!=digest:raise ValueError('Fonte mudou durante a revisão')
+        raise ValueError(f'Keynote: slides={slides}, charts={charts}; expected {manifest["counts"]["outputSlides"]}, {expected_charts}')
+    if hashlib.sha256(source.read_bytes()).hexdigest()!=digest:raise ValueError('Source changed during review')
     audit={'outputSha256':digest,'renderer':'Keynote','version':version,'slides':int(slides),'nativeCharts':int(charts),'pdf':str(pdf)}
     (directory/'review-report.json').write_text(json.dumps(audit,indent=2))
     print(json.dumps(audit))
 
 
 def main():
-    """Recebe a saída final e o diretório privado de revisão pela linha de comando."""
+    """Read the final output and private review directory from the command line."""
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source',type=Path,default=Path('output/recreated-slides.pptx'))
     parser.add_argument('--directory',type=Path,default=Path('output/review/keynote'))

@@ -16,13 +16,27 @@
     "build:fidelity": "node src/generate.mjs",
     "build:quality": "node src/generate.mjs --config config.quality.json --output output/reviewed-slides.pptx",
     "verify:quality": "python3 scripts/review_quality.py",
-    "verify:keynote": "python3 scripts/review_keynote.py"
+    "verify:keynote": "python3 scripts/review_keynote.py",
+    "dev": "concurrently -k -n api,web \"npm run dev -w @pptx/api\" \"npm run dev -w @pptx/web\"",
+    "build:apps": "npm run build -w @pptx/api && npm run build -w @pptx/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test:editor": "npm run test -w @pptx/api",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
+    "jszip": "3.10.1",
     "pptxgenjs": "4.0.1",
     "sharp": "0.35.5"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "@playwright/test": "^1.56.0"
   }
 }

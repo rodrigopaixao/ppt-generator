@@ -14,17 +14,16 @@ NS = {'p': 'http://schemas.openxmlformats.org/presentationml/2006/main',
 
 
 def norm(t):
-    """Normaliza apenas espaços/bullets para comparar texto dos templates adaptativos."""
+    """Normalize only whitespace/bullets when comparing responsive template text."""
     return re.sub(r'[\s•]+', '', t or '')
 
 
 def verify_fidelity(pptx, report):
-    """Audita o pacote real, independentemente dos contadores do gerador.
+    """Audit the actual package independently of generator counters.
 
-    Confere seleção, aspecto, relações internas e hashes. No baseline exige
-    bytes idênticos em todas as partes visuais/binárias, inclusive XML não usado
-    diretamente pelo renderer. Alterações configuradas são listadas no relatório.
-    """
+    Check selection, aspect ratio, internal relationships and hashes. The baseline
+    requires byte-identical visual/binary parts, including XML not directly used by
+    the renderer. List configured changes in the report."""
     from native_deck import read_parts, relationships, resolve_target, parse_xml, local
     import hashlib
     source = Path(report.get('sourceFile', ROOT/'2606 Context Enriched Slide Repository.pptx'))
@@ -51,7 +50,7 @@ def verify_fidelity(pptx, report):
     for name in report['changedParts']:
         if name.endswith('.rels') or name == '[Content_Types].xml':
             expected = b'<Types xmlns=' if name == '[Content_Types].xml' else b'<Relationships xmlns='
-            assert expected in actual[name], f'Namespace OPC incompatível: {name}'
+            assert expected in actual[name], f'Incompatible OPC namespace: {name}'
     changed = sorted(n for n in actual if original.get(n) != actual[n])
     assert changed == sorted(report['changedParts'])
     if report['baselineVisualPartsByteIdentical']:
@@ -63,15 +62,15 @@ def verify_fidelity(pptx, report):
     charts = sum(bool(re.fullmatch(r'ppt/charts/chart\d+\.xml', n)) for n in actual)
     tables = sum(len(parse_xml(actual[f'ppt/slides/slide{n}.xml']).findall('.//a:tbl', NS))
                  for n in report['selection'])
-    print(f'PASS: {len(slides)} slides, 16:9, {tables} tabelas, {charts} gráficos de origem; relações internas válidas.')
-    print(f'PASS: baseline visual byte-idêntico={report["baselineVisualPartsByteIdentical"]}; {len(changed)} partes alteradas.')
+    print(f'PASS: {len(slides)} slides, 16:9, {tables} tables, {charts} source charts; valid internal relationships.')
+    print(f'PASS: baseline visual byte identity={report["baselineVisualPartsByteIdentical"]}; {len(changed)} changed parts.')
     if report.get('quality'):
         assert not report['quality']['estimatedOverflow']
         assert len(report['slides']) == len(slides)
         active_charts = sum(len(parse_xml(actual[entry['part']]).findall('.//c:chart', NS)) for entry in report['slides'])
         active_tables = sum(len(parse_xml(actual[entry['part']]).findall('.//a:tbl', NS)) for entry in report['slides'])
         assert active_charts == 26, active_charts
-        print(f'PASS: quality: {active_charts} gráficos nativos ativos, {active_tables} tabelas ativas, zero overflow estimado.')
+        print(f'PASS: quality: {active_charts} active native charts, {active_tables} active tables, zero estimated overflow.')
 
 
 _report = json.loads(PPTX.with_suffix('.layout.json').read_text())

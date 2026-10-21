@@ -1,4 +1,4 @@
-"""Regressões do workbook que fazia Keynote/Preview descartarem gráficos."""
+"""Regression tests for workbooks that caused Keynote/Preview to drop charts."""
 import io
 import sys
 import unittest
@@ -11,10 +11,10 @@ from chart_compat import S, cached_cells, normalize_chart_workbooks, workbook_by
 
 
 class ChartCompatibilityTest(unittest.TestCase):
-    """Garante ranges XLSX válidos e dados numéricos idênticos ao cache original."""
+    """Ensure valid XLSX ranges and numeric data identical to the original cache."""
 
     def test_binary_workbook_is_replaced_without_changing_chart_values(self):
-        """O chart17 permanece nativo com XLSX editável e os mesmos números."""
+        """chart17 remains native with editable XLSX and unchanged values."""
         with zipfile.ZipFile(ROOT/'2606 Context Enriched Slide Repository.pptx') as archive:
             parts={name:archive.read(name) for name in archive.namelist()}
         part='ppt/charts/chart17.xml';before=parts[part]
@@ -33,7 +33,7 @@ class ChartCompatibilityTest(unittest.TestCase):
                     self.assertEqual(actual[f'{column_name(col)}{row}'],value)
 
     def test_invalid_range_and_empty_zero_are_repaired(self):
-        """Remove o apóstrofo inválido e restaura zero numérico a partir do cache."""
+        """Remove the invalid apostrophe and restore numeric zero from the cache."""
         source=zipfile.ZipFile(io.BytesIO(workbook_bytes({'Sheet1':{(1,1):('0',True)}})))
         contents={name:source.read(name) for name in source.namelist()}
         sheet=parse_xml(contents['xl/worksheets/sheet1.xml']);sheet.find(f'.//{{{S}}}v').text=None

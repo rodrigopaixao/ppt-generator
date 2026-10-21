@@ -1,0 +1,2 @@
+# Optional chart-label extraction dependency for the local slide editor.
+pdfplumber==0.11.9

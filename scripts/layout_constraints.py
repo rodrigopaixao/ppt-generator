@@ -1,8 +1,7 @@
-"""Restrições de fluxo: caixas medidas, unidades ligadas e área de rodapé.
+"""Flow constraints: measured boxes, linked units and reserved footer space.
 
-Todas as distâncias são em polegadas; fontes e tracking são em pontos. O módulo
-reposiciona desenhos editáveis, sem usar rasterização ou autofit do leitor.
-"""
+Distances use inches; fonts and tracking use points. This module repositions
+editable drawings without rasterization or reader-dependent autofit."""
 import re
 import copy
 import xml.etree.ElementTree as ET
@@ -11,24 +10,23 @@ from native_deck import (NS, EMU, q, scene_nodes, ancestors_for, box_for, text_o
 
 
 def text_width(text, size, bold, tracking, metrics):
-    """Mede uma linha com avanços Arial e tracking entre caracteres, em polegadas."""
+    """Measure a line in inches using Arial advances and inter-character tracking."""
     face = metrics['widths']['bold' if bold else 'regular']
     return sum(face.get(c,0.55) for c in text)*size/72*1.04+max(0,len(text)-1)*tracking/72
 
 
 def typography(node, size):
-    """Lê negrito e tracking locais/herdados na lista do próprio text body."""
+    """Read local/inherited bold and tracking from the text body's own list styles."""
     props = [p for p in node.iter() if p.tag in (q('a','rPr'),q('a','defRPr'))]
     return size, any(p.get('b')=='1' for p in props), max([float(p.get('spc',0))/100 for p in props] or [0])
 
 
 def prepare_slide_layout(root, parts, part, config, dimensions):
-    """Resolve faixas, rodapé e stacks antes de normalizar o texto.
+    """Resolve bands, footer boundaries and stacks before normalizing text.
 
-    Retorna limites/insets efetivos e ajustes auditáveis. config.flow oferece
-    tokens para padding/gaps e stacks com IDs estáveis. Elementos ligados a uma
-    linha se deslocam juntos; falta de área real gera erro em vez de sobreposição.
-    """
+    Return effective bounds/insets and auditable adjustments. config.flow supplies
+    padding/gap tokens and stacks with stable IDs. Elements linked to a row move
+    together; insufficient space raises an error instead of allowing overlaps."""
     from quality_deck import METRICS, measure_lines
     flow = config.get('flow',{})
     if not flow.get('enabled',False):
@@ -130,7 +128,7 @@ def prepare_slide_layout(root, parts, part, config, dimensions):
             heights.append(needed)
         available = content_bottom-old_rows[0]['y']-row_gap*(len(ids)-1)
         if sum(heights)>available:
-            raise ValueError(f'{number}: stack {ids} não cabe sem sobreposição')
+            raise ValueError(f'{number}: stack {ids} does not fit without overlap')
         desired = [max(b['h'],h) for b,h in zip(old_rows,heights)]
         ratio = min(1,(available-sum(heights))/max(0.0001,sum(desired)-sum(heights)))
         heights = [h+(d-h)*ratio for h,d in zip(heights,desired)]
@@ -212,12 +210,11 @@ def prepare_slide_layout(root, parts, part, config, dimensions):
 
 
 def anchor_table_icons(scene, table_record, settings, padding, dimensions):
-    """Ancora ícones vetoriais na geometria final da tabela, com gap constante.
+    """Anchor vector icons to final table geometry with a constant gap.
 
-    scene contém todas as peças por nome; settings define coluna reservada,
-    coluna do texto, prefixo dos nomes, size/gap em in. Os ícones são centralizados
-    na altura final de cada linha; cada peça mantém sua posição relativa ao fundo.
-    """
+    scene contains pieces indexed by name. settings defines the reserved column,
+    text column, name prefix and size/gap in inches. Center icons within each final
+    row height; each piece retains its position relative to the background."""
     table = table_record['node'].find('.//a:tbl',NS)
     if table is None or settings.get('enabled',True) is False:
         return []
@@ -227,17 +224,17 @@ def anchor_table_icons(scene, table_record, settings, padding, dimensions):
     size, gap = settings['size'],settings['gap']
     text_column, icon_column = settings['textColumn'],settings['column']
     if size<=0 or gap<0 or not 0<=icon_column<text_column<len(widths):
-        raise ValueError('size/gap ou ordem das colunas de ícone/texto inválidos')
+        raise ValueError('Invalid size/gap or icon/text column order')
     x = bounds['x']+sum(widths[:text_column])+padding-gap-size
     column_left = bounds['x']+sum(widths[:icon_column])
     if x<column_left+padding-0.001:
-        raise ValueError('Coluna do ícone insuficiente para size + gap + padding')
+        raise ValueError('Icon column cannot fit size + gap + padding')
     y = bounds['y']+int(rows[0].get('h'))/EMU
     anchors = []
     for index,row in enumerate(rows[1:],1):
         height = int(row.get('h'))/EMU
         if size+2*padding>height+0.001:
-            raise ValueError(f'Ícone da linha {index} não cabe na altura final')
+            raise ValueError(f'Icon in row {index} does not fit the final height')
         prefix = f"custom.{settings['prefix']}-{index}-"
         background = next((r for r in scene.values() if r['name']==prefix+'bg'),None)
         if background is not None:
@@ -258,13 +255,12 @@ def anchor_table_icons(scene, table_record, settings, padding, dimensions):
 
 
 def inset_container_text(scene, dimensions, padding, compact_padding=0.06):
-    """Aplica o mesmo recuo mínimo aos textos contidos em fundos independentes.
+    """Apply the same minimum inset to text contained in independent backgrounds.
 
-    Escolhe o menor fundo preenchido que contém a caixa inteira, preservando a
-    margem funcional de ícones. Shapes com fundo e texto próprios recebem inset
-    no text body; fundos independentes recebem geometria interna. Retorna ajustes
-    auditáveis com inset explícito para evitar aplicar o padding duas vezes.
-    """
+    Choose the smallest filled background containing the entire box, preserving
+    functional icon margins. Shapes with their own text and fill receive a text-body
+    inset; independent backgrounds receive inner geometry. Return auditable changes
+    with explicit insets to avoid applying padding twice."""
     adjustments = []
     backgrounds = []
     for r in scene.values():
@@ -278,9 +274,11 @@ def inset_container_text(scene, dimensions, padding, compact_padding=0.06):
             continue
         b = box_for(r['effectiveTransform'],r['parentMatrix'])
         parents = [(p,pr) for p,pr in backgrounds if p['x']-.005<=b['x'] and p['y']-.005<=b['y'] and b['x']+b['w']<=p['x']+p['w']+.005 and b['y']+b['h']<=p['y']+p['h']+.005]
-        if not parents:
-            # Fundo e texto no mesmo shape: padding pertence ao text body.
-            if (r['node'].find('p:spPr/a:solidFill',NS) is not None or r['node'].find('p:spPr/a:ln/a:solidFill',NS) is not None) and b['w']>=1 and 0.6<=b['h']<=6 and b['w']<=12.5:
+        own_fill = r['node'].find('p:spPr/a:solidFill',NS) is not None
+        if own_fill or not parents:
+            # A filled text shape is its own container, even inside another fill.
+            # Shrinking its geometry would detach its background from peer rows.
+            if (own_fill or r['node'].find('p:spPr/a:ln/a:solidFill',NS) is not None) and b['w']>=1 and 0.35<=b['h']<=6 and b['w']<=12.5:
                 effective = compact_padding if b['h']<0.8 else padding
                 adjustments.append({'id':ident,'constraint':'native-container-padding','padding':effective,'inset':effective,'box':b})
             continue
@@ -295,12 +293,11 @@ def inset_container_text(scene, dimensions, padding, compact_padding=0.06):
 
 
 def layout_panels(root, parts, part, settings, config, dimensions, content_bottom):
-    """Compõe painéis com padding comum, ícone, título e texto com faixa de markers.
+    """Compose panels with common padding, icons, headings and a marker lane.
 
-    settings.panels associa background/header/body/icon IDs originais. Os títulos
-    usam component e as descrições dense. Todos os corpos começam na mesma linha;
-    listas perdem o bullet duplicado e reservam uma faixa exclusiva de marcadores.
-    """
+    settings.panels binds original background/header/body/icon IDs. Headings use the
+    component token and descriptions use dense. Bodies start at the same height;
+    lists drop duplicate bullets and reserve a separate marker lane."""
     from quality_deck import measure_lines
     scene = scene_nodes(root,ancestors_for(parts,part))
     padding, gap = settings['padding'],settings['gap']
@@ -367,7 +364,7 @@ def layout_panels(root, parts, part, settings, config, dimensions, content_botto
 
 
 def anchor_paragraph_markers(root, scene, body_record, settings, heights, dimensions, font_size):
-    """Reposiciona círculos/grupos na primeira linha de cada parágrafo medido."""
+    """Reposition circles/groups on the first line of each measured paragraph."""
     box = box_for(body_record['effectiveTransform'],body_record['parentMatrix'])
     y = box['y']
     for index,ident in enumerate(settings['ids']):
@@ -388,7 +385,7 @@ def anchor_paragraph_markers(root, scene, body_record, settings, heights, dimens
 
 
 def layout_marker_legend(root, parts, part, settings, dimensions, footer_top):
-    """Alinha marcador e rótulo da legenda com o mesmo gap, antes da logo."""
+    """Align legend markers and labels with a constant gap before the logo."""
     scene = scene_nodes(root,ancestors_for(parts,part))
     size,gap,label_width,item_gap = 0.09,0.08,0.65,0.25
     width = len(settings['items'])*(size+gap+label_width)+(len(settings['items'])-1)*item_gap
@@ -402,15 +399,13 @@ def layout_marker_legend(root, parts, part, settings, dimensions, footer_top):
 
 
 def layout_cards(root, parts, part, settings, config, dimensions, content_bottom):
-    """Distribui cards nativos em ordem de leitura com padding e gaps comuns.
+    """Distribute native cards in reading order with common padding and gaps.
 
-    settings associa IDs de grupos/títulos/badges/corpos/responsáveis. Distâncias
-    são polegadas; fontes vêm da hierarquia central em pt. Mede cabeçalhos e nomes
-    antes de posicionar: os nomes ganham altura por linha e ficam alinhados à base.
-    O título compartilha o fundo nativo, por isso seu inset esquerdo reserva a
-    faixa do badge. Recalcula matrizes após cada alteração de grupo. Se a soma
-    mínima de texto, padding e gaps não couber, interrompe em vez de sobrepor.
-    """
+    settings binds group/title/badge/body/owner IDs. Distances use inches; fonts use
+    central hierarchy tokens in points. Measure headings and owner names before
+    placement: names gain height per line and align at the bottom. Titles share the
+    native background, so their left inset reserves a badge lane. Recompute group
+    matrices after each change. Fail if minimum text, padding and gaps do not fit."""
     from quality_deck import measure_lines
     scene = scene_nodes(root,ancestors_for(parts,part))
     grid = box_for(scene[settings['group']]['effectiveTransform'],scene[settings['group']]['parentMatrix'])
@@ -457,7 +452,7 @@ def layout_cards(root, parts, part, settings, config, dimensions, content_bottom
         body_height = owner_top-inner-body_top
         needed = measure_lines(text_of(scene[card['body']]['node']),width-2*pad,dense)*dense/72*1.1
         if needed>body_height+0.005:
-            raise ValueError(f"Card {number}.{card['title']}: texto requer {needed:.3f} in; disponível {body_height:.3f} in")
+            raise ValueError(f"Card {number}.{card['title']}: text requires {needed:.3f} in; available {body_height:.3f} in")
         body_box = {'x':box['x']+pad,'y':body_top,'w':width-2*pad,'h':body_height}
         apply_box(scene[card['body']],{'box':body_box},{},dimensions)
         ensure(scene[card['body']]['node'].find('p:txBody',NS),q('a','bodyPr')).set('anchor','t')
@@ -476,16 +471,14 @@ def layout_cards(root, parts, part, settings, config, dimensions, content_bottom
 
 
 def layout_icon_cards(root, parts, part, settings, config, dimensions):
-    """Separa fundo, título e lista de cards nativos com ícones acima do texto.
+    """Separate backgrounds, headings and native card lists with icons above text.
 
-    settings.cards fornece body (shape original com fundo e todos os parágrafos)
-    e icon (fundo e desenho vetorial, ou grupo completo); headingParagraphs
-    informa quantos parágrafos iniciais formam o título, ignorando vazios.
-    padding/gap/paragraphGap/iconSize são in.
-    Mantém os parágrafos e bullets originais; duplica apenas shapes editáveis,
-    atribuindo IDs novos. Mede o maior título com component pt para alinhar todas
-    as listas. O corpo denso usa o espaço restante e nunca invade ícone ou base.
-    """
+    settings.cards supplies body (the original shape with fill and all paragraphs)
+    and icon (background plus vector drawing, or an entire group). headingParagraphs
+    counts the initial nonempty heading paragraphs. padding/gap/paragraphGap/iconSize
+    use inches. Preserve original paragraphs and bullets; duplicate only editable
+    shapes with new IDs. Measure the tallest heading using component points to align
+    all lists. Dense bodies use the remaining space without entering icon/footer areas."""
     from quality_deck import measure_lines
     scene = scene_nodes(root,ancestors_for(parts,part))
     padding,gap = settings['padding'],settings['gap']
@@ -505,7 +498,7 @@ def layout_icon_cards(root, parts, part, settings, config, dimensions):
         titles = paragraphs[:card.get('headingParagraphs',1)]
         title_height = sum(measure_lines(text_of(title),box['w']-2*padding,size,True)*size/72*1.1 for title in titles)
         cards.append((card,box,title_height))
-        # O fundo ocupa o card inteiro, mas deixa de carregar texto ou insets.
+        # The background fills the entire card without carrying text or insets.
         background = copy.deepcopy(original['node'])
         background.remove(background.find('p:txBody',NS))
         identity = background.find('p:nvSpPr/p:cNvPr',NS)
@@ -556,7 +549,7 @@ def layout_icon_cards(root, parts, part, settings, config, dimensions):
         title_box = {'x':box['x']+padding,'y':title_y,'w':box['w']-2*padding,'h':common_header}
         body_y = title_y+common_header+gap
         body_box = {**title_box,'y':body_y,'h':box['y']+box['h']-padding-body_y}
-        if body_box['h']<=0: raise ValueError(f'Card {number}.{card["body"]} sem área útil')
+        if body_box['h']<=0: raise ValueError(f'Card {number}.{card["body"]} has no usable space')
         for ident,target in [(card['heading'],title_box),(card['body'],body_box)]:
             apply_box(scene[ident],{'box':target},{},dimensions)
             result['insets'][ident] = 0
@@ -567,25 +560,40 @@ def layout_icon_cards(root, parts, part, settings, config, dimensions):
 
 
 def layout_review_regions(root, parts, part, config, dimensions, content_bottom):
-    """Aplica regiões vinculadas configuradas após o fluxo geral, antes das fontes.
+    """Apply linked regions after general flow and before font normalization.
 
-    flow.regions[slide] usa IDs estáveis, boxes em in, inset e bottom locais.
-    compact remove só parágrafos vazios; paragraphs define tokens por parágrafo.
-    calloutRows associa bordas, textos e ícones com altura comum medida; o gap e
-    padding são constantes. legends associa marcadores e rótulos em linha.
-    numbered posiciona badges na primeira linha do parágrafo medido, com lane
-    exclusiva. Tudo permanece DrawingML editável; não há imagens de texto.
-    """
+    flow.regions[slide] uses stable IDs, inch-based boxes and local inset/bottom values.
+    compact removes only empty paragraphs; paragraphs assigns per-paragraph tokens.
+    calloutRows links borders, text and icons using a shared measured height and
+    constant padding/gaps. legends links inline markers and labels. numbered places
+    badges on the first measured paragraph line in a dedicated lane. All objects
+    remain editable DrawingML rather than text images."""
     from quality_deck import measure_rich_lines, METRICS
     number = part.rsplit('slide',1)[1].split('.')[0]
     settings = config.get('flow',{}).get('regions',{}).get(number,{})
     scene = scene_nodes(root,ancestors_for(parts,part))
-    result = {'insets':{},'adjustments':[],'paragraphSizes':{},'paragraphGaps':{},'textBottom':{},'richText':{},'bodyMarkers':{}}
+    result = {'insets':{},'adjustments':[],'paragraphSizes':{},'paragraphGaps':{},'textBottom':{},'richText':{},'bodyMarkers':{},'preferredFontSizes':{}}
     for ident,region in settings.get('elements',{}).items():
         record = scene[ident];box = box_for(record['effectiveTransform'],record['parentMatrix'])
         box.update(region.get('box',{}))
         apply_box(record,{'box':box},{},dimensions)
         body = record['node'].find('p:txBody',NS)
+        if body is not None and region.get('splitSoftBreaks'):
+            # Promote title/body soft breaks to paragraphs so hierarchy tokens
+            # can style each section independently without changing the words.
+            for paragraph in list(body.findall('a:p',NS)):
+                if paragraph.find('a:br',NS) is None:continue
+                position = list(body).index(paragraph);body.remove(paragraph)
+                props = paragraph.find('a:pPr',NS)
+                current = ET.Element(q('a','p'))
+                if props is not None:current.append(copy.deepcopy(props))
+                for child in paragraph:
+                    if child.tag == q('a','pPr'):continue
+                    if child.tag == q('a','br'):
+                        body.insert(position,current);position += 1;current = ET.Element(q('a','p'))
+                        if props is not None:current.append(copy.deepcopy(props))
+                    else:current.append(copy.deepcopy(child))
+                body.insert(position,current)
         if body is not None and region.get('compact'):
             for paragraph in list(body.findall('a:p',NS)):
                 if not text_of(paragraph).strip():body.remove(paragraph);continue
@@ -594,14 +602,38 @@ def layout_review_regions(root, parts, part, config, dimensions, content_bottom)
                     if child.tag==q('a','pPr'):continue
                     if child.tag==q('a','br') or child.tag==q('a','r') and not ''.join(t.text or '' for t in child.iter(q('a','t'))).strip():paragraph.remove(child)
                     else:break
+        if body is not None:
+            if 'leftInset' in region:ensure(body,q('a','bodyPr')).set('lIns',str(round(region['leftInset']*EMU)))
+            if 'tracking' in region:
+                for prop in body.iter():
+                    if prop.tag in (q('a','rPr'),q('a','defRPr')):prop.set('spc',str(round(region['tracking']*100)))
+            if region.get('trimLeading'):
+                for paragraph in body.findall('a:p',NS):
+                    text_node = next((t for t in paragraph.iter(q('a','t')) if (t.text or '').strip()),None)
+                    if text_node is not None:text_node.text = text_node.text.lstrip()
+            if 'anchor' in region:ensure(body,q('a','bodyPr')).set('anchor',region['anchor'])
+            if 'align' in region:
+                for paragraph in body.findall('a:p',NS):ensure(paragraph,q('a','pPr')).set('algn',region['align'])
         if 'inset' in region:result['insets'][ident] = region['inset']
         if region.get('paragraphs'):
             result['paragraphSizes'][ident] = [config['hierarchy']['sizes'].get(level,config['type'].get(level,{}).get('size')) for level in region['paragraphs']]
+        if 'fontSize' in region:result['preferredFontSizes'][ident] = region['fontSize']
         if region.get('role'):config.setdefault('roles',{})[f'{number}.{ident}'] = region['role']
         if region.get('rich'):result['richText'][ident] = True
         if 'paragraphGap' in region:result['paragraphGaps'][ident] = region['paragraphGap']
         result['textBottom'][ident] = min(content_bottom,region.get('bottom',box['y']+box['h']))
         result['adjustments'].append({'id':ident,'constraint':'bounded-region','box':box})
+    # Equivalent descriptions share the smallest fitted size required by a peer.
+    from quality_deck import fit_body_size
+    for ids in settings.get('fontGroups',[]):
+        fitted = []
+        for ident in ids:
+            record = scene[ident];box = box_for(record['effectiveTransform'],record['parentMatrix'])
+            role = config.get('roles',{}).get(f'{number}.{ident}','dense');limits = config['type'][role]
+            fitted.append(fit_body_size(record['node'].find('p:txBody',NS),config['font'],
+                result['preferredFontSizes'].get(ident,limits['size']),limits['min'],role,
+                box['h'],box['w'],result['insets'].get(ident,0),config.get('fontFit',{}),rich_measure=True))
+        for ident in ids:result['preferredFontSizes'][ident] = min(fitted)
     for stack in settings.get('calloutRows',[]):
         pad,gap = stack['padding'],stack['gap']
         height = (content_bottom-stack['top']-gap*(len(stack['rows'])-1))/len(stack['rows'])
@@ -622,7 +654,7 @@ def layout_review_regions(root, parts, part, config, dimensions, content_bottom)
             node = scene[row['text']]['node']
             body = node.find('p:txBody',NS)
             needed = sum(measure_rich_lines(p,text_box['w'],config['type']['body']['size'])*config['type']['body']['size']/72*1.1 for p in body.findall('a:p',NS))
-            if needed>text_box['h']+0.005:raise ValueError(f'{number}.{row["text"]}: callout sem área útil')
+            if needed>text_box['h']+0.005:raise ValueError(f'{number}.{row["text"]}: callout has no usable space')
             props = ensure(body,q('a','bodyPr'));props.set('lIns','0');props.set('rIns','0');props.set('anchor','ctr')
             apply_box(scene[row['text']],{'box':text_box},{},dimensions)
             result['insets'][row['text']] = 0;result['textBottom'][row['text']] = text_box['y']+text_box['h'];result['richText'][row['text']] = True
@@ -652,12 +684,11 @@ def layout_review_regions(root, parts, part, config, dimensions, content_bottom)
 
 
 def table_overlay_cells(scene, record, widths):
-    """Vincula contornos nativos de valores à célula original antes do reflow.
+    """Bind native value outlines to original table cells before reflow.
 
-    Apenas retângulos sem texto/fill e com linha colorida dentro da tabela são
-    candidatos. Guarda linha/coluna e tamanho do contorno, nunca números de y
-    fixos. Destaques acompanham a distribuição final das linhas.
-    """
+    Only unfilled rectangles without text and with a colored line inside the table
+    qualify. Store row/column and outline size rather than fixed y positions.
+    Highlights follow the final row distribution."""
     box = box_for(record['effectiveTransform'],record['parentMatrix'])
     table = record['node'].find('.//a:tbl',NS)
     heights = [int(row.get('h'))/EMU for row in table.findall('a:tr',NS)]
@@ -682,12 +713,11 @@ def table_overlay_cells(scene, record, widths):
 
 
 def anchor_table_overlays(scene, record, widths, overlays, dimensions, font_size, baseline_fraction=0.25):
-    """Ancora contornos finais, com compensação ótica de baseline em fração de em.
+    """Anchor final outlines with optical baseline compensation in em fractions.
 
-    A linha do texto reserva descendentes; o centro visível dos algarismos fica
-    abaixo do centro da linha. baseline_fraction ajusta essa diferença sem mover
-    dados ou bordas da tabela. O padrão de 0,25 em foi conferido no Keynote.
-    """
+    Text lines reserve descenders, so visible digit centers sit below the line center.
+    baseline_fraction compensates without moving table data or borders. The default
+    0.25 em offset was checked in Keynote."""
     table = record['node'].find('.//a:tbl',NS)
     heights = [int(row.get('h'))/EMU for row in table.findall('a:tr',NS)]
     b = box_for(record['effectiveTransform'],record['parentMatrix']);result=[]
@@ -703,13 +733,12 @@ def anchor_table_overlays(scene, record, widths, overlays, dimensions, font_size
 
 
 def materialize_vertical_table_labels(root, record, dimensions, font, font_size):
-    """Mantém rótulos verticais editáveis em importadores sem rotação de célula.
+    """Keep vertical labels editable in readers that ignore table cell rotation.
 
-    O Keynote ignora tcPr@vert e quebra Tailwinds/Loans letra a letra. Move o
-    conteúdo dessas células para text boxes nativos rotacionados 270 graus sobre
-    a mesma área visual. O fundo e merges continuam na tabela; texto não duplica.
-    Mede a posição depois de distribuir as alturas definitivas das linhas.
-    """
+    Keynote ignores tcPr@vert and wraps Tailwinds/Loans character by character. Move
+    those cells' content to native text boxes rotated 270 degrees over the same area.
+    Keep fills and merges in the table without duplicating text. Measure positions
+    after distributing final row heights."""
     scene = scene_nodes(root);next_id = max(int(i[1:]) for i in scene if i[1:].isdigit())+1
     table = record['node'].find('.//a:tbl',NS);rows = table.findall('a:tr',NS)
     widths = [int(column.get('w'))/EMU for column in table.findall('a:tblGrid/a:gridCol',NS)]
@@ -739,3 +768,28 @@ def materialize_vertical_table_labels(root, record, dimensions, font, font_size)
             ET.SubElement(body,q('a','p'));props.set('vert','horz');ensure(body,q('a','bodyPr')).set('vert','horz')
             result.append({'id':f'e{next_id-1}','text':text,'visualBox':visual,'fontSize':font_size})
     return result
+
+
+def anchor_table_bars(scene, record, settings, dimensions):
+    """Center linked timeline bars in final rows and constrain them to a column.
+
+    settings.column is zero-based. items binds each semantic object name to a
+    one-based data-row index (header is row zero). X spans retain source timing;
+    vertical anchors are recomputed only after table row heights are finalized.
+    """
+    table = record['node'].find('.//a:tbl',NS)
+    bounds = box_for(record['effectiveTransform'],record['parentMatrix'])
+    widths = [int(c.get('w'))/EMU for c in table.findall('a:tblGrid/a:gridCol',NS)]
+    heights = [int(r.get('h'))/EMU for r in table.findall('a:tr',NS)]
+    column = settings['column'];left = bounds['x']+sum(widths[:column]);right = left+widths[column]
+    by_name = {r['name']:r for r in scene.values()}
+    anchors = []
+    for item in settings['items']:
+        target = by_name[item['name']];row = item['row']
+        box = box_for(target['effectiveTransform'],target['parentMatrix'])
+        x = max(left,box['x']);end = min(right,box['x']+box['w'])
+        box = {**box,'x':x,'w':end-x,'y':bounds['y']+sum(heights[:row])+(heights[row]-box['h'])/2}
+        if box['w']<=0 or box['h']>heights[row]:raise ValueError('Timeline bar exceeds its owning cell')
+        apply_box(target,{'box':box},{},dimensions)
+        anchors.append({'name':item['name'],'row':row,'box':box,'rowCenter':bounds['y']+sum(heights[:row])+heights[row]/2})
+    return anchors

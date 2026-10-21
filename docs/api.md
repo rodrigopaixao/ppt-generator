@@ -30,6 +30,7 @@ The bare API has no quality profile. Pass `quality:{}` to use all quality defaul
 | `validateAdditionBox(box,size)` | Returns the same positive, finite, on-canvas box; throws otherwise |
 | `addNativeObjects(slide,additions,config,size)` | Adds supported text/shape/table/chart declarations to a PptxGenJS slide |
 | `preparePictureOverrides(config,directory)` | Async; mutates a working config's SVG replacement fields to `{path,fallback}` |
+| `prepareSvgFallbacks(sourcePath,directory)` | Async; prepares original SVG media as PNG fallbacks for quality-mode reader compatibility |
 | `parseArguments(args)` | Returns `{mode,patch,options}`; validates flags and reads configuration JSON |
 
 ## Responsive API

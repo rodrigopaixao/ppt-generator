@@ -53,6 +53,7 @@ flowchart LR
 | [native_deck.py](../scripts/native_deck.py) | Catalog, inheritance/transforms, patches, OPC resource import |
 | [quality_deck.py](../scripts/quality_deck.py) | Typography, fitting, pagination, native table sizing, diagnostics |
 | [layout_constraints.py](../scripts/layout_constraints.py) | Dynamic boxes, footer limits, padding, linked cards/icons/markers |
+| [picture_compat.py](../scripts/picture_compat.py) | Portable raster fallback relationships for original SVG-only artwork |
 | [chart_compat.py](../scripts/chart_compat.py) | Embedded workbook portability and range repairs |
 | `scripts/review_*.py`, `verify.py`, `visual_review.py` | Output checks and renderer evidence |
 
@@ -108,6 +109,7 @@ Nested groups introduce coordinate transforms. The catalog resolves global inch-
 | Reference PPTX | Original content, artwork, relationships, layouts, and masters |
 | `data/catalog.json`, `data/slides/NNN.json` | Extracted scenes, typography, geometry, IDs, and inheritance |
 | `data/templates.json` | Variants `source-001` through `source-071`, pointing to native layout/master parts |
+| `data/layout-review.json` | Source-bound row bounds, alignment, spacing, and final table-bar anchors |
 | `data/source.json`, `data/chart-source.json` | Semantic extraction and original chart data |
 | `data/font-metrics.json` | Arial character advances for deterministic measurement |
 | `assets/` | Extracted artwork, not slide screenshots |

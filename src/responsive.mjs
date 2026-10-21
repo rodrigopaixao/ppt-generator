@@ -1,6 +1,7 @@
 /**
- * Gerador adaptativo dos sete templates semânticos. Importado pelo modo
- * --mode responsive. Não promete preservar coordenadas/estilos originais.
+ * Responsive generator for seven semantic templates, invoked by --mode responsive. It
+ * reconstructs layouts rather than preserving original coordinates/styles.
+ *
  * @module responsive
  */
 import fs from 'node:fs';
@@ -12,11 +13,13 @@ import { contents, source } from './content.mjs';
 import { registerMasters, renderTemplate } from './templates.mjs';
 
 /**
- * Prepara imagens compatíveis com leitores PPTX mantendo os SVGs de referência.
- * @param {object} config Tokens e assets.<chave>.path/tint.
- * @returns {Promise<object>} Mapa {path,width,height} para cada asset.
- * original é o arquivo de entrada; input pode ser SVG com tint explícito; target
- * é PNG derivado de alta resolução. Logos oficiais não recebem recoloração.
+ * Prepare reader-compatible images while retaining reference SVGs. config supplies tokens
+ * and assets.<key>.path/tint. Return a {path, width, height} map. original is the input,
+ * input may be an explicitly tinted SVG, and target is a high-resolution derived PNG.
+ * Official logos are not recolored.
+ *
+ * @param {object} config
+ * @returns {Promise<object>}
  */
 export async function prepareAssets(config) {
   const sharp = dependency('sharp');
@@ -48,12 +51,15 @@ export async function prepareAssets(config) {
 }
 
 /**
- * Compõe sete slides com grid, tokens e componentes adaptativos.
- * @param {object} patch Overrides mesclados aos defaults de theme.mjs.
- * @param {object} options output é destino; showHidden expõe o slide 68.
- * @returns {Promise<object>} pptx, manifest, config e outputPath.
- * config valida o canvas; data aplica overrides por slide; manifest registra
- * posições/fontes efetivas. Este modo escreve PPTX novo, sem preservação XML.
+ * Compose seven slides using responsive grids, tokens and components. patch merges with
+ * theme.mjs defaults; options defines output and whether hidden slide 68 is exposed. Return
+ * pptx, manifest, config and outputPath. config validates the canvas; data supplies
+ * per-slide overrides; manifest records effective geometry/fonts. This mode creates a new
+ * PPTX without preserving source XML.
+ *
+ * @param {object} patch
+ * @param {object} options
+ * @returns {Promise<object>}
  */
 export async function build(patch = {}, { output = 'output/responsive-slides.pptx',
   showHidden = false } = {}) {

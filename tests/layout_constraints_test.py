@@ -1,4 +1,4 @@
-"""Regressões das faixas, ícones ligados e área exclusiva do rodapé."""
+"""Regression tests for bands, linked icons and reserved footer space."""
 import json
 import sys
 import unittest
@@ -11,18 +11,18 @@ from quality_deck import METRICS, measure_lines, normalize_body
 
 
 class LayoutConstraintsTest(unittest.TestCase):
-    """Mede a geometria real da referência, sem depender apenas de screenshots."""
+    """Measure actual reference geometry rather than relying only on screenshots."""
 
     @classmethod
     def setUpClass(cls):
-        """Carrega o pacote original e os tokens da configuração pública uma vez."""
+        """Load the original package and public configuration tokens once."""
         with zipfile.ZipFile(ROOT/'2606 Context Enriched Slide Repository.pptx') as archive:
             cls.parts = {n:archive.read(n) for n in archive.namelist()}
         cls.config = json.loads((ROOT/'config.quality.json').read_text())['quality']
         cls.dimensions = {'width':13.333333,'height':7.5}
 
     def test_tracking_changes_measurement_and_header_background_contains_text(self):
-        """INDUSTRY OVERVIEW permanece dentro da faixa com tracking e padding."""
+        """INDUSTRY OVERVIEW stays inside its band with tracking and padding."""
         self.assertGreater(measure_lines('INDUSTRY OVERVIEW',1.7,10,True,2),measure_lines('INDUSTRY OVERVIEW',1.7,10,True,0))
         part = 'ppt/slides/slide38.xml'
         root = parse_xml(self.parts[part])
@@ -44,7 +44,7 @@ class LayoutConstraintsTest(unittest.TestCase):
         self.assertGreaterEqual(plan['footerTop']-plan['contentBottom'],self.config['flow']['footer']['gap']-0.001)
 
     def test_locked_font_keeps_icon_gutter_and_rows_flow_without_collision(self):
-        """Fixar a fonte não apaga a faixa do ícone; as cinco linhas não colidem."""
+        """Fixing the font preserves the icon lane and prevents collisions across five rows."""
         part = 'ppt/slides/slide45.xml'
         root = parse_xml(self.parts[part])
         plan = prepare_slide_layout(root,self.parts,part,self.config,self.dimensions)
@@ -59,7 +59,7 @@ class LayoutConstraintsTest(unittest.TestCase):
         self.assertEqual(body.find('a:bodyPr',NS).get('lIns'),gutter)
 
     def test_longer_card_expands_and_displaces_the_next_row(self):
-        """Uma edição longa aumenta o fundo e move a próxima unidade com seus ícones."""
+        """A long edit expands the background and moves the next unit with its icons."""
         part = 'ppt/slides/slide45.xml'
         root = parse_xml(self.parts[part])
         scene = scene_nodes(root,ancestors_for(self.parts,part))

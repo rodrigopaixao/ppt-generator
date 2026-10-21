@@ -1,4 +1,4 @@
-"""Testes de invariantes do adaptador: edição nativa, isolamento e sincronização."""
+"""Adapter invariant tests: native editing, isolation and synchronization."""
 import copy
 import io
 import json
@@ -15,20 +15,20 @@ from native_deck import (SOURCE, NS, EMU, read_parts, parse_xml, scene_nodes,
 
 
 class NativeDeckTests(unittest.TestCase):
-    """Carrega a referência uma vez; cada teste usa seu próprio mapa de partes."""
+    """Load the reference once; each test uses its own parts map."""
 
     @classmethod
     def setUpClass(cls):
-        """Retém bytes imutáveis da referência para não compartilhar mutações XML."""
+        """Keep immutable reference bytes to avoid sharing XML mutations."""
         cls.original = read_parts(SOURCE)
         cls.size = {'width': 13.333333333333334, 'height': 7.5}
 
     def setUp(self):
-        """Cria um mapa novo; os bytes compartilhados são imutáveis em Python."""
+        """Create a new map; shared bytes are immutable in Python."""
         self.parts = dict(self.original)
 
     def test_text_override_keeps_unrelated_parts(self):
-        """Mudar título e fonte altera somente o slide e preserva o layout herdado."""
+        """Changing title and font modifies only the slide, preserving its inherited layout."""
         part = 'ppt/slides/slide5.xml'
         patch_part(self.parts, part, {'elements': {'e5': {'text': 'Novo resumo',
             'textStyle': {'fontSize': 19, 'color': 'EC111A'}}}}, {}, self.size, 's5')
@@ -36,7 +36,7 @@ class NativeDeckTests(unittest.TestCase):
         self.assertEqual([p for p in self.parts if self.parts[p] != self.original[p]], [part])
 
     def test_cell_override_retains_native_table(self):
-        """Uma célula muda sem converter a tabela em retângulos ou imagens."""
+        """Edit a cell without converting the table to rectangles or images."""
         part = 'ppt/slides/slide10.xml'
         patch_part(self.parts, part, {'elements': {'e8': {'table': {'cells': {
             '1.2': {'text': 'Transfer atualizado', 'fill': 'F5EFE8'}}}}}}, {}, self.size, 's10')
@@ -45,7 +45,7 @@ class NativeDeckTests(unittest.TestCase):
         self.assertIn('Transfer atualizado', text_of(root))
 
     def test_chart_cache_and_embedded_workbook_are_synchronized(self):
-        """Clonar/editar um gráfico atualiza valores no XML e no XLSX privado."""
+        """Cloning/editing a chart updates values in its XML and private XLSX."""
         part = 'ppt/slides/slide68.xml'
         root = parse_xml(self.parts[part])
         node = scene_nodes(root, ancestors_for(self.parts, part))['e114']['node']
@@ -63,7 +63,7 @@ class NativeDeckTests(unittest.TestCase):
             self.assertEqual(sheet.find('.//s:c[@r="B3"]/s:v', NS).text, '7')
 
     def test_placeholder_geometry_materializes_and_grid_is_configurable(self):
-        """Um título herdado recebe geometria própria ao ser movido pelo grid."""
+        """An inherited title receives its own geometry when moved using the grid."""
         part = 'ppt/slides/slide5.xml'
         patch_part(self.parts, part, {'elements': {'e5': {'grid': {
             'col': 1, 'row': 1, 'colSpan': 10, 'rowSpan': 1}}}},
@@ -73,7 +73,7 @@ class NativeDeckTests(unittest.TestCase):
         self.assertAlmostEqual(int(xf.find('a:off', NS).get('x'))/EMU, self.size['width']/12, places=5)
 
     def test_group_resize_preserves_all_child_xml(self):
-        """Redimensionar o grupo altera xfrm do pai, mantendo cada objeto filho."""
+        """Resizing a group changes its parent xfrm while retaining every child object."""
         part = 'ppt/slides/slide50.xml'
         before = scene_nodes(parse_xml(self.parts[part]))
         child = xml_bytes(before['e27']['node'])
@@ -84,7 +84,7 @@ class NativeDeckTests(unittest.TestCase):
         self.assertEqual(len(before), len(after))
 
     def test_flow_fills_rows_in_reading_order(self):
-        """Quatro textos em região estreita passam a duas linhas, sem perda de palavras."""
+        """Four text objects wrap into two rows in a narrow region without losing words."""
         part = 'ppt/slides/slide50.xml'
         ids = ['e25', 'e26', 'e27', 'e28']
         patch_part(self.parts, part, {'flows': [{'elements': ids, 'minWidth': 2,
@@ -97,21 +97,21 @@ class NativeDeckTests(unittest.TestCase):
         self.assertGreater(boxes[2]['y'], boxes[1]['y'])
 
     def test_unknown_configuration_is_rejected(self):
-        """Erros de digitação falham em vez de produzirem um deck aparentemente configurado."""
+        """Configuration typos fail rather than producing an apparently configured deck."""
         with self.assertRaises(ValueError):
             validate_config({'components': {}})
         with self.assertRaises(ValueError):
             patch_part(self.parts, 'ppt/slides/slide5.xml', {'elements': {'e99999': {'text': 'x'}}}, {}, self.size, 's5')
 
     def test_compatibility_prefixes_survive_xml_changes(self):
-        """Prefixos citados por mc:Ignorable continuam declarados após serialização."""
+        """Prefixes referenced by mc:Ignorable remain declared after serialization."""
         payload = b'<p:sld xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" mc:Ignorable="p14"/>'
         output = xml_bytes(parse_xml(payload))
         self.assertIn(b'xmlns:p14=', output)
         parse_xml(output)
 
     def test_opc_control_parts_keep_their_default_namespace(self):
-        """Content Types e Relationships mantêm nomes lexicais aceitos por leitores OPC."""
+        """Content Types and Relationships retain lexical names accepted by OPC readers."""
         for part, root_name in [('[Content_Types].xml', 'Types'),
                                 ('ppt/slides/_rels/slide68.xml.rels', 'Relationships')]:
             value = xml_bytes(parse_xml(self.parts[part]))

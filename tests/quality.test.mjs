@@ -1,4 +1,4 @@
-/** Regressões das falhas enviadas pelo usuário, verificadas no pacote exportado. */
+/** Regression tests for reported issues, verified in the exported package. */
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -11,30 +11,40 @@ import { prepareQuality } from '../src/quality.mjs';
 const catalog = JSON.parse(fs.readFileSync(new URL('../data/catalog.json', import.meta.url)));
 
 test('quality prefers standard size, shrinks tables to fit and enforces bounds', () => {
-  assert.throws(() => prepareQuality({selection:[10],quality:{type:{body:{size:17}}}},catalog), /Escala inválida/);
+  assert.throws(() => prepareQuality({selection:[10],quality:{type:{body:{size:17}}}},catalog), /Invalid type scale/);
   const fitted = prepareQuality({selection:[10],quality:{type:{dense:{size:12}}}},catalog).additions[10].find(e=>e.id==='agenda');
   assert(fitted.style.fontSize >= 10 && fitted.style.fontSize < 12);
-  assert.throws(() => prepareQuality({selection:[10],quality:{type:{dense:{min:12,size:12}}}},catalog), /Tabela agenda/);
+  assert.throws(() => prepareQuality({selection:[10],quality:{type:{dense:{min:12,size:12}}}},catalog), /Table agenda/);
   assert.throws(() => prepareQuality({selection:[10],quality:{fontFit:{step:0.001}}},catalog), /fontFit.step/);
-  assert.throws(() => prepareQuality({quality:{hierarchy:{sizes:{title:0}}}},catalog), /Token tipográfico/);
-  assert.throws(() => prepareQuality({quality:{hierarchy:{roles:{'65.e2':'unknown'}}}},catalog), /Nível tipográfico/);
+  assert.throws(() => prepareQuality({quality:{hierarchy:{sizes:{title:0}}}},catalog), /typography token/i);
+  assert.throws(() => prepareQuality({quality:{hierarchy:{roles:{'65.e2':'unknown'}}}},catalog), /typography level/i);
   const standard = prepareQuality({selection:[65],quality:{}},catalog);
   const headings = standard.additions[65].filter(e=>e.id.startsWith('card-title-'));
   assert(headings.every(e=>e.style.fontSize===12));
   const configured = prepareQuality({selection:[65],quality:{hierarchy:{sizes:{component:11.5}}}},catalog);
   assert(configured.additions[65].filter(e=>e.id.startsWith('card-title-')).every(e=>e.style.fontSize===11.5));
-  assert.throws(() => prepareQuality({selection:[31],quality:{elements:{'31.notes-left':{style:{fontSize:30}}}}},catalog), /fora dos limites/);
+  assert.throws(() => prepareQuality({selection:[31],quality:{elements:{'31.notes-left':{style:{fontSize:30}}}}},catalog), /outside the limits/);
 });
 
 test('quality preserves narrative across continuation, fits agenda, and embeds native chart workbooks', async () => {
   const directory = fs.mkdtempSync(path.join(os.tmpdir(),'quality-regression-'));
   try {
-    const result = await build({selection:[1,4,5,10,22,24,27,28,29,31,34,35,38,40,43,45,47,48,51,52,57,58,63,64,65,67,70,71], quality:{},showHidden:true},
+    const result = await build({selection:[1,4,5,10,17,22,23,24,27,28,29,31,34,35,37,38,40,41,42,43,45,47,48,51,52,57,58,60,61,63,64,65,67,70,71], quality:{},showHidden:true},
       {output:path.join(directory,'reviewed.pptx')});
-    assert.equal(result.report.counts.outputSlides,29);
-    assert.equal(result.report.slides.length,29);
+    assert.equal(result.report.counts.outputSlides,36);
+    assert.equal(result.report.slides.length,36);
     assert.deepEqual(result.report.quality.estimatedOverflow,[]);
     const measures = result.report.quality.measurements;
+    const rowDescription = measures.find(e=>e.slide===37 && e.id==='e24');
+    assert(rowDescription.preferredFontSize<=12);
+    assert(rowDescription.resolvedFontSize<12 && rowDescription.resolvedFontSize>=10);
+    assert(rowDescription.box.y+rowDescription.box.h<=2.991);
+    const bars = result.report.quality.layoutConstraints['23'].tableBars['custom.timeline'];
+    assert.equal(bars.length,17);
+    for (const bar of bars) assert(Math.abs(bar.box.y+bar.box.h/2-bar.rowCenter)<0.000001);
+    assert(result.report.quality.pictureRepairs.some(e=>e.owner==='ppt/slides/slide52.xml'));
+    assert(result.report.quality.pictureRepairs.some(e=>e.owner==='ppt/slides/slide60.xml'));
+
     for (const [slide,id,size] of [[1,'e2',60],[1,'e3',16],[1,'e4',14],[4,'e2',66],[4,'e3',28],[63,'e2',66],[63,'e3',28]]) {
       const coverText = measures.find(e=>e.slide===slide && e.id===id);
       assert.equal(coverText.resolvedFontSize,size);
@@ -185,7 +195,7 @@ test('quality preserves narrative across continuation, fits agenda, and embeds n
     }
     const footerPlan = result.report.quality.layoutConstraints['38'];
     const benchmark = result.report.slides.find(s=>s.sourceNumber===38).elements.find(e=>e.id==='e9');
-    assert(benchmark.box.y+benchmark.box.h <= footerPlan.contentBottom+0.001);
+    assert(rowDescription.box.y+rowDescription.box.h <= footerPlan.contentBottom+0.001);
     const band = measures.find(e=>e.slide===38 && e.id==='e14');
     assert.equal(band.typographyRole,'kicker');
     assert.equal(band.resolvedFontSize,10);
@@ -206,7 +216,7 @@ test('quality preserves narrative across continuation, fits agenda, and embeds n
     const agenda = result.report.slides.find(s=>s.sourceNumber===10);
     assert.equal(agenda.elements.filter(e=>e.kind==='table').length,1);
     assert(agenda.elements.find(e=>e.kind==='table').text.includes('Cocktail with clients'));
-    assert.equal(result.report.slides.flatMap(s=>s.elements).filter(e=>e.kind==='chart').length,9);
+    assert.equal(result.report.slides.flatMap(s=>s.elements).filter(e=>e.kind==='chart').length,14);
     const check = spawnSync('python3',['-c',`
 import sys,zipfile,xml.etree.ElementTree as E,json,posixpath
 z=zipfile.ZipFile(sys.argv[1]); ns={'p':'http://schemas.openxmlformats.org/presentationml/2006/main','a':'http://schemas.openxmlformats.org/drawingml/2006/main','c':'http://schemas.openxmlformats.org/drawingml/2006/chart'}

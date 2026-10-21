@@ -1,4 +1,4 @@
-/** Integração real: configura conteúdo nativo e adições PptxGenJS em um único PPTX. */
+/** Integration: configure native content and PptxGenJS additions in a single PPTX. */
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';

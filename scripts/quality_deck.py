@@ -1,10 +1,10 @@
-"""Normalização explícita da apresentação editável, com diagnóstico de tipografia.
+"""Explicitly normalize editable presentations with typography diagnostics.
 
-Este módulo só é chamado pelo perfil quality; o modo fidelity continua intacto.
-O texto original não é resumido. Reduz a fonte por medição explícita até o piso
-configurável, sem depender do autofit do leitor, recorte ou rasterização. Os mínimos são os escolhidos pelo usuário: corpo 12, matriz/gráfico
-10 e notas 8 pt. A fonte Arial é portátil e substituível por quality.font.
-"""
+Only the quality profile calls this module; fidelity mode remains unchanged.
+Preserve original wording. Measure font reductions down to configurable minimums
+without reader-dependent autofit, clipping or rasterization. Default minimums
+are 12 pt for body text, 10 pt for matrices/charts and 8 pt for notes. Arial is
+portable and replaceable through quality.font."""
 import json
 import math
 import re
@@ -20,12 +20,11 @@ METRICS = json.loads((ROOT/'data/font-metrics.json').read_text())
 
 
 def measure_lines(text, width, size, bold=False, tracking=0):
-    """Estima quebra por avanços Arial em em, com margem horizontal de 3%.
+    """Estimate wrapping using Arial advances in em and 3% horizontal safety.
 
-    text conserva quebras explícitas; width é largura útil em polegadas; size
-    é pt; tracking é o espaçamento adicional entre letras em pt. Usa métricas do projeto, sem depender de fontes instaladas no servidor.
-    Não certifica todos os renderizadores; a revisão visual complementa a medida.
-    """
+    text retains explicit breaks; width is usable inches; size and tracking use
+    points. Use project metrics without depending on server fonts. Measurements
+    do not certify all readers; visual review complements them."""
     face = METRICS['widths']['bold' if bold else 'regular']
     total = 0
     for paragraph in text.split('\n'):
@@ -44,15 +43,22 @@ def measure_lines(text, width, size, bold=False, tracking=0):
     return total
 
 
-def measure_rich_lines(paragraph, width, fallback_size):
-    """Mede a quebra de palavras ponderando cada run regular/negrito em pt.
+def paragraph_text(paragraph):
+    """Return visible text with DrawingML soft breaks preserved for measurement."""
+    return ''.join('\n' if node.tag == q('a','br') else (node.text or '')
+                   if node.tag == q('a','t') else '' for node in paragraph.iter())
 
-    Evita tratar o parágrafo inteiro como negrito quando só seu título o é. A
-    mesma medição dimensiona a lista e ancora seus indicadores ao primeiro verso.
-    """
+
+def measure_rich_lines(paragraph, width, fallback_size):
+    """Measure wrapping with each regular/bold run weighted by its point size.
+
+    Do not treat an entire paragraph as bold when only its heading is bold. The
+    same measurement sizes lists and anchors indicators to their first line."""
     widths, chars = [], []
     default = paragraph.find('a:pPr/a:defRPr',NS)
     for run in paragraph:
+        if run.tag == q('a','br'):
+            chars.append('\n'); widths.append(0); continue
         if run.tag not in (q('a','r'),q('a','fld')):
             continue
         prop = run.find('a:rPr',NS)
@@ -65,7 +71,9 @@ def measure_rich_lines(paragraph, width, fallback_size):
             chars.append(char)
             widths.append(face.get(char,0.55)*size/72*1.03+tracking/72)
     used,lines = 0,1
-    for word in re.finditer(r'\S+\s*',''.join(chars)):
+    for word in re.finditer(r'\n|[^\S\n]*\S+[^\S\n]*',''.join(chars)):
+        if word.group() == '\n':
+            lines += 1; used = 0; continue
         length = sum(widths[word.start():word.end()])
         if used and used+length>width:
             lines += 1
@@ -79,13 +87,12 @@ def measure_rich_lines(paragraph, width, fallback_size):
 
 
 def role_for(node, box, text, table=False, custom=False):
-    """Classifica título, corpo, matriz/rótulo e nota por semântica e geometria.
+    """Classify titles, body text, matrices/labels and notes by semantics/geometry.
 
-    O papel explícito quality.roles['slide.eID'] prevalece no chamador. Tabelas
-    e rótulos pequenos são dense; notas de fonte e rodapés são note. Títulos são
-    placeholders ou caixas longas no cabeçalho. custom preserva papéis já criados
-    pelo construtor JS, cujas fontes foram medidas antes da serialização.
-    """
+    Explicit quality.roles['slide.eID'] overrides take precedence in the caller.
+    Tables and small labels are dense; source notes and footers are note. Titles
+    are placeholders or wide header boxes. custom retains roles created by the JS
+    builder, whose fonts were measured before serialization."""
     if table:
         return 'dense'
     if re.match(r'^\s*(Source:|Sources:|Note:|Notes:)', text, re.I) or box['y'] >= 6.85:
@@ -99,12 +106,11 @@ def role_for(node, box, text, table=False, custom=False):
 
 
 def heading_level(config, key, role, text, reference_size, box):
-    """Resolve o nível semântico antes de escolher um tamanho padrão.
+    """Resolve the semantic hierarchy level before choosing a default font size.
 
-    config.hierarchy.roles associa IDs a níveis explícitos. Sem override, títulos
-    de slide usam title; tamanho original e caixa distinguem os níveis restantes.
-    O tamanho original serve à classificação, nunca cria um novo token por slide.
-    """
+    config.hierarchy.roles maps IDs to explicit levels. Without an override, slide
+    titles use title; original size and geometry distinguish other levels. Original
+    sizes classify elements but never create new per-slide tokens."""
     explicit = config.get('hierarchy',{}).get('roles',{}).get(key)
     if explicit:
         return explicit
@@ -124,12 +130,11 @@ def heading_level(config, key, role, text, reference_size, box):
 
 
 def normalize_template_typography(parts, config):
-    """Aplica o token title também a masters/layouts para futuros placeholders.
+    """Apply the title token to masters/layouts for future placeholders as well.
 
-    parts é o pacote OPC editável. Apenas estilos de título e placeholders title/
-    ctrTitle são alterados; placeholders body de capas usam seus tokens próprios
-    conforme o tamanho original. Tabelas e gráficos mantêm seu pipeline.
-    """
+    parts is the editable OPC package. Modify only title styles and title/ctrTitle
+    placeholders. Cover body placeholders use their own tokens based on original
+    size. Tables and charts retain their separate pipeline."""
     hierarchy = config.get('hierarchy',{})
     if not hierarchy.get('enabled',False):
         return
@@ -160,17 +165,15 @@ def normalize_template_typography(parts, config):
 
 
 def normalize_body(body, font, size, role, height, width, padding, custom=False, preserve_layout=False, paragraph_sizes=None, paragraph_gap=0, rich_measure=False):
-    """Materializa fontes, remove margens impossíveis e impede autofit oculto.
+    """Materialize fonts, remove impossible margins and prevent hidden autofit.
 
-    body é p:txBody ou a:txBody. height/width são polegadas locais. padding é
-    polegadas e é limitado pela altura real. custom conserva tamanhos explícitos; preserve_layout mantém a faixa funcional
-    de ícones mesmo quando a tipografia é fixa. paragraph_sizes fixa fontes em pt
-    por parágrafo; paragraph_gap é o espaço entre parágrafos em polegadas, também
-    somado à altura medida. rich_measure pondera os runs de ênfase na quebra.
-    Espaçamentos são materializados para
-    impedir que margens de parágrafo do master alterem a altura das linhas.
-    Retorna {requiredHeight, availableHeight, fontSizes}, para auditoria.
-    """
+    body is p:txBody or a:txBody. height/width are local inches. padding uses inches
+    and is limited by actual height. custom retains explicit sizes; preserve_layout
+    reserves functional icon lanes even with fixed typography. paragraph_sizes sets
+    per-paragraph fonts in points. paragraph_gap is measured in inches and included
+    in total height. rich_measure accounts for emphasized runs when wrapping.
+    Materialized spacing prevents inherited master margins from changing line height.
+    Return {requiredHeight, availableHeight, fontSizes} for auditing."""
     bp = ensure(body, q('a', 'bodyPr'))
     vertical = bp.get('vert') in ('vert', 'vert270', 'eaVert')
     if vertical:
@@ -207,9 +210,10 @@ def normalize_body(body, font, size, role, height, width, padding, custom=False,
         line = ET.Element(q('a', 'lnSpc'))
         ET.SubElement(line, q('a', 'spcPct'), val='100000' if role == 'dense' else '110000')
         pp.insert(0, line)
+        gap_after = paragraph_gap[min(pi,len(paragraph_gap)-1)] if isinstance(paragraph_gap,list) and paragraph_gap else paragraph_gap or 0
         for position, tag in enumerate(('spcBef', 'spcAft'), 1):
             space = ET.Element(q('a', tag))
-            ET.SubElement(space, q('a', 'spcPts'), val=str(round(paragraph_gap*72*100)) if tag=='spcAft' and pi<len(paragraphs)-1 else '0')
+            ET.SubElement(space, q('a', 'spcPts'), val=str(round(gap_after*72*100)) if tag=='spcAft' and pi<len(paragraphs)-1 else '0')
             pp.insert(position, space)
         props = [ensure(pp, q('a', 'defRPr'))]
         for run in paragraph:
@@ -231,7 +235,7 @@ def normalize_body(body, font, size, role, height, width, padding, custom=False,
             symbol = prop.find('a:sym', NS)
             if symbol is not None:
                 prop.remove(symbol)
-        text = ''.join(n.text or '' for n in paragraph.iter(q('a', 't'))).strip()
+        text = paragraph_text(paragraph).strip()
         paragraph_size = max(float(p.get('sz', size*100))/100 for p in props)
         bold = any(p.get('b') == '1' for p in props)
         left = max(0, int(pp.get('marL', 0)))/EMU
@@ -240,7 +244,7 @@ def normalize_body(body, font, size, role, height, width, padding, custom=False,
         default_tracking = float(ensure(pp,q('a','defRPr')).get('spc',0))/100
         tracking = max([float(p.get('spc',default_tracking*100))/100 for p in run_props] or [default_tracking])
         lines = measure_rich_lines(paragraph,max(0.01,width-horizontal-left),paragraph_size) if rich_measure else measure_lines(text, max(0.01, width-horizontal-left), paragraph_size, bold, tracking)
-        heights.append(lines*paragraph_size/72*1.1+(paragraph_gap if pi<len(paragraphs)-1 else 0))
+        heights.append(lines*paragraph_size/72*1.1+(gap_after if pi<len(paragraphs)-1 else 0))
     if body.find('a:p', NS) is None:
         # CT_TextBody requires at least one paragraph. An absent paragraph makes
         # readers invent one using the master's large default font, inflating
@@ -254,22 +258,21 @@ def normalize_body(body, font, size, role, height, width, padding, custom=False,
             'fontSizes': sorted(sizes), 'paragraphs': count, 'paragraphHeights':heights}
 
 
-def fit_body_size(body, font, preferred, minimum, role, height, width, padding, settings):
-    """Escolhe a maior fonte até o padrão que caiba na caixa atual.
+def fit_body_size(body, font, preferred, minimum, role, height, width, padding, settings, paragraph_sizes=None, paragraph_gap=0, rich_measure=False):
+    """Choose the largest font up to the preferred size that fits the current box.
 
-    preferred é o tamanho nominal, minimum é o piso configurável, settings define
-    enabled e step (pt). A medição usa cópias para não destruir runs durante as
-    tentativas. Sem espaço no piso, retorna o piso; reflow/paginação vêm depois.
-    Nunca amplia texto acima do nominal nem modifica conteúdo.
-    """
+    preferred is nominal size; minimum is the floor; settings supplies enabled/step
+    in points. Measure copies to preserve runs during trials. If the floor does not
+    fit, return it for later reflow/pagination. Never exceed nominal size or edit text."""
     size = preferred
     if not settings.get('enabled', True):
         return size
     step = float(settings.get('step', 0.25))
     if not math.isfinite(step) or step < 0.01:
-        raise ValueError('fontFit.step precisa ser finito e pelo menos 0.01 pt')
+        raise ValueError('fontFit.step must be finite and at least 0.01 pt')
     while size > minimum:
-        measured = normalize_body(copy.deepcopy(body), font, size, role, height, width, padding)
+        measured = normalize_body(copy.deepcopy(body), font, size, role, height, width, padding,
+                                  paragraph_sizes=paragraph_sizes, paragraph_gap=paragraph_gap, rich_measure=rich_measure)
         if measured['requiredHeight'] <= measured['availableHeight']+0.01:
             return size
         size = max(minimum, round(size-step, 2))
@@ -277,19 +280,18 @@ def fit_body_size(body, font, preferred, minimum, role, height, width, padding, 
 
 
 def fit_table_size(table, font, preferred, minimum, height, padding, custom, settings):
-    """Reduz a tabela como um conjunto, preservando fonte uniforme entre células.
+    """Shrink the whole table while retaining a uniform font across cells.
 
-    Larguras/mesclas vêm do DrawingML real. Calcula a altura mínima de todas as
-    linhas; distribui a necessidade das células com rowSpan nas linhas cobertas.
-    Só reduz se a tabela inteira não couber no nominal. No piso, o chamador pode
-    reorganizar as linhas ou sinalizar falta de espaço sem cortar conteúdo.
-    """
+    Widths/merges come from actual DrawingML. Measure all rows' minimum heights and
+    distribute rowSpan cell requirements across covered rows. Shrink only if the
+    entire table does not fit at nominal size. At the floor, the caller can rearrange
+    rows or report insufficient space without truncating content."""
     size = preferred
     if not settings.get('enabled', True):
         return size
     step = float(settings.get('step', 0.25))
     if not math.isfinite(step) or step < 0.01:
-        raise ValueError('fontFit.step precisa ser finito e pelo menos 0.01 pt')
+        raise ValueError('fontFit.step must be finite and at least 0.01 pt')
     widths = [int(col.get('w'))/EMU for col in table.findall('a:tblGrid/a:gridCol', NS)]
     rows = table.findall('a:tr', NS)
     while size > minimum:
@@ -324,13 +326,12 @@ def fit_table_size(table, font, preferred, minimum, height, padding, custom, set
 
 
 def complete_categories(parts, minimum, font):
-    """Completa caches de categorias ausentes sem alterar nenhum valor numérico.
+    """Complete missing category caches without changing numeric values.
 
-    Gráficos think-cell podem depender de categorias implícitas aceitas por alguns
-    leitores. strLit com o mesmo número de pontos garante categorias Office
-    explícitas. Eixos ocultos continuam ocultos. Séries scatter já têm x/y próprios.
-    Também materializa fonte mínima em rótulos, eixos e legenda nativos.
-    """
+    think-cell charts may use implicit categories accepted by some readers. strLit
+    with the same point count makes Office categories explicit. Hidden axes stay
+    hidden; scatter series retain their own x/y values. Also materialize minimum
+    fonts for native labels, axes and legends."""
     fixed = []
     for name in list(parts):
         if not re.fullmatch(r'ppt/charts/(?:generated-)*chart\d+\.xml', name):
@@ -390,13 +391,12 @@ def complete_categories(parts, minimum, font):
 
 
 def paginate_narrative(parts, number, ident, config, dimensions, content_bottom=7.1):
-    """Divide prosa que não cabe no mínimo em continuações com estilo preservado.
+    """Paginate narrative that does not fit at minimum size while retaining styles.
 
-    number/ident referenciam um corpo narrativo, nunca um dado de gráfico. Cada
-    parágrafo é mantido inteiro com runs/ênfases; a cópia herda master e layout.
-    As páginas são inseridas após a origem na ordem nativa da apresentação.
-    Retorna as partes criadas e as medidas das páginas, sem perder texto.
-    """
+    number/ident identify a narrative body, never chart data. Preserve complete
+    paragraphs and their runs/emphasis; copies inherit the master/layout. Insert
+    pages after the source in presentation order. Return created parts and page
+    measurements without losing text."""
     source = f'ppt/slides/slide{number}.xml'
     original = parse_xml(parts[source])
     scene = scene_nodes(original, ancestors_for(parts, source))
@@ -447,7 +447,7 @@ def paginate_narrative(parts, number, ident, config, dimensions, content_bottom=
         measured = normalize_body(target_body, config['font'], config['type']['body']['size'],
           'body', box['h'], box['w'], 0.025)
         if measured['requiredHeight'] > box['h']:
-            raise ValueError(f'Slide {number}: parágrafo individual não cabe em uma continuação')
+            raise ValueError(f'Slide {number}: an individual paragraph does not fit on a continuation page')
         for entry in scene_nodes(root, ancestors_for(parts, source)).values():
             if text_of(entry['node']).strip() == str(number) and entry['node'].tag == q('p','sp'):
                 replace_text(entry['node'], f'{number}.{page+1}')
@@ -479,14 +479,15 @@ def paginate_narrative(parts, number, ident, config, dimensions, content_bottom=
 
 
 def normalize_package(parts, config, dimensions, selection):
-    """Aplica a escala centralizada e produz diagnóstico verificável por objeto.
+    """Apply the centralized type scale and produce per-object diagnostics.
 
-    parts é o mapa OPC editável; config contém tokens e overrides de papéis.
-    selection identifica os slides entregues. O relatório inclui medições, fontes
-    e problemas restantes; não confunde igualdade de pixels com revisão visual.
-    Caixas originais só crescem se houver espaço antes do próximo texto na coluna.
-    """
+    parts is the editable OPC map; config contains tokens and role overrides;
+    selection identifies delivered slides. Report measurements, fonts and remaining
+    issues without confusing pixel equality with visual review. Original boxes grow
+    only when there is room before the next text in the same column."""
     records, issues, layout_plans = [], [], {}
+    from picture_compat import repair_svg_pictures
+    picture_repairs = repair_svg_pictures(parts, config.pop('_svgFallbacks', {}))
     normalize_template_typography(parts,config)
     font, scale = config['font'], config['type']
     for number in selection:
@@ -510,7 +511,7 @@ def normalize_package(parts, config, dimensions, selection):
             if ident in plan.get('notes',[]):
                 role = 'note'
             if role not in scale:
-                raise ValueError(f'Papel tipográfico desconhecido: {role}')
+                raise ValueError(f'Unknown typography role: {role}')
             limits = scale[role]
             declared = [int(n.get('sz'))/100 for n in node.iter() if n.tag == q('a', 'rPr') and n.get('sz')]
             original_size = max(declared or [limits['min']])
@@ -518,7 +519,7 @@ def normalize_package(parts, config, dimensions, selection):
             # Every role resolves to a discrete, reproducible size, rather than 11.37pt.
             size = original_size if custom else limits.get('size', limits['min'])
             if custom and not config.get('referenceTypography',{}).get('elements',{}).get(f'{number}.{record["name"]}',{}).get('locked') and (original_size < limits['min'] or original_size > limits['max']):
-                raise ValueError(f'{number}.{record["name"]}: {original_size}pt fora do intervalo {limits}')
+                raise ValueError(f'{number}.{record["name"]}: {original_size}pt outside the range {limits}')
             reference = config.get('referenceTypography', {}).get('elements', {}).get(f'{number}.{record["name"]}' if custom else f'{number}.{ident}')
             runs = [r for r in node.findall('p:txBody/a:p/a:r', NS) if text_of(r).strip() or r.find('a:t',NS) is not None]
             short_heading = (not custom and table is None and len(text.strip()) <= 110
@@ -602,6 +603,10 @@ def normalize_package(parts, config, dimensions, selection):
                     plan.setdefault('tableOverlays',{})[ident] = anchor_table_overlays(scene,record,widths,overlays,dimensions,size,config.get('flow',{}).get('tableOverlayBaseline',0.25))
                 vertical_labels = materialize_vertical_table_labels(root,record,dimensions,font,size)
                 if vertical_labels:plan.setdefault('verticalTableLabels',{})[ident] = vertical_labels
+                from layout_constraints import anchor_table_bars
+                bar_settings = config.get('flow',{}).get('tableBars',{}).get(f'{number}.{record["name"]}')
+                if bar_settings:
+                    plan.setdefault('tableBars',{})[record['name']] = anchor_table_bars(scene,record,bar_settings,dimensions)
                 icon_settings = config.get('flow',{}).get('tableIcons',{}).get(f'{number}.{record["name"]}')
                 if icon_settings:
                     from layout_constraints import anchor_table_icons
@@ -619,9 +624,17 @@ def normalize_package(parts, config, dimensions, selection):
                 if level in ('coverTitle','sectionCoverTitle'):
                     for paragraph in list(body.findall('a:p',NS)):
                         if not text_of(paragraph).strip(): body.remove(paragraph)
+                requested = plan.get('preferredFontSizes',{}).get(ident)
+                if requested is not None and not locked:
+                    if not limits['min'] <= requested <= limits['max']:
+                        raise ValueError(f'{number}.{ident}: preferred font outside role limits')
+                    size = requested
                 preferred_size = size
                 if not locked:
-                    size = fit_body_size(body,font,size,limits['min'],role,box['h'],box['w'],padding,config.get('fontFit',{}))
+                    size = fit_body_size(body,font,size,limits['min'],role,box['h'],box['w'],padding,config.get('fontFit',{}),
+                        paragraph_sizes=plan.get('paragraphSizes',{}).get(ident),
+                        paragraph_gap=plan.get('paragraphGaps',{}).get(ident,0),
+                        rich_measure=ident in plan.get('richText',{}))
                 else:
                     # Preserve reference run sizes (including superscripts) for original headings.
                     for pi, paragraph in enumerate(body.findall('a:p',NS)):
@@ -705,7 +718,7 @@ def normalize_package(parts, config, dimensions, selection):
     workbook_repairs = normalize_chart_workbooks(parts)
     if issues and config.get('strict', True):
         refs = ', '.join(f"{item['slide']}.{item['id']}" for item in issues[:8])
-        raise ValueError(f'Perfil quality: {len(issues)} textos não cabem nos mínimos; ajuste o layout: {refs}')
+        raise ValueError(f'Quality profile: {len(issues)} text objects do not fit at minimum sizes; adjust the layout: {refs}')
     return {'tokens': config, 'measuredObjects': len(records), 'measurements': records,
-            'estimatedOverflow': issues, 'categoryRepairs': categories, 'workbookRepairs':workbook_repairs, 'continuations': continuations,
-            'layoutConstraints':layout_plans, 'verification': 'Medição preventiva + revisão visual de exportação; não certifica todos os leitores Office.'}
+            'estimatedOverflow': issues, 'categoryRepairs': categories, 'workbookRepairs':workbook_repairs, 'pictureRepairs':picture_repairs, 'continuations': continuations,
+            'layoutConstraints':layout_plans, 'verification': 'Preventive measurement plus visual export review; does not certify every Office reader.'}

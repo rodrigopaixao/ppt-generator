@@ -5,11 +5,13 @@ import path from 'node:path';
 const local = createRequire(import.meta.url);
 // Normal npm dependencies first. Codex's bundled runtime is an optional offline fallback.
 /**
- * Carrega pacote npm local; no Codex permite fallback offline explícito.
- * @param {string} name Nome do pacote (ex.: pptxgenjs ou sharp).
- * @returns {*} Exportação CommonJS do pacote.
- * local resolve a instalação do projeto; directory usa CODEX_NODE_MODULES ou
- * o runtime local. Só MODULE_NOT_FOUND aciona fallback; outros erros propagam.
+ * Load a local npm package, with an explicit offline fallback in Codex. name is the package
+ * name, such as pptxgenjs or sharp. Return its CommonJS exports. local resolves the project
+ * installation; directory uses CODEX_NODE_MODULES or the local runtime. Only
+ * MODULE_NOT_FOUND triggers fallback; other errors propagate.
+ *
+ * @param {string} name
+ * @returns {*}
  */
 export function dependency(name) {
   try { return local(name); } catch (error) {
